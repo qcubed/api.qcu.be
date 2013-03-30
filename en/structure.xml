@@ -228,7 +228,7 @@ QButton throughout the framework.</description>
       </property>
     </class>
   </file>
-  <file path="qcubed/controls/QSlider.class.php" hash="79258d2e4a475ec4c793d3dfb71d90cd" package="Controls">
+  <file path="qcubed/controls/QSlider.class.php" hash="f788f9955473def1760787c626e4c4c4" package="Controls">
     <docblock line="2">
       <description>QSlider</description>
       <long-description>&lt;p&gt;Put your customizations of the standard behavior here.&lt;/p&gt;</long-description>
@@ -238,7 +238,7 @@ QButton throughout the framework.</description>
       <tag line="2" name="version" description="$Id$"/>
       <tag line="2" name="access" description="public"/>
     </docblock>
-    <class final="false" abstract="false" namespace="global" line="22" package="Controls  ">
+    <class final="false" abstract="false" namespace="global" line="22" package="Controls">
       <extends>\QSliderBase</extends>
       <name>QSlider</name>
       <full_name>\QSlider</full_name>
@@ -277,7 +277,7 @@ QButton throughout the framework.</description>
       <error line="11" code="50018">No DocBlock was found for property $strCssClass</error>
     </parse_markers>
   </file>
-  <file path="qcubed/controls/QDatepickerBox.class.php" hash="10f2a27b5d19974d7da8fb8d0a9c92a8" package="Controls">
+  <file path="qcubed/controls/QDatepickerBox.class.php" hash="9449204ef9b5db74c69a51f390ddbd76" package="Controls">
     <docblock line="2">
       <description>QDatepickerBox</description>
       <long-description>&lt;p&gt;Put your customizations of the standard behavior here.&lt;/p&gt;</long-description>
@@ -306,7 +306,7 @@ and allows you to get the date selected in the datepicker as a string in the tex
       </docblock>
     </class>
   </file>
-  <file path="qcubed/controls/QJqButton.class.php" hash="524a9f6e988492808ae06556e26b2f5f" package="Controls">
+  <file path="qcubed/controls/QJqButton.class.php" hash="f9257519265a6c072f12628d811022e9" package="Controls">
     <docblock line="2">
       <description>QJqButton</description>
       <long-description>&lt;p&gt;Put your customizations of the standard behavior here.&lt;/p&gt;</long-description>
@@ -316,7 +316,7 @@ and allows you to get the date selected in the datepicker as a string in the tex
       <tag line="2" name="version" description="$Id$"/>
       <tag line="2" name="access" description="public"/>
     </docblock>
-    <class final="false" abstract="false" namespace="global" line="21" package="Controls  ">
+    <class final="false" abstract="false" namespace="global" line="21" package="Controls">
       <extends>\QJqButtonBase</extends>
       <name>QJqButton</name>
       <full_name>\QJqButton</full_name>
@@ -421,7 +421,7 @@ and allows you to get the date selected in the datepicker as a string in the tex
       <error line="2" code="50000">No DocBlock was found for \QSpinner</error>
     </parse_markers>
   </file>
-  <file path="qcubed/controls/QProgressbar.class.php" hash="9d277860381d01321ca11744c693410b" package="Controls">
+  <file path="qcubed/controls/QProgressbar.class.php" hash="42acb5ed3c6b4224d2925dcca132c7f7" package="Controls">
     <docblock line="2">
       <description>QProgressbar</description>
       <long-description>&lt;p&gt;Put your customizations of the standard behavior here.&lt;/p&gt;</long-description>
@@ -431,7 +431,7 @@ and allows you to get the date selected in the datepicker as a string in the tex
       <tag line="2" name="version" description="$Id$"/>
       <tag line="2" name="access" description="public"/>
     </docblock>
-    <class final="false" abstract="false" namespace="global" line="22" package="Controls  ">
+    <class final="false" abstract="false" namespace="global" line="22" package="Controls">
       <extends>\QProgressbarBase</extends>
       <name>QProgressbar</name>
       <full_name>\QProgressbar</full_name>
@@ -449,7 +449,7 @@ and allows you to get the date selected in the datepicker as a string in the tex
       <critical line="14" code="50005">No short description for class \QProgressbar</critical>
     </parse_markers>
   </file>
-  <file path="qcubed/controls/QResizable.class.php" hash="23d2c71b30b18d055048a36b1d8251ce" package="Controls">
+  <file path="qcubed/controls/QResizable.class.php" hash="8b131a30fbb8f2ba825c8a3927ddd064" package="Controls">
     <docblock line="2">
       <description>QResizable</description>
       <long-description>&lt;p&gt;Put your customizations of the standard behavior here.&lt;/p&gt;</long-description>
@@ -459,7 +459,7 @@ and allows you to get the date selected in the datepicker as a string in the tex
       <tag line="2" name="version" description="$Id$"/>
       <tag line="2" name="access" description="public"/>
     </docblock>
-    <class final="false" abstract="false" namespace="global" line="22" package="Controls  ">
+    <class final="false" abstract="false" namespace="global" line="22" package="Controls">
       <extends>\QResizableBase</extends>
       <name>QResizable</name>
       <full_name>\QResizable</full_name>
@@ -603,7 +603,7 @@ every table in your database are all QDataGrids&lt;/p&gt;</long-description>
       <critical line="20" code="50019">No short description for property $intCellPadding</critical>
     </parse_markers>
   </file>
-  <file path="qcubed/controls/QSelectable.class.php" hash="8f0249160839e14763fa32b3ee933ccb" package="Controls">
+  <file path="qcubed/controls/QSelectable.class.php" hash="368cfcb3ff6b02f53aadfa0458c501c3" package="Controls">
     <docblock line="2">
       <description>QSelectable</description>
       <long-description>&lt;p&gt;Put your customizations of the standard behavior here.&lt;/p&gt;</long-description>
@@ -613,7 +613,7 @@ every table in your database are all QDataGrids&lt;/p&gt;</long-description>
       <tag line="2" name="version" description="$Id$"/>
       <tag line="2" name="access" description="public"/>
     </docblock>
-    <class final="false" abstract="false" namespace="global" line="22" package="Controls  ">
+    <class final="false" abstract="false" namespace="global" line="22" package="Controls">
       <extends>\QSelectableBase</extends>
       <name>QSelectable</name>
       <full_name>\QSelectable</full_name>
@@ -673,7 +673,7 @@ every table in your database are all QDataGrids&lt;/p&gt;</long-description>
       <error line="20" code="50018">No DocBlock was found for property $strCacheFolder</error>
     </parse_markers>
   </file>
-  <file path="qcubed/controls/QFileAsset.class.php" hash="aeda87430b6f28cf1f4da2cccfe8a8e8" package="Controls">
+  <file path="qcubed/controls/QFileAsset.class.php" hash="fd6ad180bcd90f62f78f1bd923527a49" package="Controls">
     <docblock line="2">
       <description>QFileAsset</description>
       <long-description></long-description>
@@ -733,7 +733,7 @@ every table in your database are all QDataGrids&lt;/p&gt;</long-description>
       <critical line="18" code="50019">No short description for property $strTemporaryUploadPath</critical>
     </parse_markers>
   </file>
-  <file path="qcubed/controls/QDroppable.class.php" hash="c3581c608a52cf28bb52aaeeec27415e" package="Controls">
+  <file path="qcubed/controls/QDroppable.class.php" hash="77a9519962b6cc67b0761cf8ae7c1e00" package="Controls">
     <docblock line="2">
       <description>QDroppable</description>
       <long-description>&lt;p&gt;Put your customizations of the standard behavior here.&lt;/p&gt;</long-description>
@@ -743,7 +743,7 @@ every table in your database are all QDataGrids&lt;/p&gt;</long-description>
       <tag line="2" name="version" description="2011"/>
       <tag line="2" name="access" description="public"/>
     </docblock>
-    <class final="false" abstract="false" namespace="global" line="21" package="Controls  ">
+    <class final="false" abstract="false" namespace="global" line="21" package="Controls">
       <extends>\QDroppableBase</extends>
       <name>QDroppable</name>
       <full_name>\QDroppable</full_name>
@@ -1392,7 +1392,7 @@ Since QJsTimer cannot have children, removing child controls does not yeild anyt
       <error line="217" code="50012">No short description for method GetEvent()</error>
     </parse_markers>
   </file>
-  <file path="qcubed/controls/QAccordion.class.php" hash="1ada6451deffbcee23464fdbd874ef7f" package="Controls">
+  <file path="qcubed/controls/QAccordion.class.php" hash="6d7700dfc7d32c811193dd1f787305a4" package="Controls">
     <docblock line="2">
       <description>QAccordion</description>
       <long-description>&lt;p&gt;Put your customizations of the standard behavior here.&lt;/p&gt;</long-description>
@@ -1527,7 +1527,7 @@ will be performed in this method.</description>
       <error line="102" code="50010">No DocBlock was found for method __set()</error>
     </parse_markers>
   </file>
-  <file path="qcubed/controls/QTabs.class.php" hash="f72483a97c4f1aeeb4fb70f656ede178" package="Controls">
+  <file path="qcubed/controls/QTabs.class.php" hash="220ad7e44b5da65a7ec708dd0d09eeb5" package="Controls">
     <docblock line="2">
       <description>QTabs</description>
       <long-description>&lt;p&gt;Put your customizations of the standard behavior here.&lt;/p&gt;</long-description>
@@ -1537,7 +1537,7 @@ will be performed in this method.</description>
       <tag line="2" name="version" description="$Id$"/>
       <tag line="2" name="access" description="public"/>
     </docblock>
-    <class final="false" abstract="false" namespace="global" line="22" package="Controls  ">
+    <class final="false" abstract="false" namespace="global" line="22" package="Controls">
       <extends>\QTabsBase</extends>
       <name>QTabs</name>
       <full_name>\QTabs</full_name>
@@ -1611,7 +1611,7 @@ This class is intended to be modified by the developer to add functions and alte
       </docblock>
     </class>
   </file>
-  <file path="qcubed/controls/QDraggable.class.php" hash="728ec563b5827f1d276a1b2439c5aabc" package="Controls">
+  <file path="qcubed/controls/QDraggable.class.php" hash="cecb874fb1607a89960b1855c3767b9b" package="Controls">
     <docblock line="2">
       <description>QDraggable</description>
       <long-description>&lt;p&gt;Put your customizations of the standard behavior here.&lt;/p&gt;</long-description>
@@ -1621,7 +1621,7 @@ This class is intended to be modified by the developer to add functions and alte
       <tag line="2" name="version" description="2011"/>
       <tag line="2" name="access" description="public"/>
     </docblock>
-    <class final="false" abstract="false" namespace="global" line="21" package="Controls  ">
+    <class final="false" abstract="false" namespace="global" line="21" package="Controls">
       <extends>\QDraggableBase</extends>
       <name>QDraggable</name>
       <full_name>\QDraggable</full_name>
@@ -1639,7 +1639,7 @@ This class is intended to be modified by the developer to add functions and alte
       <critical line="14" code="50005">No short description for class \QDraggable</critical>
     </parse_markers>
   </file>
-  <file path="qcubed/controls/QDatepicker.class.php" hash="79c95b8a9bb22689cfa432809802f234" package="Controls">
+  <file path="qcubed/controls/QDatepicker.class.php" hash="b9fc6fa29d73dc765ae4ba4f74434735" package="Controls">
     <docblock line="2">
       <description>QDatePicker</description>
       <long-description></long-description>
@@ -1682,7 +1682,7 @@ Also, read the class file to learn about the wrappers (the HTML elements with th
       </docblock>
     </class>
   </file>
-  <file path="qcubed/controls/QSortable.class.php" hash="9f407eb81f195b2270a982f69eaa5de3" package="Controls">
+  <file path="qcubed/controls/QSortable.class.php" hash="78e9c1dadd732b0762956377d902afbf" package="Controls">
     <docblock line="2">
       <description>QSortable</description>
       <long-description>&lt;p&gt;Put your customizations of the standard behavior here.&lt;/p&gt;</long-description>
@@ -1692,7 +1692,7 @@ Also, read the class file to learn about the wrappers (the HTML elements with th
       <tag line="2" name="version" description="$Id$"/>
       <tag line="2" name="access" description="public"/>
     </docblock>
-    <class final="false" abstract="false" namespace="global" line="22" package="Controls  ">
+    <class final="false" abstract="false" namespace="global" line="22" package="Controls">
       <extends>\QSortableBase</extends>
       <name>QSortable</name>
       <full_name>\QSortable</full_name>
@@ -46379,7 +46379,6 @@ Obviously, if the GC Interval is set to 0, then this GC Days Old value will be n
   <package name="Controls" full_name="Controls">
     <package name="Base" full_name="Controls\Base"/>
   </package>
-  <package name="Controls  " full_name="Controls  "/>
   <package name="DatabaseAdapters" full_name="DatabaseAdapters"/>
   <package name="Default" full_name="Default"/>
   <package name="PluginManager" full_name="PluginManager"/>

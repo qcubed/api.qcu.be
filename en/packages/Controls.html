@@ -22,7 +22,6 @@
 <li><a>Packages</a></li>
 <li><a href="../packages/Codegen.html"><i class="icon-folder-open"></i> Codegen</a></li>
 <li><a href="../packages/Controls.html"><i class="icon-folder-open"></i> Controls</a></li>
-<li><a href="../packages/Controls%20%20.html"><i class="icon-folder-open"></i> Controls  </a></li>
 <li><a href="../packages/DatabaseAdapters.html"><i class="icon-folder-open"></i> DatabaseAdapters</a></li>
 <li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
 <li><a href="../packages/Sessions.html"><i class="icon-folder-open"></i> Sessions</a></li>
@@ -81,23 +80,32 @@ errors that happen.</span><pre>DataGridEvalHandleError</pre></a></li>
 <li><a href="#QForm" title="QForm is one of the most important parts of QCubed - it is what ultimately creates the web page">QForm</a></li>
 <li><a href="#QButton" title="QButton class - You may modify it to contain your own modifications to the
 QButton throughout the framework.">QButton</a></li>
+<li><a href="#QSlider" title="Implements a JQuery UI Slider">QSlider</a></li>
 <li><a href="#QTextBox" title='This class will render an HTML Textbox -- which can either be [input type="text"],
 [input type="password"] or [textarea] depending on the TextMode (see below).'>QTextBox</a></li>
 <li><a href="#QDatepickerBox" title="Creates the jQuery Datepicker control (with a textbox)">QDatepickerBox</a></li>
+<li><a href="#QJqButton" title="Implements a JQuery UI Button">QJqButton</a></li>
+<li><a href="#QProgressbar" title="Implements a JQuery UI Progress Bar">QProgressbar</a></li>
+<li><a href="#QResizable" title="Implements the JQuery UI Resizable capabilities into a QControl">QResizable</a></li>
 <li><a href="#QListBox" title="The QListBox class is based upon QListBoxBase.">QListBox</a></li>
 <li><a href="#QJqCheckBox" title="This class mplements a JQuery Ui Check Box.">QJqCheckBox</a></li>
 <li><a href="#QDataGrid" title="QDataGrid can help generate tables automatically with pagination.">QDataGrid</a></li>
+<li><a href="#QSelectable" title="Impelments a JQuery UI Selectable box">QSelectable</a></li>
 <li><a href="#QImageLabel" title="This class will render an Image/Bitmapped version of any Text string">QImageLabel</a></li>
 <li><a href="#QImageControl" title="This class will render an Image Control of any image file in the system">QImageControl</a></li>
 <li><a href="#QFileAsset" title="QFileAsset">QFileAsset</a></li>
+<li><a href="#QDroppable" title="Implements the Droppable capabilities of JQuery UI in a QControl">QDroppable</a></li>
 <li><a href="#QImageFileAsset" title="ImageFileAsset is derived from QFileAsset and is a dedicated control for uploading images (images only).">QImageFileAsset</a></li>
 <li><a href="#QAccordion" title="Creates the jQuery Accordian control">QAccordion</a></li>
 <li><a href="#QSampleControl" title="This is a SAMPLE of a custom QControl that you could write.">QSampleControl</a></li>
+<li><a href="#QTabs" title="Impelements JQuery Ui Tabs">QTabs</a></li>
 <li><a href="#QSimpleTable" title="&lt;p&gt;This control is used to display a simple html table.">QSimpleTable</a></li>
 <li><a href="#QAutocomplete" title="This class only extends QAutocompleteBase which implements the actual functionality.">QAutocomplete</a></li>
 <li><a href="#QDialog" title="Implements a JQuery UI Dialog">QDialog</a></li>
+<li><a href="#QDraggable" title="Implements the jQuery UI Draggable capabilities on to a control.">QDraggable</a></li>
 <li><a href="#QDatepicker" title="Creates the jQuery Datepicker control">QDatepicker</a></li>
 <li><a href="#QControl" title="QControl is the user overridable Base-Class for all Controls.">QControl</a></li>
+<li><a href="#QSortable" title="Impelements a JQuery UI Sortable">QSortable</a></li>
 <li><a href="#QJqRadioButton" title="Implements a JQuery UI Radio Button">QJqRadioButton</a></li>
 <li><a href="#QListControl" title="Abstract object which is extended by anything which involves lists of selectable items.">QListControl</a></li>
 <li><a href="#QControlLabel" title="QControl is the user overridable Base-Class for all Controls.">QControlLabel</a></li>
@@ -388,12 +396,26 @@ All the appearance properties should be self-explanatory.</p>
 <div class="details collapse"></div>
 <a href="../classes/QDialogBox.html" class="more">« More »</a>
 </div>
+<div id="QDraggable" class="element ajax clickable class">
+<h1>QDraggable<a href="../classes/QDraggable.html">¶</a>
+</h1>
+<p class="short_description">Implements the jQuery UI Draggable capabilities on to a control.</p>
+<div class="details collapse"></div>
+<a href="../classes/QDraggable.html" class="more">« More »</a>
+</div>
 <div id="QDropZoneGrouping" class="element ajax clickable class">
 <h1>QDropZoneGrouping<a href="../classes/QDropZoneGrouping.html">¶</a>
 </h1>
 <p class="short_description">This file contains the QDropZoneGrouping class.</p>
 <div class="details collapse"></div>
 <a href="../classes/QDropZoneGrouping.html" class="more">« More »</a>
+</div>
+<div id="QDroppable" class="element ajax clickable class">
+<h1>QDroppable<a href="../classes/QDroppable.html">¶</a>
+</h1>
+<p class="short_description">Implements the Droppable capabilities of JQuery UI in a QControl</p>
+<div class="details collapse"></div>
+<a href="../classes/QDroppable.html" class="more">« More »</a>
 </div>
 <div id="QFileAsset" class="element ajax clickable class">
 <h1>QFileAsset<a href="../classes/QFileAsset.html">¶</a>
@@ -545,6 +567,13 @@ that the Text is a valid integer and (if applicable) is in the range of Minimum 
 <div class="details collapse"></div>
 <a href="../classes/QIntegerTextBox.html" class="more">« More »</a>
 </div>
+<div id="QJqButton" class="element ajax clickable class">
+<h1>QJqButton<a href="../classes/QJqButton.html">¶</a>
+</h1>
+<p class="short_description">Implements a JQuery UI Button</p>
+<div class="details collapse"></div>
+<a href="../classes/QJqButton.html" class="more">« More »</a>
+</div>
 <div id="QJqCheckBox" class="element ajax clickable class">
 <h1>QJqCheckBox<a href="../classes/QJqCheckBox.html">¶</a>
 </h1>
@@ -639,6 +668,13 @@ this class is abstract.</p>
 <div class="details collapse"></div>
 <a href="../classes/QPanel.html" class="more">« More »</a>
 </div>
+<div id="QProgressbar" class="element ajax clickable class">
+<h1>QProgressbar<a href="../classes/QProgressbar.html">¶</a>
+</h1>
+<p class="short_description">Implements a JQuery UI Progress Bar</p>
+<div class="details collapse"></div>
+<a href="../classes/QProgressbar.html" class="more">« More »</a>
+</div>
 <div id="QRadioButton" class="element ajax clickable class">
 <h1>QRadioButton<a href="../classes/QRadioButton.html">¶</a>
 </h1>
@@ -653,12 +689,26 @@ this class is abstract.</p>
 <div class="details collapse"></div>
 <a href="../classes/QRadioButtonList.html" class="more">« More »</a>
 </div>
+<div id="QResizable" class="element ajax clickable class">
+<h1>QResizable<a href="../classes/QResizable.html">¶</a>
+</h1>
+<p class="short_description">Implements the JQuery UI Resizable capabilities into a QControl</p>
+<div class="details collapse"></div>
+<a href="../classes/QResizable.html" class="more">« More »</a>
+</div>
 <div id="QSampleControl" class="element ajax clickable class">
 <h1>QSampleControl<a href="../classes/QSampleControl.html">¶</a>
 </h1>
 <p class="short_description">This is a SAMPLE of a custom QControl that you could write.</p>
 <div class="details collapse"></div>
 <a href="../classes/QSampleControl.html" class="more">« More »</a>
+</div>
+<div id="QSelectable" class="element ajax clickable class">
+<h1>QSelectable<a href="../classes/QSelectable.html">¶</a>
+</h1>
+<p class="short_description">Impelments a JQuery UI Selectable box</p>
+<div class="details collapse"></div>
+<a href="../classes/QSelectable.html" class="more">« More »</a>
 </div>
 <div id="QSimpleTable" class="element ajax clickable class">
 <h1>QSimpleTable<a href="../classes/QSimpleTable.html">¶</a>
@@ -673,6 +723,27 @@ this class is abstract.</p>
 <p class="short_description"><p>This control is used to display a simple html table.</p>
 <div class="details collapse"></div>
 <a href="../classes/QSimpleTableBase.html" class="more">« More »</a>
+</div>
+<div id="QSlider" class="element ajax clickable class">
+<h1>QSlider<a href="../classes/QSlider.html">¶</a>
+</h1>
+<p class="short_description">Implements a JQuery UI Slider</p>
+<div class="details collapse"></div>
+<a href="../classes/QSlider.html" class="more">« More »</a>
+</div>
+<div id="QSortable" class="element ajax clickable class">
+<h1>QSortable<a href="../classes/QSortable.html">¶</a>
+</h1>
+<p class="short_description">Impelements a JQuery UI Sortable</p>
+<div class="details collapse"></div>
+<a href="../classes/QSortable.html" class="more">« More »</a>
+</div>
+<div id="QTabs" class="element ajax clickable class">
+<h1>QTabs<a href="../classes/QTabs.html">¶</a>
+</h1>
+<p class="short_description">Impelements JQuery Ui Tabs</p>
+<div class="details collapse"></div>
+<a href="../classes/QTabs.html" class="more">« More »</a>
 </div>
 <div id="QTextBox" class="element ajax clickable class">
 <h1>QTextBox<a href="../classes/QTextBox.html">¶</a>
@@ -973,7 +1044,7 @@ this class is abstract.</p>
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
-            generated on 2013-03-30T21:11:32+07:00.<br></footer></div>
+            generated on 2013-03-31T00:57:16+07:00.<br></footer></div>
 </div>
 </body>
 </html>
