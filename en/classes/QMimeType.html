@@ -1,0 +1,337 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>QCubed API » \QMimeType</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">QCubed API</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="../packages/Codegen.html"><i class="icon-folder-open"></i> Codegen</a></li>
+<li><a href="../packages/Controls.html"><i class="icon-folder-open"></i> Controls</a></li>
+<li><a href="../packages/Controls%20%20.html"><i class="icon-folder-open"></i> Controls  </a></li>
+<li><a href="../packages/DatabaseAdapters.html"><i class="icon-folder-open"></i> DatabaseAdapters</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/My%20QCubed%20Application.html"><i class="icon-folder-open"></i> My QCubed Application</a></li>
+<li><a href="../packages/Sessions.html"><i class="icon-folder-open"></i> Sessions</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">4384</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul><li>todo 
+                <span class="label label-info">28</span>
+</li></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">8</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method_GetMimeTypeForFile" title="GetMimeTypeForFile :: Returns the suggested MIME type for an actual file."><span class="description">Returns the suggested MIME type for an actual file.</span><pre>GetMimeTypeForFile()</pre></a></li>
+<li class="method public "><a href="#method_GetMimeTypeForFilename" title="GetMimeTypeForFilename :: Returns the suggested MIME type for a filename by stripping
+out the extension and looking it up from QMimeType::$MimeTypeFor"><span class="description">Returns the suggested MIME type for a filename by stripping
+out the extension and looking it up from QMimeType::$MimeTypeFor</span><pre>GetMimeTypeForFilename()</pre></a></li>
+<li class="method public "><a href="#method_GetTokenForMimeType" title="GetTokenForMimeType :: To more easily process a file repository based on Mime Types, it's sometimes
+easier to tokenize a mimetype and process using the tokens (e.g."><span class="description">To more easily process a file repository based on Mime Types, it's sometimes
+easier to tokenize a mimetype and process using the tokens (e.g.</span><pre>GetTokenForMimeType()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties
+                    <ul>
+<li class="property public "><a href="#property_MagicDatabaseFilePath" title="$MagicDatabaseFilePath :: the absolute file path of the MIME Magic Database file"><span class="description"></span><pre>$MagicDatabaseFilePath</pre></a></li>
+<li class="property public "><a href="#property_MimeTypeFor" title="$MimeTypeFor :: MimeTypeFor array is used in conjunction with GetMimeTypeForFilename()"><span class="description"></span><pre>$MimeTypeFor</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-constant"></i> Constants
+                    <ul>
+<li class="constant  "><a href="#constant_Executable" title="Executable :: "><span class="description">Executable</span><pre>Executable</pre></a></li>
+<li class="constant  "><a href="#constant_Gif" title="Gif :: "><span class="description">Gif</span><pre>Gif</pre></a></li>
+<li class="constant  "><a href="#constant_Gzip" title="Gzip :: "><span class="description">Gzip</span><pre>Gzip</pre></a></li>
+<li class="constant  "><a href="#constant_Html" title="Html :: "><span class="description">Html</span><pre>Html</pre></a></li>
+<li class="constant  "><a href="#constant_Jpeg" title="Jpeg :: "><span class="description">Jpeg</span><pre>Jpeg</pre></a></li>
+<li class="constant  "><a href="#constant_Mp3" title="Mp3 :: "><span class="description">Mp3</span><pre>Mp3</pre></a></li>
+<li class="constant  "><a href="#constant_MpegVideo" title="MpegVideo :: "><span class="description">MpegVideo</span><pre>MpegVideo</pre></a></li>
+<li class="constant  "><a href="#constant_MsExcel" title="MsExcel :: "><span class="description">MsExcel</span><pre>MsExcel</pre></a></li>
+<li class="constant  "><a href="#constant_MsPowerpoint" title="MsPowerpoint :: "><span class="description">MsPowerpoint</span><pre>MsPowerpoint</pre></a></li>
+<li class="constant  "><a href="#constant_MsWord" title="MsWord :: "><span class="description">MsWord</span><pre>MsWord</pre></a></li>
+<li class="constant  "><a href="#constant_OoXmlPresentation" title="OoXmlPresentation :: "><span class="description">OoXmlPresentation</span><pre>OoXmlPresentation</pre></a></li>
+<li class="constant  "><a href="#constant_OoXmlSpreadsheet" title="OoXmlSpreadsheet :: "><span class="description">OoXmlSpreadsheet</span><pre>OoXmlSpreadsheet</pre></a></li>
+<li class="constant  "><a href="#constant_OoXmlWordProcessing" title="OoXmlWordProcessing :: "><span class="description">OoXmlWordProcessing</span><pre>OoXmlWordProcessing</pre></a></li>
+<li class="constant  "><a href="#constant_Pdf" title="Pdf :: "><span class="description">Pdf</span><pre>Pdf</pre></a></li>
+<li class="constant  "><a href="#constant_PlainText" title="PlainText :: "><span class="description">PlainText</span><pre>PlainText</pre></a></li>
+<li class="constant  "><a href="#constant_Png" title="Png :: "><span class="description">Png</span><pre>Png</pre></a></li>
+<li class="constant  "><a href="#constant_Quicktime" title="Quicktime :: "><span class="description">Quicktime</span><pre>Quicktime</pre></a></li>
+<li class="constant  "><a href="#constant_RichText" title="RichText :: "><span class="description">RichText</span><pre>RichText</pre></a></li>
+<li class="constant  "><a href="#constant_WavAudio" title="WavAudio :: "><span class="description">WavAudio</span><pre>WavAudio</pre></a></li>
+<li class="constant  "><a href="#constant_Xml" title="Xml :: "><span class="description">Xml</span><pre>Xml</pre></a></li>
+<li class="constant  "><a href="#constant_Zip" title="Zip :: "><span class="description">Zip</span><pre>Zip</pre></a></li>
+<li class="constant  "><a href="#constant__Default" title="_Default :: "><span class="description">_Default</span><pre>_Default</pre></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a id="\QMimeType"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/global.html">global</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/QMimeType.html">QMimeType</a>
+</li>
+</ul>
+<div class="element class"><div class="details">
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method_GetMimeTypeForFile"></a><div class="element clickable method public method_GetMimeTypeForFile" data-toggle="collapse" data-target=".method_GetMimeTypeForFile .collapse">
+<h2>Returns the suggested MIME type for an actual file.</h2>
+<pre>GetMimeTypeForFile(string $strFilePath) : string</pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Using file-based heuristics
+(data points in the ACTUAL file), it will utilize either the PECL FileInfo extension
+OR the Magic MIME extension (if either are available) to determine the MIME type.  If all
+else fails, it will fall back to the basic GetMimeTypeForFilename() method.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$strFilePath</h4>
+<code>string</code><p>the absolute file path of the ACTUAL file</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_GetMimeTypeForFilename"></a><div class="element clickable method public method_GetMimeTypeForFilename" data-toggle="collapse" data-target=".method_GetMimeTypeForFilename .collapse">
+<h2>Returns the suggested MIME type for a filename by stripping
+out the extension and looking it up from QMimeType::$MimeTypeFor</h2>
+<pre>GetMimeTypeForFilename(string $strFilename) : string</pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$strFilename</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_GetTokenForMimeType"></a><div class="element clickable method public method_GetTokenForMimeType" data-toggle="collapse" data-target=".method_GetTokenForMimeType .collapse">
+<h2>To more easily process a file repository based on Mime Types, it's sometimes
+easier to tokenize a mimetype and process using the tokens (e.g.</h2>
+<pre>GetTokenForMimeType(string $strMimeType) : string</pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>if you have a
+directory of image icons that you want to map back to a mime type or a
+collection of mime types, a tokenized-version of the mime type would be more
+appropriate).</p>
+
+<p>Given a string-based mime type, this will return a "tokenized" version
+of the mime type, which only consists of lower case characters and underscores (_).</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$strMimeType</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a id="property_MagicDatabaseFilePath"> </a><div class="element clickable property public property_MagicDatabaseFilePath" data-toggle="collapse" data-target=".property_MagicDatabaseFilePath .collapse">
+<h2></h2>
+<pre>$MagicDatabaseFilePath : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_MimeTypeFor"> </a><div class="element clickable property public property_MimeTypeFor" data-toggle="collapse" data-target=".property_MimeTypeFor .collapse">
+<h2></h2>
+<pre>$MimeTypeFor : string[]</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<h3>
+<i class="icon-custom icon-constant"></i> Constants</h3>
+<a id="constant_Executable"> </a><div class="element clickable constant  constant_Executable" data-toggle="collapse" data-target=".constant_Executable .collapse">
+<h2>Executable</h2>
+<pre>Executable </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_Gif"> </a><div class="element clickable constant  constant_Gif" data-toggle="collapse" data-target=".constant_Gif .collapse">
+<h2>Gif</h2>
+<pre>Gif </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_Gzip"> </a><div class="element clickable constant  constant_Gzip" data-toggle="collapse" data-target=".constant_Gzip .collapse">
+<h2>Gzip</h2>
+<pre>Gzip </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_Html"> </a><div class="element clickable constant  constant_Html" data-toggle="collapse" data-target=".constant_Html .collapse">
+<h2>Html</h2>
+<pre>Html </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_Jpeg"> </a><div class="element clickable constant  constant_Jpeg" data-toggle="collapse" data-target=".constant_Jpeg .collapse">
+<h2>Jpeg</h2>
+<pre>Jpeg </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_Mp3"> </a><div class="element clickable constant  constant_Mp3" data-toggle="collapse" data-target=".constant_Mp3 .collapse">
+<h2>Mp3</h2>
+<pre>Mp3 </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_MpegVideo"> </a><div class="element clickable constant  constant_MpegVideo" data-toggle="collapse" data-target=".constant_MpegVideo .collapse">
+<h2>MpegVideo</h2>
+<pre>MpegVideo </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_MsExcel"> </a><div class="element clickable constant  constant_MsExcel" data-toggle="collapse" data-target=".constant_MsExcel .collapse">
+<h2>MsExcel</h2>
+<pre>MsExcel </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_MsPowerpoint"> </a><div class="element clickable constant  constant_MsPowerpoint" data-toggle="collapse" data-target=".constant_MsPowerpoint .collapse">
+<h2>MsPowerpoint</h2>
+<pre>MsPowerpoint </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_MsWord"> </a><div class="element clickable constant  constant_MsWord" data-toggle="collapse" data-target=".constant_MsWord .collapse">
+<h2>MsWord</h2>
+<pre>MsWord </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_OoXmlPresentation"> </a><div class="element clickable constant  constant_OoXmlPresentation" data-toggle="collapse" data-target=".constant_OoXmlPresentation .collapse">
+<h2>OoXmlPresentation</h2>
+<pre>OoXmlPresentation </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_OoXmlSpreadsheet"> </a><div class="element clickable constant  constant_OoXmlSpreadsheet" data-toggle="collapse" data-target=".constant_OoXmlSpreadsheet .collapse">
+<h2>OoXmlSpreadsheet</h2>
+<pre>OoXmlSpreadsheet </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_OoXmlWordProcessing"> </a><div class="element clickable constant  constant_OoXmlWordProcessing" data-toggle="collapse" data-target=".constant_OoXmlWordProcessing .collapse">
+<h2>OoXmlWordProcessing</h2>
+<pre>OoXmlWordProcessing </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_Pdf"> </a><div class="element clickable constant  constant_Pdf" data-toggle="collapse" data-target=".constant_Pdf .collapse">
+<h2>Pdf</h2>
+<pre>Pdf </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_PlainText"> </a><div class="element clickable constant  constant_PlainText" data-toggle="collapse" data-target=".constant_PlainText .collapse">
+<h2>PlainText</h2>
+<pre>PlainText </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_Png"> </a><div class="element clickable constant  constant_Png" data-toggle="collapse" data-target=".constant_Png .collapse">
+<h2>Png</h2>
+<pre>Png </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_Quicktime"> </a><div class="element clickable constant  constant_Quicktime" data-toggle="collapse" data-target=".constant_Quicktime .collapse">
+<h2>Quicktime</h2>
+<pre>Quicktime </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_RichText"> </a><div class="element clickable constant  constant_RichText" data-toggle="collapse" data-target=".constant_RichText .collapse">
+<h2>RichText</h2>
+<pre>RichText </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_WavAudio"> </a><div class="element clickable constant  constant_WavAudio" data-toggle="collapse" data-target=".constant_WavAudio .collapse">
+<h2>WavAudio</h2>
+<pre>WavAudio </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_Xml"> </a><div class="element clickable constant  constant_Xml" data-toggle="collapse" data-target=".constant_Xml .collapse">
+<h2>Xml</h2>
+<pre>Xml </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_Zip"> </a><div class="element clickable constant  constant_Zip" data-toggle="collapse" data-target=".constant_Zip .collapse">
+<h2>Zip</h2>
+<pre>Zip </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant__Default"> </a><div class="element clickable constant  constant__Default" data-toggle="collapse" data-target=".constant__Default .collapse">
+<h2>_Default</h2>
+<pre>_Default </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+</div></div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
+            generated on 2013-03-17T02:01:20+07:00.<br></footer></div>
+</div>
+</body>
+</html>

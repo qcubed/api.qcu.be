@@ -1,0 +1,1217 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>QCubed API » \QDataGridColumn</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">QCubed API</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="../packages/Codegen.html"><i class="icon-folder-open"></i> Codegen</a></li>
+<li><a href="../packages/Controls.html"><i class="icon-folder-open"></i> Controls</a></li>
+<li><a href="../packages/Controls%20%20.html"><i class="icon-folder-open"></i> Controls  </a></li>
+<li><a href="../packages/DatabaseAdapters.html"><i class="icon-folder-open"></i> DatabaseAdapters</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/My%20QCubed%20Application.html"><i class="icon-folder-open"></i> My QCubed Application</a></li>
+<li><a href="../packages/Sessions.html"><i class="icon-folder-open"></i> Sessions</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">4384</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul><li>todo 
+                <span class="label label-info">28</span>
+</li></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">8</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method_ClearFilter" title="ClearFilter :: "><span class="description">ClearFilter()
+        </span><pre>ClearFilter()</pre></a></li>
+<li class="method public "><a href="#method_FilterAddListItem" title="FilterAddListItem :: "><span class="description">FilterAddListItem()
+        </span><pre>FilterAddListItem()</pre></a></li>
+<li class="method public "><a href="#method_GetActiveFilterState" title="GetActiveFilterState :: "><span class="description">GetActiveFilterState()
+        </span><pre>GetActiveFilterState()</pre></a></li>
+<li class="method public "><a href="#method_GetActiveFilterValue" title="GetActiveFilterValue :: "><span class="description">GetActiveFilterValue()
+        </span><pre>GetActiveFilterValue()</pre></a></li>
+<li class="method public "><a href="#method_GetAttributes" title="GetAttributes :: "><span class="description">GetAttributes()
+        </span><pre>GetAttributes()</pre></a></li>
+<li class="method public "><a href="#method_HasFilter" title="HasFilter :: "><span class="description">HasFilter()
+        </span><pre>HasFilter()</pre></a></li>
+<li class="method public inherited"><a href="#method_OverrideAttributes" title="OverrideAttributes :: This allows you to set any properties, given by a name-value pair list
+in mixOverrideArray."><span class="description">This allows you to set any properties, given by a name-value pair list
+in mixOverrideArray.</span><pre>OverrideAttributes()</pre></a></li>
+<li class="method public "><a href="#method_SetActiveFilterState" title="SetActiveFilterState :: "><span class="description">SetActiveFilterState()
+        </span><pre>SetActiveFilterState()</pre></a></li>
+<li class="method public "><a href="#method___construct" title="__construct :: "><span class="description">__construct()
+        </span><pre>__construct()</pre></a></li>
+<li class="method public "><a href="#method___get" title='__get :: Override method to perform a property "Get"
+This will get the value of $strName
+All inhereted objects that call __get() should always fall through
+to calling parent::__get() in a try/catch statement catching
+for CallerExceptions.'><span class="description">Override method to perform a property "Get"
+This will get the value of $strName
+All inhereted objects that call __get() should always fall through
+to calling parent::__get() in a try/catch statement catching
+for CallerExceptions.</span><pre>__get()</pre></a></li>
+<li class="method public "><a href="#method___set" title='__set :: Override method to perform a property "Set"
+This will set the property $strName to be $mixValue
+All inhereted objects that call __set() should always fall through
+to calling parent::__set() in a try/catch statement catching
+for CallerExceptions.'><span class="description">Override method to perform a property "Set"
+This will set the property $strName to be $mixValue
+All inhereted objects that call __set() should always fall through
+to calling parent::__set() in a try/catch statement catching
+for CallerExceptions.</span><pre>__set()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header private">» Private
+                    <ul><li class="method private "><a href="#method_FilterSetOperand" title="FilterSetOperand :: "><span class="description">FilterSetOperand()
+        </span><pre>FilterSetOperand()</pre></a></li></ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties
+                    <ul>
+<li class="property public "><a href="#property_ActiveFilter" title="$ActiveFilter :: "><span class="description"></span><pre>$ActiveFilter</pre></a></li>
+<li class="property public "><a href="#property_BackColor" title="$BackColor :: "><span class="description"></span><pre>$BackColor</pre></a></li>
+<li class="property public "><a href="#property_BorderColor" title="$BorderColor :: "><span class="description"></span><pre>$BorderColor</pre></a></li>
+<li class="property public "><a href="#property_BorderStyle" title="$BorderStyle :: "><span class="description"></span><pre>$BorderStyle</pre></a></li>
+<li class="property public "><a href="#property_BorderWidth" title="$BorderWidth :: "><span class="description"></span><pre>$BorderWidth</pre></a></li>
+<li class="property public "><a href="#property_CssClass" title="$CssClass :: "><span class="description"></span><pre>$CssClass</pre></a></li>
+<li class="property public "><a href="#property_Filter" title="$Filter :: "><span class="description"></span><pre>$Filter</pre></a></li>
+<li class="property public "><a href="#property_FilterBoxSize" title="$FilterBoxSize :: "><span class="description"></span><pre>$FilterBoxSize</pre></a></li>
+<li class="property public "><a href="#property_FilterByCommand" title="$FilterByCommand :: "><span class="description"></span><pre>$FilterByCommand</pre></a></li>
+<li class="property public "><a href="#property_FilterColId" title="$FilterColId :: "><span class="description"></span><pre>$FilterColId</pre></a></li>
+<li class="property public "><a href="#property_FilterConstant" title="$FilterConstant :: "><span class="description"></span><pre>$FilterConstant</pre></a></li>
+<li class="property public "><a href="#property_FilterInfo" title="$FilterInfo :: "><span class="description"></span><pre>$FilterInfo</pre></a></li>
+<li class="property public "><a href="#property_FilterList" title="$FilterList :: "><span class="description"></span><pre>$FilterList</pre></a></li>
+<li class="property public "><a href="#property_FilterPostfix" title="$FilterPostfix :: "><span class="description"></span><pre>$FilterPostfix</pre></a></li>
+<li class="property public "><a href="#property_FilterPrefix" title="$FilterPrefix :: "><span class="description"></span><pre>$FilterPrefix</pre></a></li>
+<li class="property public "><a href="#property_FilterType" title="$FilterType :: "><span class="description"></span><pre>$FilterType</pre></a></li>
+<li class="property public "><a href="#property_FontBold" title="$FontBold :: "><span class="description"></span><pre>$FontBold</pre></a></li>
+<li class="property public "><a href="#property_FontItalic" title="$FontItalic :: "><span class="description"></span><pre>$FontItalic</pre></a></li>
+<li class="property public "><a href="#property_FontNames" title="$FontNames :: "><span class="description"></span><pre>$FontNames</pre></a></li>
+<li class="property public "><a href="#property_FontOverline" title="$FontOverline :: "><span class="description"></span><pre>$FontOverline</pre></a></li>
+<li class="property public "><a href="#property_FontSize" title="$FontSize :: "><span class="description"></span><pre>$FontSize</pre></a></li>
+<li class="property public "><a href="#property_FontStrikeout" title="$FontStrikeout :: "><span class="description"></span><pre>$FontStrikeout</pre></a></li>
+<li class="property public "><a href="#property_FontUnderline" title="$FontUnderline :: "><span class="description"></span><pre>$FontUnderline</pre></a></li>
+<li class="property public "><a href="#property_ForeColor" title="$ForeColor :: "><span class="description"></span><pre>$ForeColor</pre></a></li>
+<li class="property public "><a href="#property_HasResetButton" title="$HasResetButton :: "><span class="description"></span><pre>$HasResetButton</pre></a></li>
+<li class="property public "><a href="#property_HorizontalAlign" title="$HorizontalAlign :: "><span class="description"></span><pre>$HorizontalAlign</pre></a></li>
+<li class="property public "><a href="#property_Html" title="$Html :: is the contents of the column itself -- the $this-&gt;strHtml contents can contain backticks ` to deliniate commands that are to be PHP evaled (again, see DataGrid.inc for more info)"><span class="description"></span><pre>$Html</pre></a></li>
+<li class="property public "><a href="#property_HtmlEntities" title="$HtmlEntities :: "><span class="description"></span><pre>$HtmlEntities</pre></a></li>
+<li class="property public "><a href="#property_Name" title="$Name :: is the name of the column, as displayed in the DataGrid's header row for that column"><span class="description"></span><pre>$Name</pre></a></li>
+<li class="property public "><a href="#property_OrderByClause" title="$OrderByClause :: "><span class="description"></span><pre>$OrderByClause</pre></a></li>
+<li class="property public "><a href="#property_ReverseOrderByClause" title="$ReverseOrderByClause :: "><span class="description"></span><pre>$ReverseOrderByClause</pre></a></li>
+<li class="property public "><a href="#property_ReverseSortByCommand" title="$ReverseSortByCommand :: "><span class="description"></span><pre>$ReverseSortByCommand</pre></a></li>
+<li class="property public "><a href="#property_SortByCommand" title="$SortByCommand :: "><span class="description"></span><pre>$SortByCommand</pre></a></li>
+<li class="property public "><a href="#property_VerticalAlign" title="$VerticalAlign :: "><span class="description"></span><pre>$VerticalAlign</pre></a></li>
+<li class="property public "><a href="#property_Width" title="$Width :: "><span class="description"></span><pre>$Width</pre></a></li>
+<li class="property public "><a href="#property_Wrap" title="$Wrap :: "><span class="description"></span><pre>$Wrap</pre></a></li>
+</ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul>
+<li class="property protected "><a href="#property_arrFilterByCommand" title="$arrFilterByCommand :: "><span class="description"></span><pre>$arrFilterByCommand</pre></a></li>
+<li class="property protected "><a href="#property_arrFilterList" title="$arrFilterList :: "><span class="description"></span><pre>$arrFilterList</pre></a></li>
+<li class="property protected "><a href="#property_blnFontBold" title="$blnFontBold :: "><span class="description"></span><pre>$blnFontBold</pre></a></li>
+<li class="property protected "><a href="#property_blnFontItalic" title="$blnFontItalic :: "><span class="description"></span><pre>$blnFontItalic</pre></a></li>
+<li class="property protected "><a href="#property_blnFontOverline" title="$blnFontOverline :: "><span class="description"></span><pre>$blnFontOverline</pre></a></li>
+<li class="property protected "><a href="#property_blnFontStrikeout" title="$blnFontStrikeout :: "><span class="description"></span><pre>$blnFontStrikeout</pre></a></li>
+<li class="property protected "><a href="#property_blnFontUnderline" title="$blnFontUnderline :: "><span class="description"></span><pre>$blnFontUnderline</pre></a></li>
+<li class="property protected "><a href="#property_blnHasResetButton" title="$blnHasResetButton :: "><span class="description"></span><pre>$blnHasResetButton</pre></a></li>
+<li class="property protected "><a href="#property_blnHtmlEntities" title="$blnHtmlEntities :: "><span class="description"></span><pre>$blnHtmlEntities</pre></a></li>
+<li class="property protected "><a href="#property_blnWrap" title="$blnWrap :: "><span class="description"></span><pre>$blnWrap</pre></a></li>
+<li class="property protected "><a href="#property_intFilterBoxSize" title="$intFilterBoxSize :: "><span class="description"></span><pre>$intFilterBoxSize</pre></a></li>
+<li class="property protected "><a href="#property_intFilterColId" title="$intFilterColId :: "><span class="description"></span><pre>$intFilterColId</pre></a></li>
+<li class="property protected "><a href="#property_objActiveFilter" title="$objActiveFilter :: "><span class="description"></span><pre>$objActiveFilter</pre></a></li>
+<li class="property protected "><a href="#property_objFilterConstant" title="$objFilterConstant :: "><span class="description"></span><pre>$objFilterConstant</pre></a></li>
+<li class="property protected "><a href="#property_objOrderByClause" title="$objOrderByClause :: "><span class="description"></span><pre>$objOrderByClause</pre></a></li>
+<li class="property protected "><a href="#property_objReverseOrderByClause" title="$objReverseOrderByClause :: "><span class="description"></span><pre>$objReverseOrderByClause</pre></a></li>
+<li class="property protected "><a href="#property_strBackColor" title="$strBackColor :: "><span class="description"></span><pre>$strBackColor</pre></a></li>
+<li class="property protected "><a href="#property_strBorderColor" title="$strBorderColor :: "><span class="description"></span><pre>$strBorderColor</pre></a></li>
+<li class="property protected "><a href="#property_strBorderStyle" title="$strBorderStyle :: "><span class="description"></span><pre>$strBorderStyle</pre></a></li>
+<li class="property protected "><a href="#property_strBorderWidth" title="$strBorderWidth :: "><span class="description"></span><pre>$strBorderWidth</pre></a></li>
+<li class="property protected "><a href="#property_strCssClass" title="$strCssClass :: "><span class="description"></span><pre>$strCssClass</pre></a></li>
+<li class="property protected "><a href="#property_strFilterPostfix" title="$strFilterPostfix :: "><span class="description"></span><pre>$strFilterPostfix</pre></a></li>
+<li class="property protected "><a href="#property_strFilterPrefix" title="$strFilterPrefix :: "><span class="description"></span><pre>$strFilterPrefix</pre></a></li>
+<li class="property protected "><a href="#property_strFilterType" title="$strFilterType :: "><span class="description"></span><pre>$strFilterType</pre></a></li>
+<li class="property protected "><a href="#property_strFontNames" title="$strFontNames :: "><span class="description"></span><pre>$strFontNames</pre></a></li>
+<li class="property protected "><a href="#property_strFontSize" title="$strFontSize :: "><span class="description"></span><pre>$strFontSize</pre></a></li>
+<li class="property protected "><a href="#property_strForeColor" title="$strForeColor :: "><span class="description"></span><pre>$strForeColor</pre></a></li>
+<li class="property protected "><a href="#property_strHorizontalAlign" title="$strHorizontalAlign :: "><span class="description"></span><pre>$strHorizontalAlign</pre></a></li>
+<li class="property protected "><a href="#property_strHtml" title="$strHtml :: "><span class="description"></span><pre>$strHtml</pre></a></li>
+<li class="property protected "><a href="#property_strName" title="$strName :: "><span class="description"></span><pre>$strName</pre></a></li>
+<li class="property protected "><a href="#property_strVerticalAlign" title="$strVerticalAlign :: "><span class="description"></span><pre>$strVerticalAlign</pre></a></li>
+<li class="property protected "><a href="#property_strWidth" title="$strWidth :: "><span class="description"></span><pre>$strWidth</pre></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a id="\QDataGridColumn"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/global.html">global</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/QDataGridColumn.html">QDataGridColumn</a>
+</li>
+</ul>
+<div class="element class">
+<p class="short_description">This defines a specific column <td> for a DataGrid
+All the appearance properties should be self-explanatory.</p>
+<div class="details">
+<div class="long_description"><p>The SortByCommand and ReverseSortByCommand are both optional -- and are explained in more
+depth in DataGrid.inc</p></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Controls.html">Controls</a></td>
+</tr></table>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method_ClearFilter"></a><div class="element clickable method public method_ClearFilter" data-toggle="collapse" data-target=".method_ClearFilter .collapse">
+<h2>ClearFilter()
+        </h2>
+<pre>ClearFilter() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_FilterAddListItem"></a><div class="element clickable method public method_FilterAddListItem" data-toggle="collapse" data-target=".method_FilterAddListItem .collapse">
+<h2>FilterAddListItem()
+        </h2>
+<pre>FilterAddListItem($arg1, $arg2) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$arg1</h4></div>
+<div class="subelement argument"><h4>$arg2</h4></div>
+</div></div>
+</div>
+<a id="method_GetActiveFilterState"></a><div class="element clickable method public method_GetActiveFilterState" data-toggle="collapse" data-target=".method_GetActiveFilterState .collapse">
+<h2>GetActiveFilterState()
+        </h2>
+<pre>GetActiveFilterState() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_GetActiveFilterValue"></a><div class="element clickable method public method_GetActiveFilterValue" data-toggle="collapse" data-target=".method_GetActiveFilterValue .collapse">
+<h2>GetActiveFilterValue()
+        </h2>
+<pre>GetActiveFilterValue() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_GetAttributes"></a><div class="element clickable method public method_GetAttributes" data-toggle="collapse" data-target=".method_GetAttributes .collapse">
+<h2>GetAttributes()
+        </h2>
+<pre>GetAttributes($blnIncludeCustom, $blnIncludeAction) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$blnIncludeCustom</h4></div>
+<div class="subelement argument"><h4>$blnIncludeAction</h4></div>
+</div></div>
+</div>
+<a id="method_HasFilter"></a><div class="element clickable method public method_HasFilter" data-toggle="collapse" data-target=".method_HasFilter .collapse">
+<h2>HasFilter()
+        </h2>
+<pre>HasFilter() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_OverrideAttributes"></a><div class="element clickable method public method_OverrideAttributes" data-toggle="collapse" data-target=".method_OverrideAttributes .collapse">
+<h2>This allows you to set any properties, given by a name-value pair list
+in mixOverrideArray.</h2>
+<pre>OverrideAttributes($mixOverrideArray) : void</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Each item in mixOverrideArray needs to be either a string in the format
+of Property=Value or an array in the format of array(Property => Value).
+OverrideAttributes() will basically call
+$this->Property = Value for each string element in the array.</p>
+
+<p>Value can be surrounded by quotes... but this is optional.</p></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QBaseClass::OverrideAttributes()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$mixOverrideArray</h4></div>
+</div></div>
+</div>
+<a id="method_SetActiveFilterState"></a><div class="element clickable method public method_SetActiveFilterState" data-toggle="collapse" data-target=".method_SetActiveFilterState .collapse">
+<h2>SetActiveFilterState()
+        </h2>
+<pre>SetActiveFilterState(mixed $mixFilterValue) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$mixFilterValue</h4>
+<code>mixed</code><p>for the custom filters, $mixFilterValue will be set as FilterByCommand['value'].
+Otherwise, if $mixFilterValue is a QQ condition, it's set as the active filter.
+If $mixFilterValue is not a QQ condition, then it's either the value of the filter for text box filters, or it's the 
+index into the filter list for the list box filters.</p>
+</div>
+</div></div>
+</div>
+<a id="method___construct"></a><div class="element clickable method public method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
+<h2>__construct()
+        </h2>
+<pre>__construct($strName, $strHtml, $objOverrideParameters) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strName</h4></div>
+<div class="subelement argument"><h4>$strHtml</h4></div>
+<div class="subelement argument"><h4>$objOverrideParameters</h4></div>
+</div></div>
+</div>
+<a id="method___get"></a><div class="element clickable method public method___get" data-toggle="collapse" data-target=".method___get .collapse">
+<h2>Override method to perform a property "Get"
+This will get the value of $strName
+All inhereted objects that call __get() should always fall through
+to calling parent::__get() in a try/catch statement catching
+for CallerExceptions.</h2>
+<pre>__get(string $strName) : mixed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$strName</h4>
+<code>string</code><p>Name of the property to get</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>mixed</code>the returned property</div>
+</div></div>
+</div>
+<a id="method___set"></a><div class="element clickable method public method___set" data-toggle="collapse" data-target=".method___set .collapse">
+<h2>Override method to perform a property "Set"
+This will set the property $strName to be $mixValue
+All inhereted objects that call __set() should always fall through
+to calling parent::__set() in a try/catch statement catching
+for CallerExceptions.</h2>
+<pre>__set(string $strName, string $mixValue) : mixed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$strName</h4>
+<code>string</code><p>Name of the property to set</p></div>
+<div class="subelement argument">
+<h4>$mixValue</h4>
+<code>string</code><p>New value of the property</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>mixed</code>the property that was set</div>
+</div></div>
+</div>
+<a id="method_FilterSetOperand"></a><div class="element clickable method private method_FilterSetOperand" data-toggle="collapse" data-target=".method_FilterSetOperand .collapse">
+<h2>FilterSetOperand()
+        </h2>
+<pre>FilterSetOperand($mixOperand) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$mixOperand</h4></div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a id="property_ActiveFilter"> </a><div class="element clickable property public property_ActiveFilter" data-toggle="collapse" data-target=".property_ActiveFilter .collapse">
+<h2></h2>
+<pre>$ActiveFilter : mixed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>magic</th>
+<td></td>
+</tr>
+<tr>
+<th>property-read</th>
+<td></td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_BackColor"> </a><div class="element clickable property public property_BackColor" data-toggle="collapse" data-target=".property_BackColor .collapse">
+<h2></h2>
+<pre>$BackColor : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>magic</th>
+<td></td>
+</tr>
+<tr>
+<th>property</th>
+<td></td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_BorderColor"> </a><div class="element clickable property public property_BorderColor" data-toggle="collapse" data-target=".property_BorderColor .collapse">
+<h2></h2>
+<pre>$BorderColor : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>magic</th>
+<td></td>
+</tr>
+<tr>
+<th>property</th>
+<td></td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_BorderStyle"> </a><div class="element clickable property public property_BorderStyle" data-toggle="collapse" data-target=".property_BorderStyle .collapse">
+<h2></h2>
+<pre>$BorderStyle : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>magic</th>
+<td></td>
+</tr>
+<tr>
+<th>property</th>
+<td></td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_BorderWidth"> </a><div class="element clickable property public property_BorderWidth" data-toggle="collapse" data-target=".property_BorderWidth .collapse">
+<h2></h2>
+<pre>$BorderWidth : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>magic</th>
+<td></td>
+</tr>
+<tr>
+<th>property</th>
+<td></td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_CssClass"> </a><div class="element clickable property public property_CssClass" data-toggle="collapse" data-target=".property_CssClass .collapse">
+<h2></h2>
+<pre>$CssClass : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>magic</th>
+<td></td>
+</tr>
+<tr>
+<th>property</th>
+<td></td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_Filter"> </a><div class="element clickable property public property_Filter" data-toggle="collapse" data-target=".property_Filter .collapse">
+<h2></h2>
+<pre>$Filter : mixed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>magic</th>
+<td></td>
+</tr>
+<tr>
+<th>property-write</th>
+<td></td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_FilterBoxSize"> </a><div class="element clickable property public property_FilterBoxSize" data-toggle="collapse" data-target=".property_FilterBoxSize .collapse">
+<h2></h2>
+<pre>$FilterBoxSize : integer</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>magic</th>
+<td></td>
+</tr>
+<tr>
+<th>property</th>
+<td></td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_FilterByCommand"> </a><div class="element clickable property public property_FilterByCommand" data-toggle="collapse" data-target=".property_FilterByCommand .collapse">
+<h2></h2>
+<pre>$FilterByCommand : mixed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>magic</th>
+<td></td>
+</tr>
+<tr>
+<th>property</th>
+<td></td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_FilterColId"> </a><div class="element clickable property public property_FilterColId" data-toggle="collapse" data-target=".property_FilterColId .collapse">
+<h2></h2>
+<pre>$FilterColId : integer</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>magic</th>
+<td></td>
+</tr>
+<tr>
+<th>property</th>
+<td></td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_FilterConstant"> </a><div class="element clickable property public property_FilterConstant" data-toggle="collapse" data-target=".property_FilterConstant .collapse">
+<h2></h2>
+<pre>$FilterConstant : mixed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>magic</th>
+<td></td>
+</tr>
+<tr>
+<th>property</th>
+<td></td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_FilterInfo"> </a><div class="element clickable property public property_FilterInfo" data-toggle="collapse" data-target=".property_FilterInfo .collapse">
+<h2></h2>
+<pre>$FilterInfo : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>magic</th>
+<td></td>
+</tr>
+<tr>
+<th>property-read</th>
+<td></td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_FilterList"> </a><div class="element clickable property public property_FilterList" data-toggle="collapse" data-target=".property_FilterList .collapse">
+<h2></h2>
+<pre>$FilterList : mixed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>magic</th>
+<td></td>
+</tr>
+<tr>
+<th>property</th>
+<td></td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_FilterPostfix"> </a><div class="element clickable property public property_FilterPostfix" data-toggle="collapse" data-target=".property_FilterPostfix .collapse">
+<h2></h2>
+<pre>$FilterPostfix : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>magic</th>
+<td></td>
+</tr>
+<tr>
+<th>property</th>
+<td></td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_FilterPrefix"> </a><div class="element clickable property public property_FilterPrefix" data-toggle="collapse" data-target=".property_FilterPrefix .collapse">
+<h2></h2>
+<pre>$FilterPrefix : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>magic</th>
+<td></td>
+</tr>
+<tr>
+<th>property</th>
+<td></td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_FilterType"> </a><div class="element clickable property public property_FilterType" data-toggle="collapse" data-target=".property_FilterType .collapse">
+<h2></h2>
+<pre>$FilterType : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>magic</th>
+<td></td>
+</tr>
+<tr>
+<th>property</th>
+<td></td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_FontBold"> </a><div class="element clickable property public property_FontBold" data-toggle="collapse" data-target=".property_FontBold .collapse">
+<h2></h2>
+<pre>$FontBold : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>magic</th>
+<td></td>
+</tr>
+<tr>
+<th>property</th>
+<td></td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_FontItalic"> </a><div class="element clickable property public property_FontItalic" data-toggle="collapse" data-target=".property_FontItalic .collapse">
+<h2></h2>
+<pre>$FontItalic : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>magic</th>
+<td></td>
+</tr>
+<tr>
+<th>property</th>
+<td></td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_FontNames"> </a><div class="element clickable property public property_FontNames" data-toggle="collapse" data-target=".property_FontNames .collapse">
+<h2></h2>
+<pre>$FontNames : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>magic</th>
+<td></td>
+</tr>
+<tr>
+<th>property</th>
+<td></td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_FontOverline"> </a><div class="element clickable property public property_FontOverline" data-toggle="collapse" data-target=".property_FontOverline .collapse">
+<h2></h2>
+<pre>$FontOverline : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>magic</th>
+<td></td>
+</tr>
+<tr>
+<th>property</th>
+<td></td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_FontSize"> </a><div class="element clickable property public property_FontSize" data-toggle="collapse" data-target=".property_FontSize .collapse">
+<h2></h2>
+<pre>$FontSize : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>magic</th>
+<td></td>
+</tr>
+<tr>
+<th>property</th>
+<td></td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_FontStrikeout"> </a><div class="element clickable property public property_FontStrikeout" data-toggle="collapse" data-target=".property_FontStrikeout .collapse">
+<h2></h2>
+<pre>$FontStrikeout : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>magic</th>
+<td></td>
+</tr>
+<tr>
+<th>property</th>
+<td></td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_FontUnderline"> </a><div class="element clickable property public property_FontUnderline" data-toggle="collapse" data-target=".property_FontUnderline .collapse">
+<h2></h2>
+<pre>$FontUnderline : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>magic</th>
+<td></td>
+</tr>
+<tr>
+<th>property</th>
+<td></td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_ForeColor"> </a><div class="element clickable property public property_ForeColor" data-toggle="collapse" data-target=".property_ForeColor .collapse">
+<h2></h2>
+<pre>$ForeColor : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>magic</th>
+<td></td>
+</tr>
+<tr>
+<th>property</th>
+<td></td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_HasResetButton"> </a><div class="element clickable property public property_HasResetButton" data-toggle="collapse" data-target=".property_HasResetButton .collapse">
+<h2></h2>
+<pre>$HasResetButton : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>magic</th>
+<td></td>
+</tr>
+<tr>
+<th>property</th>
+<td></td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_HorizontalAlign"> </a><div class="element clickable property public property_HorizontalAlign" data-toggle="collapse" data-target=".property_HorizontalAlign .collapse">
+<h2></h2>
+<pre>$HorizontalAlign : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>magic</th>
+<td></td>
+</tr>
+<tr>
+<th>property</th>
+<td></td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_Html"> </a><div class="element clickable property public property_Html" data-toggle="collapse" data-target=".property_Html .collapse">
+<h2></h2>
+<pre>$Html : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>magic</th>
+<td></td>
+</tr>
+<tr>
+<th>property</th>
+<td>is the contents of the column itself -- the $this->strHtml contents can contain backticks ` to deliniate commands that are to be PHP evaled (again, see DataGrid.inc for more info)</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_HtmlEntities"> </a><div class="element clickable property public property_HtmlEntities" data-toggle="collapse" data-target=".property_HtmlEntities .collapse">
+<h2></h2>
+<pre>$HtmlEntities : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>magic</th>
+<td></td>
+</tr>
+<tr>
+<th>property</th>
+<td></td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_Name"> </a><div class="element clickable property public property_Name" data-toggle="collapse" data-target=".property_Name .collapse">
+<h2></h2>
+<pre>$Name : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>magic</th>
+<td></td>
+</tr>
+<tr>
+<th>property</th>
+<td>is the name of the column, as displayed in the DataGrid's header row for that column</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_OrderByClause"> </a><div class="element clickable property public property_OrderByClause" data-toggle="collapse" data-target=".property_OrderByClause .collapse">
+<h2></h2>
+<pre>$OrderByClause : mixed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>magic</th>
+<td></td>
+</tr>
+<tr>
+<th>property</th>
+<td></td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_ReverseOrderByClause"> </a><div class="element clickable property public property_ReverseOrderByClause" data-toggle="collapse" data-target=".property_ReverseOrderByClause .collapse">
+<h2></h2>
+<pre>$ReverseOrderByClause : mixed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>magic</th>
+<td></td>
+</tr>
+<tr>
+<th>property</th>
+<td></td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_ReverseSortByCommand"> </a><div class="element clickable property public property_ReverseSortByCommand" data-toggle="collapse" data-target=".property_ReverseSortByCommand .collapse">
+<h2></h2>
+<pre>$ReverseSortByCommand : mixed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>magic</th>
+<td></td>
+</tr>
+<tr>
+<th>property</th>
+<td></td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_SortByCommand"> </a><div class="element clickable property public property_SortByCommand" data-toggle="collapse" data-target=".property_SortByCommand .collapse">
+<h2></h2>
+<pre>$SortByCommand : mixed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>magic</th>
+<td></td>
+</tr>
+<tr>
+<th>property</th>
+<td></td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_VerticalAlign"> </a><div class="element clickable property public property_VerticalAlign" data-toggle="collapse" data-target=".property_VerticalAlign .collapse">
+<h2></h2>
+<pre>$VerticalAlign : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>magic</th>
+<td></td>
+</tr>
+<tr>
+<th>property</th>
+<td></td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_Width"> </a><div class="element clickable property public property_Width" data-toggle="collapse" data-target=".property_Width .collapse">
+<h2></h2>
+<pre>$Width : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>magic</th>
+<td></td>
+</tr>
+<tr>
+<th>property</th>
+<td></td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_Wrap"> </a><div class="element clickable property public property_Wrap" data-toggle="collapse" data-target=".property_Wrap .collapse">
+<h2></h2>
+<pre>$Wrap : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>magic</th>
+<td></td>
+</tr>
+<tr>
+<th>property</th>
+<td></td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_arrFilterByCommand"> </a><div class="element clickable property protected property_arrFilterByCommand" data-toggle="collapse" data-target=".property_arrFilterByCommand .collapse">
+<h2></h2>
+<pre>$arrFilterByCommand </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_arrFilterList"> </a><div class="element clickable property protected property_arrFilterList" data-toggle="collapse" data-target=".property_arrFilterList .collapse">
+<h2></h2>
+<pre>$arrFilterList </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_blnFontBold"> </a><div class="element clickable property protected property_blnFontBold" data-toggle="collapse" data-target=".property_blnFontBold .collapse">
+<h2></h2>
+<pre>$blnFontBold </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_blnFontItalic"> </a><div class="element clickable property protected property_blnFontItalic" data-toggle="collapse" data-target=".property_blnFontItalic .collapse">
+<h2></h2>
+<pre>$blnFontItalic </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_blnFontOverline"> </a><div class="element clickable property protected property_blnFontOverline" data-toggle="collapse" data-target=".property_blnFontOverline .collapse">
+<h2></h2>
+<pre>$blnFontOverline </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_blnFontStrikeout"> </a><div class="element clickable property protected property_blnFontStrikeout" data-toggle="collapse" data-target=".property_blnFontStrikeout .collapse">
+<h2></h2>
+<pre>$blnFontStrikeout </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_blnFontUnderline"> </a><div class="element clickable property protected property_blnFontUnderline" data-toggle="collapse" data-target=".property_blnFontUnderline .collapse">
+<h2></h2>
+<pre>$blnFontUnderline </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_blnHasResetButton"> </a><div class="element clickable property protected property_blnHasResetButton" data-toggle="collapse" data-target=".property_blnHasResetButton .collapse">
+<h2></h2>
+<pre>$blnHasResetButton </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_blnHtmlEntities"> </a><div class="element clickable property protected property_blnHtmlEntities" data-toggle="collapse" data-target=".property_blnHtmlEntities .collapse">
+<h2></h2>
+<pre>$blnHtmlEntities </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_blnWrap"> </a><div class="element clickable property protected property_blnWrap" data-toggle="collapse" data-target=".property_blnWrap .collapse">
+<h2></h2>
+<pre>$blnWrap </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_intFilterBoxSize"> </a><div class="element clickable property protected property_intFilterBoxSize" data-toggle="collapse" data-target=".property_intFilterBoxSize .collapse">
+<h2></h2>
+<pre>$intFilterBoxSize </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_intFilterColId"> </a><div class="element clickable property protected property_intFilterColId" data-toggle="collapse" data-target=".property_intFilterColId .collapse">
+<h2></h2>
+<pre>$intFilterColId </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_objActiveFilter"> </a><div class="element clickable property protected property_objActiveFilter" data-toggle="collapse" data-target=".property_objActiveFilter .collapse">
+<h2></h2>
+<pre>$objActiveFilter </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_objFilterConstant"> </a><div class="element clickable property protected property_objFilterConstant" data-toggle="collapse" data-target=".property_objFilterConstant .collapse">
+<h2></h2>
+<pre>$objFilterConstant </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_objOrderByClause"> </a><div class="element clickable property protected property_objOrderByClause" data-toggle="collapse" data-target=".property_objOrderByClause .collapse">
+<h2></h2>
+<pre>$objOrderByClause </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_objReverseOrderByClause"> </a><div class="element clickable property protected property_objReverseOrderByClause" data-toggle="collapse" data-target=".property_objReverseOrderByClause .collapse">
+<h2></h2>
+<pre>$objReverseOrderByClause </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_strBackColor"> </a><div class="element clickable property protected property_strBackColor" data-toggle="collapse" data-target=".property_strBackColor .collapse">
+<h2></h2>
+<pre>$strBackColor </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_strBorderColor"> </a><div class="element clickable property protected property_strBorderColor" data-toggle="collapse" data-target=".property_strBorderColor .collapse">
+<h2></h2>
+<pre>$strBorderColor </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_strBorderStyle"> </a><div class="element clickable property protected property_strBorderStyle" data-toggle="collapse" data-target=".property_strBorderStyle .collapse">
+<h2></h2>
+<pre>$strBorderStyle </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_strBorderWidth"> </a><div class="element clickable property protected property_strBorderWidth" data-toggle="collapse" data-target=".property_strBorderWidth .collapse">
+<h2></h2>
+<pre>$strBorderWidth </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_strCssClass"> </a><div class="element clickable property protected property_strCssClass" data-toggle="collapse" data-target=".property_strCssClass .collapse">
+<h2></h2>
+<pre>$strCssClass </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_strFilterPostfix"> </a><div class="element clickable property protected property_strFilterPostfix" data-toggle="collapse" data-target=".property_strFilterPostfix .collapse">
+<h2></h2>
+<pre>$strFilterPostfix </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_strFilterPrefix"> </a><div class="element clickable property protected property_strFilterPrefix" data-toggle="collapse" data-target=".property_strFilterPrefix .collapse">
+<h2></h2>
+<pre>$strFilterPrefix </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_strFilterType"> </a><div class="element clickable property protected property_strFilterType" data-toggle="collapse" data-target=".property_strFilterType .collapse">
+<h2></h2>
+<pre>$strFilterType </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_strFontNames"> </a><div class="element clickable property protected property_strFontNames" data-toggle="collapse" data-target=".property_strFontNames .collapse">
+<h2></h2>
+<pre>$strFontNames </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_strFontSize"> </a><div class="element clickable property protected property_strFontSize" data-toggle="collapse" data-target=".property_strFontSize .collapse">
+<h2></h2>
+<pre>$strFontSize </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_strForeColor"> </a><div class="element clickable property protected property_strForeColor" data-toggle="collapse" data-target=".property_strForeColor .collapse">
+<h2></h2>
+<pre>$strForeColor </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_strHorizontalAlign"> </a><div class="element clickable property protected property_strHorizontalAlign" data-toggle="collapse" data-target=".property_strHorizontalAlign .collapse">
+<h2></h2>
+<pre>$strHorizontalAlign </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_strHtml"> </a><div class="element clickable property protected property_strHtml" data-toggle="collapse" data-target=".property_strHtml .collapse">
+<h2></h2>
+<pre>$strHtml </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_strName"> </a><div class="element clickable property protected property_strName" data-toggle="collapse" data-target=".property_strName .collapse">
+<h2></h2>
+<pre>$strName </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_strVerticalAlign"> </a><div class="element clickable property protected property_strVerticalAlign" data-toggle="collapse" data-target=".property_strVerticalAlign .collapse">
+<h2></h2>
+<pre>$strVerticalAlign </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_strWidth"> </a><div class="element clickable property protected property_strWidth" data-toggle="collapse" data-target=".property_strWidth .collapse">
+<h2></h2>
+<pre>$strWidth </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
+            generated on 2013-03-17T02:00:07+07:00.<br></footer></div>
+</div>
+</body>
+</html>

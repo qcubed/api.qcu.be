@@ -1,0 +1,186 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>QCubed API » \QFolder</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">QCubed API</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="../packages/Codegen.html"><i class="icon-folder-open"></i> Codegen</a></li>
+<li><a href="../packages/Controls.html"><i class="icon-folder-open"></i> Controls</a></li>
+<li><a href="../packages/Controls%20%20.html"><i class="icon-folder-open"></i> Controls  </a></li>
+<li><a href="../packages/DatabaseAdapters.html"><i class="icon-folder-open"></i> DatabaseAdapters</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/My%20QCubed%20Application.html"><i class="icon-folder-open"></i> My QCubed Application</a></li>
+<li><a href="../packages/Sessions.html"><i class="icon-folder-open"></i> Sessions</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">4384</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul><li>todo 
+                <span class="label label-info">28</span>
+</li></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">8</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method_DeleteFolder" title="DeleteFolder :: Allows for deletion of non-empty directories - takes care of
+recursion appropriately."><span class="description">Allows for deletion of non-empty directories - takes care of
+recursion appropriately.</span><pre>DeleteFolder()</pre></a></li>
+<li class="method public "><a href="#method_MakeDirectory" title="MakeDirectory :: Same as mkdir but correctly implements directory recursion."><span class="description">Same as mkdir but correctly implements directory recursion.</span><pre>MakeDirectory()</pre></a></li>
+<li class="method public "><a href="#method_isWritable" title="isWritable :: "><span class="description">isWritable()
+        </span><pre>isWritable()</pre></a></li>
+<li class="method public "><a href="#method_listFilesInFolder" title="listFilesInFolder :: Traverse a particular path and get a list of files and folders
+underneath that path."><span class="description">Traverse a particular path and get a list of files and folders
+underneath that path.</span><pre>listFilesInFolder()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header private">» Private
+                    <ul><li class="method private "><a href="#method_getFilesInFolderHelper" title="getFilesInFolderHelper :: Helper function for getRecursiveFolderContents."><span class="description">Helper function for getRecursiveFolderContents.</span><pre>getFilesInFolderHelper()</pre></a></li></ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a id="\QFolder"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/global.html">global</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/QFolder.html">QFolder</a>
+</li>
+</ul>
+<div class="element class"><div class="details">
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method_DeleteFolder"></a><div class="element clickable method public method_DeleteFolder" data-toggle="collapse" data-target=".method_DeleteFolder .collapse">
+<h2>Allows for deletion of non-empty directories - takes care of
+recursion appropriately.</h2>
+<pre>DeleteFolder(string $strPath) : int</pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$strPath</h4>
+<code>string</code><p>Full path to the folder to be deleted</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>int</code>number of deleted files</div>
+</div></div>
+</div>
+<a id="method_MakeDirectory"></a><div class="element clickable method public method_MakeDirectory" data-toggle="collapse" data-target=".method_MakeDirectory .collapse">
+<h2>Same as mkdir but correctly implements directory recursion.</h2>
+<pre>MakeDirectory(string $strPath, integer $intMode) : boolean</pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>At its core, it will use the php MKDIR function.
+This method does no special error handling.  If you want to use special error handlers,
+be sure to set that up BEFORE calling MakeDirectory.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$strPath</h4>
+<code>string</code><p>actual path of the directoy you want created</p></div>
+<div class="subelement argument">
+<h4>$intMode</h4>
+<code>integer</code><p>optional mode</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>the return flag from mkdir</div>
+</div></div>
+</div>
+<a id="method_isWritable"></a><div class="element clickable method public method_isWritable" data-toggle="collapse" data-target=".method_isWritable .collapse">
+<h2>isWritable()
+        </h2>
+<pre>isWritable($strPath) </pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strPath</h4></div>
+</div></div>
+</div>
+<a id="method_listFilesInFolder"></a><div class="element clickable method public method_listFilesInFolder" data-toggle="collapse" data-target=".method_listFilesInFolder .collapse">
+<h2>Traverse a particular path and get a list of files and folders
+underneath that path.</h2>
+<pre>listFilesInFolder(string $strPath, boolean $blnSkipFolders, $strFilenamePattern) </pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Optionally, also provide a regular
+expression that specifies the pattern that the returned files must match.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$strPath</h4>
+<code>string</code><p>full path to the folder to be processed</p></div>
+<div class="subelement argument">
+<h4>$blnSkipFolders</h4>
+<code>boolean</code><p>If this is set to true, only the FILES will be returned - not the folders.</p>
+</div>
+<div class="subelement argument"><h4>$strFilenamePattern</h4></div>
+</div></div>
+</div>
+<a id="method_getFilesInFolderHelper"></a><div class="element clickable method private method_getFilesInFolderHelper" data-toggle="collapse" data-target=".method_getFilesInFolderHelper .collapse">
+<h2>Helper function for getRecursiveFolderContents.</h2>
+<pre>getFilesInFolderHelper(string $strPath) </pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Returns the list of files in the folder that match a given pattern
+Result is an array of strings of form "filename.extension".</p>
+
+<p>Not recursive!</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$strPath</h4>
+<code>string</code><p>full path to the folder to be processed</p></div>
+</div></div>
+</div>
+</div></div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
+            generated on 2013-03-17T02:01:20+07:00.<br></footer></div>
+</div>
+</body>
+</html>

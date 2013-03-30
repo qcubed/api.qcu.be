@@ -1,0 +1,350 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>QCubed API » \QTimer</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">QCubed API</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="../packages/Codegen.html"><i class="icon-folder-open"></i> Codegen</a></li>
+<li><a href="../packages/Controls.html"><i class="icon-folder-open"></i> Controls</a></li>
+<li><a href="../packages/Controls%20%20.html"><i class="icon-folder-open"></i> Controls  </a></li>
+<li><a href="../packages/DatabaseAdapters.html"><i class="icon-folder-open"></i> DatabaseAdapters</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/My%20QCubed%20Application.html"><i class="icon-folder-open"></i> My QCubed Application</a></li>
+<li><a href="../packages/Sessions.html"><i class="icon-folder-open"></i> Sessions</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">4384</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul><li>todo 
+                <span class="label label-info">28</span>
+</li></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">8</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method_GetTime" title="GetTime :: Gets time from timer with given name"><span class="description">Gets time from timer with given name</span><pre>GetTime()</pre></a></li>
+<li class="method public "><a href="#method_GetTimer" title="GetTimer :: Returns timer with a given name"><span class="description">Returns timer with a given name</span><pre>GetTimer()</pre></a></li>
+<li class="method public "><a href="#method_GetTimerTime" title="GetTimerTime :: Returns timer's time"><span class="description">Returns timer's time</span><pre>GetTimerTime()</pre></a></li>
+<li class="method public "><a href="#method_Reset" title="Reset :: Resets timer with given name"><span class="description">Resets timer with given name</span><pre>Reset()</pre></a></li>
+<li class="method public "><a href="#method_ResetTimer" title="ResetTimer :: Resets timer"><span class="description">Resets timer</span><pre>ResetTimer()</pre></a></li>
+<li class="method public "><a href="#method_Start" title="Start :: Starts (new) timer with given name"><span class="description">Starts (new) timer with given name</span><pre>Start()</pre></a></li>
+<li class="method public "><a href="#method_StartTimer" title="StartTimer :: Starts timer"><span class="description">Starts timer</span><pre>StartTimer()</pre></a></li>
+<li class="method public "><a href="#method_Stop" title="Stop :: Stops time for timer with given name"><span class="description">Stops time for timer with given name</span><pre>Stop()</pre></a></li>
+<li class="method public "><a href="#method_StopTimer" title="StopTimer :: Stops timer."><span class="description">Stops timer.</span><pre>StopTimer()</pre></a></li>
+<li class="method public "><a href="#method_VarDump" title="VarDump :: Dumps all the timers and their info"><span class="description">Dumps all the timers and their info</span><pre>VarDump()</pre></a></li>
+<li class="method public "><a href="#method___get" title="__get :: "><span class="description">__get()
+        </span><pre>__get()</pre></a></li>
+<li class="method public "><a href="#method___toString" title="__toString :: Default toString method for timer"><span class="description">Default toString method for timer</span><pre>__toString()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul>
+<li class="method protected "><a href="#method_GetTimerInstance" title="GetTimerInstance :: "><span class="description">GetTimerInstance()
+        </span><pre>GetTimerInstance()</pre></a></li>
+<li class="method protected "><a href="#method___construct" title="__construct :: QTimer - private constructor (Factory Pattern)"><span class="description">QTimer - private constructor (Factory Pattern)</span><pre>__construct()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties
+                    <ul></ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul>
+<li class="property protected "><a href="#property_fltTime" title="$fltTime :: Timer run time."><span class="description"></span><pre>$fltTime</pre></a></li>
+<li class="property protected "><a href="#property_fltTimeStart" title="$fltTimeStart :: Timer start time."><span class="description"></span><pre>$fltTimeStart</pre></a></li>
+<li class="property protected "><a href="#property_intCountStarted" title="$intCountStarted :: Total count of timer starts"><span class="description"></span><pre>$intCountStarted</pre></a></li>
+<li class="property protected "><a href="#property_objTimerArray" title="$objTimerArray :: Array of QTime instances"><span class="description"></span><pre>$objTimerArray</pre></a></li>
+<li class="property protected "><a href="#property_strName" title="$strName :: Name of the timer"><span class="description"></span><pre>$strName</pre></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a id="\QTimer"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/global.html">global</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/QTimer.html">QTimer</a>
+</li>
+</ul>
+<div class="element class">
+<p class="short_description">QTimer class can help you lightweight profiling of your applications.</p>
+<div class="details">
+<div class="long_description"><p>Use it to measure how long tasks take.</p></div>
+<table class="table table-bordered"><tr>
+<th>author</th>
+<td><a href="">Ago Luberg</a></td>
+</tr></table>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method_GetTime"></a><div class="element clickable method public method_GetTime" data-toggle="collapse" data-target=".method_GetTime .collapse">
+<h2>Gets time from timer with given name</h2>
+<pre>GetTime(\string[optional] $strName) : float</pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$strName</h4>
+<code>\string[optional]</code><p>Timer name</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>float</code>Timer's time</div>
+</div></div>
+</div>
+<a id="method_GetTimer"></a><div class="element clickable method public method_GetTimer" data-toggle="collapse" data-target=".method_GetTimer .collapse">
+<h2>Returns timer with a given name</h2>
+<pre>GetTimer(\string[optional] $strName) : <a href="../classes/QTimer.html">\QTimer</a></pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$strName</h4>
+<code>\string[optional]</code><p>Timer name</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code><a href="../classes/QTimer.html">\QTimer</a></code>or null if a timer was not found</div>
+</div></div>
+</div>
+<a id="method_GetTimerTime"></a><div class="element clickable method public method_GetTimerTime" data-toggle="collapse" data-target=".method_GetTimerTime .collapse">
+<h2>Returns timer's time</h2>
+<pre>GetTimerTime() : float</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>float</code>Timer's time. If timer is not running, returns null.</div>
+</div></div>
+</div>
+<a id="method_Reset"></a><div class="element clickable method public method_Reset" data-toggle="collapse" data-target=".method_Reset .collapse">
+<h2>Resets timer with given name</h2>
+<pre>Reset(\string[optional] $strName) : float</pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$strName</h4>
+<code>\string[optional]</code><p>Timer name</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>float</code>Timer's time before reset or null if timer does not exist</div>
+</div></div>
+</div>
+<a id="method_ResetTimer"></a><div class="element clickable method public method_ResetTimer" data-toggle="collapse" data-target=".method_ResetTimer .collapse">
+<h2>Resets timer</h2>
+<pre>ResetTimer() : \flat</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\flat</code>Timer's time before reset</div>
+</div></div>
+</div>
+<a id="method_Start"></a><div class="element clickable method public method_Start" data-toggle="collapse" data-target=".method_Start .collapse">
+<h2>Starts (new) timer with given name</h2>
+<pre>Start(\string[optional] $strName) : <a href="../classes/QTimer.html">\QTimer</a></pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$strName</h4>
+<code>\string[optional]</code><p>Timer name</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/QTimer.html">\QTimer</a></code></div>
+</div></div>
+</div>
+<a id="method_StartTimer"></a><div class="element clickable method public method_StartTimer" data-toggle="collapse" data-target=".method_StartTimer .collapse">
+<h2>Starts timer</h2>
+<pre>StartTimer() : <a href="../classes/QTimer.html">\QTimer</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/QTimer.html">\QTimer</a></code></div>
+</div></div>
+</div>
+<a id="method_Stop"></a><div class="element clickable method public method_Stop" data-toggle="collapse" data-target=".method_Stop .collapse">
+<h2>Stops time for timer with given name</h2>
+<pre>Stop(\string[optional] $strName) : float</pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$strName</h4>
+<code>\string[optional]</code><p>Timer name</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>float</code>Timer's time</div>
+</div></div>
+</div>
+<a id="method_StopTimer"></a><div class="element clickable method public method_StopTimer" data-toggle="collapse" data-target=".method_StopTimer .collapse">
+<h2>Stops timer.</h2>
+<pre>StopTimer() : float</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Saves current time for later usage</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>float</code>Timer's time</div>
+</div></div>
+</div>
+<a id="method_VarDump"></a><div class="element clickable method public method_VarDump" data-toggle="collapse" data-target=".method_VarDump .collapse">
+<h2>Dumps all the timers and their info</h2>
+<pre>VarDump(\boolean[optional] $blnDisplayOutput) : string | void</pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$blnDisplayOutput</h4>
+<code>\boolean[optional]</code><p>If true (default), dump will be printed. If false, dump will be returned</p>
+</div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code><code>void</code>
+</div>
+</div></div>
+</div>
+<a id="method___get"></a><div class="element clickable method public method___get" data-toggle="collapse" data-target=".method___get .collapse">
+<h2>__get()
+        </h2>
+<pre>__get($strName) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strName</h4></div>
+</div></div>
+</div>
+<a id="method___toString"></a><div class="element clickable method public method___toString" data-toggle="collapse" data-target=".method___toString .collapse">
+<h2>Default toString method for timer</h2>
+<pre>__toString() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_GetTimerInstance"></a><div class="element clickable method protected method_GetTimerInstance" data-toggle="collapse" data-target=".method_GetTimerInstance .collapse">
+<h2>GetTimerInstance()
+        </h2>
+<pre>GetTimerInstance($strName, $blnCreateNew) </pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strName</h4></div>
+<div class="subelement argument"><h4>$blnCreateNew</h4></div>
+</div></div>
+</div>
+<a id="method___construct"></a><div class="element clickable method protected method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
+<h2>QTimer - private constructor (Factory Pattern)</h2>
+<pre>__construct(string $strName, boolean $blnStart) : <a href="../classes/QTimer.html">\QTimer</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$strName</h4>
+<code>string</code><p>Timer name</p></div>
+<div class="subelement argument">
+<h4>$blnStart</h4>
+<code>boolean</code><p>Whether timer is started</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/QTimer.html">\QTimer</a></code></div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a id="property_fltTime"> </a><div class="element clickable property protected property_fltTime" data-toggle="collapse" data-target=".property_fltTime .collapse">
+<h2></h2>
+<pre>$fltTime : float</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"><p>If timer is stopped, then execution time is kept here</p></div></div></div>
+</div>
+<a id="property_fltTimeStart"> </a><div class="element clickable property protected property_fltTimeStart" data-toggle="collapse" data-target=".property_fltTimeStart .collapse">
+<h2></h2>
+<pre>$fltTimeStart : float</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"><p>If -1, then timer is not started</p></div></div></div>
+</div>
+<a id="property_intCountStarted"> </a><div class="element clickable property protected property_intCountStarted" data-toggle="collapse" data-target=".property_intCountStarted .collapse">
+<h2></h2>
+<pre>$intCountStarted : int</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_objTimerArray"> </a><div class="element clickable property protected property_objTimerArray" data-toggle="collapse" data-target=".property_objTimerArray .collapse">
+<h2></h2>
+<pre>$objTimerArray : <a href="qcubed._core.framework.QTimer.class.html#%5CQTimer">\QTimer[]</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_strName"> </a><div class="element clickable property protected property_strName" data-toggle="collapse" data-target=".property_strName .collapse">
+<h2></h2>
+<pre>$strName : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
+            generated on 2013-03-17T02:00:46+07:00.<br></footer></div>
+</div>
+</body>
+</html>

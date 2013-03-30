@@ -1,0 +1,364 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>QCubed API » Controls\Base</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">QCubed API</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="../packages/Codegen.html"><i class="icon-folder-open"></i> Codegen</a></li>
+<li><a href="../packages/Controls.html"><i class="icon-folder-open"></i> Controls</a></li>
+<li><a href="../packages/Controls%20%20.html"><i class="icon-folder-open"></i> Controls  </a></li>
+<li><a href="../packages/DatabaseAdapters.html"><i class="icon-folder-open"></i> DatabaseAdapters</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/My%20QCubed%20Application.html"><i class="icon-folder-open"></i> My QCubed Application</a></li>
+<li><a href="../packages/Sessions.html"><i class="icon-folder-open"></i> Sessions</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">4384</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul><li>todo 
+                <span class="label label-info">28</span>
+</li></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">8</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-map-marker"></i> Packages</li>
+<li>
+<a href="../packages/Controls.Base.html" title="Base"><i class="icon-folder-open"></i>Base</a><ul class="nav nav-list nav-packages"></ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-class"></i> Classes</li>
+<li><a href="#QAccordionGen" title="Generated QAccordionGen class.">QAccordionGen</a></li>
+<li><a href="#QJqCheckBoxBase" title="Implements a JQuery Ui Check Box">QJqCheckBoxBase</a></li>
+<li><a href="#QSortableBase" title="Impelements a JQuery UI Sortable">QSortableBase</a></li>
+<li><a href="#QMenuGen" title="Generated QMenuGen class.">QMenuGen</a></li>
+<li><a href="#QDatepickerGen" title="Generated QDatepickerGen class.">QDatepickerGen</a></li>
+<li><a href="#QSliderBase" title="Implements a JQuery UI Slider">QSliderBase</a></li>
+<li><a href="#QSpinnerGen" title="Generated QSpinnerGen class.">QSpinnerGen</a></li>
+<li><a href="#QJqButtonGen" title="Generated QJqButtonGen class.">QJqButtonGen</a></li>
+<li><a href="#QTabsGen" title="Generated QTabsGen class.">QTabsGen</a></li>
+<li><a href="#QSelectableBase" title="Impelments a JQuery UI Selectable box">QSelectableBase</a></li>
+<li><a href="#QDraggableBase" title="Implements the jQuery UI Draggable capabilities on to a control.">QDraggableBase</a></li>
+<li><a href="#QDatepickerBoxBase" title="Impelements a JQuery UI Datepicker in a box">QDatepickerBoxBase</a></li>
+<li><a href="#QMenuBase" title="Implements a JQuery UI Menu">QMenuBase</a></li>
+<li><a href="#QSliderGen" title="Generated QSliderGen class.">QSliderGen</a></li>
+<li><a href="#QProgressbarGen" title="Generated QProgressbarGen class.">QProgressbarGen</a></li>
+<li><a href="#QDroppableGen" title="Generated QDroppableGen class.">QDroppableGen</a></li>
+<li><a href="#QAccordionBase" title="Implements the JQuery UI Accordion">QAccordionBase</a></li>
+<li><a href="#QDialogGen" title="Generated QDialogGen class.">QDialogGen</a></li>
+<li><a href="#QDraggableGen" title="Generated QDraggableGen class.">QDraggableGen</a></li>
+<li><a href="#QSpinnerBase" title="Implements a JQuery UI Spinner Object">QSpinnerBase</a></li>
+<li><a href="#QDialogBase" title="Implements a JQuery UI Dialog">QDialogBase</a></li>
+<li><a href="#QJqCheckBoxGen" title="Generated QJqCheckBoxGen class.">QJqCheckBoxGen</a></li>
+<li><a href="#QProgressbarBase" title="Implements a JQuery UI Progress Bar">QProgressbarBase</a></li>
+<li><a href="#QResizableGen" title="Generated QResizableGen class.">QResizableGen</a></li>
+<li><a href="#QSelectableGen" title="Generated QSelectableGen class.">QSelectableGen</a></li>
+<li><a href="#QAutocompleteBase" title="Implements the JQuery UI Autocomplete widget">QAutocompleteBase</a></li>
+<li><a href="#QDatepickerBoxGen" title="Generated QDatepickerBoxGen class.">QDatepickerBoxGen</a></li>
+<li><a href="#QResizableBase" title="Implements the JQuery UI Resizable capabilities into a QControl">QResizableBase</a></li>
+<li><a href="#QJqRadioButtonGen" title="Generated QJqRadioButtonGen class.">QJqRadioButtonGen</a></li>
+<li><a href="#QDatepickerBase" title="Impelements a JQuery UI Datepicker">QDatepickerBase</a></li>
+<li><a href="#QAutocompleteGen" title="Generated QAutocompleteGen class.">QAutocompleteGen</a></li>
+<li><a href="#QSortableGen" title="Generated QSortableGen class.">QSortableGen</a></li>
+<li><a href="#QDroppableBase" title="Implements the Droppable capabilities of JQuery UI in a QControl">QDroppableBase</a></li>
+<li><a href="#QTabsBase" title="Impelements JQuery Ui Tabs">QTabsBase</a></li>
+</ul>
+</div>
+<div class="span8 package-contents">
+<ul class="breadcrumb"><li>
+<a href="../index.html"><i class="icon-folder-open"></i></a><span class="divider">\</span><li><a href="../packages/Controls.html">Controls</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../packages/Controls.Base.html">Base</a>
+</li>
+</li></ul>
+<div class="package-indent">
+<h3>
+<i class="icon-custom icon-class"></i> Classes and interfaces</h3>
+<div id="QAccordionBase" class="element ajax clickable class">
+<h1>QAccordionBase<a href="../classes/QAccordionBase.html">¶</a>
+</h1>
+<p class="short_description">Implements the JQuery UI Accordion</p>
+<div class="details collapse"></div>
+<a href="../classes/QAccordionBase.html" class="more">« More »</a>
+</div>
+<div id="QAccordionGen" class="element ajax clickable class">
+<h1>QAccordionGen<a href="../classes/QAccordionGen.html">¶</a>
+</h1>
+<p class="short_description">Generated QAccordionGen class.</p>
+<div class="details collapse"></div>
+<a href="../classes/QAccordionGen.html" class="more">« More »</a>
+</div>
+<div id="QAutocompleteBase" class="element ajax clickable class">
+<h1>QAutocompleteBase<a href="../classes/QAutocompleteBase.html">¶</a>
+</h1>
+<p class="short_description">Implements the JQuery UI Autocomplete widget</p>
+<div class="details collapse"></div>
+<a href="../classes/QAutocompleteBase.html" class="more">« More »</a>
+</div>
+<div id="QAutocompleteGen" class="element ajax clickable class">
+<h1>QAutocompleteGen<a href="../classes/QAutocompleteGen.html">¶</a>
+</h1>
+<p class="short_description">Generated QAutocompleteGen class.</p>
+<div class="details collapse"></div>
+<a href="../classes/QAutocompleteGen.html" class="more">« More »</a>
+</div>
+<div id="QDatepickerBase" class="element ajax clickable class">
+<h1>QDatepickerBase<a href="../classes/QDatepickerBase.html">¶</a>
+</h1>
+<p class="short_description">Impelements a JQuery UI Datepicker</p>
+<div class="details collapse"></div>
+<a href="../classes/QDatepickerBase.html" class="more">« More »</a>
+</div>
+<div id="QDatepickerBoxBase" class="element ajax clickable class">
+<h1>QDatepickerBoxBase<a href="../classes/QDatepickerBoxBase.html">¶</a>
+</h1>
+<p class="short_description">Impelements a JQuery UI Datepicker in a box</p>
+<div class="details collapse"></div>
+<a href="../classes/QDatepickerBoxBase.html" class="more">« More »</a>
+</div>
+<div id="QDatepickerBoxGen" class="element ajax clickable class">
+<h1>QDatepickerBoxGen<a href="../classes/QDatepickerBoxGen.html">¶</a>
+</h1>
+<p class="short_description">Generated QDatepickerBoxGen class.</p>
+<div class="details collapse"></div>
+<a href="../classes/QDatepickerBoxGen.html" class="more">« More »</a>
+</div>
+<div id="QDatepickerGen" class="element ajax clickable class">
+<h1>QDatepickerGen<a href="../classes/QDatepickerGen.html">¶</a>
+</h1>
+<p class="short_description">Generated QDatepickerGen class.</p>
+<div class="details collapse"></div>
+<a href="../classes/QDatepickerGen.html" class="more">« More »</a>
+</div>
+<div id="QDialogBase" class="element ajax clickable class">
+<h1>QDialogBase<a href="../classes/QDialogBase.html">¶</a>
+</h1>
+<p class="short_description">Implements a JQuery UI Dialog</p>
+<div class="details collapse"></div>
+<a href="../classes/QDialogBase.html" class="more">« More »</a>
+</div>
+<div id="QDialogGen" class="element ajax clickable class">
+<h1>QDialogGen<a href="../classes/QDialogGen.html">¶</a>
+</h1>
+<p class="short_description">Generated QDialogGen class.</p>
+<div class="details collapse"></div>
+<a href="../classes/QDialogGen.html" class="more">« More »</a>
+</div>
+<div id="QDraggableBase" class="element ajax clickable class">
+<h1>QDraggableBase<a href="../classes/QDraggableBase.html">¶</a>
+</h1>
+<p class="short_description">Implements the jQuery UI Draggable capabilities on to a control.</p>
+<div class="details collapse"></div>
+<a href="../classes/QDraggableBase.html" class="more">« More »</a>
+</div>
+<div id="QDraggableGen" class="element ajax clickable class">
+<h1>QDraggableGen<a href="../classes/QDraggableGen.html">¶</a>
+</h1>
+<p class="short_description">Generated QDraggableGen class.</p>
+<div class="details collapse"></div>
+<a href="../classes/QDraggableGen.html" class="more">« More »</a>
+</div>
+<div id="QDroppableBase" class="element ajax clickable class">
+<h1>QDroppableBase<a href="../classes/QDroppableBase.html">¶</a>
+</h1>
+<p class="short_description">Implements the Droppable capabilities of JQuery UI in a QControl</p>
+<div class="details collapse"></div>
+<a href="../classes/QDroppableBase.html" class="more">« More »</a>
+</div>
+<div id="QDroppableGen" class="element ajax clickable class">
+<h1>QDroppableGen<a href="../classes/QDroppableGen.html">¶</a>
+</h1>
+<p class="short_description">Generated QDroppableGen class.</p>
+<div class="details collapse"></div>
+<a href="../classes/QDroppableGen.html" class="more">« More »</a>
+</div>
+<div id="QJqButtonGen" class="element ajax clickable class">
+<h1>QJqButtonGen<a href="../classes/QJqButtonGen.html">¶</a>
+</h1>
+<p class="short_description">Generated QJqButtonGen class.</p>
+<div class="details collapse"></div>
+<a href="../classes/QJqButtonGen.html" class="more">« More »</a>
+</div>
+<div id="QJqCheckBoxBase" class="element ajax clickable class">
+<h1>QJqCheckBoxBase<a href="../classes/QJqCheckBoxBase.html">¶</a>
+</h1>
+<p class="short_description">Implements a JQuery Ui Check Box</p>
+<div class="details collapse"></div>
+<a href="../classes/QJqCheckBoxBase.html" class="more">« More »</a>
+</div>
+<div id="QJqCheckBoxGen" class="element ajax clickable class">
+<h1>QJqCheckBoxGen<a href="../classes/QJqCheckBoxGen.html">¶</a>
+</h1>
+<p class="short_description">Generated QJqCheckBoxGen class.</p>
+<div class="details collapse"></div>
+<a href="../classes/QJqCheckBoxGen.html" class="more">« More »</a>
+</div>
+<div id="QJqRadioButtonGen" class="element ajax clickable class">
+<h1>QJqRadioButtonGen<a href="../classes/QJqRadioButtonGen.html">¶</a>
+</h1>
+<p class="short_description">Generated QJqRadioButtonGen class.</p>
+<div class="details collapse"></div>
+<a href="../classes/QJqRadioButtonGen.html" class="more">« More »</a>
+</div>
+<div id="QMenuBase" class="element ajax clickable class">
+<h1>QMenuBase<a href="../classes/QMenuBase.html">¶</a>
+</h1>
+<p class="short_description">Implements a JQuery UI Menu</p>
+<div class="details collapse"></div>
+<a href="../classes/QMenuBase.html" class="more">« More »</a>
+</div>
+<div id="QMenuGen" class="element ajax clickable class">
+<h1>QMenuGen<a href="../classes/QMenuGen.html">¶</a>
+</h1>
+<p class="short_description">Generated QMenuGen class.</p>
+<div class="details collapse"></div>
+<a href="../classes/QMenuGen.html" class="more">« More »</a>
+</div>
+<div id="QProgressbarBase" class="element ajax clickable class">
+<h1>QProgressbarBase<a href="../classes/QProgressbarBase.html">¶</a>
+</h1>
+<p class="short_description">Implements a JQuery UI Progress Bar</p>
+<div class="details collapse"></div>
+<a href="../classes/QProgressbarBase.html" class="more">« More »</a>
+</div>
+<div id="QProgressbarGen" class="element ajax clickable class">
+<h1>QProgressbarGen<a href="../classes/QProgressbarGen.html">¶</a>
+</h1>
+<p class="short_description">Generated QProgressbarGen class.</p>
+<div class="details collapse"></div>
+<a href="../classes/QProgressbarGen.html" class="more">« More »</a>
+</div>
+<div id="QResizableBase" class="element ajax clickable class">
+<h1>QResizableBase<a href="../classes/QResizableBase.html">¶</a>
+</h1>
+<p class="short_description">Implements the JQuery UI Resizable capabilities into a QControl</p>
+<div class="details collapse"></div>
+<a href="../classes/QResizableBase.html" class="more">« More »</a>
+</div>
+<div id="QResizableGen" class="element ajax clickable class">
+<h1>QResizableGen<a href="../classes/QResizableGen.html">¶</a>
+</h1>
+<p class="short_description">Generated QResizableGen class.</p>
+<div class="details collapse"></div>
+<a href="../classes/QResizableGen.html" class="more">« More »</a>
+</div>
+<div id="QSelectableBase" class="element ajax clickable class">
+<h1>QSelectableBase<a href="../classes/QSelectableBase.html">¶</a>
+</h1>
+<p class="short_description">Impelments a JQuery UI Selectable box</p>
+<div class="details collapse"></div>
+<a href="../classes/QSelectableBase.html" class="more">« More »</a>
+</div>
+<div id="QSelectableGen" class="element ajax clickable class">
+<h1>QSelectableGen<a href="../classes/QSelectableGen.html">¶</a>
+</h1>
+<p class="short_description">Generated QSelectableGen class.</p>
+<div class="details collapse"></div>
+<a href="../classes/QSelectableGen.html" class="more">« More »</a>
+</div>
+<div id="QSliderBase" class="element ajax clickable class">
+<h1>QSliderBase<a href="../classes/QSliderBase.html">¶</a>
+</h1>
+<p class="short_description">Implements a JQuery UI Slider</p>
+<div class="details collapse"></div>
+<a href="../classes/QSliderBase.html" class="more">« More »</a>
+</div>
+<div id="QSliderGen" class="element ajax clickable class">
+<h1>QSliderGen<a href="../classes/QSliderGen.html">¶</a>
+</h1>
+<p class="short_description">Generated QSliderGen class.</p>
+<div class="details collapse"></div>
+<a href="../classes/QSliderGen.html" class="more">« More »</a>
+</div>
+<div id="QSortableBase" class="element ajax clickable class">
+<h1>QSortableBase<a href="../classes/QSortableBase.html">¶</a>
+</h1>
+<p class="short_description">Impelements a JQuery UI Sortable</p>
+<div class="details collapse"></div>
+<a href="../classes/QSortableBase.html" class="more">« More »</a>
+</div>
+<div id="QSortableGen" class="element ajax clickable class">
+<h1>QSortableGen<a href="../classes/QSortableGen.html">¶</a>
+</h1>
+<p class="short_description">Generated QSortableGen class.</p>
+<div class="details collapse"></div>
+<a href="../classes/QSortableGen.html" class="more">« More »</a>
+</div>
+<div id="QSpinnerBase" class="element ajax clickable class">
+<h1>QSpinnerBase<a href="../classes/QSpinnerBase.html">¶</a>
+</h1>
+<p class="short_description">Implements a JQuery UI Spinner Object</p>
+<div class="details collapse"></div>
+<a href="../classes/QSpinnerBase.html" class="more">« More »</a>
+</div>
+<div id="QSpinnerGen" class="element ajax clickable class">
+<h1>QSpinnerGen<a href="../classes/QSpinnerGen.html">¶</a>
+</h1>
+<p class="short_description">Generated QSpinnerGen class.</p>
+<div class="details collapse"></div>
+<a href="../classes/QSpinnerGen.html" class="more">« More »</a>
+</div>
+<div id="QTabsBase" class="element ajax clickable class">
+<h1>QTabsBase<a href="../classes/QTabsBase.html">¶</a>
+</h1>
+<p class="short_description">Impelements JQuery Ui Tabs</p>
+<div class="details collapse"></div>
+<a href="../classes/QTabsBase.html" class="more">« More »</a>
+</div>
+<div id="QTabsGen" class="element ajax clickable class">
+<h1>QTabsGen<a href="../classes/QTabsGen.html">¶</a>
+</h1>
+<p class="short_description">Generated QTabsGen class.</p>
+<div class="details collapse"></div>
+<a href="../classes/QTabsGen.html" class="more">« More »</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
+            generated on 2013-03-17T01:59:04+07:00.<br></footer></div>
+</div>
+</body>
+</html>

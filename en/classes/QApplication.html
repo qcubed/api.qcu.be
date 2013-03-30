@@ -1,0 +1,1153 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>QCubed API » \QApplication</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">QCubed API</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="../packages/Codegen.html"><i class="icon-folder-open"></i> Codegen</a></li>
+<li><a href="../packages/Controls.html"><i class="icon-folder-open"></i> Controls</a></li>
+<li><a href="../packages/Controls%20%20.html"><i class="icon-folder-open"></i> Controls  </a></li>
+<li><a href="../packages/DatabaseAdapters.html"><i class="icon-folder-open"></i> DatabaseAdapters</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/My%20QCubed%20Application.html"><i class="icon-folder-open"></i> My QCubed Application</a></li>
+<li><a href="../packages/Sessions.html"><i class="icon-folder-open"></i> Sessions</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">4384</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul><li>todo 
+                <span class="label label-info">28</span>
+</li></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">8</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method_Autoload" title="Autoload :: This is called by the PHP5 Autoloader."><span class="description">This is called by the PHP5 Autoloader.</span><pre>Autoload()</pre></a></li>
+<li class="method public inherited"><a href="#method_CheckRemoteAdmin" title="CheckRemoteAdmin :: By default, this is used by the codegen and form drafts to do a quick check
+on the ALLOW_REMOTE_ADMIN constant (as defined in configuration.inc.php)."><span class="description">By default, this is used by the codegen and form drafts to do a quick check
+on the ALLOW_REMOTE_ADMIN constant (as defined in configuration.inc.php).</span><pre>CheckRemoteAdmin()</pre></a></li>
+<li class="method public inherited"><a href="#method_CloseWindow" title="CloseWindow :: This will close the window."><span class="description">This will close the window.</span><pre>CloseWindow()</pre></a></li>
+<li class="method public inherited"><a href="#method_DisplayAlert" title="DisplayAlert :: "><span class="description">DisplayAlert()
+        </span><pre>DisplayAlert()</pre></a></li>
+<li class="method public inherited"><a href="#method_ExecuteJavaScript" title="ExecuteJavaScript :: Thic class can be used to call a Javascript function sittin in the client browser from the server side."><span class="description">Thic class can be used to call a Javascript function sittin in the client browser from the server side.</span><pre>ExecuteJavaScript()</pre></a></li>
+<li class="method public inherited"><a href="#method_GenerateQueryString" title="GenerateQueryString :: Generates a valid URL Query String based on values in the provided array."><span class="description">Generates a valid URL Query String based on values in the provided array.</span><pre>GenerateQueryString()</pre></a></li>
+<li class="method public inherited"><a href="#method_HtmlEntities" title="HtmlEntities :: Global/Central HtmlEntities command to perform the PHP equivalent of htmlentities."><span class="description">Global/Central HtmlEntities command to perform the PHP equivalent of htmlentities.</span><pre>HtmlEntities()</pre></a></li>
+<li class="method public inherited"><a href="#method_Initialize" title="Initialize :: This should be the first call to initialize all the static variables
+The application object also has static methods that are miscellaneous web
+development utilities, etc."><span class="description">This should be the first call to initialize all the static variables
+The application object also has static methods that are miscellaneous web
+development utilities, etc.</span><pre>Initialize()</pre></a></li>
+<li class="method public inherited"><a href="#method_InitializeDatabaseConnections" title='InitializeDatabaseConnections :: This call will initialize the database connection(s) as defined by
+the constants DB_CONNECTION_X, where "X" is the index number of a
+particular database connection.'><span class="description">This call will initialize the database connection(s) as defined by
+the constants DB_CONNECTION_X, where "X" is the index number of a
+particular database connection.</span><pre>InitializeDatabaseConnections()</pre></a></li>
+<li class="method public inherited"><a href="#method_IsBrowser" title="IsBrowser :: Checks for the type of browser in use by the client."><span class="description">Checks for the type of browser in use by the client.</span><pre>IsBrowser()</pre></a></li>
+<li class="method public inherited"><a href="#method_IsIPInRange" title="IsIPInRange :: Checks whether the given IP falls into the given IP range"><span class="description">Checks whether the given IP falls into the given IP range</span><pre>IsIPInRange()</pre></a></li>
+<li class="method public inherited"><a href="#method_IsRemoteAdminSession" title="IsRemoteAdminSession :: Checks whether the current request was made by an ADMIN
+This does not refer to your Database admin or an Admin user defined in your application but an IP address
+(or IP address range) defined in configuration.inc.php."><span class="description">Checks whether the current request was made by an ADMIN
+This does not refer to your Database admin or an Admin user defined in your application but an IP address
+(or IP address range) defined in configuration.inc.php.</span><pre>IsRemoteAdminSession()</pre></a></li>
+<li class="method public inherited"><a href="#method_MakeDirectory" title="MakeDirectory :: "><span class="description">MakeDirectory()
+        </span><pre>MakeDirectory()</pre></a></li>
+<li class="method public inherited"><a href="#method_OutputPage" title="OutputPage :: "><span class="description">OutputPage()
+        </span><pre>OutputPage()</pre></a></li>
+<li class="method public inherited"><a href="#method_OverrideAttributes" title="OverrideAttributes :: This allows you to set any properties, given by a name-value pair list
+in mixOverrideArray."><span class="description">This allows you to set any properties, given by a name-value pair list
+in mixOverrideArray.</span><pre>OverrideAttributes()</pre></a></li>
+<li class="method public inherited"><a href="#method_PathInfo" title="PathInfo :: Gets the value of the PathInfo item at index $intIndex."><span class="description">Gets the value of the PathInfo item at index $intIndex.</span><pre>PathInfo()</pre></a></li>
+<li class="method public inherited"><a href="#method_QueryString" title="QueryString :: Gets the value of the QueryString item $strItem."><span class="description">Gets the value of the QueryString item $strItem.</span><pre>QueryString()</pre></a></li>
+<li class="method public inherited"><a href="#method_Redirect" title="Redirect :: This will redirect the user to a new web location."><span class="description">This will redirect the user to a new web location.</span><pre>Redirect()</pre></a></li>
+<li class="method public inherited"><a href="#method_RenderJavaScript" title="RenderJavaScript :: Function renders Javascript on the client browser."><span class="description">Function renders Javascript on the client browser.</span><pre>RenderJavaScript()</pre></a></li>
+<li class="method public inherited"><a href="#method_RestoreErrorHandler" title="RestoreErrorHandler :: Restores the temporarily overridden default error handling mechanism back to the default."><span class="description">Restores the temporarily overridden default error handling mechanism back to the default.</span><pre>RestoreErrorHandler()</pre></a></li>
+<li class="method public inherited"><a href="#method_SessionOverride" title="SessionOverride :: "><span class="description">SessionOverride()
+        </span><pre>SessionOverride()</pre></a></li>
+<li class="method public inherited"><a href="#method_SetErrorHandler" title="SetErrorHandler :: Temprorarily overrides the default error handling mechanism."><span class="description">Temprorarily overrides the default error handling mechanism.</span><pre>SetErrorHandler()</pre></a></li>
+<li class="method public inherited"><a href="#method_Translate" title="Translate :: If LanguageCode is specified and QI18n::Initialize() has been called, then this
+will perform a translation of the given token for the specified Language Code and optional
+Country code."><span class="description">If LanguageCode is specified and QI18n::Initialize() has been called, then this
+will perform a translation of the given token for the specified Language Code and optional
+Country code.</span><pre>Translate()</pre></a></li>
+<li class="method public inherited"><a href="#method_VarDump" title="VarDump :: For development purposes, this static method outputs all the Application static variables"><span class="description">For development purposes, this static method outputs all the Application static variables</span><pre>VarDump()</pre></a></li>
+<li class="method public inherited"><a href="#method___construct" title="__construct :: This faux constructor method throws a caller exception."><span class="description">This faux constructor method throws a caller exception.</span><pre>__construct()</pre></a></li>
+<li class="method public inherited"><a href="#method___get" title='__get :: Override method to perform a property "Get"
+This will get the value of $strName
+All inhereted objects that call __get() should always fall through
+to calling parent::__get() in a try/catch statement catching
+for CallerExceptions.'><span class="description">Override method to perform a property "Get"
+This will get the value of $strName
+All inhereted objects that call __get() should always fall through
+to calling parent::__get() in a try/catch statement catching
+for CallerExceptions.</span><pre>__get()</pre></a></li>
+<li class="method public inherited"><a href="#method___set" title='__set :: Override method to perform a property "Set"
+This will set the property $strName to be $mixValue
+All inhereted objects that call __set() should always fall through
+to calling parent::__set() in a try/catch statement catching
+for CallerExceptions.'><span class="description">Override method to perform a property "Set"
+This will set the property $strName to be $mixValue
+All inhereted objects that call __set() should always fall through
+to calling parent::__set() in a try/catch statement catching
+for CallerExceptions.</span><pre>__set()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul><li class="method protected inherited"><a href="#method_GenerateQueryStringHelper" title="GenerateQueryStringHelper :: "><span class="description">GenerateQueryStringHelper()
+        </span><pre>GenerateQueryStringHelper()</pre></a></li></ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties
+                    <ul>
+<li class="property public inherited"><a href="#property_AlertMessageArray" title="$AlertMessageArray :: "><span class="description"></span><pre>$AlertMessageArray</pre></a></li>
+<li class="property public inherited"><a href="#property_CacheControl" title="$CacheControl :: Definition of CacheControl for the HTTP header."><span class="description"></span><pre>$CacheControl</pre></a></li>
+<li class="property public inherited"><a href="#property_ClassFile" title="$ClassFile :: Class File Array - used by QApplication::AutoLoad to more quickly load
+core class objects without making a file_exists call."><span class="description"></span><pre>$ClassFile</pre></a></li>
+<li class="property public inherited"><a href="#property_CliMode" title="$CliMode :: A flag to indicate whether or not this script is run as a CLI (Command Line Interface)"><span class="description"></span><pre>$CliMode</pre></a></li>
+<li class="property public inherited"><a href="#property_CountryCode" title="$CountryCode :: 2-letter country code to set for internationalization and localization
+(e.g."><span class="description"></span><pre>$CountryCode</pre></a></li>
+<li class="property public inherited"><a href="#property_Database" title="$Database :: An array of Database objects, as initialized by QApplication::InitializeDatabaseConnections()"><span class="description"></span><pre>$Database</pre></a></li>
+<li class="property public inherited"><a href="#property_DefaultCrossScriptingMode" title="$DefaultCrossScriptingMode :: "><span class="description">Defines the default mode for controls that need protection against cross-site scripting. Can be overridden at the individual control level, or for all controls by overriding it in QApplication. Set to QCrossScripting::Legacy for backward compatibility reasons for legacy applications; For new applications the recommended setting is QCrossScripting::Purify.</span><pre>$DefaultCrossScriptingMode</pre></a></li>
+<li class="property public inherited"><a href="#property_DocumentRoot" title='$DocumentRoot :: Path of the "web root" or "document root" of the web server
+Like "/home/www/htdocs" on Linux/Unix or "c:\inetpub\wwwroot" on Windows'><span class="description"></span><pre>$DocumentRoot</pre></a></li>
+<li class="property public inherited"><a href="#property_EncodingType" title="$EncodingType :: The encoding type for the application (e.g."><span class="description"></span><pre>$EncodingType</pre></a></li>
+<li class="property public inherited"><a href="#property_ErrorFlag" title="$ErrorFlag :: "><span class="description"></span><pre>$ErrorFlag</pre></a></li>
+<li class="property public inherited"><a href="#property_JavaScriptArray" title="$JavaScriptArray :: "><span class="description"></span><pre>$JavaScriptArray</pre></a></li>
+<li class="property public inherited"><a href="#property_JavaScriptArrayHighPriority" title="$JavaScriptArrayHighPriority :: "><span class="description"></span><pre>$JavaScriptArrayHighPriority</pre></a></li>
+<li class="property public inherited"><a href="#property_JavaScriptArrayLowPriority" title="$JavaScriptArrayLowPriority :: "><span class="description"></span><pre>$JavaScriptArrayLowPriority</pre></a></li>
+<li class="property public inherited"><a href="#property_LanguageCode" title="$LanguageCode :: 2-letter language code to set for internationalization and localization
+(e.g."><span class="description"></span><pre>$LanguageCode</pre></a></li>
+<li class="property public inherited"><a href="#property_LanguageObject" title="$LanguageObject :: The instance of the active QI18n object (which contains translation strings), if any."><span class="description"></span><pre>$LanguageObject</pre></a></li>
+<li class="property public inherited"><a href="#property_PathInfo" title='$PathInfo :: Extended Path Information after the script URL (if applicable)
+So for "http://www.domain.com/folder/script.php/15/225"
+QApplication::$PathInfo would be "/15/255"'><span class="description"></span><pre>$PathInfo</pre></a></li>
+<li class="property public inherited"><a href="#property_PreloadedClassFile" title="$PreloadedClassFile :: Preloaded Class File Array - used by QApplication::Initialize to load
+any core class objects during Initailize()"><span class="description"></span><pre>$PreloadedClassFile</pre></a></li>
+<li class="property public inherited"><a href="#property_ProcessOutput" title="$ProcessOutput :: Whether or not we are currently trying to Process the Output of the page."><span class="description"></span><pre>$ProcessOutput</pre></a></li>
+<li class="property public inherited"><a href="#property_QueryString" title='$QueryString :: Query String after the script URL (if applicable)
+So for "http://www.domain.com/folder/script.php?item=15&amp;value=22"
+QApplication::$QueryString would be "item=15&amp;value=22"'><span class="description"></span><pre>$QueryString</pre></a></li>
+<li class="property public inherited"><a href="#property_RequestMode" title="$RequestMode :: The QRequestMode enumerated value for the current request mode"><span class="description"></span><pre>$RequestMode</pre></a></li>
+<li class="property public inherited"><a href="#property_RequestUri" title='$RequestUri :: The full Request URI that was requested
+So for "http://www.domain.com/folder/script.php/15/25/?item=15&amp;value=22"
+QApplication::$RequestUri would be "/folder/script.php/15/25/?item=15&amp;value=22"'><span class="description"></span><pre>$RequestUri</pre></a></li>
+<li class="property public inherited"><a href="#property_ScriptFilename" title='$ScriptFilename :: Full path of the actual PHP script being run
+Like "/home/www/htdocs/folder/script.php" on Linux/Unix
+or "c:\inetpub\wwwroot" on Windows'><span class="description"></span><pre>$ScriptFilename</pre></a></li>
+<li class="property public inherited"><a href="#property_ScriptName" title='$ScriptName :: Web-relative path of the actual PHP script being run
+So for "http://www.domain.com/folder/script.php",
+QApplication::$ScriptName would be "/folder/script.php"'><span class="description"></span><pre>$ScriptName</pre></a></li>
+<li class="property public inherited"><a href="#property_ServerAddress" title="$ServerAddress :: The IP address of the server running the script/PHP application
+This is either the LOCAL_ADDR or the SERVER_ADDR server constant, depending
+on the server type, OS and configuration."><span class="description"></span><pre>$ServerAddress</pre></a></li>
+<li class="property public inherited"><a href="#property_objCacheProvider" title="$objCacheProvider :: The cache provider object used for caching ORM objects
+It is initialized below in Initialize(), based on the CACHE_PROVIDER and CACHE_PROVIDER_OPTIONS
+variables defined in configuration.inc.php"><span class="description"></span><pre>$objCacheProvider</pre></a></li>
+</ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul><li class="property protected inherited"><a href="#property_BrowserType" title="$BrowserType :: Internal bitmask signifying which BrowserType the user is using
+Use the QApplication::IsBrowser() method to do browser checking"><span class="description"></span><pre>$BrowserType</pre></a></li></ul>
+</li>
+<li class="nav-header private">» Private
+                    <ul><li class="property private inherited"><a href="#property_intStoredErrorLevel" title="$intStoredErrorLevel :: "><span class="description"></span><pre>$intStoredErrorLevel</pre></a></li></ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a id="\QApplication"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/global.html">global</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/QApplication.html">QApplication</a>
+</li>
+</ul>
+<div class="element class">
+<p class="short_description">The Application class is an abstract class that statically provides
+information and global utilities for the entire web application.</p>
+<div class="details">
+<div class="long_description"><p>Custom constants for this webapp, as well as global variables and global
+methods should be declared in this abstract class (declared statically).</p>
+
+<p>This Application class should extend from the ApplicationBase class in
+the framework.</p></div>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method_Autoload"></a><div class="element clickable method public method_Autoload" data-toggle="collapse" data-target=".method_Autoload .collapse">
+<h2>This is called by the PHP5 Autoloader.</h2>
+<pre>Autoload($strClassName) : void</pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>This method overrides the
+one in ApplicationBase.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strClassName</h4></div>
+</div></div>
+</div>
+<a id="method_CheckRemoteAdmin"></a><div class="element clickable method public method_CheckRemoteAdmin" data-toggle="collapse" data-target=".method_CheckRemoteAdmin .collapse">
+<h2>By default, this is used by the codegen and form drafts to do a quick check
+on the ALLOW_REMOTE_ADMIN constant (as defined in configuration.inc.php).</h2>
+<pre>CheckRemoteAdmin() : </pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>If enabled,
+then anyone can access the page.  If disabled, only "localhost" can access the page.
+If you want to run a script that should be accessible regardless of
+ALLOW_REMOTE_ADMIN, simply remove the CheckRemoteAdmin() method call from that script.</p></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QApplicationBase::CheckRemoteAdmin()</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"></div>
+</div></div>
+</div>
+<a id="method_CloseWindow"></a><div class="element clickable method public method_CloseWindow" data-toggle="collapse" data-target=".method_CloseWindow .collapse">
+<h2>This will close the window.</h2>
+<pre>CloseWindow() : void</pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>It will immediately end processing of the rest of the script.</p></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QApplicationBase::CloseWindow()</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_DisplayAlert"></a><div class="element clickable method public method_DisplayAlert" data-toggle="collapse" data-target=".method_DisplayAlert .collapse">
+<h2>DisplayAlert()
+        </h2>
+<pre>DisplayAlert($strMessage) </pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QApplicationBase::DisplayAlert()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strMessage</h4></div>
+</div></div>
+</div>
+<a id="method_ExecuteJavaScript"></a><div class="element clickable method public method_ExecuteJavaScript" data-toggle="collapse" data-target=".method_ExecuteJavaScript .collapse">
+<h2>Thic class can be used to call a Javascript function sittin in the client browser from the server side.</h2>
+<pre>ExecuteJavaScript(string $strJavaScript, int $intPriority) </pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Can be used inside event handlers to do something after verification  on server side.</p></div>
+<table class="table table-bordered">
+<tr>
+<th>static</th>
+<td></td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QApplicationBase::ExecuteJavaScript()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$strJavaScript</h4>
+<code>string</code><p>the javascript to execute</p></div>
+<div class="subelement argument">
+<h4>$intPriority</h4>
+<code>int</code>
+</div>
+</div></div>
+</div>
+<a id="method_GenerateQueryString"></a><div class="element clickable method public method_GenerateQueryString" data-toggle="collapse" data-target=".method_GenerateQueryString .collapse">
+<h2>Generates a valid URL Query String based on values in the provided array.</h2>
+<pre>GenerateQueryString(array $arr) : string</pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>If no array is provided, it uses the global $_GET</p></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QApplicationBase::GenerateQueryString()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$arr</h4>
+<code>array</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_HtmlEntities"></a><div class="element clickable method public method_HtmlEntities" data-toggle="collapse" data-target=".method_HtmlEntities .collapse">
+<h2>Global/Central HtmlEntities command to perform the PHP equivalent of htmlentities.</h2>
+<pre>HtmlEntities(string $strText) : string</pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Feel free to override to specify encoding/quoting specific preferences (e.g. ENT_QUOTES/ENT_NOQUOTES, etc.)</p>
+
+<p>This method is also used by the global print "_p" function.</p></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QApplicationBase::HtmlEntities()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$strText</h4>
+<code>string</code><p>text string to perform html escaping</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>the html escaped string</div>
+</div></div>
+</div>
+<a id="method_Initialize"></a><div class="element clickable method public method_Initialize" data-toggle="collapse" data-target=".method_Initialize .collapse">
+<h2>This should be the first call to initialize all the static variables
+The application object also has static methods that are miscellaneous web
+development utilities, etc.</h2>
+<pre>Initialize() : void</pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QApplicationBase::Initialize()</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_InitializeDatabaseConnections"></a><div class="element clickable method public method_InitializeDatabaseConnections" data-toggle="collapse" data-target=".method_InitializeDatabaseConnections .collapse">
+<h2>This call will initialize the database connection(s) as defined by
+the constants DB_CONNECTION_X, where "X" is the index number of a
+particular database connection.</h2>
+<pre>InitializeDatabaseConnections() : void</pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QApplicationBase::InitializeDatabaseConnections()</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_IsBrowser"></a><div class="element clickable method public method_IsBrowser" data-toggle="collapse" data-target=".method_IsBrowser .collapse">
+<h2>Checks for the type of browser in use by the client.</h2>
+<pre>IsBrowser(int $intBrowserType) : int</pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>static</th>
+<td></td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QApplicationBase::IsBrowser()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$intBrowserType</h4>
+<code>int</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>int</code></div>
+</div></div>
+</div>
+<a id="method_IsIPInRange"></a><div class="element clickable method public method_IsIPInRange" data-toggle="collapse" data-target=".method_IsIPInRange .collapse">
+<h2>Checks whether the given IP falls into the given IP range</h2>
+<pre>IsIPInRange(string $ip, string $range) : bool</pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>static</th>
+<td></td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QApplicationBase::IsIPInRange()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$ip</h4>
+<code>string</code><p>the IP number to check</p></div>
+<div class="subelement argument">
+<h4>$range</h4>
+<code>string</code><p>the IP number range. The range could be in 'IP/mask' or 'IP - IP' format. mask could be a simple
+integer or a dotted netmask.</p>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>bool</code></div>
+</div></div>
+</div>
+<a id="method_IsRemoteAdminSession"></a><div class="element clickable method public method_IsRemoteAdminSession" data-toggle="collapse" data-target=".method_IsRemoteAdminSession .collapse">
+<h2>Checks whether the current request was made by an ADMIN
+This does not refer to your Database admin or an Admin user defined in your application but an IP address
+(or IP address range) defined in configuration.inc.php.</h2>
+<pre>IsRemoteAdminSession() : bool</pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>The function can be used to restrict access to sensitive pages to a list of IPs (or IP ranges), such as the LAN to which
+the server hosting the QCubed application is connected.</p></div>
+<table class="table table-bordered">
+<tr>
+<th>static</th>
+<td></td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QApplicationBase::IsRemoteAdminSession()</td>
+</tr>
+</table>
+<h3>Returns</h3>
+<div class="subelement response"><code>bool</code></div>
+</div></div>
+</div>
+<a id="method_MakeDirectory"></a><div class="element clickable method public method_MakeDirectory" data-toggle="collapse" data-target=".method_MakeDirectory .collapse">
+<h2>MakeDirectory()
+        </h2>
+<pre>MakeDirectory($strPath, $intMode) </pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QApplicationBase::MakeDirectory()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strPath</h4></div>
+<div class="subelement argument"><h4>$intMode</h4></div>
+</div></div>
+</div>
+<a id="method_OutputPage"></a><div class="element clickable method public method_OutputPage" data-toggle="collapse" data-target=".method_OutputPage .collapse">
+<h2>OutputPage()
+        </h2>
+<pre>OutputPage($strBuffer) </pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QApplicationBase::OutputPage()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strBuffer</h4></div>
+</div></div>
+</div>
+<a id="method_OverrideAttributes"></a><div class="element clickable method public method_OverrideAttributes" data-toggle="collapse" data-target=".method_OverrideAttributes .collapse">
+<h2>This allows you to set any properties, given by a name-value pair list
+in mixOverrideArray.</h2>
+<pre>OverrideAttributes($mixOverrideArray) : void</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Each item in mixOverrideArray needs to be either a string in the format
+of Property=Value or an array in the format of array(Property => Value).
+OverrideAttributes() will basically call
+$this->Property = Value for each string element in the array.</p>
+
+<p>Value can be surrounded by quotes... but this is optional.</p></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QBaseClass::OverrideAttributes()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QApplicationBase::OverrideAttributes()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$mixOverrideArray</h4></div>
+</div></div>
+</div>
+<a id="method_PathInfo"></a><div class="element clickable method public method_PathInfo" data-toggle="collapse" data-target=".method_PathInfo .collapse">
+<h2>Gets the value of the PathInfo item at index $intIndex.</h2>
+<pre>PathInfo(int $intIndex) : string | null</pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Will return NULL if it doesn't exist.</p>
+
+<p>The way PathInfo index is determined is, for example, given a URL '/folder/page.php/id/15/blue',
+QApplication::PathInfo(0) will return 'id'
+QApplication::PathInfo(1) will return '15'
+QApplication::PathInfo(2) will return 'blue'</p></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QApplicationBase::PathInfo()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$intIndex</h4>
+<code>int</code><p>index</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code><code>null</code>
+</div>
+</div></div>
+</div>
+<a id="method_QueryString"></a><div class="element clickable method public method_QueryString" data-toggle="collapse" data-target=".method_QueryString .collapse">
+<h2>Gets the value of the QueryString item $strItem.</h2>
+<pre>QueryString(string $strItem) : string</pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Will return NULL if it doesn't exist.</p></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QApplicationBase::QueryString()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$strItem</h4>
+<code>string</code><p>the parameter name</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>value of the parameter</div>
+</div></div>
+</div>
+<a id="method_Redirect"></a><div class="element clickable method public method_Redirect" data-toggle="collapse" data-target=".method_Redirect .collapse">
+<h2>This will redirect the user to a new web location.</h2>
+<pre>Redirect(string $strLocation) : void</pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>This can be a relative or absolute web path, or it
+can be an entire URL.</p></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QApplicationBase::Redirect()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$strLocation</h4>
+<code>string</code><p>target patch</p></div>
+</div></div>
+</div>
+<a id="method_RenderJavaScript"></a><div class="element clickable method public method_RenderJavaScript" data-toggle="collapse" data-target=".method_RenderJavaScript .collapse">
+<h2>Function renders Javascript on the client browser.</h2>
+<pre>RenderJavaScript(bool $blnOutput) : null | string</pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>static</th>
+<td></td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QApplicationBase::RenderJavaScript()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$blnOutput</h4>
+<code>bool</code><p>if true print the result, otherwise return it</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>null</code><code>string</code>
+</div>
+</div></div>
+</div>
+<a id="method_RestoreErrorHandler"></a><div class="element clickable method public method_RestoreErrorHandler" data-toggle="collapse" data-target=".method_RestoreErrorHandler .collapse">
+<h2>Restores the temporarily overridden default error handling mechanism back to the default.</h2>
+<pre>RestoreErrorHandler() </pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QApplicationBase::RestoreErrorHandler()</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_SessionOverride"></a><div class="element clickable method public method_SessionOverride" data-toggle="collapse" data-target=".method_SessionOverride .collapse">
+<h2>SessionOverride()
+        </h2>
+<pre>SessionOverride() </pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QApplicationBase::SessionOverride()</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_SetErrorHandler"></a><div class="element clickable method public method_SetErrorHandler" data-toggle="collapse" data-target=".method_SetErrorHandler .collapse">
+<h2>Temprorarily overrides the default error handling mechanism.</h2>
+<pre>SetErrorHandler(string $strName, integer $intLevel) </pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Remember to call
+RestoreErrorHandler to restore the error handler back to the default.</p></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QApplicationBase::SetErrorHandler()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$strName</h4>
+<code>string</code><p>the name of the new error handler function, or NULL if none</p></div>
+<div class="subelement argument">
+<h4>$intLevel</h4>
+<code>integer</code><p>if a error handler function is defined, then the new error reporting level (if any)</p>
+</div>
+</div></div>
+</div>
+<a id="method_Translate"></a><div class="element clickable method public method_Translate" data-toggle="collapse" data-target=".method_Translate .collapse">
+<h2>If LanguageCode is specified and QI18n::Initialize() has been called, then this
+will perform a translation of the given token for the specified Language Code and optional
+Country code.</h2>
+<pre>Translate(string $strToken) : string</pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Otherwise, this will simply return the token as is.
+This method is also used by the global print-translated "_t" function.</p></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QApplicationBase::Translate()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$strToken</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>the Translated token (if applicable)</div>
+</div></div>
+</div>
+<a id="method_VarDump"></a><div class="element clickable method public method_VarDump" data-toggle="collapse" data-target=".method_VarDump .collapse">
+<h2>For development purposes, this static method outputs all the Application static variables</h2>
+<pre>VarDump() : void</pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QApplicationBase::VarDump()</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method___construct"></a><div class="element clickable method public method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
+<h2>This faux constructor method throws a caller exception.</h2>
+<pre>__construct() : <a href="../classes/QApplicationBase.html">\QApplicationBase</a></pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>The Application object should never be instantiated, and this constructor
+override simply guarantees it.</p></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QApplicationBase::__construct()</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/QApplicationBase.html">\QApplicationBase</a></code></div>
+</div></div>
+</div>
+<a id="method___get"></a><div class="element clickable method public method___get" data-toggle="collapse" data-target=".method___get .collapse">
+<h2>Override method to perform a property "Get"
+This will get the value of $strName
+All inhereted objects that call __get() should always fall through
+to calling parent::__get() in a try/catch statement catching
+for CallerExceptions.</h2>
+<pre>__get(string $strName) : mixed</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QBaseClass::__get()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QApplicationBase::__get()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$strName</h4>
+<code>string</code><p>Name of the property to get</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>mixed</code>the returned property</div>
+</div></div>
+</div>
+<a id="method___set"></a><div class="element clickable method public method___set" data-toggle="collapse" data-target=".method___set .collapse">
+<h2>Override method to perform a property "Set"
+This will set the property $strName to be $mixValue
+All inhereted objects that call __set() should always fall through
+to calling parent::__set() in a try/catch statement catching
+for CallerExceptions.</h2>
+<pre>__set(string $strName, string $mixValue) : mixed</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QBaseClass::__set()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QApplicationBase::__set()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$strName</h4>
+<code>string</code><p>Name of the property to set</p></div>
+<div class="subelement argument">
+<h4>$mixValue</h4>
+<code>string</code><p>New value of the property</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>mixed</code>the property that was set</div>
+</div></div>
+</div>
+<a id="method_GenerateQueryStringHelper"></a><div class="element clickable method protected method_GenerateQueryStringHelper" data-toggle="collapse" data-target=".method_GenerateQueryStringHelper .collapse">
+<h2>GenerateQueryStringHelper()
+        </h2>
+<pre>GenerateQueryStringHelper($strKey, $mixValue) </pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QApplicationBase::GenerateQueryStringHelper()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strKey</h4></div>
+<div class="subelement argument"><h4>$mixValue</h4></div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a id="property_AlertMessageArray"> </a><div class="element clickable property public property_AlertMessageArray" data-toggle="collapse" data-target=".property_AlertMessageArray .collapse">
+<h2></h2>
+<pre>$AlertMessageArray </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QApplicationBase::$$AlertMessageArray</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_CacheControl"> </a><div class="element clickable property public property_CacheControl" data-toggle="collapse" data-target=".property_CacheControl .collapse">
+<h2></h2>
+<pre>$CacheControl : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>In general, it is
+recommended to keep this as "private".  But this can/should be overriden
+for file/scripts that have special caching requirements (e.g. dynamically
+created images like QImageLabel).</p></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QApplicationBase::$$CacheControl</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_ClassFile"> </a><div class="element clickable property public property_ClassFile" data-toggle="collapse" data-target=".property_ClassFile .collapse">
+<h2></h2>
+<pre>$ClassFile : array</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QApplicationBase::$$ClassFile</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_CliMode"> </a><div class="element clickable property public property_CliMode" data-toggle="collapse" data-target=".property_CliMode .collapse">
+<h2></h2>
+<pre>$CliMode : boolean</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QApplicationBase::$$CliMode</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_CountryCode"> </a><div class="element clickable property public property_CountryCode" data-toggle="collapse" data-target=".property_CountryCode .collapse">
+<h2></h2>
+<pre>$CountryCode : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>us, uk, jp)</p></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QApplicationBase::$$CountryCode</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_Database"> </a><div class="element clickable property public property_Database" data-toggle="collapse" data-target=".property_Database .collapse">
+<h2></h2>
+<pre>$Database : <a href="qcubed._core.framework.QDatabaseBase.class.html#%5CQDatabaseBase">\QDatabaseBase[]</a></pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QApplicationBase::$$Database</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_DefaultCrossScriptingMode"> </a><div class="element clickable property public property_DefaultCrossScriptingMode" data-toggle="collapse" data-target=".property_DefaultCrossScriptingMode .collapse">
+<h2>Defines the default mode for controls that need protection against cross-site scripting. Can be overridden at the individual control level, or for all controls by overriding it in QApplication. Set to QCrossScripting::Legacy for backward compatibility reasons for legacy applications; For new applications the recommended setting is QCrossScripting::Purify.</h2>
+<pre>$DefaultCrossScriptingMode : \#P#C\QCrossScripting.Purify | \?</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QApplicationBase::$$DefaultCrossScriptingMode</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_DocumentRoot"> </a><div class="element clickable property public property_DocumentRoot" data-toggle="collapse" data-target=".property_DocumentRoot .collapse">
+<h2></h2>
+<pre>$DocumentRoot : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QApplicationBase::$$DocumentRoot</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_EncodingType"> </a><div class="element clickable property public property_EncodingType" data-toggle="collapse" data-target=".property_EncodingType .collapse">
+<h2></h2>
+<pre>$EncodingType : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>UTF-8, ISO-8859-1, etc.)</p></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QApplicationBase::$$EncodingType</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_ErrorFlag"> </a><div class="element clickable property public property_ErrorFlag" data-toggle="collapse" data-target=".property_ErrorFlag .collapse">
+<h2></h2>
+<pre>$ErrorFlag </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QApplicationBase::$$ErrorFlag</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_JavaScriptArray"> </a><div class="element clickable property public property_JavaScriptArray" data-toggle="collapse" data-target=".property_JavaScriptArray .collapse">
+<h2></h2>
+<pre>$JavaScriptArray </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QApplicationBase::$$JavaScriptArray</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_JavaScriptArrayHighPriority"> </a><div class="element clickable property public property_JavaScriptArrayHighPriority" data-toggle="collapse" data-target=".property_JavaScriptArrayHighPriority .collapse">
+<h2></h2>
+<pre>$JavaScriptArrayHighPriority </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QApplicationBase::$$JavaScriptArrayHighPriority</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_JavaScriptArrayLowPriority"> </a><div class="element clickable property public property_JavaScriptArrayLowPriority" data-toggle="collapse" data-target=".property_JavaScriptArrayLowPriority .collapse">
+<h2></h2>
+<pre>$JavaScriptArrayLowPriority </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QApplicationBase::$$JavaScriptArrayLowPriority</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_LanguageCode"> </a><div class="element clickable property public property_LanguageCode" data-toggle="collapse" data-target=".property_LanguageCode .collapse">
+<h2></h2>
+<pre>$LanguageCode : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>en, jp, etc.)</p></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QApplicationBase::$$LanguageCode</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_LanguageObject"> </a><div class="element clickable property public property_LanguageObject" data-toggle="collapse" data-target=".property_LanguageObject .collapse">
+<h2></h2>
+<pre>$LanguageObject : <a href="../classes/QTranslationBase.html">\QTranslationBase</a></pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QApplicationBase::$$LanguageObject</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_PathInfo"> </a><div class="element clickable property public property_PathInfo" data-toggle="collapse" data-target=".property_PathInfo .collapse">
+<h2></h2>
+<pre>$PathInfo : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QApplicationBase::$$PathInfo</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_PreloadedClassFile"> </a><div class="element clickable property public property_PreloadedClassFile" data-toggle="collapse" data-target=".property_PreloadedClassFile .collapse">
+<h2></h2>
+<pre>$PreloadedClassFile : array</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QApplicationBase::$$PreloadedClassFile</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_ProcessOutput"> </a><div class="element clickable property public property_ProcessOutput" data-toggle="collapse" data-target=".property_ProcessOutput .collapse">
+<h2></h2>
+<pre>$ProcessOutput : boolean</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Used by the OutputPage PHP output_buffering handler.  As of PHP 5.2,
+this gets called whenever ob_get_contents() is called.  Because some
+classes like QFormBase utilizes ob_get_contents() to perform template
+evaluation without wanting to actually perform OutputPage, this flag
+can be set/modified by QFormBase::EvaluateTemplate accordingly to
+prevent OutputPage from executing.</p></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QApplicationBase::$$ProcessOutput</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_QueryString"> </a><div class="element clickable property public property_QueryString" data-toggle="collapse" data-target=".property_QueryString .collapse">
+<h2></h2>
+<pre>$QueryString : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QApplicationBase::$$QueryString</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_RequestMode"> </a><div class="element clickable property public property_RequestMode" data-toggle="collapse" data-target=".property_RequestMode .collapse">
+<h2></h2>
+<pre>$RequestMode : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QApplicationBase::$$RequestMode</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_RequestUri"> </a><div class="element clickable property public property_RequestUri" data-toggle="collapse" data-target=".property_RequestUri .collapse">
+<h2></h2>
+<pre>$RequestUri : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QApplicationBase::$$RequestUri</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_ScriptFilename"> </a><div class="element clickable property public property_ScriptFilename" data-toggle="collapse" data-target=".property_ScriptFilename .collapse">
+<h2></h2>
+<pre>$ScriptFilename : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QApplicationBase::$$ScriptFilename</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_ScriptName"> </a><div class="element clickable property public property_ScriptName" data-toggle="collapse" data-target=".property_ScriptName .collapse">
+<h2></h2>
+<pre>$ScriptName : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QApplicationBase::$$ScriptName</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_ServerAddress"> </a><div class="element clickable property public property_ServerAddress" data-toggle="collapse" data-target=".property_ServerAddress .collapse">
+<h2></h2>
+<pre>$ServerAddress : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QApplicationBase::$$ServerAddress</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_objCacheProvider"> </a><div class="element clickable property public property_objCacheProvider" data-toggle="collapse" data-target=".property_objCacheProvider .collapse">
+<h2></h2>
+<pre>$objCacheProvider : <a href="../classes/QAbstractCacheProvider.html">\QAbstractCacheProvider</a></pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QApplicationBase::$$objCacheProvider</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_BrowserType"> </a><div class="element clickable property protected property_BrowserType" data-toggle="collapse" data-target=".property_BrowserType .collapse">
+<h2></h2>
+<pre>$BrowserType : integer</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QApplicationBase::$$BrowserType</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_intStoredErrorLevel"> </a><div class="element clickable property private property_intStoredErrorLevel" data-toggle="collapse" data-target=".property_intStoredErrorLevel .collapse">
+<h2></h2>
+<pre>$intStoredErrorLevel </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QApplicationBase::$$intStoredErrorLevel</td>
+</tr></table>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
+            generated on 2013-03-17T01:59:08+07:00.<br></footer></div>
+</div>
+</body>
+</html>

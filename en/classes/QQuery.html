@@ -1,0 +1,854 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>QCubed API » \QQuery</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">QCubed API</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="../packages/Codegen.html"><i class="icon-folder-open"></i> Codegen</a></li>
+<li><a href="../packages/Controls.html"><i class="icon-folder-open"></i> Controls</a></li>
+<li><a href="../packages/Controls%20%20.html"><i class="icon-folder-open"></i> Controls  </a></li>
+<li><a href="../packages/DatabaseAdapters.html"><i class="icon-folder-open"></i> DatabaseAdapters</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/My%20QCubed%20Application.html"><i class="icon-folder-open"></i> My QCubed Application</a></li>
+<li><a href="../packages/Sessions.html"><i class="icon-folder-open"></i> Sessions</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">4384</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul><li>todo 
+                <span class="label label-info">28</span>
+</li></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">8</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list"><li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public inherited"><a href="#method_Alias" title="Alias :: Returns the supplied node object, after seting its alias to the value supplied"><span class="description">Returns the supplied node object, after seting its alias to the value supplied</span><pre>Alias()</pre></a></li>
+<li class="method public inherited"><a href="#method_All" title="All :: "><span class="description">All()
+        </span><pre>All()</pre></a></li>
+<li class="method public inherited"><a href="#method_AndCondition" title="AndCondition :: "><span class="description">AndCondition()
+        </span><pre>AndCondition()</pre></a></li>
+<li class="method public inherited"><a href="#method_Average" title="Average :: "><span class="description">Average()
+        </span><pre>Average()</pre></a></li>
+<li class="method public inherited"><a href="#method_Between" title="Between :: "><span class="description">Between()
+        </span><pre>Between()</pre></a></li>
+<li class="method public inherited"><a href="#method_Clause" title="Clause :: "><span class="description">Clause()
+        </span><pre>Clause()</pre></a></li>
+<li class="method public inherited"><a href="#method_Count" title="Count :: "><span class="description">Count()
+        </span><pre>Count()</pre></a></li>
+<li class="method public inherited"><a href="#method_Distinct" title="Distinct :: "><span class="description">Distinct()
+        </span><pre>Distinct()</pre></a></li>
+<li class="method public inherited"><a href="#method_Equal" title="Equal :: "><span class="description">Equal()
+        </span><pre>Equal()</pre></a></li>
+<li class="method public inherited"><a href="#method_Expand" title="Expand :: "><span class="description">Expand()
+        </span><pre>Expand()</pre></a></li>
+<li class="method public inherited"><a href="#method_ExpandAsArray" title="ExpandAsArray :: "><span class="description">ExpandAsArray()
+        </span><pre>ExpandAsArray()</pre></a></li>
+<li class="method public inherited"><a href="#method_GreaterOrEqual" title="GreaterOrEqual :: "><span class="description">GreaterOrEqual()
+        </span><pre>GreaterOrEqual()</pre></a></li>
+<li class="method public inherited"><a href="#method_GreaterThan" title="GreaterThan :: "><span class="description">GreaterThan()
+        </span><pre>GreaterThan()</pre></a></li>
+<li class="method public inherited"><a href="#method_GroupBy" title="GroupBy :: "><span class="description">GroupBy()
+        </span><pre>GroupBy()</pre></a></li>
+<li class="method public inherited"><a href="#method_Having" title="Having :: "><span class="description">Having()
+        </span><pre>Having()</pre></a></li>
+<li class="method public inherited"><a href="#method_In" title="In :: "><span class="description">In()
+        </span><pre>In()</pre></a></li>
+<li class="method public inherited"><a href="#method_IsNotNull" title="IsNotNull :: "><span class="description">IsNotNull()
+        </span><pre>IsNotNull()</pre></a></li>
+<li class="method public inherited"><a href="#method_IsNull" title="IsNull :: "><span class="description">IsNull()
+        </span><pre>IsNull()</pre></a></li>
+<li class="method public inherited"><a href="#method_LessOrEqual" title="LessOrEqual :: "><span class="description">LessOrEqual()
+        </span><pre>LessOrEqual()</pre></a></li>
+<li class="method public inherited"><a href="#method_LessThan" title="LessThan :: "><span class="description">LessThan()
+        </span><pre>LessThan()</pre></a></li>
+<li class="method public inherited"><a href="#method_Like" title="Like :: "><span class="description">Like()
+        </span><pre>Like()</pre></a></li>
+<li class="method public inherited"><a href="#method_LimitInfo" title="LimitInfo :: "><span class="description">LimitInfo()
+        </span><pre>LimitInfo()</pre></a></li>
+<li class="method public inherited"><a href="#method_Maximum" title="Maximum :: "><span class="description">Maximum()
+        </span><pre>Maximum()</pre></a></li>
+<li class="method public inherited"><a href="#method_Minimum" title="Minimum :: "><span class="description">Minimum()
+        </span><pre>Minimum()</pre></a></li>
+<li class="method public inherited"><a href="#method_NamedValue" title="NamedValue :: "><span class="description">NamedValue()
+        </span><pre>NamedValue()</pre></a></li>
+<li class="method public inherited"><a href="#method_None" title="None :: "><span class="description">None()
+        </span><pre>None()</pre></a></li>
+<li class="method public inherited"><a href="#method_Not" title="Not :: "><span class="description">Not()
+        </span><pre>Not()</pre></a></li>
+<li class="method public inherited"><a href="#method_NotBetween" title="NotBetween :: "><span class="description">NotBetween()
+        </span><pre>NotBetween()</pre></a></li>
+<li class="method public inherited"><a href="#method_NotEqual" title="NotEqual :: "><span class="description">NotEqual()
+        </span><pre>NotEqual()</pre></a></li>
+<li class="method public inherited"><a href="#method_NotIn" title="NotIn :: "><span class="description">NotIn()
+        </span><pre>NotIn()</pre></a></li>
+<li class="method public inherited"><a href="#method_NotLike" title="NotLike :: "><span class="description">NotLike()
+        </span><pre>NotLike()</pre></a></li>
+<li class="method public inherited"><a href="#method_OrCondition" title="OrCondition :: "><span class="description">OrCondition()
+        </span><pre>OrCondition()</pre></a></li>
+<li class="method public inherited"><a href="#method_OrderBy" title="OrderBy :: "><span class="description">OrderBy()
+        </span><pre>OrderBy()</pre></a></li>
+<li class="method public inherited"><a href="#method_Select" title="Select :: "><span class="description">Select()
+        </span><pre>Select()</pre></a></li>
+<li class="method public inherited"><a href="#method_SubSql" title="SubSql :: "><span class="description">SubSql()
+        </span><pre>SubSql()</pre></a></li>
+<li class="method public inherited"><a href="#method_Sum" title="Sum :: "><span class="description">Sum()
+        </span><pre>Sum()</pre></a></li>
+<li class="method public inherited"><a href="#method_Virtual" title="Virtual :: "><span class="description">Virtual()
+        </span><pre>Virtual()</pre></a></li>
+<li class="method public inherited"><a href="#method__" title="_ :: "><span class="description">_()
+        </span><pre>_()</pre></a></li>
+<li class="method public inherited"><a href="#method_extractSelectClause" title="extractSelectClause :: "><span class="description">extractSelectClause()
+        </span><pre>extractSelectClause()</pre></a></li>
+</ul>
+</li></ul>
+</div>
+<div class="span8">
+<a id="\QQuery"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/global.html">global</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/QQuery.html">QQuery</a>
+</li>
+</ul>
+<div class="element class"><div class="details">
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method_Alias"></a><div class="element clickable method public method_Alias" data-toggle="collapse" data-target=".method_Alias .collapse">
+<h2>Returns the supplied node object, after seting its alias to the value supplied</h2>
+<pre>Alias(\QQBaseNode $objNode, string $strAlias) : mixed</pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QQ::Alias()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$objNode</h4>
+<code><a href="../classes/QQBaseNode.html">\QQBaseNode</a></code><p>The node object to set alias on</p></div>
+<div class="subelement argument">
+<h4>$strAlias</h4>
+<code>string</code><p>The alias to set</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>mixed</code>The same node that was passed in, but with the alias set</div>
+</div></div>
+</div>
+<a id="method_All"></a><div class="element clickable method public method_All" data-toggle="collapse" data-target=".method_All .collapse">
+<h2>All()
+        </h2>
+<pre>All() </pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QQ::All()</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_AndCondition"></a><div class="element clickable method public method_AndCondition" data-toggle="collapse" data-target=".method_AndCondition .collapse">
+<h2>AndCondition()
+        </h2>
+<pre>AndCondition() </pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QQ::AndCondition()</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_Average"></a><div class="element clickable method public method_Average" data-toggle="collapse" data-target=".method_Average .collapse">
+<h2>Average()
+        </h2>
+<pre>Average($objNode, $strAttributeName) </pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QQ::Average()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$objNode</h4></div>
+<div class="subelement argument"><h4>$strAttributeName</h4></div>
+</div></div>
+</div>
+<a id="method_Between"></a><div class="element clickable method public method_Between" data-toggle="collapse" data-target=".method_Between .collapse">
+<h2>Between()
+        </h2>
+<pre>Between(\QQNode $objQueryNode, $strMinValue, $strMaxValue) </pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QQ::Between()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$objQueryNode</h4></div>
+<div class="subelement argument"><h4>$strMinValue</h4></div>
+<div class="subelement argument"><h4>$strMaxValue</h4></div>
+</div></div>
+</div>
+<a id="method_Clause"></a><div class="element clickable method public method_Clause" data-toggle="collapse" data-target=".method_Clause .collapse">
+<h2>Clause()
+        </h2>
+<pre>Clause() </pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QQ::Clause()</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_Count"></a><div class="element clickable method public method_Count" data-toggle="collapse" data-target=".method_Count .collapse">
+<h2>Count()
+        </h2>
+<pre>Count($objNode, $strAttributeName) </pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QQ::Count()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$objNode</h4></div>
+<div class="subelement argument"><h4>$strAttributeName</h4></div>
+</div></div>
+</div>
+<a id="method_Distinct"></a><div class="element clickable method public method_Distinct" data-toggle="collapse" data-target=".method_Distinct .collapse">
+<h2>Distinct()
+        </h2>
+<pre>Distinct() </pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QQ::Distinct()</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_Equal"></a><div class="element clickable method public method_Equal" data-toggle="collapse" data-target=".method_Equal .collapse">
+<h2>Equal()
+        </h2>
+<pre>Equal(\QQNode $objQueryNode, $mixValue) </pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QQ::Equal()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$objQueryNode</h4></div>
+<div class="subelement argument"><h4>$mixValue</h4></div>
+</div></div>
+</div>
+<a id="method_Expand"></a><div class="element clickable method public method_Expand" data-toggle="collapse" data-target=".method_Expand .collapse">
+<h2>Expand()
+        </h2>
+<pre>Expand($objNode, \QQCondition $objJoinCondition, \QQSelect $objSelect) </pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QQ::Expand()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$objNode</h4></div>
+<div class="subelement argument"><h4>$objJoinCondition</h4></div>
+<div class="subelement argument"><h4>$objSelect</h4></div>
+</div></div>
+</div>
+<a id="method_ExpandAsArray"></a><div class="element clickable method public method_ExpandAsArray" data-toggle="collapse" data-target=".method_ExpandAsArray .collapse">
+<h2>ExpandAsArray()
+        </h2>
+<pre>ExpandAsArray($objNode, \QQSelect $objSelect) </pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QQ::ExpandAsArray()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$objNode</h4></div>
+<div class="subelement argument"><h4>$objSelect</h4></div>
+</div></div>
+</div>
+<a id="method_GreaterOrEqual"></a><div class="element clickable method public method_GreaterOrEqual" data-toggle="collapse" data-target=".method_GreaterOrEqual .collapse">
+<h2>GreaterOrEqual()
+        </h2>
+<pre>GreaterOrEqual(\QQNode $objQueryNode, $mixValue) </pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QQ::GreaterOrEqual()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$objQueryNode</h4></div>
+<div class="subelement argument"><h4>$mixValue</h4></div>
+</div></div>
+</div>
+<a id="method_GreaterThan"></a><div class="element clickable method public method_GreaterThan" data-toggle="collapse" data-target=".method_GreaterThan .collapse">
+<h2>GreaterThan()
+        </h2>
+<pre>GreaterThan(\QQNode $objQueryNode, $mixValue) </pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QQ::GreaterThan()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$objQueryNode</h4></div>
+<div class="subelement argument"><h4>$mixValue</h4></div>
+</div></div>
+</div>
+<a id="method_GroupBy"></a><div class="element clickable method public method_GroupBy" data-toggle="collapse" data-target=".method_GroupBy .collapse">
+<h2>GroupBy()
+        </h2>
+<pre>GroupBy() </pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QQ::GroupBy()</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_Having"></a><div class="element clickable method public method_Having" data-toggle="collapse" data-target=".method_Having .collapse">
+<h2>Having()
+        </h2>
+<pre>Having(\QQSubQuerySqlNode $objNode) </pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QQ::Having()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$objNode</h4></div>
+</div></div>
+</div>
+<a id="method_In"></a><div class="element clickable method public method_In" data-toggle="collapse" data-target=".method_In .collapse">
+<h2>In()
+        </h2>
+<pre>In(\QQNode $objQueryNode, $mixValuesArray) </pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QQ::In()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$objQueryNode</h4></div>
+<div class="subelement argument"><h4>$mixValuesArray</h4></div>
+</div></div>
+</div>
+<a id="method_IsNotNull"></a><div class="element clickable method public method_IsNotNull" data-toggle="collapse" data-target=".method_IsNotNull .collapse">
+<h2>IsNotNull()
+        </h2>
+<pre>IsNotNull(\QQNode $objQueryNode) </pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QQ::IsNotNull()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$objQueryNode</h4></div>
+</div></div>
+</div>
+<a id="method_IsNull"></a><div class="element clickable method public method_IsNull" data-toggle="collapse" data-target=".method_IsNull .collapse">
+<h2>IsNull()
+        </h2>
+<pre>IsNull(\QQNode $objQueryNode) </pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QQ::IsNull()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$objQueryNode</h4></div>
+</div></div>
+</div>
+<a id="method_LessOrEqual"></a><div class="element clickable method public method_LessOrEqual" data-toggle="collapse" data-target=".method_LessOrEqual .collapse">
+<h2>LessOrEqual()
+        </h2>
+<pre>LessOrEqual(\QQNode $objQueryNode, $mixValue) </pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QQ::LessOrEqual()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$objQueryNode</h4></div>
+<div class="subelement argument"><h4>$mixValue</h4></div>
+</div></div>
+</div>
+<a id="method_LessThan"></a><div class="element clickable method public method_LessThan" data-toggle="collapse" data-target=".method_LessThan .collapse">
+<h2>LessThan()
+        </h2>
+<pre>LessThan(\QQNode $objQueryNode, $mixValue) </pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QQ::LessThan()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$objQueryNode</h4></div>
+<div class="subelement argument"><h4>$mixValue</h4></div>
+</div></div>
+</div>
+<a id="method_Like"></a><div class="element clickable method public method_Like" data-toggle="collapse" data-target=".method_Like .collapse">
+<h2>Like()
+        </h2>
+<pre>Like(\QQNode $objQueryNode, $strValue) </pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QQ::Like()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$objQueryNode</h4></div>
+<div class="subelement argument"><h4>$strValue</h4></div>
+</div></div>
+</div>
+<a id="method_LimitInfo"></a><div class="element clickable method public method_LimitInfo" data-toggle="collapse" data-target=".method_LimitInfo .collapse">
+<h2>LimitInfo()
+        </h2>
+<pre>LimitInfo($intMaxRowCount, $intOffset) </pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QQ::LimitInfo()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$intMaxRowCount</h4></div>
+<div class="subelement argument"><h4>$intOffset</h4></div>
+</div></div>
+</div>
+<a id="method_Maximum"></a><div class="element clickable method public method_Maximum" data-toggle="collapse" data-target=".method_Maximum .collapse">
+<h2>Maximum()
+        </h2>
+<pre>Maximum($objNode, $strAttributeName) </pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QQ::Maximum()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$objNode</h4></div>
+<div class="subelement argument"><h4>$strAttributeName</h4></div>
+</div></div>
+</div>
+<a id="method_Minimum"></a><div class="element clickable method public method_Minimum" data-toggle="collapse" data-target=".method_Minimum .collapse">
+<h2>Minimum()
+        </h2>
+<pre>Minimum($objNode, $strAttributeName) </pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QQ::Minimum()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$objNode</h4></div>
+<div class="subelement argument"><h4>$strAttributeName</h4></div>
+</div></div>
+</div>
+<a id="method_NamedValue"></a><div class="element clickable method public method_NamedValue" data-toggle="collapse" data-target=".method_NamedValue .collapse">
+<h2>NamedValue()
+        </h2>
+<pre>NamedValue($strName) </pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QQ::NamedValue()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strName</h4></div>
+</div></div>
+</div>
+<a id="method_None"></a><div class="element clickable method public method_None" data-toggle="collapse" data-target=".method_None .collapse">
+<h2>None()
+        </h2>
+<pre>None() </pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QQ::None()</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_Not"></a><div class="element clickable method public method_Not" data-toggle="collapse" data-target=".method_Not .collapse">
+<h2>Not()
+        </h2>
+<pre>Not(\QQCondition $objCondition) </pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QQ::Not()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$objCondition</h4></div>
+</div></div>
+</div>
+<a id="method_NotBetween"></a><div class="element clickable method public method_NotBetween" data-toggle="collapse" data-target=".method_NotBetween .collapse">
+<h2>NotBetween()
+        </h2>
+<pre>NotBetween(\QQNode $objQueryNode, $strMinValue, $strMaxValue) </pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QQ::NotBetween()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$objQueryNode</h4></div>
+<div class="subelement argument"><h4>$strMinValue</h4></div>
+<div class="subelement argument"><h4>$strMaxValue</h4></div>
+</div></div>
+</div>
+<a id="method_NotEqual"></a><div class="element clickable method public method_NotEqual" data-toggle="collapse" data-target=".method_NotEqual .collapse">
+<h2>NotEqual()
+        </h2>
+<pre>NotEqual(\QQNode $objQueryNode, $mixValue) </pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QQ::NotEqual()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$objQueryNode</h4></div>
+<div class="subelement argument"><h4>$mixValue</h4></div>
+</div></div>
+</div>
+<a id="method_NotIn"></a><div class="element clickable method public method_NotIn" data-toggle="collapse" data-target=".method_NotIn .collapse">
+<h2>NotIn()
+        </h2>
+<pre>NotIn(\QQNode $objQueryNode, $mixValuesArray) </pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QQ::NotIn()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$objQueryNode</h4></div>
+<div class="subelement argument"><h4>$mixValuesArray</h4></div>
+</div></div>
+</div>
+<a id="method_NotLike"></a><div class="element clickable method public method_NotLike" data-toggle="collapse" data-target=".method_NotLike .collapse">
+<h2>NotLike()
+        </h2>
+<pre>NotLike(\QQNode $objQueryNode, $strValue) </pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QQ::NotLike()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$objQueryNode</h4></div>
+<div class="subelement argument"><h4>$strValue</h4></div>
+</div></div>
+</div>
+<a id="method_OrCondition"></a><div class="element clickable method public method_OrCondition" data-toggle="collapse" data-target=".method_OrCondition .collapse">
+<h2>OrCondition()
+        </h2>
+<pre>OrCondition() </pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QQ::OrCondition()</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_OrderBy"></a><div class="element clickable method public method_OrderBy" data-toggle="collapse" data-target=".method_OrderBy .collapse">
+<h2>OrderBy()
+        </h2>
+<pre>OrderBy() </pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QQ::OrderBy()</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_Select"></a><div class="element clickable method public method_Select" data-toggle="collapse" data-target=".method_Select .collapse">
+<h2>Select()
+        </h2>
+<pre>Select() </pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QQ::Select()</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_SubSql"></a><div class="element clickable method public method_SubSql" data-toggle="collapse" data-target=".method_SubSql .collapse">
+<h2>SubSql()
+        </h2>
+<pre>SubSql($strSql, $objParentQueryNodes) </pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QQ::SubSql()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strSql</h4></div>
+<div class="subelement argument"><h4>$objParentQueryNodes</h4></div>
+</div></div>
+</div>
+<a id="method_Sum"></a><div class="element clickable method public method_Sum" data-toggle="collapse" data-target=".method_Sum .collapse">
+<h2>Sum()
+        </h2>
+<pre>Sum($objNode, $strAttributeName) </pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QQ::Sum()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$objNode</h4></div>
+<div class="subelement argument"><h4>$strAttributeName</h4></div>
+</div></div>
+</div>
+<a id="method_Virtual"></a><div class="element clickable method public method_Virtual" data-toggle="collapse" data-target=".method_Virtual .collapse">
+<h2>Virtual()
+        </h2>
+<pre>Virtual($strName, \QQSubQueryNode $objSubQueryDefinition) </pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QQ::Virtual()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strName</h4></div>
+<div class="subelement argument"><h4>$objSubQueryDefinition</h4></div>
+</div></div>
+</div>
+<a id="method__"></a><div class="element clickable method public method__" data-toggle="collapse" data-target=".method__ .collapse">
+<h2>_()
+        </h2>
+<pre>_(\QQNode $objQueryNode, $strSymbol, $mixValue, $mixValueTwo) </pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QQ::_()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$objQueryNode</h4></div>
+<div class="subelement argument"><h4>$strSymbol</h4></div>
+<div class="subelement argument"><h4>$mixValue</h4></div>
+<div class="subelement argument"><h4>$mixValueTwo</h4></div>
+</div></div>
+</div>
+<a id="method_extractSelectClause"></a><div class="element clickable method public method_extractSelectClause" data-toggle="collapse" data-target=".method_extractSelectClause .collapse">
+<h2>extractSelectClause()
+        </h2>
+<pre>extractSelectClause(<a href="qcubed._core.framework.QQuery.class.html#%5CQQClause">\QQClause[]</a> | <a href="../classes/QQClause.html">\QQClause</a> | null $objClauses) : <a href="../classes/QQSelect.html">\QQSelect</a></pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QQ::extractSelectClause()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$objClauses</h4>
+<code><a href="qcubed._core.framework.QQuery.class.html#%5CQQClause">\QQClause[]</a></code><code><a href="../classes/QQClause.html">\QQClause</a></code><code>null</code><p>QQClause object or array of QQClause objects</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code><a href="../classes/QQSelect.html">\QQSelect</a></code>QQSelect clause containing all the nodes from all the QQSelect clauses from $objClauses,
+or null if $objClauses contains no QQSelect clauses</div>
+</div></div>
+</div>
+</div></div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
+            generated on 2013-03-17T02:01:15+07:00.<br></footer></div>
+</div>
+</body>
+</html>

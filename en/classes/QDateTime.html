@@ -1,0 +1,1360 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>QCubed API » \QDateTime</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">QCubed API</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="../packages/Codegen.html"><i class="icon-folder-open"></i> Codegen</a></li>
+<li><a href="../packages/Controls.html"><i class="icon-folder-open"></i> Controls</a></li>
+<li><a href="../packages/Controls%20%20.html"><i class="icon-folder-open"></i> Controls  </a></li>
+<li><a href="../packages/DatabaseAdapters.html"><i class="icon-folder-open"></i> DatabaseAdapters</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/My%20QCubed%20Application.html"><i class="icon-folder-open"></i> My QCubed Application</a></li>
+<li><a href="../packages/Sessions.html"><i class="icon-folder-open"></i> Sessions</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">4384</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul><li>todo 
+                <span class="label label-info">28</span>
+</li></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">8</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method_Add" title="Add :: "><span class="description">Add()
+        </span><pre>Add()</pre></a></li>
+<li class="method public "><a href="#method_Difference" title="Difference :: "><span class="description">Difference()
+        </span><pre>Difference()</pre></a></li>
+<li class="method public "><a href="#method_FromTimestamp" title="FromTimestamp :: "><span class="description">FromTimestamp()
+        </span><pre>FromTimestamp()</pre></a></li>
+<li class="method public "><a href="#method_GetSoapDateTimeArray" title="GetSoapDateTimeArray :: This returns an array of strings with ISO-formatted datetime values, given an array of QDateTime objects"><span class="description">This returns an array of strings with ISO-formatted datetime values, given an array of QDateTime objects</span><pre>GetSoapDateTimeArray()</pre></a></li>
+<li class="method public "><a href="#method_IsDateNull" title="IsDateNull :: This returns a boolean specifying whether or not the Date portion is null"><span class="description">This returns a boolean specifying whether or not the Date portion is null</span><pre>IsDateNull()</pre></a></li>
+<li class="method public "><a href="#method_IsEarlierThan" title="IsEarlierThan :: "><span class="description">IsEarlierThan()
+        </span><pre>IsEarlierThan()</pre></a></li>
+<li class="method public "><a href="#method_IsEqualTo" title="IsEqualTo :: "><span class="description">IsEqualTo()
+        </span><pre>IsEqualTo()</pre></a></li>
+<li class="method public "><a href="#method_IsLaterThan" title="IsLaterThan :: "><span class="description">IsLaterThan()
+        </span><pre>IsLaterThan()</pre></a></li>
+<li class="method public "><a href="#method_IsNull" title="IsNull :: This returns a boolean specifying whether or not this object DateTime is null"><span class="description">This returns a boolean specifying whether or not this object DateTime is null</span><pre>IsNull()</pre></a></li>
+<li class="method public "><a href="#method_IsTimeNull" title="IsTimeNull :: This returns a boolean specifying whether or not the Date portion is null"><span class="description">This returns a boolean specifying whether or not the Date portion is null</span><pre>IsTimeNull()</pre></a></li>
+<li class="method public "><a href="#method_Now" title="Now :: Returns a new QDateTime object that's set to &quot;Now&quot;
+Set blnTimeValue to true (default) for a DateTime, and set blnTimeValue to false for just a Date"><span class="description">Returns a new QDateTime object that's set to "Now"
+Set blnTimeValue to true (default) for a DateTime, and set blnTimeValue to false for just a Date</span><pre>Now()</pre></a></li>
+<li class="method public "><a href="#method_NowToString" title="NowToString :: Shortcut to output the current datetime in any defined format."><span class="description">Shortcut to output the current datetime in any defined format.</span><pre>NowToString()</pre></a></li>
+<li class="method public "><a href="#method_PHPDate" title="PHPDate :: This makes a call to the PHP date() function, where you
+can pass in a PHP date()-compatible format to display
+this date/time object."><span class="description">This makes a call to the PHP date() function, where you
+can pass in a PHP date()-compatible format to display
+this date/time object.</span><pre>PHPDate()</pre></a></li>
+<li class="method public "><a href="#method_Subtract" title="Subtract :: "><span class="description">Subtract()
+        </span><pre>Subtract()</pre></a></li>
+<li class="method public "><a href="#method___construct" title="__construct :: Constructor function to create a new datetime."><span class="description">Constructor function to create a new datetime.</span><pre>__construct()</pre></a></li>
+<li class="method public "><a href="#method___get" title='__get :: Override method to perform a property "Get"
+This will get the value of $strName'><span class="description">Override method to perform a property "Get"
+This will get the value of $strName</span><pre>__get()</pre></a></li>
+<li class="method public "><a href="#method___set" title='__set :: Override method to perform a property "Set"
+This will set the property $strName to be $mixValue'><span class="description">Override method to perform a property "Set"
+This will set the property $strName to be $mixValue</span><pre>__set()</pre></a></li>
+<li class="method public "><a href="#method___toString" title="__toString :: Outputs the date as a string given the format strFormat."><span class="description">Outputs the date as a string given the format strFormat.</span><pre>__toString()</pre></a></li>
+<li class="method public "><a href="#method_qFormat" title="qFormat :: "><span class="description">qFormat()
+        </span><pre>qFormat()</pre></a></li>
+<li class="method public "><a href="#method_setDate" title="setDate :: "><span class="description">setDate()
+        </span><pre>setDate()</pre></a></li>
+<li class="method public "><a href="#method_setTime" title="setTime :: "><span class="description">setTime()
+        </span><pre>setTime()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties
+                    <ul>
+<li class="property public "><a href="#property_DefaultFormat" title='$DefaultFormat :: The "Default" Display Format'><span class="description"></span><pre>$DefaultFormat</pre></a></li>
+<li class="property public "><a href="#property_DefaultTimeFormat" title='$DefaultTimeFormat :: The "Default" Display Format for Times'><span class="description"></span><pre>$DefaultTimeFormat</pre></a></li>
+</ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul>
+<li class="property protected "><a href="#property_intDay" title="$intDay :: The Day value."><span class="description"></span><pre>$intDay</pre></a></li>
+<li class="property protected "><a href="#property_intHour" title="$intHour :: The Hour value."><span class="description"></span><pre>$intHour</pre></a></li>
+<li class="property protected "><a href="#property_intMinute" title="$intMinute :: The Minute value."><span class="description"></span><pre>$intMinute</pre></a></li>
+<li class="property protected "><a href="#property_intMonth" title="$intMonth :: The Month value."><span class="description"></span><pre>$intMonth</pre></a></li>
+<li class="property protected "><a href="#property_intSecond" title="$intSecond :: The Second value."><span class="description"></span><pre>$intSecond</pre></a></li>
+<li class="property protected "><a href="#property_intYear" title="$intYear :: The Year value."><span class="description"></span><pre>$intYear</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-constant"></i> Constants
+                    <ul>
+<li class="constant  "><a href="#constant_FormatDisplayDate" title="FormatDisplayDate :: Constant for __toString to display Date as simple
+Mar 20 1977"><span class="description">Constant for __toString to display Date as simple
+Mar 20 1977</span><pre>FormatDisplayDate</pre></a></li>
+<li class="constant  "><a href="#constant_FormatDisplayDateFull" title="FormatDisplayDateFull :: Constant for __toString to display Date as extended
+Sunday, March 20, 1977"><span class="description">Constant for __toString to display Date as extended
+Sunday, March 20, 1977</span><pre>FormatDisplayDateFull</pre></a></li>
+<li class="constant  "><a href="#constant_FormatDisplayDateTime" title="FormatDisplayDateTime :: Constant for __toString to display Date/Time as simple
+Mar 20 1977 03:35 PM"><span class="description">Constant for __toString to display Date/Time as simple
+Mar 20 1977 03:35 PM</span><pre>FormatDisplayDateTime</pre></a></li>
+<li class="constant  "><a href="#constant_FormatDisplayDateTimeFull" title="FormatDisplayDateTimeFull :: Constant for __toString to display Date/Time as extended
+Sunday, March 20, 1977, 3:35:15 PM"><span class="description">Constant for __toString to display Date/Time as extended
+Sunday, March 20, 1977, 3:35:15 PM</span><pre>FormatDisplayDateTimeFull</pre></a></li>
+<li class="constant  "><a href="#constant_FormatDisplayTime" title="FormatDisplayTime :: Constant for __toString to display Time as
+03:35:15 PM"><span class="description">Constant for __toString to display Time as
+03:35:15 PM</span><pre>FormatDisplayTime</pre></a></li>
+<li class="constant  "><a href="#constant_FormatIso" title="FormatIso :: Constant for __toString to display Date/Time as ISO Standard
+1977-03-20 15:35:15"><span class="description">Constant for __toString to display Date/Time as ISO Standard
+1977-03-20 15:35:15</span><pre>FormatIso</pre></a></li>
+<li class="constant  "><a href="#constant_FormatIsoCompressed" title="FormatIsoCompressed :: Constant for __toString to display Date/Time as 14-digit
+19770320153515"><span class="description">Constant for __toString to display Date/Time as 14-digit
+19770320153515</span><pre>FormatIsoCompressed</pre></a></li>
+<li class="constant  "><a href="#constant_FormatRfc822" title="FormatRfc822 :: Constant for __toString to display DateTime as RFC 822 Format
+Sun, 20 Mar 1977 15:35:15 GMT"><span class="description">Constant for __toString to display DateTime as RFC 822 Format
+Sun, 20 Mar 1977 15:35:15 GMT</span><pre>FormatRfc822</pre></a></li>
+<li class="constant  "><a href="#constant_FormatSoap" title="FormatSoap :: Constant for __toString to display Date/Time as SOAP Standard
+1977-03-20T15:35:15"><span class="description">Constant for __toString to display Date/Time as SOAP Standard
+1977-03-20T15:35:15</span><pre>FormatSoap</pre></a></li>
+<li class="constant  "><a href="#constant_Now" title="Now :: Pass this to __construct in order to set DateTime to current date/time."><span class="description">Pass this to __construct in order to set DateTime to current date/time.</span><pre>Now</pre></a></li>
+</ul>
+</li>
+</ul>
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method_Add" title="Add :: "><span class="description">Add()
+        </span><pre>Add()</pre></a></li>
+<li class="method public "><a href="#method_AddDays" title="AddDays :: "><span class="description">AddDays()
+        </span><pre>AddDays()</pre></a></li>
+<li class="method public "><a href="#method_AddHours" title="AddHours :: "><span class="description">AddHours()
+        </span><pre>AddHours()</pre></a></li>
+<li class="method public "><a href="#method_AddMinutes" title="AddMinutes :: "><span class="description">AddMinutes()
+        </span><pre>AddMinutes()</pre></a></li>
+<li class="method public "><a href="#method_AddMonths" title="AddMonths :: "><span class="description">AddMonths()
+        </span><pre>AddMonths()</pre></a></li>
+<li class="method public "><a href="#method_AddSeconds" title="AddSeconds :: "><span class="description">AddSeconds()
+        </span><pre>AddSeconds()</pre></a></li>
+<li class="method public "><a href="#method_AddYears" title="AddYears :: "><span class="description">AddYears()
+        </span><pre>AddYears()</pre></a></li>
+<li class="method public "><a href="#method_ConvertToTimezone" title="ConvertToTimezone :: Converts the current QDateTime object to a different TimeZone."><span class="description">Converts the current QDateTime object to a different TimeZone.</span><pre>ConvertToTimezone()</pre></a></li>
+<li class="method public "><a href="#method_Difference" title="Difference :: "><span class="description">Difference()
+        </span><pre>Difference()</pre></a></li>
+<li class="method public "><a href="#method_FirstDayOfTheMonth" title="FirstDayOfTheMonth :: Returns a new QDateTime object set to the first day of the specified month."><span class="description">Returns a new QDateTime object set to the first day of the specified month.</span><pre>FirstDayOfTheMonth()</pre></a></li>
+<li class="method public "><a href="#method_FromTimestamp" title="FromTimestamp :: "><span class="description">FromTimestamp()
+        </span><pre>FromTimestamp()</pre></a></li>
+<li class="method public "><a href="#method_GetSoapDateTimeArray" title="GetSoapDateTimeArray :: "><span class="description">GetSoapDateTimeArray()
+        </span><pre>GetSoapDateTimeArray()</pre></a></li>
+<li class="method public "><a href="#method_IsDateNull" title="IsDateNull :: "><span class="description">IsDateNull()
+        </span><pre>IsDateNull()</pre></a></li>
+<li class="method public "><a href="#method_IsEarlierOrEqualTo" title="IsEarlierOrEqualTo :: "><span class="description">IsEarlierOrEqualTo()
+        </span><pre>IsEarlierOrEqualTo()</pre></a></li>
+<li class="method public "><a href="#method_IsEarlierThan" title="IsEarlierThan :: "><span class="description">IsEarlierThan()
+        </span><pre>IsEarlierThan()</pre></a></li>
+<li class="method public "><a href="#method_IsEqualTo" title="IsEqualTo :: "><span class="description">IsEqualTo()
+        </span><pre>IsEqualTo()</pre></a></li>
+<li class="method public "><a href="#method_IsLaterOrEqualTo" title="IsLaterOrEqualTo :: "><span class="description">IsLaterOrEqualTo()
+        </span><pre>IsLaterOrEqualTo()</pre></a></li>
+<li class="method public "><a href="#method_IsLaterThan" title="IsLaterThan :: "><span class="description">IsLaterThan()
+        </span><pre>IsLaterThan()</pre></a></li>
+<li class="method public "><a href="#method_IsNull" title="IsNull :: "><span class="description">IsNull()
+        </span><pre>IsNull()</pre></a></li>
+<li class="method public "><a href="#method_IsTimeNull" title="IsTimeNull :: "><span class="description">IsTimeNull()
+        </span><pre>IsTimeNull()</pre></a></li>
+<li class="method public "><a href="#method_LastDayOfTheMonth" title="LastDayOfTheMonth :: Returns a new QDateTime object set to the last day of the specified month."><span class="description">Returns a new QDateTime object set to the last day of the specified month.</span><pre>LastDayOfTheMonth()</pre></a></li>
+<li class="method public "><a href="#method_Modify" title="Modify :: "><span class="description">Modify()
+        </span><pre>Modify()</pre></a></li>
+<li class="method public "><a href="#method_Now" title="Now :: Returns a new QDateTime object that's set to &quot;Now&quot;
+Set blnTimeValue to true (default) for a DateTime, and set blnTimeValue to false for just a Date"><span class="description">Returns a new QDateTime object that's set to "Now"
+Set blnTimeValue to true (default) for a DateTime, and set blnTimeValue to false for just a Date</span><pre>Now()</pre></a></li>
+<li class="method public "><a href="#method_NowToString" title="NowToString :: "><span class="description">NowToString()
+        </span><pre>NowToString()</pre></a></li>
+<li class="method public "><a href="#method_PhpDate" title="PhpDate :: "><span class="description">PhpDate()
+        </span><pre>PhpDate()</pre></a></li>
+<li class="method public "><a href="#method___construct" title="__construct :: "><span class="description">__construct()
+        </span><pre>__construct()</pre></a></li>
+<li class="method public "><a href="#method___get" title="__get :: "><span class="description">__get()
+        </span><pre>__get()</pre></a></li>
+<li class="method public "><a href="#method___set" title="__set :: "><span class="description">__set()
+        </span><pre>__set()</pre></a></li>
+<li class="method public "><a href="#method___sleep" title="__sleep :: "><span class="description">__sleep()
+        </span><pre>__sleep()</pre></a></li>
+<li class="method public "><a href="#method___toString" title="__toString :: "><span class="description">__toString()
+        </span><pre>__toString()</pre></a></li>
+<li class="method public "><a href="#method___wakeup" title="__wakeup :: "><span class="description">__wakeup()
+        </span><pre>__wakeup()</pre></a></li>
+<li class="method public "><a href="#method_qFormat" title="qFormat :: Outputs the date as a string given the format strFormat."><span class="description">Outputs the date as a string given the format strFormat.</span><pre>qFormat()</pre></a></li>
+<li class="method public "><a href="#method_setDate" title="setDate :: "><span class="description">setDate()
+        </span><pre>setDate()</pre></a></li>
+<li class="method public "><a href="#method_setTime" title="setTime :: "><span class="description">setTime()
+        </span><pre>setTime()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul><li class="method protected "><a href="#method_ReinforceNullProperties" title="ReinforceNullProperties :: "><span class="description">ReinforceNullProperties()
+        </span><pre>ReinforceNullProperties()</pre></a></li></ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties
+                    <ul>
+<li class="property public "><a href="#property_DefaultFormat" title='$DefaultFormat :: The "Default" Display Format'><span class="description"></span><pre>$DefaultFormat</pre></a></li>
+<li class="property public "><a href="#property_DefaultTimeFormat" title='$DefaultTimeFormat :: The "Default" Display Format for Times'><span class="description"></span><pre>$DefaultTimeFormat</pre></a></li>
+</ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul>
+<li class="property protected "><a href="#property_blnDateNull" title="$blnDateNull :: "><span class="description"></span><pre>$blnDateNull</pre></a></li>
+<li class="property protected "><a href="#property_blnTimeNull" title="$blnTimeNull :: "><span class="description"></span><pre>$blnTimeNull</pre></a></li>
+<li class="property protected "><a href="#property_strSerializedData" title="$strSerializedData :: "><span class="description"></span><pre>$strSerializedData</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-constant"></i> Constants
+                    <ul>
+<li class="constant  "><a href="#constant_DateAndTimeType" title="DateAndTimeType :: "><span class="description">DateAndTimeType</span><pre>DateAndTimeType</pre></a></li>
+<li class="constant  "><a href="#constant_DateOnlyType" title="DateOnlyType :: "><span class="description">DateOnlyType</span><pre>DateOnlyType</pre></a></li>
+<li class="constant  "><a href="#constant_FormatDisplayDate" title="FormatDisplayDate :: "><span class="description">FormatDisplayDate</span><pre>FormatDisplayDate</pre></a></li>
+<li class="constant  "><a href="#constant_FormatDisplayDateFull" title="FormatDisplayDateFull :: "><span class="description">FormatDisplayDateFull</span><pre>FormatDisplayDateFull</pre></a></li>
+<li class="constant  "><a href="#constant_FormatDisplayDateTime" title="FormatDisplayDateTime :: "><span class="description">FormatDisplayDateTime</span><pre>FormatDisplayDateTime</pre></a></li>
+<li class="constant  "><a href="#constant_FormatDisplayDateTimeFull" title="FormatDisplayDateTimeFull :: "><span class="description">FormatDisplayDateTimeFull</span><pre>FormatDisplayDateTimeFull</pre></a></li>
+<li class="constant  "><a href="#constant_FormatDisplayTime" title="FormatDisplayTime :: "><span class="description">FormatDisplayTime</span><pre>FormatDisplayTime</pre></a></li>
+<li class="constant  "><a href="#constant_FormatIso" title="FormatIso :: "><span class="description">FormatIso</span><pre>FormatIso</pre></a></li>
+<li class="constant  "><a href="#constant_FormatIsoCompressed" title="FormatIsoCompressed :: "><span class="description">FormatIsoCompressed</span><pre>FormatIsoCompressed</pre></a></li>
+<li class="constant  "><a href="#constant_FormatRfc822" title="FormatRfc822 :: "><span class="description">FormatRfc822</span><pre>FormatRfc822</pre></a></li>
+<li class="constant  "><a href="#constant_FormatSoap" title="FormatSoap :: "><span class="description">FormatSoap</span><pre>FormatSoap</pre></a></li>
+<li class="constant  "><a href="#constant_Now" title="Now :: "><span class="description">Now</span><pre>Now</pre></a></li>
+<li class="constant  "><a href="#constant_TimeOnlyType" title="TimeOnlyType :: "><span class="description">TimeOnlyType</span><pre>TimeOnlyType</pre></a></li>
+<li class="constant  "><a href="#constant_UnknownType" title="UnknownType :: "><span class="description">UnknownType</span><pre>UnknownType</pre></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a id="\QDateTime"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/global.html">global</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/QDateTime.html">QDateTime</a>
+</li>
+</ul>
+<div class="element class">
+<p class="short_description">QDateTime.legacy</p>
+<div class="details">
+<div class="long_description"><p>This DateTime class manages datetimes for the entire system.  It basically
+provides a nice wrapper around the built-in date-related functionality in PHP.</p>
+
+<p>This is used by QCubed users using PHP &lt; 5.2.0
+As of Qcodo 0.3.14, no additional functionality will be added to QDateTime.legacy</p>
+
+<p>All new QDateTime functionality will be added to the QDateTime (standard) which uses PHP DateTime,
+which is included in all versions of >= PHP 5.2.0</p></div>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method_Add"></a><div class="element clickable method public method_Add" data-toggle="collapse" data-target=".method_Add .collapse">
+<h2>Add()
+        </h2>
+<pre>Add(\QDateTimeSpan $dtsSpan) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$dtsSpan</h4></div>
+</div></div>
+</div>
+<a id="method_Difference"></a><div class="element clickable method public method_Difference" data-toggle="collapse" data-target=".method_Difference .collapse">
+<h2>Difference()
+        </h2>
+<pre>Difference(\QDateTime $dttDateTime) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$dttDateTime</h4></div>
+</div></div>
+</div>
+<a id="method_FromTimestamp"></a><div class="element clickable method public method_FromTimestamp" data-toggle="collapse" data-target=".method_FromTimestamp .collapse">
+<h2>FromTimestamp()
+        </h2>
+<pre>FromTimestamp(integer $intTimestamp) : <a href="../classes/QDateTime.html">\QDateTime</a></pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$intTimestamp</h4>
+<code>integer</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/QDateTime.html">\QDateTime</a></code></div>
+</div></div>
+</div>
+<a id="method_GetSoapDateTimeArray"></a><div class="element clickable method public method_GetSoapDateTimeArray" data-toggle="collapse" data-target=".method_GetSoapDateTimeArray .collapse">
+<h2>This returns an array of strings with ISO-formatted datetime values, given an array of QDateTime objects</h2>
+<pre>GetSoapDateTimeArray($dttArray) : string[]</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$dttArray</h4></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string[]</code>array of ISO-formatted datetime strings</div>
+</div></div>
+</div>
+<a id="method_IsDateNull"></a><div class="element clickable method public method_IsDateNull" data-toggle="collapse" data-target=".method_IsDateNull .collapse">
+<h2>This returns a boolean specifying whether or not the Date portion is null</h2>
+<pre>IsDateNull() : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>whether or not the date is null</div>
+</div></div>
+</div>
+<a id="method_IsEarlierThan"></a><div class="element clickable method public method_IsEarlierThan" data-toggle="collapse" data-target=".method_IsEarlierThan .collapse">
+<h2>IsEarlierThan()
+        </h2>
+<pre>IsEarlierThan(\QDateTime $dttDate) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$dttDate</h4></div>
+</div></div>
+</div>
+<a id="method_IsEqualTo"></a><div class="element clickable method public method_IsEqualTo" data-toggle="collapse" data-target=".method_IsEqualTo .collapse">
+<h2>IsEqualTo()
+        </h2>
+<pre>IsEqualTo(\QDateTime $dttDate) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$dttDate</h4></div>
+</div></div>
+</div>
+<a id="method_IsLaterThan"></a><div class="element clickable method public method_IsLaterThan" data-toggle="collapse" data-target=".method_IsLaterThan .collapse">
+<h2>IsLaterThan()
+        </h2>
+<pre>IsLaterThan(\QDateTime $dttDate) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$dttDate</h4></div>
+</div></div>
+</div>
+<a id="method_IsNull"></a><div class="element clickable method public method_IsNull" data-toggle="collapse" data-target=".method_IsNull .collapse">
+<h2>This returns a boolean specifying whether or not this object DateTime is null</h2>
+<pre>IsNull() : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>whether or not the datetime object is null</div>
+</div></div>
+</div>
+<a id="method_IsTimeNull"></a><div class="element clickable method public method_IsTimeNull" data-toggle="collapse" data-target=".method_IsTimeNull .collapse">
+<h2>This returns a boolean specifying whether or not the Date portion is null</h2>
+<pre>IsTimeNull() : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>whether or not the time is null</div>
+</div></div>
+</div>
+<a id="method_Now"></a><div class="element clickable method public method_Now" data-toggle="collapse" data-target=".method_Now .collapse">
+<h2>Returns a new QDateTime object that's set to "Now"
+Set blnTimeValue to true (default) for a DateTime, and set blnTimeValue to false for just a Date</h2>
+<pre>Now(boolean $blnTimeValue) : <a href="../classes/QDateTime.html">\QDateTime</a></pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$blnTimeValue</h4>
+<code>boolean</code><p>whether or not to include the time value</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code><a href="../classes/QDateTime.html">\QDateTime</a></code>the current date and/or time</div>
+</div></div>
+</div>
+<a id="method_NowToString"></a><div class="element clickable method public method_NowToString" data-toggle="collapse" data-target=".method_NowToString .collapse">
+<h2>Shortcut to output the current datetime in any defined format.</h2>
+<pre>NowToString(string $strFormat) : string</pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Follows the same
+formatting mechanism as __toString.  This is basically a shortcut to doing:
+   $dttNow = new QDateTime(QDateTime::Now);
+   $dttNow->__toString($strFormat);</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$strFormat</h4>
+<code>string</code><p>the format of the datetime</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>the formatted current datetime as a string</div>
+</div></div>
+</div>
+<a id="method_PHPDate"></a><div class="element clickable method public method_PHPDate" data-toggle="collapse" data-target=".method_PHPDate .collapse">
+<h2>This makes a call to the PHP date() function, where you
+can pass in a PHP date()-compatible format to display
+this date/time object.</h2>
+<pre>PHPDate(string $strFormat) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$strFormat</h4>
+<code>string</code><p>a PHP date()-compatible string format for datetime</p>
+</div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>the output from the PHP date() call</div>
+</div></div>
+</div>
+<a id="method_Subtract"></a><div class="element clickable method public method_Subtract" data-toggle="collapse" data-target=".method_Subtract .collapse">
+<h2>Subtract()
+        </h2>
+<pre>Subtract(\QDateTimeSpan $dtsSpan) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$dtsSpan</h4></div>
+</div></div>
+</div>
+<a id="method___construct"></a><div class="element clickable method public method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
+<h2>Constructor function to create a new datetime.</h2>
+<pre>__construct($mixValue) : <a href="http://php.net/manual/en/class.datetime.php">\DateTime</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Takes in an optional $mixValue, which can be one of the following:
+ ISO Standard format (mostly used in databases) 1977-03-20 15:35:15
+ ISO-compressed format (the pure digits of the ISO format) 19770320153515
+ another DateTime object (to clone it)
+ the QDateTime::Now constant (to return current date/time)
+ a unix timestamp
+ null/none (to return a blank date, which by default is set to 0000-01-01 00:00:00)
+DateTime can be constructed with either the date, the time, or both portions of any of the above formats.
+For any part that's missing, the date would be set to 0000-01-01, or the time would be set to 00:00:00</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$mixValue</h4><p>the date/time to set (see documentation for more information)</p>
+</div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code><a href="http://php.net/manual/en/class.datetime.php">\DateTime</a></code>the new DateTime object</div>
+</div></div>
+</div>
+<a id="method___get"></a><div class="element clickable method public method___get" data-toggle="collapse" data-target=".method___get .collapse">
+<h2>Override method to perform a property "Get"
+This will get the value of $strName</h2>
+<pre>__get(string $strName) : mixed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$strName</h4>
+<code>string</code><p>Name of the property to get</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>mixed</code>the returned property</div>
+</div></div>
+</div>
+<a id="method___set"></a><div class="element clickable method public method___set" data-toggle="collapse" data-target=".method___set .collapse">
+<h2>Override method to perform a property "Set"
+This will set the property $strName to be $mixValue</h2>
+<pre>__set(string $strName, string $mixValue) : mixed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$strName</h4>
+<code>string</code><p>Name of the property to set</p></div>
+<div class="subelement argument">
+<h4>$mixValue</h4>
+<code>string</code><p>New value of the property</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>mixed</code>the property that was set</div>
+</div></div>
+</div>
+<a id="method___toString"></a><div class="element clickable method public method___toString" data-toggle="collapse" data-target=".method___toString .collapse">
+<h2>Outputs the date as a string given the format strFormat.</h2>
+<pre>__toString(string $strFormat) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>By default,
+it will return as QDateTime::FormatDisplayDate "MMM DD YYYY", e.g. Mar 20 1977.</p>
+
+<p>Properties of strFormat are (using Sunday, March 2, 1977 at 1:15:35 pm
+in the following examples):</p>
+
+<p>M - Month as an integer (e.g., 3)
+MM - Month as an integer with leading zero (e.g., 03)
+MMM - Month as three-letters (e.g., Mar)
+MMMM - Month as full name (e.g., March)</p>
+
+<p>D - Day as an integer (e.g., 2)
+DD - Day as an integer with leading zero (e.g., 02)
+DDD - Day of week as three-letters (e.g., Wed)
+DDDD - Day of week as full name (e.g., Wednesday)</p>
+
+<p>YY - Year as a two-digit integer (e.g., 77)
+YYYY - Year as a four-digit integer (e.g., 1977)</p>
+
+<p>h - Hour as an integer in 12-hour format (e.g., 1)
+hh - Hour as an integer in 12-hour format with leading zero (e.g., 01)
+hhh - Hour as an integer in 24-hour format (e.g., 13)
+hhhh - Hour as an integer in 24-hour format with leading zero (e.g., 13)</p>
+
+<p>mm - Minute as a two-digit integer</p>
+
+<p>ss - Second as a two-digit integer</p>
+
+<p>z - "pm" or "am"
+zz - "PM" or "AM"
+zzz - "p.m." or "a.m."
+zzzz - "P.M." or "A.M."</p>
+
+<p>ttt - Timezone as a three-letter code (e.g. GMT)</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$strFormat</h4>
+<code>string</code><p>the format of the date</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>the formatted date as a string</div>
+</div></div>
+</div>
+<a id="method_qFormat"></a><div class="element clickable method public method_qFormat" data-toggle="collapse" data-target=".method_qFormat .collapse">
+<h2>qFormat()
+        </h2>
+<pre>qFormat($strFormat) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strFormat</h4></div>
+</div></div>
+</div>
+<a id="method_setDate"></a><div class="element clickable method public method_setDate" data-toggle="collapse" data-target=".method_setDate .collapse">
+<h2>setDate()
+        </h2>
+<pre>setDate(integer $intYear, integer $intMonth, integer $intDay) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$intYear</h4>
+<code>integer</code>
+</div>
+<div class="subelement argument">
+<h4>$intMonth</h4>
+<code>integer</code>
+</div>
+<div class="subelement argument">
+<h4>$intDay</h4>
+<code>integer</code>
+</div>
+</div></div>
+</div>
+<a id="method_setTime"></a><div class="element clickable method public method_setTime" data-toggle="collapse" data-target=".method_setTime .collapse">
+<h2>setTime()
+        </h2>
+<pre>setTime(integer $intHour, integer $intMinute, integer $intSecond) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$intHour</h4>
+<code>integer</code>
+</div>
+<div class="subelement argument">
+<h4>$intMinute</h4>
+<code>integer</code>
+</div>
+<div class="subelement argument">
+<h4>$intSecond</h4>
+<code>integer</code>
+</div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a id="property_DefaultFormat"> </a><div class="element clickable property public property_DefaultFormat" data-toggle="collapse" data-target=".property_DefaultFormat .collapse">
+<h2></h2>
+<pre>$DefaultFormat : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_DefaultTimeFormat"> </a><div class="element clickable property public property_DefaultTimeFormat" data-toggle="collapse" data-target=".property_DefaultTimeFormat .collapse">
+<h2></h2>
+<pre>$DefaultTimeFormat : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_intDay"> </a><div class="element clickable property protected property_intDay" data-toggle="collapse" data-target=".property_intDay .collapse">
+<h2></h2>
+<pre>$intDay : int</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"><p>Should be accessed through the Day property.</p></div></div></div>
+</div>
+<a id="property_intHour"> </a><div class="element clickable property protected property_intHour" data-toggle="collapse" data-target=".property_intHour .collapse">
+<h2></h2>
+<pre>$intHour : int</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"><p>Should be accessed through the Hour property.</p></div></div></div>
+</div>
+<a id="property_intMinute"> </a><div class="element clickable property protected property_intMinute" data-toggle="collapse" data-target=".property_intMinute .collapse">
+<h2></h2>
+<pre>$intMinute : int</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"><p>Should be accessed through the Minute property.</p></div></div></div>
+</div>
+<a id="property_intMonth"> </a><div class="element clickable property protected property_intMonth" data-toggle="collapse" data-target=".property_intMonth .collapse">
+<h2></h2>
+<pre>$intMonth : int</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"><p>Should be accessed through the Month property.</p></div></div></div>
+</div>
+<a id="property_intSecond"> </a><div class="element clickable property protected property_intSecond" data-toggle="collapse" data-target=".property_intSecond .collapse">
+<h2></h2>
+<pre>$intSecond : int</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"><p>Should be accessed through the Second property.</p></div></div></div>
+</div>
+<a id="property_intYear"> </a><div class="element clickable property protected property_intYear" data-toggle="collapse" data-target=".property_intYear .collapse">
+<h2></h2>
+<pre>$intYear : int</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"><p>Should be accessed through the Year property.</p></div></div></div>
+</div>
+<h3>
+<i class="icon-custom icon-constant"></i> Constants</h3>
+<a id="constant_FormatDisplayDate"> </a><div class="element clickable constant  constant_FormatDisplayDate" data-toggle="collapse" data-target=".constant_FormatDisplayDate .collapse">
+<h2>Constant for __toString to display Date as simple
+Mar 20 1977</h2>
+<pre>FormatDisplayDate </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_FormatDisplayDateFull"> </a><div class="element clickable constant  constant_FormatDisplayDateFull" data-toggle="collapse" data-target=".constant_FormatDisplayDateFull .collapse">
+<h2>Constant for __toString to display Date as extended
+Sunday, March 20, 1977</h2>
+<pre>FormatDisplayDateFull </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_FormatDisplayDateTime"> </a><div class="element clickable constant  constant_FormatDisplayDateTime" data-toggle="collapse" data-target=".constant_FormatDisplayDateTime .collapse">
+<h2>Constant for __toString to display Date/Time as simple
+Mar 20 1977 03:35 PM</h2>
+<pre>FormatDisplayDateTime </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_FormatDisplayDateTimeFull"> </a><div class="element clickable constant  constant_FormatDisplayDateTimeFull" data-toggle="collapse" data-target=".constant_FormatDisplayDateTimeFull .collapse">
+<h2>Constant for __toString to display Date/Time as extended
+Sunday, March 20, 1977, 3:35:15 PM</h2>
+<pre>FormatDisplayDateTimeFull </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_FormatDisplayTime"> </a><div class="element clickable constant  constant_FormatDisplayTime" data-toggle="collapse" data-target=".constant_FormatDisplayTime .collapse">
+<h2>Constant for __toString to display Time as
+03:35:15 PM</h2>
+<pre>FormatDisplayTime </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_FormatIso"> </a><div class="element clickable constant  constant_FormatIso" data-toggle="collapse" data-target=".constant_FormatIso .collapse">
+<h2>Constant for __toString to display Date/Time as ISO Standard
+1977-03-20 15:35:15</h2>
+<pre>FormatIso </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_FormatIsoCompressed"> </a><div class="element clickable constant  constant_FormatIsoCompressed" data-toggle="collapse" data-target=".constant_FormatIsoCompressed .collapse">
+<h2>Constant for __toString to display Date/Time as 14-digit
+19770320153515</h2>
+<pre>FormatIsoCompressed </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_FormatRfc822"> </a><div class="element clickable constant  constant_FormatRfc822" data-toggle="collapse" data-target=".constant_FormatRfc822 .collapse">
+<h2>Constant for __toString to display DateTime as RFC 822 Format
+Sun, 20 Mar 1977 15:35:15 GMT</h2>
+<pre>FormatRfc822 </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_FormatSoap"> </a><div class="element clickable constant  constant_FormatSoap" data-toggle="collapse" data-target=".constant_FormatSoap .collapse">
+<h2>Constant for __toString to display Date/Time as SOAP Standard
+1977-03-20T15:35:15</h2>
+<pre>FormatSoap </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_Now"> </a><div class="element clickable constant  constant_Now" data-toggle="collapse" data-target=".constant_Now .collapse">
+<h2>Pass this to __construct in order to set DateTime to current date/time.</h2>
+<pre>Now </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"><p>e.g. $dttDate = new QDateTime(QDateTime::Now);</p></div></div></div>
+</div>
+</div>
+</div>
+<a id="\QDateTime"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/global.html">global</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/QDateTime.html">QDateTime</a>
+</li>
+</ul>
+<div class="element class">
+<p class="short_description">QDateTime (Standard)
+REQUIRES: PHP >= 5.2.0</p>
+<div class="details">
+<div class="long_description"><p>This DateTime class manages datetimes for the entire system.  It basically
+provides a nice wrapper around the PHP DateTime class, which is included with
+all versions of PHP >= 5.2.0.</p>
+
+<p>For legacy PHP users (PHP &lt; 5.2.0), please refer to QDateTime.legacy</p></div>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method_Add"></a><div class="element clickable method public method_Add" data-toggle="collapse" data-target=".method_Add .collapse">
+<h2>Add()
+        </h2>
+<pre>Add($dtsSpan) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$dtsSpan</h4></div>
+</div></div>
+</div>
+<a id="method_AddDays"></a><div class="element clickable method public method_AddDays" data-toggle="collapse" data-target=".method_AddDays .collapse">
+<h2>AddDays()
+        </h2>
+<pre>AddDays($intDays) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$intDays</h4></div>
+</div></div>
+</div>
+<a id="method_AddHours"></a><div class="element clickable method public method_AddHours" data-toggle="collapse" data-target=".method_AddHours .collapse">
+<h2>AddHours()
+        </h2>
+<pre>AddHours($intHours) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$intHours</h4></div>
+</div></div>
+</div>
+<a id="method_AddMinutes"></a><div class="element clickable method public method_AddMinutes" data-toggle="collapse" data-target=".method_AddMinutes .collapse">
+<h2>AddMinutes()
+        </h2>
+<pre>AddMinutes($intMinutes) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$intMinutes</h4></div>
+</div></div>
+</div>
+<a id="method_AddMonths"></a><div class="element clickable method public method_AddMonths" data-toggle="collapse" data-target=".method_AddMonths .collapse">
+<h2>AddMonths()
+        </h2>
+<pre>AddMonths($intMonths) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$intMonths</h4></div>
+</div></div>
+</div>
+<a id="method_AddSeconds"></a><div class="element clickable method public method_AddSeconds" data-toggle="collapse" data-target=".method_AddSeconds .collapse">
+<h2>AddSeconds()
+        </h2>
+<pre>AddSeconds($intSeconds) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$intSeconds</h4></div>
+</div></div>
+</div>
+<a id="method_AddYears"></a><div class="element clickable method public method_AddYears" data-toggle="collapse" data-target=".method_AddYears .collapse">
+<h2>AddYears()
+        </h2>
+<pre>AddYears($intYears) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$intYears</h4></div>
+</div></div>
+</div>
+<a id="method_ConvertToTimezone"></a><div class="element clickable method public method_ConvertToTimezone" data-toggle="collapse" data-target=".method_ConvertToTimezone .collapse">
+<h2>Converts the current QDateTime object to a different TimeZone.</h2>
+<pre>ConvertToTimezone(string $strTimezoneIdentifier) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>TimeZone should be passed in as a string-based identifier.</p>
+
+<p>Note that this is different than the built-in DateTime::SetTimezone() method which expicitly
+takes in a DateTimeZone object.  QDateTime::ConvertToTimezone allows you to specify any
+string-based Timezone identifier.  If none is specified and/or if the specified timezone
+is not a valid identifier, it will simply remain unchanged as opposed to throwing an exeception
+or error.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$strTimezoneIdentifier</h4>
+<code>string</code><p>a string-based parameter specifying a timezone identifier (e.g. America/Los_Angeles)</p>
+</div>
+</div></div>
+</div>
+<a id="method_Difference"></a><div class="element clickable method public method_Difference" data-toggle="collapse" data-target=".method_Difference .collapse">
+<h2>Difference()
+        </h2>
+<pre>Difference(\QDateTime $dttDateTime) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$dttDateTime</h4></div>
+</div></div>
+</div>
+<a id="method_FirstDayOfTheMonth"></a><div class="element clickable method public method_FirstDayOfTheMonth" data-toggle="collapse" data-target=".method_FirstDayOfTheMonth .collapse">
+<h2>Returns a new QDateTime object set to the first day of the specified month.</h2>
+<pre>FirstDayOfTheMonth(int $intMonth, int $intYear) : <a href="../classes/QDateTime.html">\QDateTime</a></pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$intMonth</h4>
+<code>int</code><p>month</p></div>
+<div class="subelement argument">
+<h4>$intYear</h4>
+<code>int</code><p>year</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code><a href="../classes/QDateTime.html">\QDateTime</a></code>the first day of the month</div>
+</div></div>
+</div>
+<a id="method_FromTimestamp"></a><div class="element clickable method public method_FromTimestamp" data-toggle="collapse" data-target=".method_FromTimestamp .collapse">
+<h2>FromTimestamp()
+        </h2>
+<pre>FromTimestamp(integer $intTimestamp, \DateTimeZone $objTimeZone) : <a href="../classes/QDateTime.html">\QDateTime</a></pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$intTimestamp</h4>
+<code>integer</code>
+</div>
+<div class="subelement argument">
+<h4>$objTimeZone</h4>
+<code><a href="http://php.net/manual/en/class.datetimezone.php">\DateTimeZone</a></code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/QDateTime.html">\QDateTime</a></code></div>
+</div></div>
+</div>
+<a id="method_GetSoapDateTimeArray"></a><div class="element clickable method public method_GetSoapDateTimeArray" data-toggle="collapse" data-target=".method_GetSoapDateTimeArray .collapse">
+<h2>GetSoapDateTimeArray()
+        </h2>
+<pre>GetSoapDateTimeArray($dttArray) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$dttArray</h4></div>
+</div></div>
+</div>
+<a id="method_IsDateNull"></a><div class="element clickable method public method_IsDateNull" data-toggle="collapse" data-target=".method_IsDateNull .collapse">
+<h2>IsDateNull()
+        </h2>
+<pre>IsDateNull() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_IsEarlierOrEqualTo"></a><div class="element clickable method public method_IsEarlierOrEqualTo" data-toggle="collapse" data-target=".method_IsEarlierOrEqualTo .collapse">
+<h2>IsEarlierOrEqualTo()
+        </h2>
+<pre>IsEarlierOrEqualTo(\QDateTime $dttCompare) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$dttCompare</h4></div>
+</div></div>
+</div>
+<a id="method_IsEarlierThan"></a><div class="element clickable method public method_IsEarlierThan" data-toggle="collapse" data-target=".method_IsEarlierThan .collapse">
+<h2>IsEarlierThan()
+        </h2>
+<pre>IsEarlierThan(\QDateTime $dttCompare) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$dttCompare</h4></div>
+</div></div>
+</div>
+<a id="method_IsEqualTo"></a><div class="element clickable method public method_IsEqualTo" data-toggle="collapse" data-target=".method_IsEqualTo .collapse">
+<h2>IsEqualTo()
+        </h2>
+<pre>IsEqualTo(\QDateTime $dttCompare) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$dttCompare</h4></div>
+</div></div>
+</div>
+<a id="method_IsLaterOrEqualTo"></a><div class="element clickable method public method_IsLaterOrEqualTo" data-toggle="collapse" data-target=".method_IsLaterOrEqualTo .collapse">
+<h2>IsLaterOrEqualTo()
+        </h2>
+<pre>IsLaterOrEqualTo(\QDateTime $dttCompare) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$dttCompare</h4></div>
+</div></div>
+</div>
+<a id="method_IsLaterThan"></a><div class="element clickable method public method_IsLaterThan" data-toggle="collapse" data-target=".method_IsLaterThan .collapse">
+<h2>IsLaterThan()
+        </h2>
+<pre>IsLaterThan(\QDateTime $dttCompare) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$dttCompare</h4></div>
+</div></div>
+</div>
+<a id="method_IsNull"></a><div class="element clickable method public method_IsNull" data-toggle="collapse" data-target=".method_IsNull .collapse">
+<h2>IsNull()
+        </h2>
+<pre>IsNull() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_IsTimeNull"></a><div class="element clickable method public method_IsTimeNull" data-toggle="collapse" data-target=".method_IsTimeNull .collapse">
+<h2>IsTimeNull()
+        </h2>
+<pre>IsTimeNull() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_LastDayOfTheMonth"></a><div class="element clickable method public method_LastDayOfTheMonth" data-toggle="collapse" data-target=".method_LastDayOfTheMonth .collapse">
+<h2>Returns a new QDateTime object set to the last day of the specified month.</h2>
+<pre>LastDayOfTheMonth(int $intMonth, int $intYear) : <a href="../classes/QDateTime.html">\QDateTime</a></pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$intMonth</h4>
+<code>int</code><p>month</p></div>
+<div class="subelement argument">
+<h4>$intYear</h4>
+<code>int</code><p>year</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code><a href="../classes/QDateTime.html">\QDateTime</a></code>the last day to a month in a year</div>
+</div></div>
+</div>
+<a id="method_Modify"></a><div class="element clickable method public method_Modify" data-toggle="collapse" data-target=".method_Modify .collapse">
+<h2>Modify()
+        </h2>
+<pre>Modify($mixValue) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$mixValue</h4></div>
+</div></div>
+</div>
+<a id="method_Now"></a><div class="element clickable method public method_Now" data-toggle="collapse" data-target=".method_Now .collapse">
+<h2>Returns a new QDateTime object that's set to "Now"
+Set blnTimeValue to true (default) for a DateTime, and set blnTimeValue to false for just a Date</h2>
+<pre>Now(boolean $blnTimeValue) : <a href="../classes/QDateTime.html">\QDateTime</a></pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$blnTimeValue</h4>
+<code>boolean</code><p>whether or not to include the time value</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code><a href="../classes/QDateTime.html">\QDateTime</a></code>the current date and/or time</div>
+</div></div>
+</div>
+<a id="method_NowToString"></a><div class="element clickable method public method_NowToString" data-toggle="collapse" data-target=".method_NowToString .collapse">
+<h2>NowToString()
+        </h2>
+<pre>NowToString($strFormat) </pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strFormat</h4></div>
+</div></div>
+</div>
+<a id="method_PhpDate"></a><div class="element clickable method public method_PhpDate" data-toggle="collapse" data-target=".method_PhpDate .collapse">
+<h2>PhpDate()
+        </h2>
+<pre>PhpDate($strFormat) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strFormat</h4></div>
+</div></div>
+</div>
+<a id="method___construct"></a><div class="element clickable method public method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
+<h2>__construct()
+        </h2>
+<pre>__construct($mixValue, \DateTimeZone $objTimeZone, $intType) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$mixValue</h4></div>
+<div class="subelement argument"><h4>$objTimeZone</h4></div>
+<div class="subelement argument"><h4>$intType</h4></div>
+</div></div>
+</div>
+<a id="method___get"></a><div class="element clickable method public method___get" data-toggle="collapse" data-target=".method___get .collapse">
+<h2>__get()
+        </h2>
+<pre>__get($strName) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strName</h4></div>
+</div></div>
+</div>
+<a id="method___set"></a><div class="element clickable method public method___set" data-toggle="collapse" data-target=".method___set .collapse">
+<h2>__set()
+        </h2>
+<pre>__set($strName, $mixValue) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strName</h4></div>
+<div class="subelement argument"><h4>$mixValue</h4></div>
+</div></div>
+</div>
+<a id="method___sleep"></a><div class="element clickable method public method___sleep" data-toggle="collapse" data-target=".method___sleep .collapse">
+<h2>__sleep()
+        </h2>
+<pre>__sleep() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method___toString"></a><div class="element clickable method public method___toString" data-toggle="collapse" data-target=".method___toString .collapse">
+<h2>__toString()
+        </h2>
+<pre>__toString() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>deprecated</th>
+<td>since PHP 5.3
+DEPRECATED - DO NOT USE. For PHP 5.3 compatability, this method should not be called with parameters.
+In previous versions of QCubed and QCodo, the way to format a date was to call 
+__toString(), passing the format as a parameter. PHP 5.3 no longer supports this construct. 
+To format a date, call $myDateTimeObject->qFormat($strParameters).
+For compatibility with old apps, this method is preserved - and passing parameters to it is
+allowed, through a horrible hack. Please DO NOT use in applications that were written past the
+release of PHP 5.3.</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method___wakeup"></a><div class="element clickable method public method___wakeup" data-toggle="collapse" data-target=".method___wakeup .collapse">
+<h2>__wakeup()
+        </h2>
+<pre>__wakeup() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_qFormat"></a><div class="element clickable method public method_qFormat" data-toggle="collapse" data-target=".method_qFormat .collapse">
+<h2>Outputs the date as a string given the format strFormat.</h2>
+<pre>qFormat(string $strFormat) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>By default,
+it will return as QDateTime::FormatDisplayDate "MMM DD YYYY", e.g. Mar 20 1977.</p>
+
+<p>Properties of strFormat are (using Sunday, March 2, 1977 at 1:15:35 pm
+in the following examples):</p>
+
+<p>M - Month as an integer (e.g., 3)
+MM - Month as an integer with leading zero (e.g., 03)
+MMM - Month as three-letters (e.g., Mar)
+MMMM - Month as full name (e.g., March)</p>
+
+<p>D - Day as an integer (e.g., 2)
+DD - Day as an integer with leading zero (e.g., 02)
+DDD - Day of week as three-letters (e.g., Wed)
+DDDD - Day of week as full name (e.g., Wednesday)</p>
+
+<p>YY - Year as a two-digit integer (e.g., 77)
+YYYY - Year as a four-digit integer (e.g., 1977)</p>
+
+<p>h - Hour as an integer in 12-hour format (e.g., 1)
+hh - Hour as an integer in 12-hour format with leading zero (e.g., 01)
+hhh - Hour as an integer in 24-hour format (e.g., 13)
+hhhh - Hour as an integer in 24-hour format with leading zero (e.g., 13)</p>
+
+<p>mm - Minute as a two-digit integer</p>
+
+<p>ss - Second as a two-digit integer</p>
+
+<p>z - "pm" or "am"
+zz - "PM" or "AM"
+zzz - "p.m." or "a.m."
+zzzz - "P.M." or "A.M."</p>
+
+<p>ttt - Timezone Abbreviation as a three-letter code (e.g. PDT, GMT)
+ tttt - Timezone Identifier (e.g. America/Los_Angeles)</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$strFormat</h4>
+<code>string</code><p>the format of the date</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>the formatted date as a string</div>
+</div></div>
+</div>
+<a id="method_setDate"></a><div class="element clickable method public method_setDate" data-toggle="collapse" data-target=".method_setDate .collapse">
+<h2>setDate()
+        </h2>
+<pre>setDate($intYear, $intMonth, $intDay) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$intYear</h4></div>
+<div class="subelement argument"><h4>$intMonth</h4></div>
+<div class="subelement argument"><h4>$intDay</h4></div>
+</div></div>
+</div>
+<a id="method_setTime"></a><div class="element clickable method public method_setTime" data-toggle="collapse" data-target=".method_setTime .collapse">
+<h2>setTime()
+        </h2>
+<pre>setTime($intHour, $intMinute, $intSecond) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$intHour</h4></div>
+<div class="subelement argument"><h4>$intMinute</h4></div>
+<div class="subelement argument"><h4>$intSecond</h4></div>
+</div></div>
+</div>
+<a id="method_ReinforceNullProperties"></a><div class="element clickable method protected method_ReinforceNullProperties" data-toggle="collapse" data-target=".method_ReinforceNullProperties .collapse">
+<h2>ReinforceNullProperties()
+        </h2>
+<pre>ReinforceNullProperties() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a id="property_DefaultFormat"> </a><div class="element clickable property public property_DefaultFormat" data-toggle="collapse" data-target=".property_DefaultFormat .collapse">
+<h2></h2>
+<pre>$DefaultFormat : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_DefaultTimeFormat"> </a><div class="element clickable property public property_DefaultTimeFormat" data-toggle="collapse" data-target=".property_DefaultTimeFormat .collapse">
+<h2></h2>
+<pre>$DefaultTimeFormat : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_blnDateNull"> </a><div class="element clickable property protected property_blnDateNull" data-toggle="collapse" data-target=".property_blnDateNull .collapse">
+<h2></h2>
+<pre>$blnDateNull </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_blnTimeNull"> </a><div class="element clickable property protected property_blnTimeNull" data-toggle="collapse" data-target=".property_blnTimeNull .collapse">
+<h2></h2>
+<pre>$blnTimeNull </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_strSerializedData"> </a><div class="element clickable property protected property_strSerializedData" data-toggle="collapse" data-target=".property_strSerializedData .collapse">
+<h2></h2>
+<pre>$strSerializedData </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<h3>
+<i class="icon-custom icon-constant"></i> Constants</h3>
+<a id="constant_DateAndTimeType"> </a><div class="element clickable constant  constant_DateAndTimeType" data-toggle="collapse" data-target=".constant_DateAndTimeType .collapse">
+<h2>DateAndTimeType</h2>
+<pre>DateAndTimeType </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_DateOnlyType"> </a><div class="element clickable constant  constant_DateOnlyType" data-toggle="collapse" data-target=".constant_DateOnlyType .collapse">
+<h2>DateOnlyType</h2>
+<pre>DateOnlyType </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_FormatDisplayDate"> </a><div class="element clickable constant  constant_FormatDisplayDate" data-toggle="collapse" data-target=".constant_FormatDisplayDate .collapse">
+<h2>FormatDisplayDate</h2>
+<pre>FormatDisplayDate </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_FormatDisplayDateFull"> </a><div class="element clickable constant  constant_FormatDisplayDateFull" data-toggle="collapse" data-target=".constant_FormatDisplayDateFull .collapse">
+<h2>FormatDisplayDateFull</h2>
+<pre>FormatDisplayDateFull </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_FormatDisplayDateTime"> </a><div class="element clickable constant  constant_FormatDisplayDateTime" data-toggle="collapse" data-target=".constant_FormatDisplayDateTime .collapse">
+<h2>FormatDisplayDateTime</h2>
+<pre>FormatDisplayDateTime </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_FormatDisplayDateTimeFull"> </a><div class="element clickable constant  constant_FormatDisplayDateTimeFull" data-toggle="collapse" data-target=".constant_FormatDisplayDateTimeFull .collapse">
+<h2>FormatDisplayDateTimeFull</h2>
+<pre>FormatDisplayDateTimeFull </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_FormatDisplayTime"> </a><div class="element clickable constant  constant_FormatDisplayTime" data-toggle="collapse" data-target=".constant_FormatDisplayTime .collapse">
+<h2>FormatDisplayTime</h2>
+<pre>FormatDisplayTime </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_FormatIso"> </a><div class="element clickable constant  constant_FormatIso" data-toggle="collapse" data-target=".constant_FormatIso .collapse">
+<h2>FormatIso</h2>
+<pre>FormatIso </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_FormatIsoCompressed"> </a><div class="element clickable constant  constant_FormatIsoCompressed" data-toggle="collapse" data-target=".constant_FormatIsoCompressed .collapse">
+<h2>FormatIsoCompressed</h2>
+<pre>FormatIsoCompressed </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_FormatRfc822"> </a><div class="element clickable constant  constant_FormatRfc822" data-toggle="collapse" data-target=".constant_FormatRfc822 .collapse">
+<h2>FormatRfc822</h2>
+<pre>FormatRfc822 </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_FormatSoap"> </a><div class="element clickable constant  constant_FormatSoap" data-toggle="collapse" data-target=".constant_FormatSoap .collapse">
+<h2>FormatSoap</h2>
+<pre>FormatSoap </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_Now"> </a><div class="element clickable constant  constant_Now" data-toggle="collapse" data-target=".constant_Now .collapse">
+<h2>Now</h2>
+<pre>Now </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_TimeOnlyType"> </a><div class="element clickable constant  constant_TimeOnlyType" data-toggle="collapse" data-target=".constant_TimeOnlyType .collapse">
+<h2>TimeOnlyType</h2>
+<pre>TimeOnlyType </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_UnknownType"> </a><div class="element clickable constant  constant_UnknownType" data-toggle="collapse" data-target=".constant_UnknownType .collapse">
+<h2>UnknownType</h2>
+<pre>UnknownType </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
+            generated on 2013-03-17T02:01:01+07:00.<br></footer></div>
+</div>
+</body>
+</html>

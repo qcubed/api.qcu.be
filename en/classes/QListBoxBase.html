@@ -1,0 +1,3690 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>QCubed API » \QListBoxBase</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">QCubed API</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="../packages/Codegen.html"><i class="icon-folder-open"></i> Codegen</a></li>
+<li><a href="../packages/Controls.html"><i class="icon-folder-open"></i> Controls</a></li>
+<li><a href="../packages/Controls%20%20.html"><i class="icon-folder-open"></i> Controls  </a></li>
+<li><a href="../packages/DatabaseAdapters.html"><i class="icon-folder-open"></i> DatabaseAdapters</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/My%20QCubed%20Application.html"><i class="icon-folder-open"></i> My QCubed Application</a></li>
+<li><a href="../packages/Sessions.html"><i class="icon-folder-open"></i> Sessions</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">4384</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul><li>todo 
+                <span class="label label-info">28</span>
+</li></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">8</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public inherited"><a href="#method_AddAction" title="AddAction :: Adds an action to the control"><span class="description">Adds an action to the control</span><pre>AddAction()</pre></a></li>
+<li class="method public inherited"><a href="#method_AddActionArray" title="AddActionArray :: Adds an array of actions to the control"><span class="description">Adds an array of actions to the control</span><pre>AddActionArray()</pre></a></li>
+<li class="method public inherited"><a href="#method_AddChildControl" title="AddChildControl :: Adds a control as a child of this control."><span class="description">Adds a control as a child of this control.</span><pre>AddChildControl()</pre></a></li>
+<li class="method public inherited"><a href="#method_AddCssClass" title="AddCssClass :: This will add a CssClass name to the CssClass property (if it does not yet exist),
+updating the CssClass property accordingly."><span class="description">This will add a CssClass name to the CssClass property (if it does not yet exist),
+updating the CssClass property accordingly.</span><pre>AddCssClass()</pre></a></li>
+<li class="method public inherited"><a href="#method_AddCssFile" title="AddCssFile :: "><span class="description">AddCssFile()
+        </span><pre>AddCssFile()</pre></a></li>
+<li class="method public inherited"><a href="#method_AddItem" title="AddItem :: Add one ListItem to the ListControl"><span class="description">Add one ListItem to the ListControl</span><pre>AddItem()</pre></a></li>
+<li class="method public inherited"><a href="#method_AddItemAt" title="AddItemAt :: Allows you to add a ListItem at a certain index"><span class="description">Allows you to add a ListItem at a certain index</span><pre>AddItemAt()</pre></a></li>
+<li class="method public inherited"><a href="#method_AddItems" title="AddItems :: Adds an array of items, or an array of key=&gt;value pairs."><span class="description">Adds an array of items, or an array of key=&gt;value pairs.</span><pre>AddItems()</pre></a></li>
+<li class="method public inherited"><a href="#method_AddJavascriptFile" title="AddJavascriptFile :: "><span class="description">AddJavascriptFile()
+        </span><pre>AddJavascriptFile()</pre></a></li>
+<li class="method public inherited"><a href="#method_AddPluginCssFile" title="AddPluginCssFile :: "><span class="description">AddPluginCssFile()
+        </span><pre>AddPluginCssFile()</pre></a></li>
+<li class="method public inherited"><a href="#method_AddPluginJavascriptFile" title="AddPluginJavascriptFile :: "><span class="description">AddPluginJavascriptFile()
+        </span><pre>AddPluginJavascriptFile()</pre></a></li>
+<li class="method public inherited"><a href="#method_Blink" title="Blink :: Let this control blink"><span class="description">Let this control blink</span><pre>Blink()</pre></a></li>
+<li class="method public inherited"><a href="#method_CreatePersistent" title="CreatePersistent :: "><span class="description">CreatePersistent()
+        </span><pre>CreatePersistent()</pre></a></li>
+<li class="method public inherited"><a href="#method_Focus" title="Focus :: Sets focus to this control"><span class="description">Sets focus to this control</span><pre>Focus()</pre></a></li>
+<li class="method public inherited"><a href="#method_GetActionAttributes" title="GetActionAttributes :: Returns all action attributes"><span class="description">Returns all action attributes</span><pre>GetActionAttributes()</pre></a></li>
+<li class="method public inherited"><a href="#method_GetAllActions" title="GetAllActions :: Returns all actions that are connected with specific events"><span class="description">Returns all actions that are connected with specific events</span><pre>GetAllActions()</pre></a></li>
+<li class="method public inherited"><a href="#method_GetAllItems" title="GetAllItems :: This will return an array of ALL the QListItems associated with this QListControl."><span class="description">This will return an array of ALL the QListItems associated with this QListControl.</span><pre>GetAllItems()</pre></a></li>
+<li class="method public "><a href="#method_GetAttributes" title="GetAttributes :: Returns all attributes in the correct HTML format"><span class="description">Returns all attributes in the correct HTML format</span><pre>GetAttributes()</pre></a></li>
+<li class="method public inherited"><a href="#method_GetChildControl" title="GetChildControl :: Returns the child control with the given id"><span class="description">Returns the child control with the given id</span><pre>GetChildControl()</pre></a></li>
+<li class="method public inherited"><a href="#method_GetChildControls" title="GetChildControls :: Returns all child controls as an array"><span class="description">Returns all child controls as an array</span><pre>GetChildControls()</pre></a></li>
+<li class="method public inherited"><a href="#method_GetCustomAttribute" title="GetCustomAttribute :: Returns the value of a custom attribute"><span class="description">Returns the value of a custom attribute</span><pre>GetCustomAttribute()</pre></a></li>
+<li class="method public inherited"><a href="#method_GetCustomAttributes" title="GetCustomAttributes :: Returns the custom attributes HTML formatted"><span class="description">Returns the custom attributes HTML formatted</span><pre>GetCustomAttributes()</pre></a></li>
+<li class="method public inherited"><a href="#method_GetCustomStyle" title="GetCustomStyle :: Returns the value of the given custom style"><span class="description">Returns the value of the given custom style</span><pre>GetCustomStyle()</pre></a></li>
+<li class="method public inherited"><a href="#method_GetEndHtml" title="GetEndHtml :: For any HTML code that needs to be rendered at the END of the QForm when this control is
+INITIALLY rendered."><span class="description">For any HTML code that needs to be rendered at the END of the QForm when this control is
+INITIALLY rendered.</span><pre>GetEndHtml()</pre></a></li>
+<li class="method public inherited"><a href="#method_GetEndScript" title="GetEndScript :: Returns all Javscript that needs to be executed after rendering of this control"><span class="description">Returns all Javscript that needs to be executed after rendering of this control</span><pre>GetEndScript()</pre></a></li>
+<li class="method public inherited"><a href="#method_GetItem" title="GetItem :: Retrieve the ListItem at the specified index location"><span class="description">Retrieve the ListItem at the specified index location</span><pre>GetItem()</pre></a></li>
+<li class="method public inherited"><a href="#method_GetJavaScriptForEvent" title="GetJavaScriptForEvent :: "><span class="description">GetJavaScriptForEvent()
+        </span><pre>GetJavaScriptForEvent()</pre></a></li>
+<li class="method public inherited"><a href="#method_GetStyleAttributes" title="GetStyleAttributes :: Returns all style-attributes"><span class="description">Returns all style-attributes</span><pre>GetStyleAttributes()</pre></a></li>
+<li class="method public inherited"><a href="#method_MarkAsModified" title="MarkAsModified :: "><span class="description">MarkAsModified()
+        </span><pre>MarkAsModified()</pre></a></li>
+<li class="method public inherited"><a href="#method_MarkAsRendered" title="MarkAsRendered :: "><span class="description">MarkAsRendered()
+        </span><pre>MarkAsRendered()</pre></a></li>
+<li class="method public inherited"><a href="#method_MarkAsWrapperModified" title="MarkAsWrapperModified :: "><span class="description">MarkAsWrapperModified()
+        </span><pre>MarkAsWrapperModified()</pre></a></li>
+<li class="method public inherited"><a href="#method_OverrideAttributes" title="OverrideAttributes :: This allows you to set any properties, given by a name-value pair list
+in mixOverrideArray."><span class="description">This allows you to set any properties, given by a name-value pair list
+in mixOverrideArray.</span><pre>OverrideAttributes()</pre></a></li>
+<li class="method public "><a href="#method_ParsePostData" title="ParsePostData :: ParsePostData parses the value of this control from FormState"><span class="description">ParsePostData parses the value of this control from FormState</span><pre>ParsePostData()</pre></a></li>
+<li class="method public inherited"><a href="#method_Persist" title="Persist :: "><span class="description">Persist()
+        </span><pre>Persist()</pre></a></li>
+<li class="method public inherited"><a href="#method_Refresh" title="Refresh :: Refreshes the control"><span class="description">Refreshes the control</span><pre>Refresh()</pre></a></li>
+<li class="method public inherited"><a href="#method_RemoveAllActions" title="RemoveAllActions :: Removes all events for a given event name."><span class="description">Removes all events for a given event name.</span><pre>RemoveAllActions()</pre></a></li>
+<li class="method public inherited"><a href="#method_RemoveAllItems" title="RemoveAllItems :: Removes all the items in objItemsArray"><span class="description">Removes all the items in objItemsArray</span><pre>RemoveAllItems()</pre></a></li>
+<li class="method public inherited"><a href="#method_RemoveChildControl" title="RemoveChildControl :: Removes the child control with the given id"><span class="description">Removes the child control with the given id</span><pre>RemoveChildControl()</pre></a></li>
+<li class="method public inherited"><a href="#method_RemoveChildControls" title="RemoveChildControls :: Removes all child controls"><span class="description">Removes all child controls</span><pre>RemoveChildControls()</pre></a></li>
+<li class="method public inherited"><a href="#method_RemoveCssClass" title="RemoveCssClass :: This will remove a CssClass name from the CssClass property (if it exists),
+updating the CssClass property accordingly."><span class="description">This will remove a CssClass name from the CssClass property (if it exists),
+updating the CssClass property accordingly.</span><pre>RemoveCssClass()</pre></a></li>
+<li class="method public inherited"><a href="#method_RemoveCustomAttribute" title="RemoveCustomAttribute :: Removes the given custom attribute"><span class="description">Removes the given custom attribute</span><pre>RemoveCustomAttribute()</pre></a></li>
+<li class="method public inherited"><a href="#method_RemoveCustomStyle" title="RemoveCustomStyle :: Deletes the given custom style"><span class="description">Deletes the given custom style</span><pre>RemoveCustomStyle()</pre></a></li>
+<li class="method public inherited"><a href="#method_RemoveItem" title="RemoveItem :: Removes a ListItem at the specified index location"><span class="description">Removes a ListItem at the specified index location</span><pre>RemoveItem()</pre></a></li>
+<li class="method public inherited"><a href="#method_Render" title="Render :: This render method is the most basic render-method available."><span class="description">This render method is the most basic render-method available.</span><pre>Render()</pre></a></li>
+<li class="method public inherited"><a href="#method_RenderAjax" title="RenderAjax :: RenderAjax will be called during an Ajax-Rerendering of the controls do to it being modified"><span class="description">RenderAjax will be called during an Ajax-Rerendering of the controls do to it being modified</span><pre>RenderAjax()</pre></a></li>
+<li class="method public inherited"><a href="#method_RenderExtensionRenderer" title="RenderExtensionRenderer :: Helper method to render the control using some other class/method."><span class="description">Helper method to render the control using some other class/method.</span><pre>RenderExtensionRenderer()</pre></a></li>
+<li class="method public inherited"><a href="#method_RenderWithError" title="RenderWithError :: This render method will render the control with additional output of
+any validation errors, that might occur"><span class="description">This render method will render the control with additional output of
+any validation errors, that might occur</span><pre>RenderWithError()</pre></a></li>
+<li class="method public inherited"><a href="#method_RenderWithName" title="RenderWithName :: Renders the control with an attached name"><span class="description">Renders the control with an attached name</span><pre>RenderWithName()</pre></a></li>
+<li class="method public inherited"><a href="#method_ReplaceItem" title="ReplaceItem :: Replaces a QListItem at $intIndex."><span class="description">Replaces a QListItem at $intIndex.</span><pre>ReplaceItem()</pre></a></li>
+<li class="method public inherited"><a href="#method_ResetFlags" title="ResetFlags :: "><span class="description">ResetFlags()
+        </span><pre>ResetFlags()</pre></a></li>
+<li class="method public inherited"><a href="#method_ResetOnPageStatus" title="ResetOnPageStatus :: "><span class="description">ResetOnPageStatus()
+        </span><pre>ResetOnPageStatus()</pre></a></li>
+<li class="method public inherited"><a href="#method_SetCustomAttribute" title="SetCustomAttribute :: Sets one custom attribute"><span class="description">Sets one custom attribute</span><pre>SetCustomAttribute()</pre></a></li>
+<li class="method public inherited"><a href="#method_SetCustomStyle" title="SetCustomStyle :: Adds a custom style property/value to the html style attribute"><span class="description">Adds a custom style property/value to the html style attribute</span><pre>SetCustomStyle()</pre></a></li>
+<li class="method public inherited"><a href="#method_SetFocus" title='SetFocus :: Same as "Focus": Sets focus to this control'><span class="description">Same as "Focus": Sets focus to this control</span><pre>SetFocus()</pre></a></li>
+<li class="method public inherited"><a href="#method_SetForm" title="SetForm :: "><span class="description">SetForm()
+        </span><pre>SetForm()</pre></a></li>
+<li class="method public inherited"><a href="#method_SetParentControl" title="SetParentControl :: "><span class="description">SetParentControl()
+        </span><pre>SetParentControl()</pre></a></li>
+<li class="method public "><a href="#method_Validate" title="Validate :: Checks if this controls contains a valid value."><span class="description">Checks if this controls contains a valid value.</span><pre>Validate()</pre></a></li>
+<li class="method public inherited"><a href="#method_ValidationReset" title="ValidationReset :: "><span class="description">ValidationReset()
+        </span><pre>ValidationReset()</pre></a></li>
+<li class="method public inherited"><a href="#method_VarExport" title="VarExport :: "><span class="description">VarExport()
+        </span><pre>VarExport()</pre></a></li>
+<li class="method public "><a href="#method___construct" title="__construct :: QControl-Constructor"><span class="description">QControl-Constructor</span><pre>__construct()</pre></a></li>
+<li class="method public "><a href="#method___get" title='__get :: Override method to perform a property "Get"
+This will get the value of $strName
+All inhereted objects that call __get() should always fall through
+to calling parent::__get() in a try/catch statement catching
+for CallerExceptions.'><span class="description">Override method to perform a property "Get"
+This will get the value of $strName
+All inhereted objects that call __get() should always fall through
+to calling parent::__get() in a try/catch statement catching
+for CallerExceptions.</span><pre>__get()</pre></a></li>
+<li class="method public "><a href="#method___set" title='__set :: Override method to perform a property "Set"
+This will set the property $strName to be $mixValue
+All inhereted objects that call __set() should always fall through
+to calling parent::__set() in a try/catch statement catching
+for CallerExceptions.'><span class="description">Override method to perform a property "Set"
+This will set the property $strName to be $mixValue
+All inhereted objects that call __set() should always fall through
+to calling parent::__set() in a try/catch statement catching
+for CallerExceptions.</span><pre>__set()</pre></a></li>
+<li class="method public inherited"><a href="#method_getJqControlId" title="getJqControlId :: Used by jQuery UI wrapper controls to find the element on which to apply the jQuery function"><span class="description">Used by jQuery UI wrapper controls to find the element on which to apply the jQuery function</span><pre>getJqControlId()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul>
+<li class="method protected "><a href="#method_GetControlHtml" title="GetControlHtml :: This method will render the control, itself, and will return the rendered HTML as a string"><span class="description">This method will render the control, itself, and will return the rendered HTML as a string</span><pre>GetControlHtml()</pre></a></li>
+<li class="method protected "><a href="#method_GetItemHtml" title="GetItemHtml :: Returns the HTML-Code for a single Item"><span class="description">Returns the HTML-Code for a single Item</span><pre>GetItemHtml()</pre></a></li>
+<li class="method protected inherited"><a href="#method_GetNonWrappedHtml" title="GetNonWrappedHtml :: "><span class="description">GetNonWrappedHtml()
+        </span><pre>GetNonWrappedHtml()</pre></a></li>
+<li class="method protected "><a href="#method_GetResetButtonHtml" title="GetResetButtonHtml :: "><span class="description">GetResetButtonHtml()
+        </span><pre>GetResetButtonHtml()</pre></a></li>
+<li class="method protected inherited"><a href="#method_GetWrapperStyleAttributes" title="GetWrapperStyleAttributes :: Returns all wrapper-style-attributes"><span class="description">Returns all wrapper-style-attributes</span><pre>GetWrapperStyleAttributes()</pre></a></li>
+<li class="method protected inherited"><a href="#method_PersistPrepare" title="PersistPrepare :: "><span class="description">PersistPrepare()
+        </span><pre>PersistPrepare()</pre></a></li>
+<li class="method protected inherited"><a href="#method_RenderChildren" title="RenderChildren :: Renders all Children"><span class="description">Renders all Children</span><pre>RenderChildren()</pre></a></li>
+<li class="method protected inherited"><a href="#method_RenderHelper" title='RenderHelper :: RenderHelper should be called from all "Render" functions FIRST in order to check for and
+perform attribute overides (if any).'><span class="description">RenderHelper should be called from all "Render" functions FIRST in order to check for and
+perform attribute overides (if any).</span><pre>RenderHelper()</pre></a></li>
+<li class="method protected inherited"><a href="#method_RenderOutput" title="RenderOutput :: RenderOutput should be the last call in your custom RenderMethod."><span class="description">RenderOutput should be the last call in your custom RenderMethod.</span><pre>RenderOutput()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties
+                    <ul>
+<li class="property public "><a href="#property_ItemStyle" title="$ItemStyle :: {@link QListItemStyle}"><span class="description"></span><pre>$ItemStyle</pre></a></li>
+<li class="property public "><a href="#property_LabelForRequired" title="$LabelForRequired :: "><span class="description"></span><pre>$LabelForRequired</pre></a></li>
+<li class="property public "><a href="#property_LabelForRequiredUnnamed" title="$LabelForRequiredUnnamed :: "><span class="description"></span><pre>$LabelForRequiredUnnamed</pre></a></li>
+<li class="property public "><a href="#property_Rows" title="$Rows :: specifies how many rows you want to have shown."><span class="description"></span><pre>$Rows</pre></a></li>
+<li class="property public "><a href="#property_SelectionMode" title='$SelectionMode :: {@link QSelectionMode} specifies if this is a "Single" or "Multiple" select control.'><span class="description"></span><pre>$SelectionMode</pre></a></li>
+</ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul>
+<li class="property protected inherited"><a href="#property_blnActionsMustTerminate" title="$blnActionsMustTerminate :: "><span class="description"></span><pre>$blnActionsMustTerminate</pre></a></li>
+<li class="property protected inherited"><a href="#property_blnDisplay" title="$blnDisplay :: "><span class="description"></span><pre>$blnDisplay</pre></a></li>
+<li class="property protected inherited"><a href="#property_blnEnabled" title="$blnEnabled :: "><span class="description"></span><pre>$blnEnabled</pre></a></li>
+<li class="property protected inherited"><a href="#property_blnFontBold" title="$blnFontBold :: "><span class="description"></span><pre>$blnFontBold</pre></a></li>
+<li class="property protected inherited"><a href="#property_blnFontItalic" title="$blnFontItalic :: "><span class="description"></span><pre>$blnFontItalic</pre></a></li>
+<li class="property protected inherited"><a href="#property_blnFontOverline" title="$blnFontOverline :: "><span class="description"></span><pre>$blnFontOverline</pre></a></li>
+<li class="property protected inherited"><a href="#property_blnFontStrikeout" title="$blnFontStrikeout :: "><span class="description"></span><pre>$blnFontStrikeout</pre></a></li>
+<li class="property protected inherited"><a href="#property_blnFontUnderline" title="$blnFontUnderline :: "><span class="description"></span><pre>$blnFontUnderline</pre></a></li>
+<li class="property protected inherited"><a href="#property_blnIsBlockElement" title="$blnIsBlockElement :: "><span class="description"></span><pre>$blnIsBlockElement</pre></a></li>
+<li class="property protected inherited"><a href="#property_blnModified" title="$blnModified :: "><span class="description"></span><pre>$blnModified</pre></a></li>
+<li class="property protected inherited"><a href="#property_blnOnPage" title="$blnOnPage :: "><span class="description"></span><pre>$blnOnPage</pre></a></li>
+<li class="property protected inherited"><a href="#property_blnRendered" title="$blnRendered :: "><span class="description"></span><pre>$blnRendered</pre></a></li>
+<li class="property protected inherited"><a href="#property_blnRendering" title="$blnRendering :: "><span class="description"></span><pre>$blnRendering</pre></a></li>
+<li class="property protected inherited"><a href="#property_blnRequired" title="$blnRequired :: "><span class="description"></span><pre>$blnRequired</pre></a></li>
+<li class="property protected inherited"><a href="#property_blnUseWrapper" title="$blnUseWrapper :: "><span class="description"></span><pre>$blnUseWrapper</pre></a></li>
+<li class="property protected inherited"><a href="#property_blnVisible" title="$blnVisible :: "><span class="description"></span><pre>$blnVisible</pre></a></li>
+<li class="property protected inherited"><a href="#property_blnWrapperModified" title="$blnWrapperModified :: "><span class="description"></span><pre>$blnWrapperModified</pre></a></li>
+<li class="property protected inherited"><a href="#property_intOpacity" title="$intOpacity :: "><span class="description"></span><pre>$intOpacity</pre></a></li>
+<li class="property protected inherited"><a href="#property_intTabIndex" title="$intTabIndex :: "><span class="description"></span><pre>$intTabIndex</pre></a></li>
+<li class="property protected inherited"><a href="#property_mixActionParameter" title="$mixActionParameter :: "><span class="description"></span><pre>$mixActionParameter</pre></a></li>
+<li class="property protected inherited"><a href="#property_mixCausesValidation" title="$mixCausesValidation :: "><span class="description"></span><pre>$mixCausesValidation</pre></a></li>
+<li class="property protected inherited"><a href="#property_objActionArray" title="$objActionArray :: "><span class="description"></span><pre>$objActionArray</pre></a></li>
+<li class="property protected inherited"><a href="#property_objChildControlArray" title="$objChildControlArray :: "><span class="description"></span><pre>$objChildControlArray</pre></a></li>
+<li class="property protected inherited"><a href="#property_objDraggable" title="$objDraggable :: "><span class="description"></span><pre>$objDraggable</pre></a></li>
+<li class="property protected inherited"><a href="#property_objDroppable" title="$objDroppable :: "><span class="description"></span><pre>$objDroppable</pre></a></li>
+<li class="property protected inherited"><a href="#property_objForm" title="$objForm :: "><span class="description"></span><pre>$objForm</pre></a></li>
+<li class="property protected "><a href="#property_objItemStyle" title="$objItemStyle :: "><span class="description"></span><pre>$objItemStyle</pre></a></li>
+<li class="property protected inherited"><a href="#property_objItemsArray" title="$objItemsArray :: "><span class="description"></span><pre>$objItemsArray</pre></a></li>
+<li class="property protected inherited"><a href="#property_objParentControl" title="$objParentControl :: "><span class="description"></span><pre>$objParentControl</pre></a></li>
+<li class="property protected inherited"><a href="#property_objResizable" title="$objResizable :: "><span class="description"></span><pre>$objResizable</pre></a></li>
+<li class="property protected inherited"><a href="#property_strAccessKey" title="$strAccessKey :: "><span class="description"></span><pre>$strAccessKey</pre></a></li>
+<li class="property protected inherited"><a href="#property_strBackColor" title="$strBackColor :: "><span class="description"></span><pre>$strBackColor</pre></a></li>
+<li class="property protected inherited"><a href="#property_strBorderColor" title="$strBorderColor :: "><span class="description"></span><pre>$strBorderColor</pre></a></li>
+<li class="property protected inherited"><a href="#property_strBorderStyle" title="$strBorderStyle :: "><span class="description"></span><pre>$strBorderStyle</pre></a></li>
+<li class="property protected inherited"><a href="#property_strBorderWidth" title="$strBorderWidth :: "><span class="description"></span><pre>$strBorderWidth</pre></a></li>
+<li class="property protected inherited"><a href="#property_strControlId" title="$strControlId :: "><span class="description"></span><pre>$strControlId</pre></a></li>
+<li class="property protected inherited"><a href="#property_strCssClass" title="$strCssClass :: "><span class="description"></span><pre>$strCssClass</pre></a></li>
+<li class="property protected inherited"><a href="#property_strCursor" title="$strCursor :: "><span class="description"></span><pre>$strCursor</pre></a></li>
+<li class="property protected inherited"><a href="#property_strCustomAttributeArray" title="$strCustomAttributeArray :: "><span class="description"></span><pre>$strCustomAttributeArray</pre></a></li>
+<li class="property protected inherited"><a href="#property_strCustomStyleArray" title="$strCustomStyleArray :: "><span class="description"></span><pre>$strCustomStyleArray</pre></a></li>
+<li class="property protected inherited"><a href="#property_strDisplayStyle" title="$strDisplayStyle :: "><span class="description"></span><pre>$strDisplayStyle</pre></a></li>
+<li class="property protected inherited"><a href="#property_strFontNames" title="$strFontNames :: "><span class="description"></span><pre>$strFontNames</pre></a></li>
+<li class="property protected inherited"><a href="#property_strFontSize" title="$strFontSize :: "><span class="description"></span><pre>$strFontSize</pre></a></li>
+<li class="property protected inherited"><a href="#property_strForeColor" title="$strForeColor :: "><span class="description"></span><pre>$strForeColor</pre></a></li>
+<li class="property protected inherited"><a href="#property_strFormAttributes" title="$strFormAttributes :: "><span class="description"></span><pre>$strFormAttributes</pre></a></li>
+<li class="property protected inherited"><a href="#property_strHeight" title="$strHeight :: "><span class="description"></span><pre>$strHeight</pre></a></li>
+<li class="property protected inherited"><a href="#property_strHtmlAfter" title="$strHtmlAfter :: "><span class="description"></span><pre>$strHtmlAfter</pre></a></li>
+<li class="property protected inherited"><a href="#property_strHtmlBefore" title="$strHtmlBefore :: "><span class="description"></span><pre>$strHtmlBefore</pre></a></li>
+<li class="property protected inherited"><a href="#property_strInstructions" title="$strInstructions :: "><span class="description"></span><pre>$strInstructions</pre></a></li>
+<li class="property protected inherited"><a href="#property_strJavaScripts" title="$strJavaScripts :: "><span class="description"></span><pre>$strJavaScripts</pre></a></li>
+<li class="property protected "><a href="#property_strLabelForRequired" title="$strLabelForRequired :: "><span class="description"></span><pre>$strLabelForRequired</pre></a></li>
+<li class="property protected "><a href="#property_strLabelForRequiredUnnamed" title="$strLabelForRequiredUnnamed :: "><span class="description"></span><pre>$strLabelForRequiredUnnamed</pre></a></li>
+<li class="property protected inherited"><a href="#property_strLeft" title="$strLeft :: "><span class="description"></span><pre>$strLeft</pre></a></li>
+<li class="property protected inherited"><a href="#property_strName" title="$strName :: "><span class="description"></span><pre>$strName</pre></a></li>
+<li class="property protected inherited"><a href="#property_strOverflow" title="$strOverflow :: "><span class="description"></span><pre>$strOverflow</pre></a></li>
+<li class="property protected inherited"><a href="#property_strPosition" title="$strPosition :: "><span class="description"></span><pre>$strPosition</pre></a></li>
+<li class="property protected inherited"><a href="#property_strPreferedRenderMethod" title="$strPreferedRenderMethod :: "><span class="description"></span><pre>$strPreferedRenderMethod</pre></a></li>
+<li class="property protected inherited"><a href="#property_strRenderMethod" title="$strRenderMethod :: "><span class="description"></span><pre>$strRenderMethod</pre></a></li>
+<li class="property protected "><a href="#property_strSelectionMode" title="$strSelectionMode :: "><span class="description"></span><pre>$strSelectionMode</pre></a></li>
+<li class="property protected inherited"><a href="#property_strStyleSheets" title="$strStyleSheets :: "><span class="description"></span><pre>$strStyleSheets</pre></a></li>
+<li class="property protected inherited"><a href="#property_strToolTip" title="$strToolTip :: "><span class="description"></span><pre>$strToolTip</pre></a></li>
+<li class="property protected inherited"><a href="#property_strTop" title="$strTop :: "><span class="description"></span><pre>$strTop</pre></a></li>
+<li class="property protected inherited"><a href="#property_strValidationError" title="$strValidationError :: "><span class="description"></span><pre>$strValidationError</pre></a></li>
+<li class="property protected inherited"><a href="#property_strWarning" title="$strWarning :: "><span class="description"></span><pre>$strWarning</pre></a></li>
+<li class="property protected inherited"><a href="#property_strWidth" title="$strWidth :: "><span class="description"></span><pre>$strWidth</pre></a></li>
+<li class="property protected inherited"><a href="#property_strWrapperCssClass" title="$strWrapperCssClass :: "><span class="description"></span><pre>$strWrapperCssClass</pre></a></li>
+</ul>
+</li>
+<li class="nav-header private">» Private
+                    <ul><li class="property private "><a href="#property_intRows" title="$intRows :: "><span class="description"></span><pre>$intRows</pre></a></li></ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a id="\QListBoxBase"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/global.html">global</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/QListBoxBase.html">QListBoxBase</a>
+</li>
+</ul>
+<div class="element class">
+<p class="short_description">QListBoxBase will render an HTML DropDown or MultiSelect box [SELECT] element.</p>
+<div class="details">
+<div class="long_description"><p>It extends <a href="QListControl">QListControl</a>.  By default, the number of visible rows is set to 1 and
+the selection mode is set to single, creating a dropdown select box.</p></div>
+<table class="table table-bordered">
+<tr>
+<th>see</th>
+<td><a href="">\global\QListItemStyle</a></td>
+</tr>
+<tr>
+<th>see</th>
+<td><a href="">\global\QSelectionMode</a></td>
+</tr>
+<tr>
+<th>package</th>
+<td><a href="../packages/Controls.html">Controls</a></td>
+</tr>
+</table>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method_AddAction"></a><div class="element clickable method public method_AddAction" data-toggle="collapse" data-target=".method_AddAction .collapse">
+<h2>Adds an action to the control</h2>
+<pre>AddAction(\QEvent $objEvent, \QAction $objAction) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::AddAction()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::AddAction()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::AddAction()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$objEvent</h4>
+<code>\QEvent</code>
+</div>
+<div class="subelement argument">
+<h4>$objAction</h4>
+<code>\QAction</code>
+</div>
+</div></div>
+</div>
+<a id="method_AddActionArray"></a><div class="element clickable method public method_AddActionArray" data-toggle="collapse" data-target=".method_AddActionArray .collapse">
+<h2>Adds an array of actions to the control</h2>
+<pre>AddActionArray(\QEvent $objEvent, array $objActionArray) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::AddActionArray()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::AddActionArray()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::AddActionArray()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$objEvent</h4>
+<code>\QEvent</code>
+</div>
+<div class="subelement argument">
+<h4>$objActionArray</h4>
+<code>array</code>
+</div>
+</div></div>
+</div>
+<a id="method_AddChildControl"></a><div class="element clickable method public method_AddChildControl" data-toggle="collapse" data-target=".method_AddChildControl .collapse">
+<h2>Adds a control as a child of this control.</h2>
+<pre>AddChildControl(\QControl $objControl) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::AddChildControl()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::AddChildControl()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::AddChildControl()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$objControl</h4>
+<code><a href="../classes/QControl.html">\QControl</a></code><p>the control to add</p></div>
+</div></div>
+</div>
+<a id="method_AddCssClass"></a><div class="element clickable method public method_AddCssClass" data-toggle="collapse" data-target=".method_AddCssClass .collapse">
+<h2>This will add a CssClass name to the CssClass property (if it does not yet exist),
+updating the CssClass property accordingly.</h2>
+<pre>AddCssClass(string $strCssClassName) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::AddCssClass()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::AddCssClass()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::AddCssClass()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$strCssClassName</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a id="method_AddCssFile"></a><div class="element clickable method public method_AddCssFile" data-toggle="collapse" data-target=".method_AddCssFile .collapse">
+<h2>AddCssFile()
+        </h2>
+<pre>AddCssFile($strCssFileName) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::AddCssFile()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::AddCssFile()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::AddCssFile()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strCssFileName</h4></div>
+</div></div>
+</div>
+<a id="method_AddItem"></a><div class="element clickable method public method_AddItem" data-toggle="collapse" data-target=".method_AddItem .collapse">
+<h2>Add one ListItem to the ListControl</h2>
+<pre>AddItem(mixed $mixListItemOrName, string $strValue, boolean $blnSelected, string $strItemGroup, string $strOverrideParameters) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Allows you to add a ListItem to the ListItem array within the ListControl. Items are appended to
+the array. This method exhibits polymorphism: you can either pass in a ListItem object or you
+can pass in three strings.</p>
+
+<pre><code> // Method 1: adding a created ListItem
+ $objListItem = new QListItem($name, $value, $blnIsSelected);
+ $lstList->AddItem($objListItem);
+
+ // Method 2: adding a list item using direct strings
+ $lstList->AddItem($name, $value, $blnIsSelected);
+
+</code></pre></div>
+<table class="table table-bordered">
+<tr>
+<th>see</th>
+<td><a href="qcubed._core.base_controls.QListItem.class.html#%5CQListItem::__construct()">\QListItem::__construct()</a></td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::AddItem()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$mixListItemOrName</h4>
+<code>mixed</code><p>QListItem or Name of the ListItem</p></div>
+<div class="subelement argument">
+<h4>$strValue</h4>
+<code>string</code><p>Value of the ListItem</p></div>
+<div class="subelement argument">
+<h4>$blnSelected</h4>
+<code>boolean</code><p>set the html selected attribute for the ListItem</p></div>
+<div class="subelement argument">
+<h4>$strItemGroup</h4>
+<code>string</code><p>allows you to apply grouping (<optgroup> tag)</p>
+</div>
+<div class="subelement argument">
+<h4>$strOverrideParameters</h4>
+<code>string</code><p>OverrideParameters for ListItemStyle</p></div>
+</div></div>
+</div>
+<a id="method_AddItemAt"></a><div class="element clickable method public method_AddItemAt" data-toggle="collapse" data-target=".method_AddItemAt .collapse">
+<h2>Allows you to add a ListItem at a certain index</h2>
+<pre>AddItemAt(integer $intIndex, \QListItem $objListItem) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Unlike AddItem, this will insert the ListItem at whatever index is passed to the function.  Additionally,
+only a ListItem object can be passed (as opposed to an object or strings)</p></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QListControl::AddItemAt()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$intIndex</h4>
+<code>integer</code><p>index at which the item should be inserted</p></div>
+<div class="subelement argument">
+<h4>$objListItem</h4>
+<code><a href="../classes/QListItem.html">\QListItem</a></code><p>the ListItem which shall be inserted</p></div>
+</div></div>
+</div>
+<a id="method_AddItems"></a><div class="element clickable method public method_AddItems" data-toggle="collapse" data-target=".method_AddItems .collapse">
+<h2>Adds an array of items, or an array of key=&gt;value pairs.</h2>
+<pre>AddItems(array $mixItemArray, mixed $mixSelectedValues, string $strItemGroup, string $strOverrideParameters) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Convenient for adding a list from a type table.
+When passing key=>val pairs, mixSelectedValues can be an array, or just a single value to compare against to indicate what is selected.</p></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QListControl::AddItems()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$mixItemArray</h4>
+<code>array</code><p>Array of QListItems or key=>val pairs.</p>
+</div>
+<div class="subelement argument">
+<h4>$mixSelectedValues</h4>
+<code>mixed</code><p>Array of selected values, or value of one selection</p></div>
+<div class="subelement argument">
+<h4>$strItemGroup</h4>
+<code>string</code><p>allows you to apply grouping (<optgroup> tag)</p>
+</div>
+<div class="subelement argument">
+<h4>$strOverrideParameters</h4>
+<code>string</code><p>OverrideParameters for ListItemStyle</p></div>
+</div></div>
+</div>
+<a id="method_AddJavascriptFile"></a><div class="element clickable method public method_AddJavascriptFile" data-toggle="collapse" data-target=".method_AddJavascriptFile .collapse">
+<h2>AddJavascriptFile()
+        </h2>
+<pre>AddJavascriptFile($strJsFileName) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::AddJavascriptFile()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::AddJavascriptFile()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::AddJavascriptFile()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strJsFileName</h4></div>
+</div></div>
+</div>
+<a id="method_AddPluginCssFile"></a><div class="element clickable method public method_AddPluginCssFile" data-toggle="collapse" data-target=".method_AddPluginCssFile .collapse">
+<h2>AddPluginCssFile()
+        </h2>
+<pre>AddPluginCssFile($strPluginName, $strCssFileName) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::AddPluginCssFile()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::AddPluginCssFile()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::AddPluginCssFile()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strPluginName</h4></div>
+<div class="subelement argument"><h4>$strCssFileName</h4></div>
+</div></div>
+</div>
+<a id="method_AddPluginJavascriptFile"></a><div class="element clickable method public method_AddPluginJavascriptFile" data-toggle="collapse" data-target=".method_AddPluginJavascriptFile .collapse">
+<h2>AddPluginJavascriptFile()
+        </h2>
+<pre>AddPluginJavascriptFile($strPluginName, $strJsFileName) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::AddPluginJavascriptFile()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::AddPluginJavascriptFile()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::AddPluginJavascriptFile()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strPluginName</h4></div>
+<div class="subelement argument"><h4>$strJsFileName</h4></div>
+</div></div>
+</div>
+<a id="method_Blink"></a><div class="element clickable method public method_Blink" data-toggle="collapse" data-target=".method_Blink .collapse">
+<h2>Let this control blink</h2>
+<pre>Blink(string $strFromColor, string $strToColor) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::Blink()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::Blink()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::Blink()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$strFromColor</h4>
+<code>string</code><p>start color</p></div>
+<div class="subelement argument">
+<h4>$strToColor</h4>
+<code>string</code><p>blink color</p></div>
+</div></div>
+</div>
+<a id="method_CreatePersistent"></a><div class="element clickable method public method_CreatePersistent" data-toggle="collapse" data-target=".method_CreatePersistent .collapse">
+<h2>CreatePersistent()
+        </h2>
+<pre>CreatePersistent($strClassName, $objParentObject, $strControlId) </pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::CreatePersistent()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::CreatePersistent()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::CreatePersistent()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strClassName</h4></div>
+<div class="subelement argument"><h4>$objParentObject</h4></div>
+<div class="subelement argument"><h4>$strControlId</h4></div>
+</div></div>
+</div>
+<a id="method_Focus"></a><div class="element clickable method public method_Focus" data-toggle="collapse" data-target=".method_Focus .collapse">
+<h2>Sets focus to this control</h2>
+<pre>Focus() </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::Focus()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::Focus()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::Focus()</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="method_GetActionAttributes"></a><div class="element clickable method public method_GetActionAttributes" data-toggle="collapse" data-target=".method_GetActionAttributes .collapse">
+<h2>Returns all action attributes</h2>
+<pre>GetActionAttributes() : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::GetActionAttributes()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::GetActionAttributes()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::GetActionAttributes()</td>
+</tr>
+</table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_GetAllActions"></a><div class="element clickable method public method_GetAllActions" data-toggle="collapse" data-target=".method_GetAllActions .collapse">
+<h2>Returns all actions that are connected with specific events</h2>
+<pre>GetAllActions(string $strEventType, string $strActionType) : array</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::GetAllActions()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::GetAllActions()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::GetAllActions()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$strEventType</h4>
+<code>string</code><p>the type of the event. Be sure and use a
+ QFooEvent::EventName here. (QClickEvent::EventName, for example)</p>
+</div>
+<div class="subelement argument">
+<h4>$strActionType</h4>
+<code>string</code><p>if given only actions of this type will be
+ returned</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method_GetAllItems"></a><div class="element clickable method public method_GetAllItems" data-toggle="collapse" data-target=".method_GetAllItems .collapse">
+<h2>This will return an array of ALL the QListItems associated with this QListControl.</h2>
+<pre>GetAllItems() : <a href="qcubed._core.base_controls.QListItem.class.html#%5CQListItem">\QListItem[]</a></pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Please note that while each individual item can be altered, altering the array, itself,
+will not affect any change on the QListControl.  So existing QListItems may be modified,
+but to add / remove items from the QListControl, you should use AddItem() and RemoveItem().</p></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QListControl::GetAllItems()</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="qcubed._core.base_controls.QListItem.class.html#%5CQListItem">\QListItem[]</a></code></div>
+</div></div>
+</div>
+<a id="method_GetAttributes"></a><div class="element clickable method public method_GetAttributes" data-toggle="collapse" data-target=".method_GetAttributes .collapse">
+<h2>Returns all attributes in the correct HTML format</h2>
+<pre>GetAttributes(boolean $blnIncludeCustom, boolean $blnIncludeAction) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>This is utilized by Render methods to display various name-value HTML attributes for the
+control.</p>
+
+<p>ControlBase's implementation contains the very-basic set of HTML attributes... it is expected
+that most subclasses will extend this method's functionality to add Control-specific HTML
+attributes (e.g. textbox will likely add the maxlength html attribute, etc.)</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$blnIncludeCustom</h4>
+<code>boolean</code>
+</div>
+<div class="subelement argument">
+<h4>$blnIncludeAction</h4>
+<code>boolean</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_GetChildControl"></a><div class="element clickable method public method_GetChildControl" data-toggle="collapse" data-target=".method_GetChildControl .collapse">
+<h2>Returns the child control with the given id</h2>
+<pre>GetChildControl(string $strControlId) : <a href="../classes/QControl.html">\QControl</a></pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::GetChildControl()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::GetChildControl()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::GetChildControl()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$strControlId</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/QControl.html">\QControl</a></code></div>
+</div></div>
+</div>
+<a id="method_GetChildControls"></a><div class="element clickable method public method_GetChildControls" data-toggle="collapse" data-target=".method_GetChildControls .collapse">
+<h2>Returns all child controls as an array</h2>
+<pre>GetChildControls(boolean $blnUseNumericIndexes) : array</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::GetChildControls()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::GetChildControls()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::GetChildControls()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$blnUseNumericIndexes</h4>
+<code>boolean</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>array</code>an array of QControls</div>
+</div></div>
+</div>
+<a id="method_GetCustomAttribute"></a><div class="element clickable method public method_GetCustomAttribute" data-toggle="collapse" data-target=".method_GetCustomAttribute .collapse">
+<h2>Returns the value of a custom attribute</h2>
+<pre>GetCustomAttribute(string $strName) : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::GetCustomAttribute()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::GetCustomAttribute()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::GetCustomAttribute()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$strName</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_GetCustomAttributes"></a><div class="element clickable method public method_GetCustomAttributes" data-toggle="collapse" data-target=".method_GetCustomAttributes .collapse">
+<h2>Returns the custom attributes HTML formatted</h2>
+<pre>GetCustomAttributes() : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>All attributes will be returned as concatened the string of the form
+key1="value1" key2="value2"
+Note: if the the value is === false, then the key will be randered as is, without any value</p></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::GetCustomAttributes()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::GetCustomAttributes()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::GetCustomAttributes()</td>
+</tr>
+</table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_GetCustomStyle"></a><div class="element clickable method public method_GetCustomStyle" data-toggle="collapse" data-target=".method_GetCustomStyle .collapse">
+<h2>Returns the value of the given custom style</h2>
+<pre>GetCustomStyle(string $strName) : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::GetCustomStyle()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::GetCustomStyle()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::GetCustomStyle()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$strName</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_GetEndHtml"></a><div class="element clickable method public method_GetEndHtml" data-toggle="collapse" data-target=".method_GetEndHtml .collapse">
+<h2>For any HTML code that needs to be rendered at the END of the QForm when this control is
+INITIALLY rendered.</h2>
+<pre>GetEndHtml() : \unknown_type</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>This function is never used throughout the whole framework. So it probably should be
+deprecated. Only Call to this function is in QFormBase Line 1171.</p></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::GetEndHtml()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::GetEndHtml()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::GetEndHtml()</td>
+</tr>
+</table>
+<h3>Returns</h3>
+<div class="subelement response"><code>\unknown_type</code></div>
+</div></div>
+</div>
+<a id="method_GetEndScript"></a><div class="element clickable method public method_GetEndScript" data-toggle="collapse" data-target=".method_GetEndScript .collapse">
+<h2>Returns all Javscript that needs to be executed after rendering of this control</h2>
+<pre>GetEndScript() : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>For any JavaScript calls that need to be made whenever this control is rendered or
+re-rendered return here your custom javascript code.</p>
+
+<p>Remember to call $strToReturn = parent::GetEndScript if you want to have basic moveable support.</p></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::GetEndScript()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::GetEndScript()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::GetEndScript()</td>
+</tr>
+</table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_GetItem"></a><div class="element clickable method public method_GetItem" data-toggle="collapse" data-target=".method_GetItem .collapse">
+<h2>Retrieve the ListItem at the specified index location</h2>
+<pre>GetItem(integer $intIndex) : <a href="../classes/QListItem.html">\QListItem</a></pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QListControl::GetItem()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$intIndex</h4>
+<code>integer</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/QListItem.html">\QListItem</a></code></div>
+</div></div>
+</div>
+<a id="method_GetJavaScriptForEvent"></a><div class="element clickable method public method_GetJavaScriptForEvent" data-toggle="collapse" data-target=".method_GetJavaScriptForEvent .collapse">
+<h2>GetJavaScriptForEvent()
+        </h2>
+<pre>GetJavaScriptForEvent($strEventName) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::GetJavaScriptForEvent()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::GetJavaScriptForEvent()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::GetJavaScriptForEvent()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strEventName</h4></div>
+</div></div>
+</div>
+<a id="method_GetStyleAttributes"></a><div class="element clickable method public method_GetStyleAttributes" data-toggle="collapse" data-target=".method_GetStyleAttributes .collapse">
+<h2>Returns all style-attributes</h2>
+<pre>GetStyleAttributes() : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Similar to GetAttributes, but specifically for CSS name/value pairs that will render
+within a control's HTML "style" attribute</p>
+
+<p>&lt;</p>
+
+<p>pre><code><?php
+$txtTextbox = new Textbox("txtTextbox");
+$txtTextbox->SetCustomStyle("white-space", "nowrap");
+$txtTextbox->SetCustomStyle("margin", "10px");
+$txtTextBox->Height = 20;
+$txtTextBox->GetStyleAttributes();
+?>
+will return:
+white-space:nowrap;margin:10px;height:20px;</p></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::GetStyleAttributes()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::GetStyleAttributes()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::GetStyleAttributes()</td>
+</tr>
+</table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_MarkAsModified"></a><div class="element clickable method public method_MarkAsModified" data-toggle="collapse" data-target=".method_MarkAsModified .collapse">
+<h2>MarkAsModified()
+        </h2>
+<pre>MarkAsModified() </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::MarkAsModified()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::MarkAsModified()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::MarkAsModified()</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="method_MarkAsRendered"></a><div class="element clickable method public method_MarkAsRendered" data-toggle="collapse" data-target=".method_MarkAsRendered .collapse">
+<h2>MarkAsRendered()
+        </h2>
+<pre>MarkAsRendered() </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::MarkAsRendered()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::MarkAsRendered()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::MarkAsRendered()</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="method_MarkAsWrapperModified"></a><div class="element clickable method public method_MarkAsWrapperModified" data-toggle="collapse" data-target=".method_MarkAsWrapperModified .collapse">
+<h2>MarkAsWrapperModified()
+        </h2>
+<pre>MarkAsWrapperModified() </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::MarkAsWrapperModified()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::MarkAsWrapperModified()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::MarkAsWrapperModified()</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="method_OverrideAttributes"></a><div class="element clickable method public method_OverrideAttributes" data-toggle="collapse" data-target=".method_OverrideAttributes .collapse">
+<h2>This allows you to set any properties, given by a name-value pair list
+in mixOverrideArray.</h2>
+<pre>OverrideAttributes($mixOverrideArray) : void</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Each item in mixOverrideArray needs to be either a string in the format
+of Property=Value or an array in the format of array(Property => Value).
+OverrideAttributes() will basically call
+$this->Property = Value for each string element in the array.</p>
+
+<p>Value can be surrounded by quotes... but this is optional.</p></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QBaseClass::OverrideAttributes()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::OverrideAttributes()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::OverrideAttributes()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::OverrideAttributes()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$mixOverrideArray</h4></div>
+</div></div>
+</div>
+<a id="method_ParsePostData"></a><div class="element clickable method public method_ParsePostData" data-toggle="collapse" data-target=".method_ParsePostData .collapse">
+<h2>ParsePostData parses the value of this control from FormState</h2>
+<pre>ParsePostData() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"><p>This abstract method must be implemented by all controls.</p>
+
+<p>When utilizing formgen, the programmer should never access form variables directly (e.g.
+via the $_FORM array). It can be assumed that at *ANY* given time, a control's
+values/properties will be "up to date" with whatever the webuser has entered in.</p>
+
+<p>When a Form is Created via Form::Create(string), the form will go through to check and
+see if it is a first-run of a form, or if it is a post-back.  If it is a postback, it
+will go through its own private array of controls and call ParsePostData on EVERY control
+it has.  Each control is responsible for "knowing" how to parse the $_POST data to update
+its own values/properties based on what was returned to via the postback.</p></div></div></div>
+</div>
+<a id="method_Persist"></a><div class="element clickable method public method_Persist" data-toggle="collapse" data-target=".method_Persist .collapse">
+<h2>Persist()
+        </h2>
+<pre>Persist() </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::Persist()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::Persist()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::Persist()</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="method_Refresh"></a><div class="element clickable method public method_Refresh" data-toggle="collapse" data-target=".method_Refresh .collapse">
+<h2>Refreshes the control</h2>
+<pre>Refresh() </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>If not yet rendered during this ajax event, will set the Modified variable to true.  This will
+have the effect of forcing a refresh of this control when it is supposed to be rendered.
+Otherwise, this will do nothing</p></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::Refresh()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::Refresh()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::Refresh()</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="method_RemoveAllActions"></a><div class="element clickable method public method_RemoveAllActions" data-toggle="collapse" data-target=".method_RemoveAllActions .collapse">
+<h2>Removes all events for a given event name.</h2>
+<pre>RemoveAllActions(string $strEventName) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Be sure and use a QFooEvent::EventName constant here
+(QClickEvent::EventName, for example).</p></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::RemoveAllActions()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::RemoveAllActions()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::RemoveAllActions()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$strEventName</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a id="method_RemoveAllItems"></a><div class="element clickable method public method_RemoveAllItems" data-toggle="collapse" data-target=".method_RemoveAllItems .collapse">
+<h2>Removes all the items in objItemsArray</h2>
+<pre>RemoveAllItems() </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QListControl::RemoveAllItems()</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_RemoveChildControl"></a><div class="element clickable method public method_RemoveChildControl" data-toggle="collapse" data-target=".method_RemoveChildControl .collapse">
+<h2>Removes the child control with the given id</h2>
+<pre>RemoveChildControl(string $strControlId, boolean $blnRemoveFromForm) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::RemoveChildControl()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::RemoveChildControl()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::RemoveChildControl()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$strControlId</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$blnRemoveFromForm</h4>
+<code>boolean</code><p>should the control be removed from the form, too?</p>
+</div>
+</div></div>
+</div>
+<a id="method_RemoveChildControls"></a><div class="element clickable method public method_RemoveChildControls" data-toggle="collapse" data-target=".method_RemoveChildControls .collapse">
+<h2>Removes all child controls</h2>
+<pre>RemoveChildControls(boolean $blnRemoveFromForm) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::RemoveChildControls()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::RemoveChildControls()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::RemoveChildControls()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$blnRemoveFromForm</h4>
+<code>boolean</code>
+</div>
+</div></div>
+</div>
+<a id="method_RemoveCssClass"></a><div class="element clickable method public method_RemoveCssClass" data-toggle="collapse" data-target=".method_RemoveCssClass .collapse">
+<h2>This will remove a CssClass name from the CssClass property (if it exists),
+updating the CssClass property accordingly.</h2>
+<pre>RemoveCssClass(string $strCssClassName) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::RemoveCssClass()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::RemoveCssClass()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::RemoveCssClass()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$strCssClassName</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a id="method_RemoveCustomAttribute"></a><div class="element clickable method public method_RemoveCustomAttribute" data-toggle="collapse" data-target=".method_RemoveCustomAttribute .collapse">
+<h2>Removes the given custom attribute</h2>
+<pre>RemoveCustomAttribute(string $strName) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::RemoveCustomAttribute()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::RemoveCustomAttribute()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::RemoveCustomAttribute()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$strName</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a id="method_RemoveCustomStyle"></a><div class="element clickable method public method_RemoveCustomStyle" data-toggle="collapse" data-target=".method_RemoveCustomStyle .collapse">
+<h2>Deletes the given custom style</h2>
+<pre>RemoveCustomStyle(string $strName) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::RemoveCustomStyle()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::RemoveCustomStyle()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::RemoveCustomStyle()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$strName</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a id="method_RemoveItem"></a><div class="element clickable method public method_RemoveItem" data-toggle="collapse" data-target=".method_RemoveItem .collapse">
+<h2>Removes a ListItem at the specified index location</h2>
+<pre>RemoveItem(integer $intIndex) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QListControl::RemoveItem()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$intIndex</h4>
+<code>integer</code>
+</div>
+</div></div>
+</div>
+<a id="method_Render"></a><div class="element clickable method public method_Render" data-toggle="collapse" data-target=".method_Render .collapse">
+<h2>This render method is the most basic render-method available.</h2>
+<pre>Render(boolean $blnDisplayOutput) : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>It will perform attribute overiding (if any) and will either display the rendered
+HTML (if blnDisplayOutput is true, which it is by default), or it will return the
+rendered HTML as a string.</p></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::Render()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::Render()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::Render()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$blnDisplayOutput</h4>
+<code>boolean</code><p>render the control or return as string</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_RenderAjax"></a><div class="element clickable method public method_RenderAjax" data-toggle="collapse" data-target=".method_RenderAjax .collapse">
+<h2>RenderAjax will be called during an Ajax-Rerendering of the controls do to it being modified</h2>
+<pre>RenderAjax(boolean $blnDisplayOutput) : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::RenderAjax()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::RenderAjax()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::RenderAjax()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$blnDisplayOutput</h4>
+<code>boolean</code><p>render the control or return as string</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_RenderExtensionRenderer"></a><div class="element clickable method public method_RenderExtensionRenderer" data-toggle="collapse" data-target=".method_RenderExtensionRenderer .collapse">
+<h2>Helper method to render the control using some other class/method.</h2>
+<pre>RenderExtensionRenderer($classname, $methodname, $args) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Useful for plugins that want to override the render behavior for the controls
+without modifying the control code.</p></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::RenderExtensionRenderer()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::RenderExtensionRenderer()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::RenderExtensionRenderer()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$classname</h4></div>
+<div class="subelement argument"><h4>$methodname</h4></div>
+<div class="subelement argument"><h4>$args</h4></div>
+</div></div>
+</div>
+<a id="method_RenderWithError"></a><div class="element clickable method public method_RenderWithError" data-toggle="collapse" data-target=".method_RenderWithError .collapse">
+<h2>This render method will render the control with additional output of
+any validation errors, that might occur</h2>
+<pre>RenderWithError(boolean $blnDisplayOutput) : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::RenderWithError()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::RenderWithError()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::RenderWithError()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$blnDisplayOutput</h4>
+<code>boolean</code><p>display output (echo out) or just return as string</p>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_RenderWithName"></a><div class="element clickable method public method_RenderWithName" data-toggle="collapse" data-target=".method_RenderWithName .collapse">
+<h2>Renders the control with an attached name</h2>
+<pre>RenderWithName(boolean $blnDisplayOutput) : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>This will call <a href="QControlBase::GetControlHtml()">QControlBase::GetControlHtml()</a> for the bulk of the work, but will add layout html as well.  It will include
+the rendering of the Controls' name label, any errors or warnings, instructions, and html before/after (if specified).
+As this is the parent class of all controls, this method defines how ALL controls will render when rendered with a name.
+If you need certain controls to display differently, override this function in that control's class.</p></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::RenderWithName()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::RenderWithName()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::RenderWithName()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$blnDisplayOutput</h4>
+<code>boolean</code><p>true to send to display buffer, false to just return then html</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="../classes/QCallerException.html">\QCallerException</a></code></th>
+<td></td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>HTML of rendered Control</div>
+</div></div>
+</div>
+<a id="method_ReplaceItem"></a><div class="element clickable method public method_ReplaceItem" data-toggle="collapse" data-target=".method_ReplaceItem .collapse">
+<h2>Replaces a QListItem at $intIndex.</h2>
+<pre>ReplaceItem(integer $intIndex, \QListItem $objListItem) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>This combines the RemoveItem() and AddItemAt() operations.</p></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QListControl::ReplaceItem()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$intIndex</h4>
+<code>integer</code>
+</div>
+<div class="subelement argument">
+<h4>$objListItem</h4>
+<code><a href="../classes/QListItem.html">\QListItem</a></code>
+</div>
+</div></div>
+</div>
+<a id="method_ResetFlags"></a><div class="element clickable method public method_ResetFlags" data-toggle="collapse" data-target=".method_ResetFlags .collapse">
+<h2>ResetFlags()
+        </h2>
+<pre>ResetFlags() </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::ResetFlags()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::ResetFlags()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::ResetFlags()</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="method_ResetOnPageStatus"></a><div class="element clickable method public method_ResetOnPageStatus" data-toggle="collapse" data-target=".method_ResetOnPageStatus .collapse">
+<h2>ResetOnPageStatus()
+        </h2>
+<pre>ResetOnPageStatus() </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::ResetOnPageStatus()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::ResetOnPageStatus()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::ResetOnPageStatus()</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="method_SetCustomAttribute"></a><div class="element clickable method public method_SetCustomAttribute" data-toggle="collapse" data-target=".method_SetCustomAttribute .collapse">
+<h2>Sets one custom attribute</h2>
+<pre>SetCustomAttribute(string $strName, string $strValue) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Custom Attributes refers to the html name-value pairs that can be rendered within the control that are not
+covered by an explicit method. For example, on a textbox, you can render any number of additional name-value
+pairs, to assign additional javascript actions, additional formatting, etc.</p>
+
+<pre><code><?php
+$txtTextbox = new Textbox("txtTextbox");
+$txtTextbox->SetCustomAttribute("onfocus", "alert('You are about to edit this field');");
+$txtTextbox->SetCustomAttribute("nowrap", "nowrap");
+$txtTextbox->SetCustomAttribute("blah", "foo");
+?>
+</code></pre>
+
+<p>Will render:</p>
+
+<pre><code>  <input type="text" ...... onfocus="alert('You are about to edit this field');" nowrap="nowrap" blah="foo" />
+</code></pre></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::SetCustomAttribute()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::SetCustomAttribute()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::SetCustomAttribute()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$strName</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$strValue</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a id="method_SetCustomStyle"></a><div class="element clickable method public method_SetCustomStyle" data-toggle="collapse" data-target=".method_SetCustomStyle .collapse">
+<h2>Adds a custom style property/value to the html style attribute</h2>
+<pre>SetCustomStyle(string $strName, string $strValue) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Sets a custom css property. For example:</p>
+
+<pre><code><?php
+$txtTextbox = new Textbox("txtTextbox");
+$txtTextbox->SetCustomStyle("white-space", "nowrap");
+$txtTextbox->SetCustomStyle("margin", "10px");
+?>
+</code></pre>
+
+<p>Will render:</p>
+
+<pre><code>     <input type="text" ...... style="white-space:nowrap;margin:10px" />
+</code></pre></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::SetCustomStyle()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::SetCustomStyle()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::SetCustomStyle()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$strName</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$strValue</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a id="method_SetFocus"></a><div class="element clickable method public method_SetFocus" data-toggle="collapse" data-target=".method_SetFocus .collapse">
+<h2>Same as "Focus": Sets focus to this control</h2>
+<pre>SetFocus() </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::SetFocus()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::SetFocus()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::SetFocus()</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="method_SetForm"></a><div class="element clickable method public method_SetForm" data-toggle="collapse" data-target=".method_SetForm .collapse">
+<h2>SetForm()
+        </h2>
+<pre>SetForm($objForm) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::SetForm()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::SetForm()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::SetForm()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$objForm</h4></div>
+</div></div>
+</div>
+<a id="method_SetParentControl"></a><div class="element clickable method public method_SetParentControl" data-toggle="collapse" data-target=".method_SetParentControl .collapse">
+<h2>SetParentControl()
+        </h2>
+<pre>SetParentControl($objControl) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::SetParentControl()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::SetParentControl()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::SetParentControl()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$objControl</h4></div>
+</div></div>
+</div>
+<a id="method_Validate"></a><div class="element clickable method public method_Validate" data-toggle="collapse" data-target=".method_Validate .collapse">
+<h2>Checks if this controls contains a valid value.</h2>
+<pre>Validate() : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>This abstract method defines how a control should validate itself based on the value/
+properties it has. It should also include the handling of ensuring the "Required"
+requirements are obeyed if this control's "Required" flag is set to true.</p>
+
+<p>For Controls that can't realistically be "validated" (e.g. labels, datagrids, etc.),
+those controls should simply have Validate() return true.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>boolean</code></div>
+</div></div>
+</div>
+<a id="method_ValidationReset"></a><div class="element clickable method public method_ValidationReset" data-toggle="collapse" data-target=".method_ValidationReset .collapse">
+<h2>ValidationReset()
+        </h2>
+<pre>ValidationReset() </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::ValidationReset()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::ValidationReset()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::ValidationReset()</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="method_VarExport"></a><div class="element clickable method public method_VarExport" data-toggle="collapse" data-target=".method_VarExport .collapse">
+<h2>VarExport()
+        </h2>
+<pre>VarExport($blnReturn) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::VarExport()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::VarExport()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::VarExport()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$blnReturn</h4></div>
+</div></div>
+</div>
+<a id="method___construct"></a><div class="element clickable method public method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
+<h2>QControl-Constructor</h2>
+<pre>__construct(<a href="../classes/QControl.html">\QControl</a> | <a href="../classes/QForm.html">\QForm</a> $objParentObject, string $strControlId) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>This constructor will generally not be used to create a QControlBase object.  Instead it is used by the
+classes which extend the class.  Only the parent object parameter is required.  If the option strControlId
+parameter is not used, QCubed will generate the id.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$objParentObject</h4>
+<code><a href="../classes/QControl.html">\QControl</a></code><code><a href="../classes/QForm.html">\QForm</a></code>
+</div>
+<div class="subelement argument">
+<h4>$strControlId</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a id="method___get"></a><div class="element clickable method public method___get" data-toggle="collapse" data-target=".method___get .collapse">
+<h2>Override method to perform a property "Get"
+This will get the value of $strName
+All inhereted objects that call __get() should always fall through
+to calling parent::__get() in a try/catch statement catching
+for CallerExceptions.</h2>
+<pre>__get(string $strName) : mixed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$strName</h4>
+<code>string</code><p>Name of the property to get</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>mixed</code>the returned property</div>
+</div></div>
+</div>
+<a id="method___set"></a><div class="element clickable method public method___set" data-toggle="collapse" data-target=".method___set .collapse">
+<h2>Override method to perform a property "Set"
+This will set the property $strName to be $mixValue
+All inhereted objects that call __set() should always fall through
+to calling parent::__set() in a try/catch statement catching
+for CallerExceptions.</h2>
+<pre>__set(string $strName, string $mixValue) : mixed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$strName</h4>
+<code>string</code><p>Name of the property to set</p></div>
+<div class="subelement argument">
+<h4>$mixValue</h4>
+<code>string</code><p>New value of the property</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>mixed</code>the property that was set</div>
+</div></div>
+</div>
+<a id="method_getJqControlId"></a><div class="element clickable method public method_getJqControlId" data-toggle="collapse" data-target=".method_getJqControlId .collapse">
+<h2>Used by jQuery UI wrapper controls to find the element on which to apply the jQuery function</h2>
+<pre>getJqControlId() : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>NOTE: Some controls that use jQuery will get wrapped with extra divs by the jQuery library.
+If such a control then gets replaced by Ajax, the jQuery effects will be deleted. To solve this,
+the corresponding QCubed control should set UseWrapper to true, attach the jQuery effect to
+the wrapper, and override this function to return the id of the wrapper. See QDialogBase.class.php for
+an exaple.</p></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::getJqControlId()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::getJqControlId()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::getJqControlId()</td>
+</tr>
+</table>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>the DOM element id on which to apply the jQuery UI function</div>
+</div></div>
+</div>
+<a id="method_GetControlHtml"></a><div class="element clickable method protected method_GetControlHtml" data-toggle="collapse" data-target=".method_GetControlHtml .collapse">
+<h2>This method will render the control, itself, and will return the rendered HTML as a string</h2>
+<pre>GetControlHtml() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>As an abstract method, any class extending QControlBase must implement it.  This ensures that
+each control has its own specific html.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_GetItemHtml"></a><div class="element clickable method protected method_GetItemHtml" data-toggle="collapse" data-target=".method_GetItemHtml .collapse">
+<h2>Returns the HTML-Code for a single Item</h2>
+<pre>GetItemHtml(<a href="../classes/QListItem.html">\QListItem</a> $objItem, integer $intIndex) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$objItem</h4>
+<code><a href="../classes/QListItem.html">\QListItem</a></code>
+</div>
+<div class="subelement argument">
+<h4>$intIndex</h4>
+<code>integer</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>resulting HTML</div>
+</div></div>
+</div>
+<a id="method_GetNonWrappedHtml"></a><div class="element clickable method protected method_GetNonWrappedHtml" data-toggle="collapse" data-target=".method_GetNonWrappedHtml .collapse">
+<h2>GetNonWrappedHtml()
+        </h2>
+<pre>GetNonWrappedHtml() </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::GetNonWrappedHtml()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::GetNonWrappedHtml()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::GetNonWrappedHtml()</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="method_GetResetButtonHtml"></a><div class="element clickable method protected method_GetResetButtonHtml" data-toggle="collapse" data-target=".method_GetResetButtonHtml .collapse">
+<h2>GetResetButtonHtml()
+        </h2>
+<pre>GetResetButtonHtml() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_GetWrapperStyleAttributes"></a><div class="element clickable method protected method_GetWrapperStyleAttributes" data-toggle="collapse" data-target=".method_GetWrapperStyleAttributes .collapse">
+<h2>Returns all wrapper-style-attributes</h2>
+<pre>GetWrapperStyleAttributes($blnIsBlockElement) : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Similar to GetStyleAttributes, but specifically for CSS name/value pairs that will render
+within a wrapper's HTML "style" attribute</p></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::GetWrapperStyleAttributes()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::GetWrapperStyleAttributes()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::GetWrapperStyleAttributes()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$blnIsBlockElement</h4></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_PersistPrepare"></a><div class="element clickable method protected method_PersistPrepare" data-toggle="collapse" data-target=".method_PersistPrepare .collapse">
+<h2>PersistPrepare()
+        </h2>
+<pre>PersistPrepare() </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::PersistPrepare()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::PersistPrepare()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::PersistPrepare()</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="method_RenderChildren"></a><div class="element clickable method protected method_RenderChildren" data-toggle="collapse" data-target=".method_RenderChildren .collapse">
+<h2>Renders all Children</h2>
+<pre>RenderChildren(boolean $blnDisplayOutput) : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::RenderChildren()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::RenderChildren()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::RenderChildren()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$blnDisplayOutput</h4>
+<code>boolean</code><p>display output (echo out) or just return as string</p>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_RenderHelper"></a><div class="element clickable method protected method_RenderHelper" data-toggle="collapse" data-target=".method_RenderHelper .collapse">
+<h2>RenderHelper should be called from all "Render" functions FIRST in order to check for and
+perform attribute overides (if any).</h2>
+<pre>RenderHelper($mixParameterArray, $strRenderMethod) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>All render methods should take in an optional first boolean parameter blnDisplayOutput
+(default to true), and then any number of attribute overrides.</p>
+
+<p>Any "Render" method (e.g. Render, RenderWithName, RenderWithError) should call the
+RenderHelper FIRST in order to:</p>
+
+<ul>
+<li>Check for and perform attribute overrides</li>
+<li>Check to see if this control is "Visible".  If it is Visible=false, then
+    the renderhelper will cause the method to immedaitely return</li>
+</ul>
+
+<p>Proper usage within the first line of any Render() method is:</p>
+
+<pre><code>$this->RenderHelper(func_get_args(), __FUNCTION__);</code></pre>
+
+<p>See <a href="QControl::RenderWithName()">QControl::RenderWithName()</a> as example.</p></div>
+<table class="table table-bordered">
+<tr>
+<th>see</th>
+<td><a href="qcubed._core.base_controls.QControlBase.class.html#%5CQControlBase::RenderOutput()">\QControlBase::RenderOutput()</a></td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::RenderHelper()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::RenderHelper()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::RenderHelper()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$mixParameterArray</h4><p>the parameters given to the render call</p></div>
+<div class="subelement argument">
+<h4>$strRenderMethod</h4><p>the method which has been used to render the
+	control. This is important for ajax rerendering</p></div>
+</div></div>
+</div>
+<a id="method_RenderOutput"></a><div class="element clickable method protected method_RenderOutput" data-toggle="collapse" data-target=".method_RenderOutput .collapse">
+<h2>RenderOutput should be the last call in your custom RenderMethod.</h2>
+<pre>RenderOutput(string $strOutput, boolean $blnDisplayOutput, boolean $blnForceAsBlockElement, $strWrapperAttributes) : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>RenderOutput wraps your content with valid divs and control-identifiers, echos your code
+to the content buffer or simply returns it. See <a href="QControlBase::RenderHelper()">QControlBase::RenderHelper()</a>.</p></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::RenderOutput()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::RenderOutput()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::RenderOutput()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$strOutput</h4>
+<code>string</code><p>Your html-code which should be given out</p>
+</div>
+<div class="subelement argument">
+<h4>$blnDisplayOutput</h4>
+<code>boolean</code><p>should it be given out, or just be returned?</p>
+</div>
+<div class="subelement argument">
+<h4>$blnForceAsBlockElement</h4>
+<code>boolean</code><p>should it be given out as a block element, regardless of its configured tag?</p>
+</div>
+<div class="subelement argument"><h4>$strWrapperAttributes</h4></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a id="property_ItemStyle"> </a><div class="element clickable property public property_ItemStyle" data-toggle="collapse" data-target=".property_ItemStyle .collapse">
+<h2></h2>
+<pre>$ItemStyle : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>magic</th>
+<td></td>
+</tr>
+<tr>
+<th>property</th>
+<td>{@link QListItemStyle}</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_LabelForRequired"> </a><div class="element clickable property public property_LabelForRequired" data-toggle="collapse" data-target=".property_LabelForRequired .collapse">
+<h2></h2>
+<pre>$LabelForRequired : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>magic</th>
+<td></td>
+</tr>
+<tr>
+<th>property</th>
+<td></td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_LabelForRequiredUnnamed"> </a><div class="element clickable property public property_LabelForRequiredUnnamed" data-toggle="collapse" data-target=".property_LabelForRequiredUnnamed .collapse">
+<h2></h2>
+<pre>$LabelForRequiredUnnamed : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>magic</th>
+<td></td>
+</tr>
+<tr>
+<th>property</th>
+<td></td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_Rows"> </a><div class="element clickable property public property_Rows" data-toggle="collapse" data-target=".property_Rows .collapse">
+<h2></h2>
+<pre>$Rows : integer</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>magic</th>
+<td></td>
+</tr>
+<tr>
+<th>property</th>
+<td>specifies how many rows you want to have shown.</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_SelectionMode"> </a><div class="element clickable property public property_SelectionMode" data-toggle="collapse" data-target=".property_SelectionMode .collapse">
+<h2></h2>
+<pre>$SelectionMode : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>magic</th>
+<td></td>
+</tr>
+<tr>
+<th>property</th>
+<td>{@link QSelectionMode} specifies if this is a "Single" or "Multiple" select control.</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_blnActionsMustTerminate"> </a><div class="element clickable property protected property_blnActionsMustTerminate" data-toggle="collapse" data-target=".property_blnActionsMustTerminate .collapse">
+<h2></h2>
+<pre>$blnActionsMustTerminate </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::$$blnActionsMustTerminate</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::$$blnActionsMustTerminate</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::$$blnActionsMustTerminate</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_blnDisplay"> </a><div class="element clickable property protected property_blnDisplay" data-toggle="collapse" data-target=".property_blnDisplay .collapse">
+<h2></h2>
+<pre>$blnDisplay </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::$$blnDisplay</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::$$blnDisplay</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::$$blnDisplay</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_blnEnabled"> </a><div class="element clickable property protected property_blnEnabled" data-toggle="collapse" data-target=".property_blnEnabled .collapse">
+<h2></h2>
+<pre>$blnEnabled </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::$$blnEnabled</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::$$blnEnabled</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::$$blnEnabled</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_blnFontBold"> </a><div class="element clickable property protected property_blnFontBold" data-toggle="collapse" data-target=".property_blnFontBold .collapse">
+<h2></h2>
+<pre>$blnFontBold </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::$$blnFontBold</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::$$blnFontBold</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::$$blnFontBold</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_blnFontItalic"> </a><div class="element clickable property protected property_blnFontItalic" data-toggle="collapse" data-target=".property_blnFontItalic .collapse">
+<h2></h2>
+<pre>$blnFontItalic </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::$$blnFontItalic</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::$$blnFontItalic</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::$$blnFontItalic</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_blnFontOverline"> </a><div class="element clickable property protected property_blnFontOverline" data-toggle="collapse" data-target=".property_blnFontOverline .collapse">
+<h2></h2>
+<pre>$blnFontOverline </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::$$blnFontOverline</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::$$blnFontOverline</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::$$blnFontOverline</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_blnFontStrikeout"> </a><div class="element clickable property protected property_blnFontStrikeout" data-toggle="collapse" data-target=".property_blnFontStrikeout .collapse">
+<h2></h2>
+<pre>$blnFontStrikeout </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::$$blnFontStrikeout</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::$$blnFontStrikeout</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::$$blnFontStrikeout</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_blnFontUnderline"> </a><div class="element clickable property protected property_blnFontUnderline" data-toggle="collapse" data-target=".property_blnFontUnderline .collapse">
+<h2></h2>
+<pre>$blnFontUnderline </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::$$blnFontUnderline</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::$$blnFontUnderline</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::$$blnFontUnderline</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_blnIsBlockElement"> </a><div class="element clickable property protected property_blnIsBlockElement" data-toggle="collapse" data-target=".property_blnIsBlockElement .collapse">
+<h2></h2>
+<pre>$blnIsBlockElement </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::$$blnIsBlockElement</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::$$blnIsBlockElement</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::$$blnIsBlockElement</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_blnModified"> </a><div class="element clickable property protected property_blnModified" data-toggle="collapse" data-target=".property_blnModified .collapse">
+<h2></h2>
+<pre>$blnModified </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::$$blnModified</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::$$blnModified</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::$$blnModified</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_blnOnPage"> </a><div class="element clickable property protected property_blnOnPage" data-toggle="collapse" data-target=".property_blnOnPage .collapse">
+<h2></h2>
+<pre>$blnOnPage </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::$$blnOnPage</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::$$blnOnPage</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::$$blnOnPage</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_blnRendered"> </a><div class="element clickable property protected property_blnRendered" data-toggle="collapse" data-target=".property_blnRendered .collapse">
+<h2></h2>
+<pre>$blnRendered </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::$$blnRendered</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::$$blnRendered</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::$$blnRendered</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_blnRendering"> </a><div class="element clickable property protected property_blnRendering" data-toggle="collapse" data-target=".property_blnRendering .collapse">
+<h2></h2>
+<pre>$blnRendering </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::$$blnRendering</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::$$blnRendering</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::$$blnRendering</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_blnRequired"> </a><div class="element clickable property protected property_blnRequired" data-toggle="collapse" data-target=".property_blnRequired .collapse">
+<h2></h2>
+<pre>$blnRequired </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::$$blnRequired</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::$$blnRequired</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::$$blnRequired</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_blnUseWrapper"> </a><div class="element clickable property protected property_blnUseWrapper" data-toggle="collapse" data-target=".property_blnUseWrapper .collapse">
+<h2></h2>
+<pre>$blnUseWrapper </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::$$blnUseWrapper</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::$$blnUseWrapper</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::$$blnUseWrapper</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_blnVisible"> </a><div class="element clickable property protected property_blnVisible" data-toggle="collapse" data-target=".property_blnVisible .collapse">
+<h2></h2>
+<pre>$blnVisible </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::$$blnVisible</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::$$blnVisible</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::$$blnVisible</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_blnWrapperModified"> </a><div class="element clickable property protected property_blnWrapperModified" data-toggle="collapse" data-target=".property_blnWrapperModified .collapse">
+<h2></h2>
+<pre>$blnWrapperModified </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::$$blnWrapperModified</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::$$blnWrapperModified</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::$$blnWrapperModified</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_intOpacity"> </a><div class="element clickable property protected property_intOpacity" data-toggle="collapse" data-target=".property_intOpacity .collapse">
+<h2></h2>
+<pre>$intOpacity </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::$$intOpacity</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::$$intOpacity</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::$$intOpacity</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_intTabIndex"> </a><div class="element clickable property protected property_intTabIndex" data-toggle="collapse" data-target=".property_intTabIndex .collapse">
+<h2></h2>
+<pre>$intTabIndex </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::$$intTabIndex</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::$$intTabIndex</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::$$intTabIndex</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_mixActionParameter"> </a><div class="element clickable property protected property_mixActionParameter" data-toggle="collapse" data-target=".property_mixActionParameter .collapse">
+<h2></h2>
+<pre>$mixActionParameter </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::$$mixActionParameter</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::$$mixActionParameter</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::$$mixActionParameter</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_mixCausesValidation"> </a><div class="element clickable property protected property_mixCausesValidation" data-toggle="collapse" data-target=".property_mixCausesValidation .collapse">
+<h2></h2>
+<pre>$mixCausesValidation </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::$$mixCausesValidation</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::$$mixCausesValidation</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::$$mixCausesValidation</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_objActionArray"> </a><div class="element clickable property protected property_objActionArray" data-toggle="collapse" data-target=".property_objActionArray .collapse">
+<h2></h2>
+<pre>$objActionArray </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::$$objActionArray</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::$$objActionArray</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::$$objActionArray</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_objChildControlArray"> </a><div class="element clickable property protected property_objChildControlArray" data-toggle="collapse" data-target=".property_objChildControlArray .collapse">
+<h2></h2>
+<pre>$objChildControlArray </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::$$objChildControlArray</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::$$objChildControlArray</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::$$objChildControlArray</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_objDraggable"> </a><div class="element clickable property protected property_objDraggable" data-toggle="collapse" data-target=".property_objDraggable .collapse">
+<h2></h2>
+<pre>$objDraggable </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::$$objDraggable</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::$$objDraggable</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::$$objDraggable</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_objDroppable"> </a><div class="element clickable property protected property_objDroppable" data-toggle="collapse" data-target=".property_objDroppable .collapse">
+<h2></h2>
+<pre>$objDroppable </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::$$objDroppable</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::$$objDroppable</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::$$objDroppable</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_objForm"> </a><div class="element clickable property protected property_objForm" data-toggle="collapse" data-target=".property_objForm .collapse">
+<h2></h2>
+<pre>$objForm </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::$$objForm</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::$$objForm</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::$$objForm</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_objItemStyle"> </a><div class="element clickable property protected property_objItemStyle" data-toggle="collapse" data-target=".property_objItemStyle .collapse">
+<h2></h2>
+<pre>$objItemStyle </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_objItemsArray"> </a><div class="element clickable property protected property_objItemsArray" data-toggle="collapse" data-target=".property_objItemsArray .collapse">
+<h2></h2>
+<pre>$objItemsArray : object</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>access</th>
+<td>protected</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::$$objItemsArray</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_objParentControl"> </a><div class="element clickable property protected property_objParentControl" data-toggle="collapse" data-target=".property_objParentControl .collapse">
+<h2></h2>
+<pre>$objParentControl </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::$$objParentControl</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::$$objParentControl</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::$$objParentControl</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_objResizable"> </a><div class="element clickable property protected property_objResizable" data-toggle="collapse" data-target=".property_objResizable .collapse">
+<h2></h2>
+<pre>$objResizable </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::$$objResizable</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::$$objResizable</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::$$objResizable</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_strAccessKey"> </a><div class="element clickable property protected property_strAccessKey" data-toggle="collapse" data-target=".property_strAccessKey .collapse">
+<h2></h2>
+<pre>$strAccessKey </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::$$strAccessKey</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::$$strAccessKey</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::$$strAccessKey</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_strBackColor"> </a><div class="element clickable property protected property_strBackColor" data-toggle="collapse" data-target=".property_strBackColor .collapse">
+<h2></h2>
+<pre>$strBackColor </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::$$strBackColor</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::$$strBackColor</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::$$strBackColor</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_strBorderColor"> </a><div class="element clickable property protected property_strBorderColor" data-toggle="collapse" data-target=".property_strBorderColor .collapse">
+<h2></h2>
+<pre>$strBorderColor </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::$$strBorderColor</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::$$strBorderColor</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::$$strBorderColor</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_strBorderStyle"> </a><div class="element clickable property protected property_strBorderStyle" data-toggle="collapse" data-target=".property_strBorderStyle .collapse">
+<h2></h2>
+<pre>$strBorderStyle </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::$$strBorderStyle</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::$$strBorderStyle</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::$$strBorderStyle</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_strBorderWidth"> </a><div class="element clickable property protected property_strBorderWidth" data-toggle="collapse" data-target=".property_strBorderWidth .collapse">
+<h2></h2>
+<pre>$strBorderWidth </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::$$strBorderWidth</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::$$strBorderWidth</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::$$strBorderWidth</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_strControlId"> </a><div class="element clickable property protected property_strControlId" data-toggle="collapse" data-target=".property_strControlId .collapse">
+<h2></h2>
+<pre>$strControlId </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::$$strControlId</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::$$strControlId</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::$$strControlId</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_strCssClass"> </a><div class="element clickable property protected property_strCssClass" data-toggle="collapse" data-target=".property_strCssClass .collapse">
+<h2></h2>
+<pre>$strCssClass </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::$$strCssClass</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::$$strCssClass</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::$$strCssClass</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_strCursor"> </a><div class="element clickable property protected property_strCursor" data-toggle="collapse" data-target=".property_strCursor .collapse">
+<h2></h2>
+<pre>$strCursor </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::$$strCursor</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::$$strCursor</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::$$strCursor</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_strCustomAttributeArray"> </a><div class="element clickable property protected property_strCustomAttributeArray" data-toggle="collapse" data-target=".property_strCustomAttributeArray .collapse">
+<h2></h2>
+<pre>$strCustomAttributeArray </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::$$strCustomAttributeArray</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::$$strCustomAttributeArray</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::$$strCustomAttributeArray</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_strCustomStyleArray"> </a><div class="element clickable property protected property_strCustomStyleArray" data-toggle="collapse" data-target=".property_strCustomStyleArray .collapse">
+<h2></h2>
+<pre>$strCustomStyleArray </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::$$strCustomStyleArray</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::$$strCustomStyleArray</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::$$strCustomStyleArray</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_strDisplayStyle"> </a><div class="element clickable property protected property_strDisplayStyle" data-toggle="collapse" data-target=".property_strDisplayStyle .collapse">
+<h2></h2>
+<pre>$strDisplayStyle </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::$$strDisplayStyle</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::$$strDisplayStyle</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::$$strDisplayStyle</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_strFontNames"> </a><div class="element clickable property protected property_strFontNames" data-toggle="collapse" data-target=".property_strFontNames .collapse">
+<h2></h2>
+<pre>$strFontNames </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::$$strFontNames</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::$$strFontNames</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::$$strFontNames</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_strFontSize"> </a><div class="element clickable property protected property_strFontSize" data-toggle="collapse" data-target=".property_strFontSize .collapse">
+<h2></h2>
+<pre>$strFontSize </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::$$strFontSize</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::$$strFontSize</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::$$strFontSize</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_strForeColor"> </a><div class="element clickable property protected property_strForeColor" data-toggle="collapse" data-target=".property_strForeColor .collapse">
+<h2></h2>
+<pre>$strForeColor </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::$$strForeColor</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::$$strForeColor</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::$$strForeColor</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_strFormAttributes"> </a><div class="element clickable property protected property_strFormAttributes" data-toggle="collapse" data-target=".property_strFormAttributes .collapse">
+<h2></h2>
+<pre>$strFormAttributes </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::$$strFormAttributes</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::$$strFormAttributes</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::$$strFormAttributes</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_strHeight"> </a><div class="element clickable property protected property_strHeight" data-toggle="collapse" data-target=".property_strHeight .collapse">
+<h2></h2>
+<pre>$strHeight </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::$$strHeight</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::$$strHeight</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::$$strHeight</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_strHtmlAfter"> </a><div class="element clickable property protected property_strHtmlAfter" data-toggle="collapse" data-target=".property_strHtmlAfter .collapse">
+<h2></h2>
+<pre>$strHtmlAfter </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::$$strHtmlAfter</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::$$strHtmlAfter</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::$$strHtmlAfter</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_strHtmlBefore"> </a><div class="element clickable property protected property_strHtmlBefore" data-toggle="collapse" data-target=".property_strHtmlBefore .collapse">
+<h2></h2>
+<pre>$strHtmlBefore </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::$$strHtmlBefore</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::$$strHtmlBefore</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::$$strHtmlBefore</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_strInstructions"> </a><div class="element clickable property protected property_strInstructions" data-toggle="collapse" data-target=".property_strInstructions .collapse">
+<h2></h2>
+<pre>$strInstructions </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::$$strInstructions</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::$$strInstructions</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::$$strInstructions</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_strJavaScripts"> </a><div class="element clickable property protected property_strJavaScripts" data-toggle="collapse" data-target=".property_strJavaScripts .collapse">
+<h2></h2>
+<pre>$strJavaScripts </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::$$strJavaScripts</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::$$strJavaScripts</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::$$strJavaScripts</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_strLabelForRequired"> </a><div class="element clickable property protected property_strLabelForRequired" data-toggle="collapse" data-target=".property_strLabelForRequired .collapse">
+<h2></h2>
+<pre>$strLabelForRequired </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_strLabelForRequiredUnnamed"> </a><div class="element clickable property protected property_strLabelForRequiredUnnamed" data-toggle="collapse" data-target=".property_strLabelForRequiredUnnamed .collapse">
+<h2></h2>
+<pre>$strLabelForRequiredUnnamed </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_strLeft"> </a><div class="element clickable property protected property_strLeft" data-toggle="collapse" data-target=".property_strLeft .collapse">
+<h2></h2>
+<pre>$strLeft </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::$$strLeft</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::$$strLeft</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::$$strLeft</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_strName"> </a><div class="element clickable property protected property_strName" data-toggle="collapse" data-target=".property_strName .collapse">
+<h2></h2>
+<pre>$strName </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::$$strName</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::$$strName</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::$$strName</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_strOverflow"> </a><div class="element clickable property protected property_strOverflow" data-toggle="collapse" data-target=".property_strOverflow .collapse">
+<h2></h2>
+<pre>$strOverflow </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::$$strOverflow</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::$$strOverflow</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::$$strOverflow</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_strPosition"> </a><div class="element clickable property protected property_strPosition" data-toggle="collapse" data-target=".property_strPosition .collapse">
+<h2></h2>
+<pre>$strPosition </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::$$strPosition</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::$$strPosition</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::$$strPosition</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_strPreferedRenderMethod"> </a><div class="element clickable property protected property_strPreferedRenderMethod" data-toggle="collapse" data-target=".property_strPreferedRenderMethod .collapse">
+<h2></h2>
+<pre>$strPreferedRenderMethod </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::$$strPreferedRenderMethod</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::$$strPreferedRenderMethod</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::$$strPreferedRenderMethod</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_strRenderMethod"> </a><div class="element clickable property protected property_strRenderMethod" data-toggle="collapse" data-target=".property_strRenderMethod .collapse">
+<h2></h2>
+<pre>$strRenderMethod </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::$$strRenderMethod</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::$$strRenderMethod</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::$$strRenderMethod</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_strSelectionMode"> </a><div class="element clickable property protected property_strSelectionMode" data-toggle="collapse" data-target=".property_strSelectionMode .collapse">
+<h2></h2>
+<pre>$strSelectionMode </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_strStyleSheets"> </a><div class="element clickable property protected property_strStyleSheets" data-toggle="collapse" data-target=".property_strStyleSheets .collapse">
+<h2></h2>
+<pre>$strStyleSheets </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::$$strStyleSheets</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::$$strStyleSheets</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::$$strStyleSheets</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_strToolTip"> </a><div class="element clickable property protected property_strToolTip" data-toggle="collapse" data-target=".property_strToolTip .collapse">
+<h2></h2>
+<pre>$strToolTip </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::$$strToolTip</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::$$strToolTip</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::$$strToolTip</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_strTop"> </a><div class="element clickable property protected property_strTop" data-toggle="collapse" data-target=".property_strTop .collapse">
+<h2></h2>
+<pre>$strTop </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::$$strTop</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::$$strTop</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::$$strTop</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_strValidationError"> </a><div class="element clickable property protected property_strValidationError" data-toggle="collapse" data-target=".property_strValidationError .collapse">
+<h2></h2>
+<pre>$strValidationError </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::$$strValidationError</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::$$strValidationError</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::$$strValidationError</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_strWarning"> </a><div class="element clickable property protected property_strWarning" data-toggle="collapse" data-target=".property_strWarning .collapse">
+<h2></h2>
+<pre>$strWarning </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::$$strWarning</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::$$strWarning</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::$$strWarning</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_strWidth"> </a><div class="element clickable property protected property_strWidth" data-toggle="collapse" data-target=".property_strWidth .collapse">
+<h2></h2>
+<pre>$strWidth </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::$$strWidth</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::$$strWidth</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::$$strWidth</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_strWrapperCssClass"> </a><div class="element clickable property protected property_strWrapperCssClass" data-toggle="collapse" data-target=".property_strWrapperCssClass .collapse">
+<h2></h2>
+<pre>$strWrapperCssClass </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QControlBase::$$strWrapperCssClass</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QControl::$$strWrapperCssClass</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QListControl::$$strWrapperCssClass</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_intRows"> </a><div class="element clickable property private property_intRows" data-toggle="collapse" data-target=".property_intRows .collapse">
+<h2></h2>
+<pre>$intRows </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
+            generated on 2013-03-17T01:59:55+07:00.<br></footer></div>
+</div>
+</body>
+</html>

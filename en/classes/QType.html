@@ -1,0 +1,394 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>QCubed API » \QType</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">QCubed API</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="../packages/Codegen.html"><i class="icon-folder-open"></i> Codegen</a></li>
+<li><a href="../packages/Controls.html"><i class="icon-folder-open"></i> Controls</a></li>
+<li><a href="../packages/Controls%20%20.html"><i class="icon-folder-open"></i> Controls  </a></li>
+<li><a href="../packages/DatabaseAdapters.html"><i class="icon-folder-open"></i> DatabaseAdapters</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/My%20QCubed%20Application.html"><i class="icon-folder-open"></i> My QCubed Application</a></li>
+<li><a href="../packages/Sessions.html"><i class="icon-folder-open"></i> Sessions</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">4384</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul><li>todo 
+                <span class="label label-info">28</span>
+</li></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">8</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method_Cast" title="Cast :: Used to cast a variable to another type."><span class="description">Used to cast a variable to another type.</span><pre>Cast()</pre></a></li>
+<li class="method public "><a href="#method_Constant" title='Constant :: Used by the QCubed Code Generator to allow for the code generation of
+the actual "Type::Xxx" constant, instead of the text of the constant,
+in generated code.'><span class="description">Used by the QCubed Code Generator to allow for the code generation of
+the actual "Type::Xxx" constant, instead of the text of the constant,
+in generated code.</span><pre>Constant()</pre></a></li>
+<li class="method public "><a href="#method_SetBehaviour" title="SetBehaviour :: This method can be used to change the casting behaviour of QType::Cast()."><span class="description">This method can be used to change the casting behaviour of QType::Cast().</span><pre>SetBehaviour()</pre></a></li>
+<li class="method public "><a href="#method_SoapType" title='SoapType :: Used by the QCubed Code Generator and QSoapService class to allow for the xml generation of
+the actual "s:type" Soap Variable types.'><span class="description">Used by the QCubed Code Generator and QSoapService class to allow for the xml generation of
+the actual "s:type" Soap Variable types.</span><pre>SoapType()</pre></a></li>
+<li class="method public "><a href="#method_TypeFromDoc" title="TypeFromDoc :: "><span class="description">TypeFromDoc()
+        </span><pre>TypeFromDoc()</pre></a></li>
+<li class="method public "><a href="#method___construct" title="__construct :: This faux constructor method throws a caller exception."><span class="description">This faux constructor method throws a caller exception.</span><pre>__construct()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header private">» Private
+                    <ul>
+<li class="method private "><a href="#method_CastArrayTo" title="CastArrayTo :: "><span class="description">CastArrayTo()
+        </span><pre>CastArrayTo()</pre></a></li>
+<li class="method private "><a href="#method_CastObjectTo" title="CastObjectTo :: "><span class="description">CastObjectTo()
+        </span><pre>CastObjectTo()</pre></a></li>
+<li class="method private "><a href="#method_CastValueTo" title="CastValueTo :: "><span class="description">CastValueTo()
+        </span><pre>CastValueTo()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties
+                    <ul></ul>
+</li>
+<li class="nav-header private">» Private
+                    <ul><li class="property private "><a href="#property_intBehaviour" title="$intBehaviour :: "><span class="description"></span><pre>$intBehaviour</pre></a></li></ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-constant"></i> Constants
+                    <ul>
+<li class="constant  "><a href="#constant_ArrayType" title="ArrayType :: "><span class="description">ArrayType</span><pre>ArrayType</pre></a></li>
+<li class="constant  "><a href="#constant_Boolean" title="Boolean :: "><span class="description">Boolean</span><pre>Boolean</pre></a></li>
+<li class="constant  "><a href="#constant_CastOnly" title="CastOnly :: "><span class="description">CastOnly</span><pre>CastOnly</pre></a></li>
+<li class="constant  "><a href="#constant_CheckAndCast" title="CheckAndCast :: "><span class="description">CheckAndCast</span><pre>CheckAndCast</pre></a></li>
+<li class="constant  "><a href="#constant_CheckOnly" title="CheckOnly :: "><span class="description">CheckOnly</span><pre>CheckOnly</pre></a></li>
+<li class="constant  "><a href="#constant_DateTime" title="DateTime :: "><span class="description">DateTime</span><pre>DateTime</pre></a></li>
+<li class="constant  "><a href="#constant_Float" title="Float :: "><span class="description">Float</span><pre>Float</pre></a></li>
+<li class="constant  "><a href="#constant_Integer" title="Integer :: "><span class="description">Integer</span><pre>Integer</pre></a></li>
+<li class="constant  "><a href="#constant_NoOp" title="NoOp :: "><span class="description">NoOp</span><pre>NoOp</pre></a></li>
+<li class="constant  "><a href="#constant_Object" title="Object :: "><span class="description">Object</span><pre>Object</pre></a></li>
+<li class="constant  "><a href="#constant_Resource" title="Resource :: "><span class="description">Resource</span><pre>Resource</pre></a></li>
+<li class="constant  "><a href="#constant_String" title="String :: "><span class="description">String</span><pre>String</pre></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a id="\QType"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/global.html">global</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/QType.html">QType</a>
+</li>
+</ul>
+<div class="element class">
+<p class="short_description">Type Library to add some support for strongly named types.</p>
+<div class="details">
+<div class="long_description"><p>PHP does not support strongly named types.  The QCubed type library
+and QCubed typing in general attempts to bring some structure to types
+when passing in values, properties, parameters to/from QCubed framework objects
+and methods.</p>
+
+<p>The Type library attempts to allow as much flexibility as possible to
+set and cast variables to other types, similar to how PHP does it natively,
+but simply adds a big more structure to it.</p>
+
+<p>For example, regardless if a variable is an integer, boolean, or string,
+QType::Cast will allow the flexibility of those values to interchange with
+each other with little to no issue.</p>
+
+<p>In addition to value objects (ints, bools, floats, strings), the Type library
+also supports object casting.  While technically casting one object to another
+is not a true cast, QType::Cast does at least ensure that the tap being "casted"
+to is a legitamate subclass of the object being "cast".  So if you have ParentClass,
+and you have a ChildClass that extends ParentClass,
+    $objChildClass = new ChildClass();
+    $objParentClass = new ParentClass();
+    Type::Cast($objChildClass, 'ParentClass'); // is a legal cast
+    Type::Cast($objParentClass, 'ChildClass'); // will throw an InvalidCastException</p>
+
+<p>For values, specifically int to string conversion, one different between
+QType::Cast and PHP (in order to add structure) is that if an integer contains
+alpha characters, PHP would normally allow that through w/o complaint, simply
+ignoring any numeric characters past the first alpha character.  QType::Cast
+would instead throw an InvalidCastException to let the developer immedaitely
+know that something doesn't look right.</p>
+
+<p>In theory, the type library should maintain the same level of flexibility
+PHP developers are accostomed to, while providing a mechanism to limit
+careless coding errors and tough to figure out mistakes due to PHP's sometimes
+overly laxed type conversions.</p></div>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method_Cast"></a><div class="element clickable method public method_Cast" data-toggle="collapse" data-target=".method_Cast .collapse">
+<h2>Used to cast a variable to another type.</h2>
+<pre>Cast(mixed $mixItem, string $strType) : mixed</pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Allows for moderate
+support of strongly-named types.</p>
+
+<p>Will throw an exception if the cast fails, causes unexpected side effects,
+if attempting to cast an object to a value (or vice versa), or if an object
+is being cast to a class that isn't a subclass (e.g. parent).  The exception
+thrown will be an InvalidCastException, which extends CallerException.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$mixItem</h4>
+<code>mixed</code><p>the value, array or object that you want to cast</p></div>
+<div class="subelement argument">
+<h4>$strType</h4>
+<code>string</code><p>the type to cast to.  Can be a QType::XXX constant (e.g. QType::Integer), or the name of a Class</p>
+</div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>mixed</code>the passed in value/array/object that has been cast to strType</div>
+</div></div>
+</div>
+<a id="method_Constant"></a><div class="element clickable method public method_Constant" data-toggle="collapse" data-target=".method_Constant .collapse">
+<h2>Used by the QCubed Code Generator to allow for the code generation of
+the actual "Type::Xxx" constant, instead of the text of the constant,
+in generated code.</h2>
+<pre>Constant(string $strType) : string</pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>It is rare for Constant to be used manually outside of Code Generation.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$strType</h4>
+<code>string</code><p>the type to convert to 'constant' form</p>
+</div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>the text of the Text:Xxx Constant</div>
+</div></div>
+</div>
+<a id="method_SetBehaviour"></a><div class="element clickable method public method_SetBehaviour" data-toggle="collapse" data-target=".method_SetBehaviour .collapse">
+<h2>This method can be used to change the casting behaviour of QType::Cast().</h2>
+<pre>SetBehaviour(int $intBehaviour) : int</pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>By default QType::Cast() does lots of validation and type casting (using settype()).
+Depending on your application you may or may not need validation or casting or both.
+In these situations you can set the necessary behaviour by passing the appropriate constant to this function.</p></div>
+<table class="table table-bordered"><tr>
+<th>static</th>
+<td></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$intBehaviour</h4>
+<code>int</code><p>one of the 4 constants QType::NoOp, QType::CastOnly, QType::CheckOnly, QType::CheckAndCast</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>int</code>the previous setting</div>
+</div></div>
+</div>
+<a id="method_SoapType"></a><div class="element clickable method public method_SoapType" data-toggle="collapse" data-target=".method_SoapType .collapse">
+<h2>Used by the QCubed Code Generator and QSoapService class to allow for the xml generation of
+the actual "s:type" Soap Variable types.</h2>
+<pre>SoapType(string $strType) : string</pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$strType</h4>
+<code>string</code><p>the type to convert to 'constant' form</p>
+</div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>the text of the SOAP standard s:type variable type</div>
+</div></div>
+</div>
+<a id="method_TypeFromDoc"></a><div class="element clickable method public method_TypeFromDoc" data-toggle="collapse" data-target=".method_TypeFromDoc .collapse">
+<h2>TypeFromDoc()
+        </h2>
+<pre>TypeFromDoc($strType) </pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strType</h4></div>
+</div></div>
+</div>
+<a id="method___construct"></a><div class="element clickable method public method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
+<h2>This faux constructor method throws a caller exception.</h2>
+<pre>__construct() : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"><p>The Type object should never be instantiated, and this constructor
+override simply guarantees it.</p></div></div></div>
+</div>
+<a id="method_CastArrayTo"></a><div class="element clickable method private method_CastArrayTo" data-toggle="collapse" data-target=".method_CastArrayTo .collapse">
+<h2>CastArrayTo()
+        </h2>
+<pre>CastArrayTo($arrItem, $strType) </pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$arrItem</h4></div>
+<div class="subelement argument"><h4>$strType</h4></div>
+</div></div>
+</div>
+<a id="method_CastObjectTo"></a><div class="element clickable method private method_CastObjectTo" data-toggle="collapse" data-target=".method_CastObjectTo .collapse">
+<h2>CastObjectTo()
+        </h2>
+<pre>CastObjectTo($objItem, $strType) </pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$objItem</h4></div>
+<div class="subelement argument"><h4>$strType</h4></div>
+</div></div>
+</div>
+<a id="method_CastValueTo"></a><div class="element clickable method private method_CastValueTo" data-toggle="collapse" data-target=".method_CastValueTo .collapse">
+<h2>CastValueTo()
+        </h2>
+<pre>CastValueTo($mixItem, $strNewType) </pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$mixItem</h4></div>
+<div class="subelement argument"><h4>$strNewType</h4></div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a id="property_intBehaviour"> </a><div class="element clickable property private property_intBehaviour" data-toggle="collapse" data-target=".property_intBehaviour .collapse">
+<h2></h2>
+<pre>$intBehaviour </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<h3>
+<i class="icon-custom icon-constant"></i> Constants</h3>
+<a id="constant_ArrayType"> </a><div class="element clickable constant  constant_ArrayType" data-toggle="collapse" data-target=".constant_ArrayType .collapse">
+<h2>ArrayType</h2>
+<pre>ArrayType </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_Boolean"> </a><div class="element clickable constant  constant_Boolean" data-toggle="collapse" data-target=".constant_Boolean .collapse">
+<h2>Boolean</h2>
+<pre>Boolean </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_CastOnly"> </a><div class="element clickable constant  constant_CastOnly" data-toggle="collapse" data-target=".constant_CastOnly .collapse">
+<h2>CastOnly</h2>
+<pre>CastOnly </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_CheckAndCast"> </a><div class="element clickable constant  constant_CheckAndCast" data-toggle="collapse" data-target=".constant_CheckAndCast .collapse">
+<h2>CheckAndCast</h2>
+<pre>CheckAndCast </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_CheckOnly"> </a><div class="element clickable constant  constant_CheckOnly" data-toggle="collapse" data-target=".constant_CheckOnly .collapse">
+<h2>CheckOnly</h2>
+<pre>CheckOnly </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_DateTime"> </a><div class="element clickable constant  constant_DateTime" data-toggle="collapse" data-target=".constant_DateTime .collapse">
+<h2>DateTime</h2>
+<pre>DateTime </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_Float"> </a><div class="element clickable constant  constant_Float" data-toggle="collapse" data-target=".constant_Float .collapse">
+<h2>Float</h2>
+<pre>Float </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_Integer"> </a><div class="element clickable constant  constant_Integer" data-toggle="collapse" data-target=".constant_Integer .collapse">
+<h2>Integer</h2>
+<pre>Integer </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_NoOp"> </a><div class="element clickable constant  constant_NoOp" data-toggle="collapse" data-target=".constant_NoOp .collapse">
+<h2>NoOp</h2>
+<pre>NoOp </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_Object"> </a><div class="element clickable constant  constant_Object" data-toggle="collapse" data-target=".constant_Object .collapse">
+<h2>Object</h2>
+<pre>Object </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_Resource"> </a><div class="element clickable constant  constant_Resource" data-toggle="collapse" data-target=".constant_Resource .collapse">
+<h2>Resource</h2>
+<pre>Resource </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_String"> </a><div class="element clickable constant  constant_String" data-toggle="collapse" data-target=".constant_String .collapse">
+<h2>String</h2>
+<pre>String </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
+            generated on 2013-03-17T02:00:58+07:00.<br></footer></div>
+</div>
+</body>
+</html>

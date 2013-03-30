@@ -1,0 +1,685 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>QCubed API » \QUpdateUtility</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">QCubed API</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="../packages/Codegen.html"><i class="icon-folder-open"></i> Codegen</a></li>
+<li><a href="../packages/Controls.html"><i class="icon-folder-open"></i> Controls</a></li>
+<li><a href="../packages/Controls%20%20.html"><i class="icon-folder-open"></i> Controls  </a></li>
+<li><a href="../packages/DatabaseAdapters.html"><i class="icon-folder-open"></i> DatabaseAdapters</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/My%20QCubed%20Application.html"><i class="icon-folder-open"></i> My QCubed Application</a></li>
+<li><a href="../packages/Sessions.html"><i class="icon-folder-open"></i> Sessions</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">4384</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul><li>todo 
+                <span class="label label-info">28</span>
+</li></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">8</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method_Error" title="Error :: "><span class="description">Error()
+        </span><pre>Error()</pre></a></li>
+<li class="method public "><a href="#method_IsSuffixedFile" title="IsSuffixedFile :: "><span class="description">IsSuffixedFile()
+        </span><pre>IsSuffixedFile()</pre></a></li>
+<li class="method public "><a href="#method_PrintDownloaderInstructions" title="PrintDownloaderInstructions :: "><span class="description">PrintDownloaderInstructions()
+        </span><pre>PrintDownloaderInstructions()</pre></a></li>
+<li class="method public "><a href="#method_PrintUpdaterInstructions" title="PrintUpdaterInstructions :: "><span class="description">PrintUpdaterInstructions()
+        </span><pre>PrintUpdaterInstructions()</pre></a></li>
+<li class="method public "><a href="#method_RunDownloader" title="RunDownloader :: "><span class="description">RunDownloader()
+        </span><pre>RunDownloader()</pre></a></li>
+<li class="method public "><a href="#method_RunUpdater" title="RunUpdater :: "><span class="description">RunUpdater()
+        </span><pre>RunUpdater()</pre></a></li>
+<li class="method public "><a href="#method___construct" title="__construct :: "><span class="description">__construct()
+        </span><pre>__construct()</pre></a></li>
+<li class="method public "><a href="#method___destruct" title="__destruct :: "><span class="description">__destruct()
+        </span><pre>__destruct()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul>
+<li class="method protected "><a href="#method_AppendBaseSuffix" title="AppendBaseSuffix :: "><span class="description">AppendBaseSuffix()
+        </span><pre>AppendBaseSuffix()</pre></a></li>
+<li class="method protected "><a href="#method_CheckCoreDirectoriesForExtras" title="CheckCoreDirectoriesForExtras :: "><span class="description">CheckCoreDirectoriesForExtras()
+        </span><pre>CheckCoreDirectoriesForExtras()</pre></a></li>
+<li class="method protected "><a href="#method_CheckCoreDirectoriesHelper" title="CheckCoreDirectoriesHelper :: "><span class="description">CheckCoreDirectoriesHelper()
+        </span><pre>CheckCoreDirectoriesHelper()</pre></a></li>
+<li class="method protected "><a href="#method_DeleteFile" title="DeleteFile :: "><span class="description">DeleteFile()
+        </span><pre>DeleteFile()</pre></a></li>
+<li class="method protected "><a href="#method_DownloadFile" title="DownloadFile :: "><span class="description">DownloadFile()
+        </span><pre>DownloadFile()</pre></a></li>
+<li class="method protected "><a href="#method_FilePutContents" title="FilePutContents :: "><span class="description">FilePutContents()
+        </span><pre>FilePutContents()</pre></a></li>
+<li class="method protected "><a href="#method_GetActualFilePath" title="GetActualFilePath :: Uses the cli_config.inc constants to convert a manifest-based file path
+to an actual file path on this system."><span class="description">Uses the cli_config.inc constants to convert a manifest-based file path
+to an actual file path on this system.</span><pre>GetActualFilePath()</pre></a></li>
+<li class="method protected "><a href="#method_IgnoreFile" title="IgnoreFile :: "><span class="description">IgnoreFile()
+        </span><pre>IgnoreFile()</pre></a></li>
+<li class="method protected "><a href="#method_IsCore" title="IsCore :: "><span class="description">IsCore()
+        </span><pre>IsCore()</pre></a></li>
+<li class="method protected "><a href="#method_IsSuffixedFileHelper" title="IsSuffixedFileHelper :: "><span class="description">IsSuffixedFileHelper()
+        </span><pre>IsSuffixedFileHelper()</pre></a></li>
+<li class="method protected "><a href="#method_PrintDownloadCommand" title="PrintDownloadCommand :: "><span class="description">PrintDownloadCommand()
+        </span><pre>PrintDownloadCommand()</pre></a></li>
+<li class="method protected "><a href="#method_Prompt" title="Prompt :: "><span class="description">Prompt()
+        </span><pre>Prompt()</pre></a></li>
+<li class="method protected "><a href="#method_ReadString" title="ReadString :: "><span class="description">ReadString()
+        </span><pre>ReadString()</pre></a></li>
+<li class="method protected "><a href="#method_RenameWithBaseSuffix" title="RenameWithBaseSuffix :: "><span class="description">RenameWithBaseSuffix()
+        </span><pre>RenameWithBaseSuffix()</pre></a></li>
+<li class="method protected "><a href="#method_RenameWithVersion" title="RenameWithVersion :: "><span class="description">RenameWithVersion()
+        </span><pre>RenameWithVersion()</pre></a></li>
+<li class="method protected "><a href="#method_ReportBack" title="ReportBack :: "><span class="description">ReportBack()
+        </span><pre>ReportBack()</pre></a></li>
+<li class="method protected "><a href="#method_RetrieveFromService" title="RetrieveFromService :: "><span class="description">RetrieveFromService()
+        </span><pre>RetrieveFromService()</pre></a></li>
+<li class="method protected "><a href="#method_SaveFile" title="SaveFile :: "><span class="description">SaveFile()
+        </span><pre>SaveFile()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties
+                    <ul>
+<li class="property public "><a href="#property_CurrentFilePath" title="$CurrentFilePath :: "><span class="description"></span><pre>$CurrentFilePath</pre></a></li>
+<li class="property public "><a href="#property_PrimaryInstance" title="$PrimaryInstance :: "><span class="description"></span><pre>$PrimaryInstance</pre></a></li>
+<li class="property public "><a href="#property_strAlertArray" title="$strAlertArray :: "><span class="description"></span><pre>$strAlertArray</pre></a></li>
+</ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul>
+<li class="property protected "><a href="#property_blnGzCompress" title="$blnGzCompress :: "><span class="description"></span><pre>$blnGzCompress</pre></a></li>
+<li class="property protected "><a href="#property_blnNewManifestPrefixWarning" title="$blnNewManifestPrefixWarning :: "><span class="description"></span><pre>$blnNewManifestPrefixWarning</pre></a></li>
+<li class="property protected "><a href="#property_blnQuietMode" title="$blnQuietMode :: "><span class="description"></span><pre>$blnQuietMode</pre></a></li>
+<li class="property protected "><a href="#property_intBuild" title="$intBuild :: "><span class="description"></span><pre>$intBuild</pre></a></li>
+<li class="property protected "><a href="#property_intMajor" title="$intMajor :: "><span class="description"></span><pre>$intMajor</pre></a></li>
+<li class="property protected "><a href="#property_intMinor" title="$intMinor :: "><span class="description"></span><pre>$intMinor</pre></a></li>
+<li class="property protected "><a href="#property_objServerManifestDirectories" title="$objServerManifestDirectories :: "><span class="description"></span><pre>$objServerManifestDirectories</pre></a></li>
+<li class="property protected "><a href="#property_objStdIn" title="$objStdIn :: "><span class="description"></span><pre>$objStdIn</pre></a></li>
+<li class="property protected "><a href="#property_strDeprecatedArray" title="$strDeprecatedArray :: "><span class="description"></span><pre>$strDeprecatedArray</pre></a></li>
+<li class="property protected "><a href="#property_strExtraArray" title="$strExtraArray :: "><span class="description"></span><pre>$strExtraArray</pre></a></li>
+<li class="property protected "><a href="#property_strIgnoreArray" title="$strIgnoreArray :: "><span class="description"></span><pre>$strIgnoreArray</pre></a></li>
+<li class="property protected "><a href="#property_strLocalManifest" title="$strLocalManifest :: "><span class="description"></span><pre>$strLocalManifest</pre></a></li>
+<li class="property protected "><a href="#property_strNoticeArray" title="$strNoticeArray :: "><span class="description"></span><pre>$strNoticeArray</pre></a></li>
+<li class="property protected "><a href="#property_strServerManifest" title="$strServerManifest :: "><span class="description"></span><pre>$strServerManifest</pre></a></li>
+<li class="property protected "><a href="#property_strShouldDownloadArray" title="$strShouldDownloadArray :: "><span class="description"></span><pre>$strShouldDownloadArray</pre></a></li>
+<li class="property protected "><a href="#property_strShouldUpdateArray" title="$strShouldUpdateArray :: "><span class="description"></span><pre>$strShouldUpdateArray</pre></a></li>
+<li class="property protected "><a href="#property_strSuggestCoreUpdateArray" title="$strSuggestCoreUpdateArray :: "><span class="description"></span><pre>$strSuggestCoreUpdateArray</pre></a></li>
+<li class="property protected "><a href="#property_strSuggestFixArray" title="$strSuggestFixArray :: "><span class="description"></span><pre>$strSuggestFixArray</pre></a></li>
+<li class="property protected "><a href="#property_strSuggestNonCoreUpdateArray" title="$strSuggestNonCoreUpdateArray :: "><span class="description"></span><pre>$strSuggestNonCoreUpdateArray</pre></a></li>
+<li class="property protected "><a href="#property_strTouchedFile" title="$strTouchedFile :: "><span class="description"></span><pre>$strTouchedFile</pre></a></li>
+<li class="property protected "><a href="#property_strVersion" title="$strVersion :: "><span class="description"></span><pre>$strVersion</pre></a></li>
+<li class="property protected "><a href="#property_strVersionType" title="$strVersionType :: "><span class="description"></span><pre>$strVersionType</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-constant"></i> Constants
+                    <ul>
+<li class="constant  "><a href="#constant_Force" title="Force :: "><span class="description">Force</span><pre>Force</pre></a></li>
+<li class="constant  "><a href="#constant_Interactive" title="Interactive :: "><span class="description">Interactive</span><pre>Interactive</pre></a></li>
+<li class="constant  "><a href="#constant_Rename" title="Rename :: "><span class="description">Rename</span><pre>Rename</pre></a></li>
+<li class="constant  "><a href="#constant_ReportOnly" title="ReportOnly :: "><span class="description">ReportOnly</span><pre>ReportOnly</pre></a></li>
+<li class="constant  "><a href="#constant_ServiceUrl" title="ServiceUrl :: "><span class="description">ServiceUrl</span><pre>ServiceUrl</pre></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a id="\QUpdateUtility"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/global.html">global</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/QUpdateUtility.html">QUpdateUtility</a>
+</li>
+</ul>
+<div class="element class">
+<p class="short_description">The QUpdateUtility is used by the qcodo_updater.cli and qcodo_downloader.cli command line utilities.</p>
+<div class="details">
+<div class="long_description"><p>It will use the QCubed Updater WebService at http://api.qcodo.com/ to perform updates to the installed
+QCubed system.</p></div>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method_Error"></a><div class="element clickable method public method_Error" data-toggle="collapse" data-target=".method_Error .collapse">
+<h2>Error()
+        </h2>
+<pre>Error($strError) </pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strError</h4></div>
+</div></div>
+</div>
+<a id="method_IsSuffixedFile"></a><div class="element clickable method public method_IsSuffixedFile" data-toggle="collapse" data-target=".method_IsSuffixedFile .collapse">
+<h2>IsSuffixedFile()
+        </h2>
+<pre>IsSuffixedFile($strFilePath) </pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strFilePath</h4></div>
+</div></div>
+</div>
+<a id="method_PrintDownloaderInstructions"></a><div class="element clickable method public method_PrintDownloaderInstructions" data-toggle="collapse" data-target=".method_PrintDownloaderInstructions .collapse">
+<h2>PrintDownloaderInstructions()
+        </h2>
+<pre>PrintDownloaderInstructions() </pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_PrintUpdaterInstructions"></a><div class="element clickable method public method_PrintUpdaterInstructions" data-toggle="collapse" data-target=".method_PrintUpdaterInstructions .collapse">
+<h2>PrintUpdaterInstructions()
+        </h2>
+<pre>PrintUpdaterInstructions($blnHelp) </pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$blnHelp</h4></div>
+</div></div>
+</div>
+<a id="method_RunDownloader"></a><div class="element clickable method public method_RunDownloader" data-toggle="collapse" data-target=".method_RunDownloader .collapse">
+<h2>RunDownloader()
+        </h2>
+<pre>RunDownloader($strToken, $strFile, $strActualFilePath) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strToken</h4></div>
+<div class="subelement argument"><h4>$strFile</h4></div>
+<div class="subelement argument"><h4>$strActualFilePath</h4></div>
+</div></div>
+</div>
+<a id="method_RunUpdater"></a><div class="element clickable method public method_RunUpdater" data-toggle="collapse" data-target=".method_RunUpdater .collapse">
+<h2>RunUpdater()
+        </h2>
+<pre>RunUpdater($strInteractionType, $blnQuietMode) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strInteractionType</h4></div>
+<div class="subelement argument"><h4>$blnQuietMode</h4></div>
+</div></div>
+</div>
+<a id="method___construct"></a><div class="element clickable method public method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
+<h2>__construct()
+        </h2>
+<pre>__construct($strVersion) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strVersion</h4></div>
+</div></div>
+</div>
+<a id="method___destruct"></a><div class="element clickable method public method___destruct" data-toggle="collapse" data-target=".method___destruct .collapse">
+<h2>__destruct()
+        </h2>
+<pre>__destruct() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_AppendBaseSuffix"></a><div class="element clickable method protected method_AppendBaseSuffix" data-toggle="collapse" data-target=".method_AppendBaseSuffix .collapse">
+<h2>AppendBaseSuffix()
+        </h2>
+<pre>AppendBaseSuffix($strActualFilePath, $strBaseSuffix, $strReason) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strActualFilePath</h4></div>
+<div class="subelement argument"><h4>$strBaseSuffix</h4></div>
+<div class="subelement argument"><h4>$strReason</h4></div>
+</div></div>
+</div>
+<a id="method_CheckCoreDirectoriesForExtras"></a><div class="element clickable method protected method_CheckCoreDirectoriesForExtras" data-toggle="collapse" data-target=".method_CheckCoreDirectoriesForExtras .collapse">
+<h2>CheckCoreDirectoriesForExtras()
+        </h2>
+<pre>CheckCoreDirectoriesForExtras() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_CheckCoreDirectoriesHelper"></a><div class="element clickable method protected method_CheckCoreDirectoriesHelper" data-toggle="collapse" data-target=".method_CheckCoreDirectoriesHelper .collapse">
+<h2>CheckCoreDirectoriesHelper()
+        </h2>
+<pre>CheckCoreDirectoriesHelper($strDirectory, $strBaseDirectory, $strToken, $blnIsCore) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strDirectory</h4></div>
+<div class="subelement argument"><h4>$strBaseDirectory</h4></div>
+<div class="subelement argument"><h4>$strToken</h4></div>
+<div class="subelement argument"><h4>$blnIsCore</h4></div>
+</div></div>
+</div>
+<a id="method_DeleteFile"></a><div class="element clickable method protected method_DeleteFile" data-toggle="collapse" data-target=".method_DeleteFile .collapse">
+<h2>DeleteFile()
+        </h2>
+<pre>DeleteFile($strActualFilePath, $strReason) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strActualFilePath</h4></div>
+<div class="subelement argument"><h4>$strReason</h4></div>
+</div></div>
+</div>
+<a id="method_DownloadFile"></a><div class="element clickable method protected method_DownloadFile" data-toggle="collapse" data-target=".method_DownloadFile .collapse">
+<h2>DownloadFile()
+        </h2>
+<pre>DownloadFile($strToken, $strFile, $strActualFilePath, $blnRename) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strToken</h4></div>
+<div class="subelement argument"><h4>$strFile</h4></div>
+<div class="subelement argument"><h4>$strActualFilePath</h4></div>
+<div class="subelement argument"><h4>$blnRename</h4></div>
+</div></div>
+</div>
+<a id="method_FilePutContents"></a><div class="element clickable method protected method_FilePutContents" data-toggle="collapse" data-target=".method_FilePutContents .collapse">
+<h2>FilePutContents()
+        </h2>
+<pre>FilePutContents($strFilePath, $strData) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strFilePath</h4></div>
+<div class="subelement argument"><h4>$strData</h4></div>
+</div></div>
+</div>
+<a id="method_GetActualFilePath"></a><div class="element clickable method protected method_GetActualFilePath" data-toggle="collapse" data-target=".method_GetActualFilePath .collapse">
+<h2>Uses the cli_config.inc constants to convert a manifest-based file path
+to an actual file path on this system.</h2>
+<pre>GetActualFilePath($strManifestFilePath) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Will return NULL if the file being converted is specified to an actual path
+of "none" by the user.</p>
+
+<p>Will return -1 if the file being converted does not have a path prefix
+(this will happen if a new path prefix has been added since the last time
+qcodo_updater was called)</p>
+
+<p>An example $strManifestFilePath is (for example) <strong>INCLUDES</strong>|prepend.inc.php</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strManifestFilePath</h4></div>
+</div></div>
+</div>
+<a id="method_IgnoreFile"></a><div class="element clickable method protected method_IgnoreFile" data-toggle="collapse" data-target=".method_IgnoreFile .collapse">
+<h2>IgnoreFile()
+        </h2>
+<pre>IgnoreFile($strActualFilePath, $strAction) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strActualFilePath</h4></div>
+<div class="subelement argument"><h4>$strAction</h4></div>
+</div></div>
+</div>
+<a id="method_IsCore"></a><div class="element clickable method protected method_IsCore" data-toggle="collapse" data-target=".method_IsCore .collapse">
+<h2>IsCore()
+        </h2>
+<pre>IsCore($strManifestFilePath) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strManifestFilePath</h4></div>
+</div></div>
+</div>
+<a id="method_IsSuffixedFileHelper"></a><div class="element clickable method protected method_IsSuffixedFileHelper" data-toggle="collapse" data-target=".method_IsSuffixedFileHelper .collapse">
+<h2>IsSuffixedFileHelper()
+        </h2>
+<pre>IsSuffixedFileHelper($strFilePath, $strPattern) </pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strFilePath</h4></div>
+<div class="subelement argument"><h4>$strPattern</h4></div>
+</div></div>
+</div>
+<a id="method_PrintDownloadCommand"></a><div class="element clickable method protected method_PrintDownloadCommand" data-toggle="collapse" data-target=".method_PrintDownloadCommand .collapse">
+<h2>PrintDownloadCommand()
+        </h2>
+<pre>PrintDownloadCommand($strManifestFile, $strActualFilePath) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strManifestFile</h4></div>
+<div class="subelement argument"><h4>$strActualFilePath</h4></div>
+</div></div>
+</div>
+<a id="method_Prompt"></a><div class="element clickable method protected method_Prompt" data-toggle="collapse" data-target=".method_Prompt .collapse">
+<h2>Prompt()
+        </h2>
+<pre>Prompt($strPrompt, $strValidLetterArray) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strPrompt</h4></div>
+<div class="subelement argument"><h4>$strValidLetterArray</h4></div>
+</div></div>
+</div>
+<a id="method_ReadString"></a><div class="element clickable method protected method_ReadString" data-toggle="collapse" data-target=".method_ReadString .collapse">
+<h2>ReadString()
+        </h2>
+<pre>ReadString() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_RenameWithBaseSuffix"></a><div class="element clickable method protected method_RenameWithBaseSuffix" data-toggle="collapse" data-target=".method_RenameWithBaseSuffix .collapse">
+<h2>RenameWithBaseSuffix()
+        </h2>
+<pre>RenameWithBaseSuffix($strActualFilePath, $strSuffix) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strActualFilePath</h4></div>
+<div class="subelement argument"><h4>$strSuffix</h4></div>
+</div></div>
+</div>
+<a id="method_RenameWithVersion"></a><div class="element clickable method protected method_RenameWithVersion" data-toggle="collapse" data-target=".method_RenameWithVersion .collapse">
+<h2>RenameWithVersion()
+        </h2>
+<pre>RenameWithVersion($strActualFilePath) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strActualFilePath</h4></div>
+</div></div>
+</div>
+<a id="method_ReportBack"></a><div class="element clickable method protected method_ReportBack" data-toggle="collapse" data-target=".method_ReportBack .collapse">
+<h2>ReportBack()
+        </h2>
+<pre>ReportBack($strName, $strArray, $strNote) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strName</h4></div>
+<div class="subelement argument"><h4>$strArray</h4></div>
+<div class="subelement argument"><h4>$strNote</h4></div>
+</div></div>
+</div>
+<a id="method_RetrieveFromService"></a><div class="element clickable method protected method_RetrieveFromService" data-toggle="collapse" data-target=".method_RetrieveFromService .collapse">
+<h2>RetrieveFromService()
+        </h2>
+<pre>RetrieveFromService($strArgument, $strErrorMessage) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strArgument</h4></div>
+<div class="subelement argument"><h4>$strErrorMessage</h4></div>
+</div></div>
+</div>
+<a id="method_SaveFile"></a><div class="element clickable method protected method_SaveFile" data-toggle="collapse" data-target=".method_SaveFile .collapse">
+<h2>SaveFile()
+        </h2>
+<pre>SaveFile($strManifestFileString, $strActualFilePath, $strVerbPhrase, $strAlertMessage, $blnRename) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strManifestFileString</h4></div>
+<div class="subelement argument"><h4>$strActualFilePath</h4></div>
+<div class="subelement argument"><h4>$strVerbPhrase</h4></div>
+<div class="subelement argument"><h4>$strAlertMessage</h4></div>
+<div class="subelement argument"><h4>$blnRename</h4></div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a id="property_CurrentFilePath"> </a><div class="element clickable property public property_CurrentFilePath" data-toggle="collapse" data-target=".property_CurrentFilePath .collapse">
+<h2></h2>
+<pre>$CurrentFilePath </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_PrimaryInstance"> </a><div class="element clickable property public property_PrimaryInstance" data-toggle="collapse" data-target=".property_PrimaryInstance .collapse">
+<h2></h2>
+<pre>$PrimaryInstance </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_strAlertArray"> </a><div class="element clickable property public property_strAlertArray" data-toggle="collapse" data-target=".property_strAlertArray .collapse">
+<h2></h2>
+<pre>$strAlertArray </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_blnGzCompress"> </a><div class="element clickable property protected property_blnGzCompress" data-toggle="collapse" data-target=".property_blnGzCompress .collapse">
+<h2></h2>
+<pre>$blnGzCompress </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_blnNewManifestPrefixWarning"> </a><div class="element clickable property protected property_blnNewManifestPrefixWarning" data-toggle="collapse" data-target=".property_blnNewManifestPrefixWarning .collapse">
+<h2></h2>
+<pre>$blnNewManifestPrefixWarning </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_blnQuietMode"> </a><div class="element clickable property protected property_blnQuietMode" data-toggle="collapse" data-target=".property_blnQuietMode .collapse">
+<h2></h2>
+<pre>$blnQuietMode </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_intBuild"> </a><div class="element clickable property protected property_intBuild" data-toggle="collapse" data-target=".property_intBuild .collapse">
+<h2></h2>
+<pre>$intBuild </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_intMajor"> </a><div class="element clickable property protected property_intMajor" data-toggle="collapse" data-target=".property_intMajor .collapse">
+<h2></h2>
+<pre>$intMajor </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_intMinor"> </a><div class="element clickable property protected property_intMinor" data-toggle="collapse" data-target=".property_intMinor .collapse">
+<h2></h2>
+<pre>$intMinor </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_objServerManifestDirectories"> </a><div class="element clickable property protected property_objServerManifestDirectories" data-toggle="collapse" data-target=".property_objServerManifestDirectories .collapse">
+<h2></h2>
+<pre>$objServerManifestDirectories </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_objStdIn"> </a><div class="element clickable property protected property_objStdIn" data-toggle="collapse" data-target=".property_objStdIn .collapse">
+<h2></h2>
+<pre>$objStdIn </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_strDeprecatedArray"> </a><div class="element clickable property protected property_strDeprecatedArray" data-toggle="collapse" data-target=".property_strDeprecatedArray .collapse">
+<h2></h2>
+<pre>$strDeprecatedArray </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_strExtraArray"> </a><div class="element clickable property protected property_strExtraArray" data-toggle="collapse" data-target=".property_strExtraArray .collapse">
+<h2></h2>
+<pre>$strExtraArray </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_strIgnoreArray"> </a><div class="element clickable property protected property_strIgnoreArray" data-toggle="collapse" data-target=".property_strIgnoreArray .collapse">
+<h2></h2>
+<pre>$strIgnoreArray </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_strLocalManifest"> </a><div class="element clickable property protected property_strLocalManifest" data-toggle="collapse" data-target=".property_strLocalManifest .collapse">
+<h2></h2>
+<pre>$strLocalManifest </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_strNoticeArray"> </a><div class="element clickable property protected property_strNoticeArray" data-toggle="collapse" data-target=".property_strNoticeArray .collapse">
+<h2></h2>
+<pre>$strNoticeArray </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_strServerManifest"> </a><div class="element clickable property protected property_strServerManifest" data-toggle="collapse" data-target=".property_strServerManifest .collapse">
+<h2></h2>
+<pre>$strServerManifest </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_strShouldDownloadArray"> </a><div class="element clickable property protected property_strShouldDownloadArray" data-toggle="collapse" data-target=".property_strShouldDownloadArray .collapse">
+<h2></h2>
+<pre>$strShouldDownloadArray </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_strShouldUpdateArray"> </a><div class="element clickable property protected property_strShouldUpdateArray" data-toggle="collapse" data-target=".property_strShouldUpdateArray .collapse">
+<h2></h2>
+<pre>$strShouldUpdateArray </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_strSuggestCoreUpdateArray"> </a><div class="element clickable property protected property_strSuggestCoreUpdateArray" data-toggle="collapse" data-target=".property_strSuggestCoreUpdateArray .collapse">
+<h2></h2>
+<pre>$strSuggestCoreUpdateArray </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_strSuggestFixArray"> </a><div class="element clickable property protected property_strSuggestFixArray" data-toggle="collapse" data-target=".property_strSuggestFixArray .collapse">
+<h2></h2>
+<pre>$strSuggestFixArray </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_strSuggestNonCoreUpdateArray"> </a><div class="element clickable property protected property_strSuggestNonCoreUpdateArray" data-toggle="collapse" data-target=".property_strSuggestNonCoreUpdateArray .collapse">
+<h2></h2>
+<pre>$strSuggestNonCoreUpdateArray </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_strTouchedFile"> </a><div class="element clickable property protected property_strTouchedFile" data-toggle="collapse" data-target=".property_strTouchedFile .collapse">
+<h2></h2>
+<pre>$strTouchedFile </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_strVersion"> </a><div class="element clickable property protected property_strVersion" data-toggle="collapse" data-target=".property_strVersion .collapse">
+<h2></h2>
+<pre>$strVersion </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_strVersionType"> </a><div class="element clickable property protected property_strVersionType" data-toggle="collapse" data-target=".property_strVersionType .collapse">
+<h2></h2>
+<pre>$strVersionType </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<h3>
+<i class="icon-custom icon-constant"></i> Constants</h3>
+<a id="constant_Force"> </a><div class="element clickable constant  constant_Force" data-toggle="collapse" data-target=".constant_Force .collapse">
+<h2>Force</h2>
+<pre>Force </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_Interactive"> </a><div class="element clickable constant  constant_Interactive" data-toggle="collapse" data-target=".constant_Interactive .collapse">
+<h2>Interactive</h2>
+<pre>Interactive </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_Rename"> </a><div class="element clickable constant  constant_Rename" data-toggle="collapse" data-target=".constant_Rename .collapse">
+<h2>Rename</h2>
+<pre>Rename </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_ReportOnly"> </a><div class="element clickable constant  constant_ReportOnly" data-toggle="collapse" data-target=".constant_ReportOnly .collapse">
+<h2>ReportOnly</h2>
+<pre>ReportOnly </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_ServiceUrl"> </a><div class="element clickable constant  constant_ServiceUrl" data-toggle="collapse" data-target=".constant_ServiceUrl .collapse">
+<h2>ServiceUrl</h2>
+<pre>ServiceUrl </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
+            generated on 2013-03-17T02:00:53+07:00.<br></footer></div>
+</div>
+</body>
+</html>

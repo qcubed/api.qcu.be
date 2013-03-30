@@ -1,0 +1,312 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>QCubed API » \QPlugin</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">QCubed API</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="../packages/Codegen.html"><i class="icon-folder-open"></i> Codegen</a></li>
+<li><a href="../packages/Controls.html"><i class="icon-folder-open"></i> Controls</a></li>
+<li><a href="../packages/Controls%20%20.html"><i class="icon-folder-open"></i> Controls  </a></li>
+<li><a href="../packages/DatabaseAdapters.html"><i class="icon-folder-open"></i> DatabaseAdapters</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/My%20QCubed%20Application.html"><i class="icon-folder-open"></i> My QCubed Application</a></li>
+<li><a href="../packages/Sessions.html"><i class="icon-folder-open"></i> Sessions</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">4384</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul><li>todo 
+                <span class="label label-info">28</span>
+</li></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">8</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method___construct" title="__construct :: "><span class="description">__construct()
+        </span><pre>__construct()</pre></a></li>
+<li class="method public "><a href="#method_addComponents" title="addComponents :: "><span class="description">addComponents()
+        </span><pre>addComponents()</pre></a></li>
+<li class="method public "><a href="#method_addExample" title="addExample :: "><span class="description">addExample()
+        </span><pre>addExample()</pre></a></li>
+<li class="method public "><a href="#method_addFile" title="addFile :: "><span class="description">addFile()
+        </span><pre>addFile()</pre></a></li>
+<li class="method public "><a href="#method_addIncludedClass" title="addIncludedClass :: "><span class="description">addIncludedClass()
+        </span><pre>addIncludedClass()</pre></a></li>
+<li class="method public "><a href="#method_install" title="install :: "><span class="description">install()
+        </span><pre>install()</pre></a></li>
+<li class="method public "><a href="#method_toXml" title="toXml :: "><span class="description">toXml()
+        </span><pre>toXml()</pre></a></li>
+<li class="method public "><a href="#method_validate" title="validate :: "><span class="description">validate()
+        </span><pre>validate()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header private">» Private
+                    <ul>
+<li class="method private "><a href="#method_escapeAttribute" title="escapeAttribute :: "><span class="description">escapeAttribute()
+        </span><pre>escapeAttribute()</pre></a></li>
+<li class="method private "><a href="#method_escapeCData" title="escapeCData :: "><span class="description">escapeCData()
+        </span><pre>escapeCData()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties
+                    <ul>
+<li class="property public "><a href="#property_objAllFilesArray" title="$objAllFilesArray :: "><span class="description"></span><pre>$objAllFilesArray</pre></a></li>
+<li class="property public "><a href="#property_objExamplesArray" title="$objExamplesArray :: "><span class="description"></span><pre>$objExamplesArray</pre></a></li>
+<li class="property public "><a href="#property_objIncludesArray" title="$objIncludesArray :: "><span class="description"></span><pre>$objIncludesArray</pre></a></li>
+<li class="property public "><a href="#property_strAuthorEmail" title="$strAuthorEmail :: "><span class="description"></span><pre>$strAuthorEmail</pre></a></li>
+<li class="property public "><a href="#property_strAuthorName" title="$strAuthorName :: "><span class="description"></span><pre>$strAuthorName</pre></a></li>
+<li class="property public "><a href="#property_strDescription" title="$strDescription :: "><span class="description"></span><pre>$strDescription</pre></a></li>
+<li class="property public "><a href="#property_strName" title="$strName :: Properties of the plugin that can and should be set
+when instantiating a new plugin."><span class="description"></span><pre>$strName</pre></a></li>
+<li class="property public "><a href="#property_strPlatformVersion" title="$strPlatformVersion :: "><span class="description"></span><pre>$strPlatformVersion</pre></a></li>
+<li class="property public "><a href="#property_strTemporaryExpandedPath" title="$strTemporaryExpandedPath :: "><span class="description"></span><pre>$strTemporaryExpandedPath</pre></a></li>
+<li class="property public "><a href="#property_strVersion" title="$strVersion :: "><span class="description"></span><pre>$strVersion</pre></a></li>
+</ul>
+</li>
+<li class="nav-header private">» Private
+                    <ul><li class="property private "><a href="#property_strValidationError" title="$strValidationError :: "><span class="description"></span><pre>$strValidationError</pre></a></li></ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a id="\QPlugin"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/global.html">global</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/QPlugin.html">QPlugin</a>
+</li>
+</ul>
+<div class="element class">
+<p class="short_description">This class should be used by plugin writers to create their own
+plugin descriptors in the install.php scripts of every plugin.</p>
+<div class="details">
+<div class="long_description"><p>Details on creating an install script are here: http://examples.qcu.be/assets/_core/php/examples/plugins/components.php</p>
+
+<p>Whenever you use the install.php script, the plugin manager will run the script,
+and then internally generate an XML descriptor of the plugin before actually
+installing it. Note that this XML descriptor can be used directly, in place of
+the install.php configuration script, in order to install the plugin.</p></div>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method___construct"></a><div class="element clickable method public method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
+<h2>__construct()
+        </h2>
+<pre>__construct($blnInstalling) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$blnInstalling</h4></div>
+</div></div>
+</div>
+<a id="method_addComponents"></a><div class="element clickable method public method_addComponents" data-toggle="collapse" data-target=".method_addComponents .collapse">
+<h2>addComponents()
+        </h2>
+<pre>addComponents($arrComponents) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$arrComponents</h4></div>
+</div></div>
+</div>
+<a id="method_addExample"></a><div class="element clickable method public method_addExample" data-toggle="collapse" data-target=".method_addExample .collapse">
+<h2>addExample()
+        </h2>
+<pre>addExample(\QPluginExample $objComponent) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$objComponent</h4></div>
+</div></div>
+</div>
+<a id="method_addFile"></a><div class="element clickable method public method_addFile" data-toggle="collapse" data-target=".method_addFile .collapse">
+<h2>addFile()
+        </h2>
+<pre>addFile(\QPluginFile $objComponent) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$objComponent</h4></div>
+</div></div>
+</div>
+<a id="method_addIncludedClass"></a><div class="element clickable method public method_addIncludedClass" data-toggle="collapse" data-target=".method_addIncludedClass .collapse">
+<h2>addIncludedClass()
+        </h2>
+<pre>addIncludedClass(\QPluginIncludedClass $objComponent) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$objComponent</h4></div>
+</div></div>
+</div>
+<a id="method_install"></a><div class="element clickable method public method_install" data-toggle="collapse" data-target=".method_install .collapse">
+<h2>install()
+        </h2>
+<pre>install() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_toXml"></a><div class="element clickable method public method_toXml" data-toggle="collapse" data-target=".method_toXml .collapse">
+<h2>toXml()
+        </h2>
+<pre>toXml() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_validate"></a><div class="element clickable method public method_validate" data-toggle="collapse" data-target=".method_validate .collapse">
+<h2>validate()
+        </h2>
+<pre>validate() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_escapeAttribute"></a><div class="element clickable method private method_escapeAttribute" data-toggle="collapse" data-target=".method_escapeAttribute .collapse">
+<h2>escapeAttribute()
+        </h2>
+<pre>escapeAttribute($strAttributeValue) </pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strAttributeValue</h4></div>
+</div></div>
+</div>
+<a id="method_escapeCData"></a><div class="element clickable method private method_escapeCData" data-toggle="collapse" data-target=".method_escapeCData .collapse">
+<h2>escapeCData()
+        </h2>
+<pre>escapeCData($value) </pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$value</h4></div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a id="property_objAllFilesArray"> </a><div class="element clickable property public property_objAllFilesArray" data-toggle="collapse" data-target=".property_objAllFilesArray .collapse">
+<h2></h2>
+<pre>$objAllFilesArray </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_objExamplesArray"> </a><div class="element clickable property public property_objExamplesArray" data-toggle="collapse" data-target=".property_objExamplesArray .collapse">
+<h2></h2>
+<pre>$objExamplesArray </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_objIncludesArray"> </a><div class="element clickable property public property_objIncludesArray" data-toggle="collapse" data-target=".property_objIncludesArray .collapse">
+<h2></h2>
+<pre>$objIncludesArray </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_strAuthorEmail"> </a><div class="element clickable property public property_strAuthorEmail" data-toggle="collapse" data-target=".property_strAuthorEmail .collapse">
+<h2></h2>
+<pre>$strAuthorEmail </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_strAuthorName"> </a><div class="element clickable property public property_strAuthorName" data-toggle="collapse" data-target=".property_strAuthorName .collapse">
+<h2></h2>
+<pre>$strAuthorName </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_strDescription"> </a><div class="element clickable property public property_strDescription" data-toggle="collapse" data-target=".property_strDescription .collapse">
+<h2></h2>
+<pre>$strDescription </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_strName"> </a><div class="element clickable property public property_strName" data-toggle="collapse" data-target=".property_strName .collapse">
+<h2></h2>
+<pre>$strName </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_strPlatformVersion"> </a><div class="element clickable property public property_strPlatformVersion" data-toggle="collapse" data-target=".property_strPlatformVersion .collapse">
+<h2></h2>
+<pre>$strPlatformVersion </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_strTemporaryExpandedPath"> </a><div class="element clickable property public property_strTemporaryExpandedPath" data-toggle="collapse" data-target=".property_strTemporaryExpandedPath .collapse">
+<h2></h2>
+<pre>$strTemporaryExpandedPath </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_strVersion"> </a><div class="element clickable property public property_strVersion" data-toggle="collapse" data-target=".property_strVersion .collapse">
+<h2></h2>
+<pre>$strVersion </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_strValidationError"> </a><div class="element clickable property private property_strValidationError" data-toggle="collapse" data-target=".property_strValidationError .collapse">
+<h2></h2>
+<pre>$strValidationError </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
+            generated on 2013-03-17T02:00:54+07:00.<br></footer></div>
+</div>
+</body>
+</html>

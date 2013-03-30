@@ -1,0 +1,932 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>QCubed API » \QCheckBoxColumn</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">QCubed API</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="../packages/Codegen.html"><i class="icon-folder-open"></i> Codegen</a></li>
+<li><a href="../packages/Controls.html"><i class="icon-folder-open"></i> Controls</a></li>
+<li><a href="../packages/Controls%20%20.html"><i class="icon-folder-open"></i> Controls  </a></li>
+<li><a href="../packages/DatabaseAdapters.html"><i class="icon-folder-open"></i> DatabaseAdapters</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/My%20QCubed%20Application.html"><i class="icon-folder-open"></i> My QCubed Application</a></li>
+<li><a href="../packages/Sessions.html"><i class="icon-folder-open"></i> Sessions</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">4384</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul><li>todo 
+                <span class="label label-info">28</span>
+</li></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">8</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method_AcceptChanges" title="AcceptChanges :: Considers the current state to be the new baseline"><span class="description">Considers the current state to be the new baseline</span><pre>AcceptChanges()</pre></a></li>
+<li class="method public inherited"><a href="#method_ClearFilter" title="ClearFilter :: "><span class="description">ClearFilter()
+        </span><pre>ClearFilter()</pre></a></li>
+<li class="method public inherited"><a href="#method_FilterAddListItem" title="FilterAddListItem :: "><span class="description">FilterAddListItem()
+        </span><pre>FilterAddListItem()</pre></a></li>
+<li class="method public inherited"><a href="#method_GetActiveFilterState" title="GetActiveFilterState :: "><span class="description">GetActiveFilterState()
+        </span><pre>GetActiveFilterState()</pre></a></li>
+<li class="method public inherited"><a href="#method_GetActiveFilterValue" title="GetActiveFilterValue :: "><span class="description">GetActiveFilterValue()
+        </span><pre>GetActiveFilterValue()</pre></a></li>
+<li class="method public inherited"><a href="#method_GetAttributes" title="GetAttributes :: "><span class="description">GetAttributes()
+        </span><pre>GetAttributes()</pre></a></li>
+<li class="method public "><a href="#method_GetChangedIds" title="GetChangedIds :: Returns an array of changed ids."><span class="description">Returns an array of changed ids.</span><pre>GetChangedIds()</pre></a></li>
+<li class="method public "><a href="#method_GetSelectedIds" title="GetSelectedIds :: Returns an array of the Ids of the items selected."><span class="description">Returns an array of the Ids of the items selected.</span><pre>GetSelectedIds()</pre></a></li>
+<li class="method public "><a href="#method_GetSelectedItems" title="GetSelectedItems :: Returns an array of items for the selected rows, loaded using the specified class's Load($id) method"><span class="description">Returns an array of items for the selected rows, loaded using the specified class's Load($id) method</span><pre>GetSelectedItems()</pre></a></li>
+<li class="method public inherited"><a href="#method_HasFilter" title="HasFilter :: "><span class="description">HasFilter()
+        </span><pre>HasFilter()</pre></a></li>
+<li class="method public inherited"><a href="#method_OverrideAttributes" title="OverrideAttributes :: This allows you to set any properties, given by a name-value pair list
+in mixOverrideArray."><span class="description">This allows you to set any properties, given by a name-value pair list
+in mixOverrideArray.</span><pre>OverrideAttributes()</pre></a></li>
+<li class="method public inherited"><a href="#method_SetActiveFilterState" title="SetActiveFilterState :: "><span class="description">SetActiveFilterState()
+        </span><pre>SetActiveFilterState()</pre></a></li>
+<li class="method public "><a href="#method_SetCheckbox" title="SetCheckbox :: "><span class="description">SetCheckbox()
+        </span><pre>SetCheckbox()</pre></a></li>
+<li class="method public "><a href="#method_SetCheckboxCallback" title="SetCheckboxCallback :: Sets the callback method for when a checkbox is created."><span class="description">Sets the callback method for when a checkbox is created.</span><pre>SetCheckboxCallback()</pre></a></li>
+<li class="method public "><a href="#method_SetSelectAllCheckbox" title="SetSelectAllCheckbox :: "><span class="description">SetSelectAllCheckbox()
+        </span><pre>SetSelectAllCheckbox()</pre></a></li>
+<li class="method public "><a href="#method___construct" title="__construct :: Creates a QDataGridColumn of checkboxes"><span class="description">Creates a QDataGridColumn of checkboxes</span><pre>__construct()</pre></a></li>
+<li class="method public "><a href="#method___get" title='__get :: Override method to perform a property "Get"
+This will get the value of $strName
+All inhereted objects that call __get() should always fall through
+to calling parent::__get() in a try/catch statement catching
+for CallerExceptions.'><span class="description">Override method to perform a property "Get"
+This will get the value of $strName
+All inhereted objects that call __get() should always fall through
+to calling parent::__get() in a try/catch statement catching
+for CallerExceptions.</span><pre>__get()</pre></a></li>
+<li class="method public "><a href="#method___set" title='__set :: Override method to perform a property "Set"
+This will set the property $strName to be $mixValue'><span class="description">Override method to perform a property "Set"
+This will set the property $strName to be $mixValue</span><pre>__set()</pre></a></li>
+<li class="method public "><a href="#method_chkSelectAll_Render" title="chkSelectAll_Render :: "><span class="description">chkSelectAll_Render()
+        </span><pre>chkSelectAll_Render()</pre></a></li>
+<li class="method public "><a href="#method_chkSelected_Render" title="chkSelected_Render :: "><span class="description">chkSelected_Render()
+        </span><pre>chkSelected_Render()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul><li class="method protected "><a href="#method_GetColIndex" title="GetColIndex :: Returns the index of this column in the parent datagrid"><span class="description">Returns the index of this column in the parent datagrid</span><pre>GetColIndex()</pre></a></li></ul>
+</li>
+<li class="nav-header private">» Private
+                    <ul><li class="method private inherited"><a href="#method_FilterSetOperand" title="FilterSetOperand :: "><span class="description">FilterSetOperand()
+        </span><pre>FilterSetOperand()</pre></a></li></ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties
+                    <ul></ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul>
+<li class="property protected inherited"><a href="#property_arrFilterByCommand" title="$arrFilterByCommand :: "><span class="description"></span><pre>$arrFilterByCommand</pre></a></li>
+<li class="property protected inherited"><a href="#property_arrFilterList" title="$arrFilterList :: "><span class="description"></span><pre>$arrFilterList</pre></a></li>
+<li class="property protected inherited"><a href="#property_blnFontBold" title="$blnFontBold :: "><span class="description"></span><pre>$blnFontBold</pre></a></li>
+<li class="property protected inherited"><a href="#property_blnFontItalic" title="$blnFontItalic :: "><span class="description"></span><pre>$blnFontItalic</pre></a></li>
+<li class="property protected inherited"><a href="#property_blnFontOverline" title="$blnFontOverline :: "><span class="description"></span><pre>$blnFontOverline</pre></a></li>
+<li class="property protected inherited"><a href="#property_blnFontStrikeout" title="$blnFontStrikeout :: "><span class="description"></span><pre>$blnFontStrikeout</pre></a></li>
+<li class="property protected inherited"><a href="#property_blnFontUnderline" title="$blnFontUnderline :: "><span class="description"></span><pre>$blnFontUnderline</pre></a></li>
+<li class="property protected inherited"><a href="#property_blnHasResetButton" title="$blnHasResetButton :: "><span class="description"></span><pre>$blnHasResetButton</pre></a></li>
+<li class="property protected "><a href="#property_blnHtmlEntities" title="$blnHtmlEntities :: "><span class="description"></span><pre>$blnHtmlEntities</pre></a></li>
+<li class="property protected inherited"><a href="#property_blnWrap" title="$blnWrap :: "><span class="description"></span><pre>$blnWrap</pre></a></li>
+<li class="property protected "><a href="#property_chkSelectAll" title="$chkSelectAll :: "><span class="description"></span><pre>$chkSelectAll</pre></a></li>
+<li class="property protected "><a href="#property_colIndex" title="$colIndex :: "><span class="description"></span><pre>$colIndex</pre></a></li>
+<li class="property protected inherited"><a href="#property_intFilterBoxSize" title="$intFilterBoxSize :: "><span class="description"></span><pre>$intFilterBoxSize</pre></a></li>
+<li class="property protected inherited"><a href="#property_intFilterColId" title="$intFilterColId :: "><span class="description"></span><pre>$intFilterColId</pre></a></li>
+<li class="property protected inherited"><a href="#property_objActiveFilter" title="$objActiveFilter :: "><span class="description"></span><pre>$objActiveFilter</pre></a></li>
+<li class="property protected "><a href="#property_objCheckboxCallback" title="$objCheckboxCallback :: "><span class="description"></span><pre>$objCheckboxCallback</pre></a></li>
+<li class="property protected "><a href="#property_objDataGrid" title="$objDataGrid :: "><span class="description"></span><pre>$objDataGrid</pre></a></li>
+<li class="property protected inherited"><a href="#property_objFilterConstant" title="$objFilterConstant :: "><span class="description"></span><pre>$objFilterConstant</pre></a></li>
+<li class="property protected inherited"><a href="#property_objOrderByClause" title="$objOrderByClause :: "><span class="description"></span><pre>$objOrderByClause</pre></a></li>
+<li class="property protected inherited"><a href="#property_objReverseOrderByClause" title="$objReverseOrderByClause :: "><span class="description"></span><pre>$objReverseOrderByClause</pre></a></li>
+<li class="property protected inherited"><a href="#property_strBackColor" title="$strBackColor :: "><span class="description"></span><pre>$strBackColor</pre></a></li>
+<li class="property protected inherited"><a href="#property_strBorderColor" title="$strBorderColor :: "><span class="description"></span><pre>$strBorderColor</pre></a></li>
+<li class="property protected inherited"><a href="#property_strBorderStyle" title="$strBorderStyle :: "><span class="description"></span><pre>$strBorderStyle</pre></a></li>
+<li class="property protected inherited"><a href="#property_strBorderWidth" title="$strBorderWidth :: "><span class="description"></span><pre>$strBorderWidth</pre></a></li>
+<li class="property protected "><a href="#property_strCheckboxCallbackFunc" title="$strCheckboxCallbackFunc :: "><span class="description"></span><pre>$strCheckboxCallbackFunc</pre></a></li>
+<li class="property protected inherited"><a href="#property_strCssClass" title="$strCssClass :: "><span class="description"></span><pre>$strCssClass</pre></a></li>
+<li class="property protected inherited"><a href="#property_strFilterPostfix" title="$strFilterPostfix :: "><span class="description"></span><pre>$strFilterPostfix</pre></a></li>
+<li class="property protected inherited"><a href="#property_strFilterPrefix" title="$strFilterPrefix :: "><span class="description"></span><pre>$strFilterPrefix</pre></a></li>
+<li class="property protected inherited"><a href="#property_strFilterType" title="$strFilterType :: "><span class="description"></span><pre>$strFilterType</pre></a></li>
+<li class="property protected inherited"><a href="#property_strFontNames" title="$strFontNames :: "><span class="description"></span><pre>$strFontNames</pre></a></li>
+<li class="property protected inherited"><a href="#property_strFontSize" title="$strFontSize :: "><span class="description"></span><pre>$strFontSize</pre></a></li>
+<li class="property protected inherited"><a href="#property_strForeColor" title="$strForeColor :: "><span class="description"></span><pre>$strForeColor</pre></a></li>
+<li class="property protected inherited"><a href="#property_strHorizontalAlign" title="$strHorizontalAlign :: "><span class="description"></span><pre>$strHorizontalAlign</pre></a></li>
+<li class="property protected inherited"><a href="#property_strHtml" title="$strHtml :: "><span class="description"></span><pre>$strHtml</pre></a></li>
+<li class="property protected inherited"><a href="#property_strName" title="$strName :: "><span class="description"></span><pre>$strName</pre></a></li>
+<li class="property protected "><a href="#property_strPrimaryKey" title="$strPrimaryKey :: "><span class="description"></span><pre>$strPrimaryKey</pre></a></li>
+<li class="property protected inherited"><a href="#property_strVerticalAlign" title="$strVerticalAlign :: "><span class="description"></span><pre>$strVerticalAlign</pre></a></li>
+<li class="property protected inherited"><a href="#property_strWidth" title="$strWidth :: "><span class="description"></span><pre>$strWidth</pre></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a id="\QCheckBoxColumn"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/global.html">global</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/QCheckBoxColumn.html">QCheckBoxColumn</a>
+</li>
+</ul>
+<div class="element class">
+<p class="short_description">This defines a specific column <td> for a DataGrid
+All the appearance properties should be self-explanatory.</p>
+<div class="details">
+<div class="long_description"><p>The SortByCommand and ReverseSortByCommand are both optional -- and are explained in more
+depth in DataGrid.inc</p></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Controls</a></td>
+</tr></table>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method_AcceptChanges"></a><div class="element clickable method public method_AcceptChanges" data-toggle="collapse" data-target=".method_AcceptChanges .collapse">
+<h2>Considers the current state to be the new baseline</h2>
+<pre>AcceptChanges() : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_ClearFilter"></a><div class="element clickable method public method_ClearFilter" data-toggle="collapse" data-target=".method_ClearFilter .collapse">
+<h2>ClearFilter()
+        </h2>
+<pre>ClearFilter() </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QDataGridColumn::ClearFilter()</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_FilterAddListItem"></a><div class="element clickable method public method_FilterAddListItem" data-toggle="collapse" data-target=".method_FilterAddListItem .collapse">
+<h2>FilterAddListItem()
+        </h2>
+<pre>FilterAddListItem($arg1, $arg2) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QDataGridColumn::FilterAddListItem()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$arg1</h4></div>
+<div class="subelement argument"><h4>$arg2</h4></div>
+</div></div>
+</div>
+<a id="method_GetActiveFilterState"></a><div class="element clickable method public method_GetActiveFilterState" data-toggle="collapse" data-target=".method_GetActiveFilterState .collapse">
+<h2>GetActiveFilterState()
+        </h2>
+<pre>GetActiveFilterState() </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QDataGridColumn::GetActiveFilterState()</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_GetActiveFilterValue"></a><div class="element clickable method public method_GetActiveFilterValue" data-toggle="collapse" data-target=".method_GetActiveFilterValue .collapse">
+<h2>GetActiveFilterValue()
+        </h2>
+<pre>GetActiveFilterValue() </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QDataGridColumn::GetActiveFilterValue()</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_GetAttributes"></a><div class="element clickable method public method_GetAttributes" data-toggle="collapse" data-target=".method_GetAttributes .collapse">
+<h2>GetAttributes()
+        </h2>
+<pre>GetAttributes($blnIncludeCustom, $blnIncludeAction) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QDataGridColumn::GetAttributes()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$blnIncludeCustom</h4></div>
+<div class="subelement argument"><h4>$blnIncludeAction</h4></div>
+</div></div>
+</div>
+<a id="method_GetChangedIds"></a><div class="element clickable method public method_GetChangedIds" data-toggle="collapse" data-target=".method_GetChangedIds .collapse">
+<h2>Returns an array of changed ids.</h2>
+<pre>GetChangedIds($blnRemember) : bool[]</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$blnRemember</h4></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>bool[]</code>Key is the object Id, value is the new check state (bln)</div>
+</div></div>
+</div>
+<a id="method_GetSelectedIds"></a><div class="element clickable method public method_GetSelectedIds" data-toggle="collapse" data-target=".method_GetSelectedIds .collapse">
+<h2>Returns an array of the Ids of the items selected.</h2>
+<pre>GetSelectedIds() : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Note this only includes rendered controls.</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>array</code>An array of selected Ids</div>
+</div></div>
+</div>
+<a id="method_GetSelectedItems"></a><div class="element clickable method public method_GetSelectedItems" data-toggle="collapse" data-target=".method_GetSelectedItems .collapse">
+<h2>Returns an array of items for the selected rows, loaded using the specified class's Load($id) method</h2>
+<pre>GetSelectedItems(string $strClass, bool $blnIndex, $objClauses) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$strClass</h4>
+<code>string</code><p>The class name of the object type to return</p></div>
+<div class="subelement argument">
+<h4>$blnIndex</h4>
+<code>bool</code><p>Whether to spend extra time indexing the array by Id</p></div>
+<div class="subelement argument"><h4>$objClauses</h4></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>array</code>An array of selected Items</div>
+</div></div>
+</div>
+<a id="method_HasFilter"></a><div class="element clickable method public method_HasFilter" data-toggle="collapse" data-target=".method_HasFilter .collapse">
+<h2>HasFilter()
+        </h2>
+<pre>HasFilter() </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QDataGridColumn::HasFilter()</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_OverrideAttributes"></a><div class="element clickable method public method_OverrideAttributes" data-toggle="collapse" data-target=".method_OverrideAttributes .collapse">
+<h2>This allows you to set any properties, given by a name-value pair list
+in mixOverrideArray.</h2>
+<pre>OverrideAttributes($mixOverrideArray) : void</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Each item in mixOverrideArray needs to be either a string in the format
+of Property=Value or an array in the format of array(Property => Value).
+OverrideAttributes() will basically call
+$this->Property = Value for each string element in the array.</p>
+
+<p>Value can be surrounded by quotes... but this is optional.</p></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QBaseClass::OverrideAttributes()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QDataGridColumn::OverrideAttributes()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$mixOverrideArray</h4></div>
+</div></div>
+</div>
+<a id="method_SetActiveFilterState"></a><div class="element clickable method public method_SetActiveFilterState" data-toggle="collapse" data-target=".method_SetActiveFilterState .collapse">
+<h2>SetActiveFilterState()
+        </h2>
+<pre>SetActiveFilterState(mixed $mixFilterValue) : void</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QDataGridColumn::SetActiveFilterState()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$mixFilterValue</h4>
+<code>mixed</code><p>for the custom filters, $mixFilterValue will be set as FilterByCommand['value'].
+Otherwise, if $mixFilterValue is a QQ condition, it's set as the active filter.
+If $mixFilterValue is not a QQ condition, then it's either the value of the filter for text box filters, or it's the 
+index into the filter list for the list box filters.</p>
+</div>
+</div></div>
+</div>
+<a id="method_SetCheckbox"></a><div class="element clickable method public method_SetCheckbox" data-toggle="collapse" data-target=".method_SetCheckbox .collapse">
+<h2>SetCheckbox()
+        </h2>
+<pre>SetCheckbox($itemId, $value) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$itemId</h4></div>
+<div class="subelement argument"><h4>$value</h4></div>
+</div></div>
+</div>
+<a id="method_SetCheckboxCallback"></a><div class="element clickable method public method_SetCheckboxCallback" data-toggle="collapse" data-target=".method_SetCheckboxCallback .collapse">
+<h2>Sets the callback method for when a checkbox is created.</h2>
+<pre>SetCheckboxCallback(Object $objParent, string $strFuncName) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Used for initializing the checkbox state</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$objParent</h4>
+<code>Object</code><p>The object the callback function belongs to</p></div>
+<div class="subelement argument">
+<h4>$strFuncName</h4>
+<code>string</code><p>The name of the function to call back</p></div>
+</div></div>
+</div>
+<a id="method_SetSelectAllCheckbox"></a><div class="element clickable method public method_SetSelectAllCheckbox" data-toggle="collapse" data-target=".method_SetSelectAllCheckbox .collapse">
+<h2>SetSelectAllCheckbox()
+        </h2>
+<pre>SetSelectAllCheckbox($value) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$value</h4></div>
+</div></div>
+</div>
+<a id="method___construct"></a><div class="element clickable method public method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
+<h2>Creates a QDataGridColumn of checkboxes</h2>
+<pre>__construct(string $strName, \QDataGrid $dataGrid, mixed $objOverrideParameters) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$strName</h4>
+<code>string</code><p>The header to give the column, shown as the label for the Select All checkbox</p></div>
+<div class="subelement argument">
+<h4>$dataGrid</h4>
+<code><a href="../classes/QDataGrid.html">\QDataGrid</a></code><p>The parent DataGrid. This does not add the column to that datagrid</p></div>
+<div class="subelement argument">
+<h4>$objOverrideParameters</h4>
+<code>mixed</code><p>Same as QDataGrid</p></div>
+</div></div>
+</div>
+<a id="method___get"></a><div class="element clickable method public method___get" data-toggle="collapse" data-target=".method___get .collapse">
+<h2>Override method to perform a property "Get"
+This will get the value of $strName
+All inhereted objects that call __get() should always fall through
+to calling parent::__get() in a try/catch statement catching
+for CallerExceptions.</h2>
+<pre>__get(string $strName) : mixed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$strName</h4>
+<code>string</code><p>Name of the property to get</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>mixed</code>the returned property</div>
+</div></div>
+</div>
+<a id="method___set"></a><div class="element clickable method public method___set" data-toggle="collapse" data-target=".method___set .collapse">
+<h2>Override method to perform a property "Set"
+This will set the property $strName to be $mixValue</h2>
+<pre>__set(string $strName, string $mixValue) : mixed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$strName</h4>
+<code>string</code><p>Name of the property to set</p></div>
+<div class="subelement argument">
+<h4>$mixValue</h4>
+<code>string</code><p>New value of the property</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>mixed</code></div>
+</div></div>
+</div>
+<a id="method_chkSelectAll_Render"></a><div class="element clickable method public method_chkSelectAll_Render" data-toggle="collapse" data-target=".method_chkSelectAll_Render .collapse">
+<h2>chkSelectAll_Render()
+        </h2>
+<pre>chkSelectAll_Render() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_chkSelected_Render"></a><div class="element clickable method public method_chkSelected_Render" data-toggle="collapse" data-target=".method_chkSelected_Render .collapse">
+<h2>chkSelected_Render()
+        </h2>
+<pre>chkSelected_Render($_ITEM) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$_ITEM</h4></div>
+</div></div>
+</div>
+<a id="method_GetColIndex"></a><div class="element clickable method protected method_GetColIndex" data-toggle="collapse" data-target=".method_GetColIndex .collapse">
+<h2>Returns the index of this column in the parent datagrid</h2>
+<pre>GetColIndex() : int</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>int</code>The index of the column, or -1 if not found</div>
+</div></div>
+</div>
+<a id="method_FilterSetOperand"></a><div class="element clickable method private method_FilterSetOperand" data-toggle="collapse" data-target=".method_FilterSetOperand .collapse">
+<h2>FilterSetOperand()
+        </h2>
+<pre>FilterSetOperand($mixOperand) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QDataGridColumn::FilterSetOperand()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$mixOperand</h4></div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a id="property_arrFilterByCommand"> </a><div class="element clickable property protected property_arrFilterByCommand" data-toggle="collapse" data-target=".property_arrFilterByCommand .collapse">
+<h2></h2>
+<pre>$arrFilterByCommand </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QDataGridColumn::$$arrFilterByCommand</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_arrFilterList"> </a><div class="element clickable property protected property_arrFilterList" data-toggle="collapse" data-target=".property_arrFilterList .collapse">
+<h2></h2>
+<pre>$arrFilterList </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QDataGridColumn::$$arrFilterList</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_blnFontBold"> </a><div class="element clickable property protected property_blnFontBold" data-toggle="collapse" data-target=".property_blnFontBold .collapse">
+<h2></h2>
+<pre>$blnFontBold </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QDataGridColumn::$$blnFontBold</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_blnFontItalic"> </a><div class="element clickable property protected property_blnFontItalic" data-toggle="collapse" data-target=".property_blnFontItalic .collapse">
+<h2></h2>
+<pre>$blnFontItalic </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QDataGridColumn::$$blnFontItalic</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_blnFontOverline"> </a><div class="element clickable property protected property_blnFontOverline" data-toggle="collapse" data-target=".property_blnFontOverline .collapse">
+<h2></h2>
+<pre>$blnFontOverline </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QDataGridColumn::$$blnFontOverline</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_blnFontStrikeout"> </a><div class="element clickable property protected property_blnFontStrikeout" data-toggle="collapse" data-target=".property_blnFontStrikeout .collapse">
+<h2></h2>
+<pre>$blnFontStrikeout </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QDataGridColumn::$$blnFontStrikeout</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_blnFontUnderline"> </a><div class="element clickable property protected property_blnFontUnderline" data-toggle="collapse" data-target=".property_blnFontUnderline .collapse">
+<h2></h2>
+<pre>$blnFontUnderline </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QDataGridColumn::$$blnFontUnderline</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_blnHasResetButton"> </a><div class="element clickable property protected property_blnHasResetButton" data-toggle="collapse" data-target=".property_blnHasResetButton .collapse">
+<h2></h2>
+<pre>$blnHasResetButton </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QDataGridColumn::$$blnHasResetButton</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_blnHtmlEntities"> </a><div class="element clickable property protected property_blnHtmlEntities" data-toggle="collapse" data-target=".property_blnHtmlEntities .collapse">
+<h2></h2>
+<pre>$blnHtmlEntities </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_blnWrap"> </a><div class="element clickable property protected property_blnWrap" data-toggle="collapse" data-target=".property_blnWrap .collapse">
+<h2></h2>
+<pre>$blnWrap </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QDataGridColumn::$$blnWrap</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_chkSelectAll"> </a><div class="element clickable property protected property_chkSelectAll" data-toggle="collapse" data-target=".property_chkSelectAll .collapse">
+<h2></h2>
+<pre>$chkSelectAll </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_colIndex"> </a><div class="element clickable property protected property_colIndex" data-toggle="collapse" data-target=".property_colIndex .collapse">
+<h2></h2>
+<pre>$colIndex </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_intFilterBoxSize"> </a><div class="element clickable property protected property_intFilterBoxSize" data-toggle="collapse" data-target=".property_intFilterBoxSize .collapse">
+<h2></h2>
+<pre>$intFilterBoxSize </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QDataGridColumn::$$intFilterBoxSize</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_intFilterColId"> </a><div class="element clickable property protected property_intFilterColId" data-toggle="collapse" data-target=".property_intFilterColId .collapse">
+<h2></h2>
+<pre>$intFilterColId </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QDataGridColumn::$$intFilterColId</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_objActiveFilter"> </a><div class="element clickable property protected property_objActiveFilter" data-toggle="collapse" data-target=".property_objActiveFilter .collapse">
+<h2></h2>
+<pre>$objActiveFilter </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QDataGridColumn::$$objActiveFilter</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_objCheckboxCallback"> </a><div class="element clickable property protected property_objCheckboxCallback" data-toggle="collapse" data-target=".property_objCheckboxCallback .collapse">
+<h2></h2>
+<pre>$objCheckboxCallback </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_objDataGrid"> </a><div class="element clickable property protected property_objDataGrid" data-toggle="collapse" data-target=".property_objDataGrid .collapse">
+<h2></h2>
+<pre>$objDataGrid </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_objFilterConstant"> </a><div class="element clickable property protected property_objFilterConstant" data-toggle="collapse" data-target=".property_objFilterConstant .collapse">
+<h2></h2>
+<pre>$objFilterConstant </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QDataGridColumn::$$objFilterConstant</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_objOrderByClause"> </a><div class="element clickable property protected property_objOrderByClause" data-toggle="collapse" data-target=".property_objOrderByClause .collapse">
+<h2></h2>
+<pre>$objOrderByClause </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QDataGridColumn::$$objOrderByClause</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_objReverseOrderByClause"> </a><div class="element clickable property protected property_objReverseOrderByClause" data-toggle="collapse" data-target=".property_objReverseOrderByClause .collapse">
+<h2></h2>
+<pre>$objReverseOrderByClause </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QDataGridColumn::$$objReverseOrderByClause</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_strBackColor"> </a><div class="element clickable property protected property_strBackColor" data-toggle="collapse" data-target=".property_strBackColor .collapse">
+<h2></h2>
+<pre>$strBackColor </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QDataGridColumn::$$strBackColor</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_strBorderColor"> </a><div class="element clickable property protected property_strBorderColor" data-toggle="collapse" data-target=".property_strBorderColor .collapse">
+<h2></h2>
+<pre>$strBorderColor </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QDataGridColumn::$$strBorderColor</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_strBorderStyle"> </a><div class="element clickable property protected property_strBorderStyle" data-toggle="collapse" data-target=".property_strBorderStyle .collapse">
+<h2></h2>
+<pre>$strBorderStyle </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QDataGridColumn::$$strBorderStyle</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_strBorderWidth"> </a><div class="element clickable property protected property_strBorderWidth" data-toggle="collapse" data-target=".property_strBorderWidth .collapse">
+<h2></h2>
+<pre>$strBorderWidth </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QDataGridColumn::$$strBorderWidth</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_strCheckboxCallbackFunc"> </a><div class="element clickable property protected property_strCheckboxCallbackFunc" data-toggle="collapse" data-target=".property_strCheckboxCallbackFunc .collapse">
+<h2></h2>
+<pre>$strCheckboxCallbackFunc </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_strCssClass"> </a><div class="element clickable property protected property_strCssClass" data-toggle="collapse" data-target=".property_strCssClass .collapse">
+<h2></h2>
+<pre>$strCssClass </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QDataGridColumn::$$strCssClass</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_strFilterPostfix"> </a><div class="element clickable property protected property_strFilterPostfix" data-toggle="collapse" data-target=".property_strFilterPostfix .collapse">
+<h2></h2>
+<pre>$strFilterPostfix </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QDataGridColumn::$$strFilterPostfix</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_strFilterPrefix"> </a><div class="element clickable property protected property_strFilterPrefix" data-toggle="collapse" data-target=".property_strFilterPrefix .collapse">
+<h2></h2>
+<pre>$strFilterPrefix </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QDataGridColumn::$$strFilterPrefix</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_strFilterType"> </a><div class="element clickable property protected property_strFilterType" data-toggle="collapse" data-target=".property_strFilterType .collapse">
+<h2></h2>
+<pre>$strFilterType </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QDataGridColumn::$$strFilterType</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_strFontNames"> </a><div class="element clickable property protected property_strFontNames" data-toggle="collapse" data-target=".property_strFontNames .collapse">
+<h2></h2>
+<pre>$strFontNames </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QDataGridColumn::$$strFontNames</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_strFontSize"> </a><div class="element clickable property protected property_strFontSize" data-toggle="collapse" data-target=".property_strFontSize .collapse">
+<h2></h2>
+<pre>$strFontSize </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QDataGridColumn::$$strFontSize</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_strForeColor"> </a><div class="element clickable property protected property_strForeColor" data-toggle="collapse" data-target=".property_strForeColor .collapse">
+<h2></h2>
+<pre>$strForeColor </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QDataGridColumn::$$strForeColor</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_strHorizontalAlign"> </a><div class="element clickable property protected property_strHorizontalAlign" data-toggle="collapse" data-target=".property_strHorizontalAlign .collapse">
+<h2></h2>
+<pre>$strHorizontalAlign </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QDataGridColumn::$$strHorizontalAlign</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_strHtml"> </a><div class="element clickable property protected property_strHtml" data-toggle="collapse" data-target=".property_strHtml .collapse">
+<h2></h2>
+<pre>$strHtml </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QDataGridColumn::$$strHtml</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_strName"> </a><div class="element clickable property protected property_strName" data-toggle="collapse" data-target=".property_strName .collapse">
+<h2></h2>
+<pre>$strName </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QDataGridColumn::$$strName</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_strPrimaryKey"> </a><div class="element clickable property protected property_strPrimaryKey" data-toggle="collapse" data-target=".property_strPrimaryKey .collapse">
+<h2></h2>
+<pre>$strPrimaryKey </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_strVerticalAlign"> </a><div class="element clickable property protected property_strVerticalAlign" data-toggle="collapse" data-target=".property_strVerticalAlign .collapse">
+<h2></h2>
+<pre>$strVerticalAlign </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QDataGridColumn::$$strVerticalAlign</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_strWidth"> </a><div class="element clickable property protected property_strWidth" data-toggle="collapse" data-target=".property_strWidth .collapse">
+<h2></h2>
+<pre>$strWidth </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QDataGridColumn::$$strWidth</td>
+</tr></table>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
+            generated on 2013-03-17T02:00:02+07:00.<br></footer></div>
+</div>
+</body>
+</html>

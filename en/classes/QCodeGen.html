@@ -1,0 +1,1231 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>QCubed API » \QCodeGen</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">QCubed API</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="../packages/Codegen.html"><i class="icon-folder-open"></i> Codegen</a></li>
+<li><a href="../packages/Controls.html"><i class="icon-folder-open"></i> Controls</a></li>
+<li><a href="../packages/Controls%20%20.html"><i class="icon-folder-open"></i> Controls  </a></li>
+<li><a href="../packages/DatabaseAdapters.html"><i class="icon-folder-open"></i> DatabaseAdapters</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/My%20QCubed%20Application.html"><i class="icon-folder-open"></i> My QCubed Application</a></li>
+<li><a href="../packages/Sessions.html"><i class="icon-folder-open"></i> Sessions</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">4384</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul><li>todo 
+                <span class="label label-info">28</span>
+</li></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">8</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public inherited"><a href="#method_GenerateAggregate" title="GenerateAggregate :: "><span class="description">GenerateAggregate()
+        </span><pre>GenerateAggregate()</pre></a></li>
+<li class="method public inherited"><a href="#method_GenerateFile" title="GenerateFile :: Enter description here."><span class="description">Enter description here.</span><pre>GenerateFile()</pre></a></li>
+<li class="method public inherited"><a href="#method_GenerateFiles" title="GenerateFiles :: Given a template prefix (e.g."><span class="description">Given a template prefix (e.g.</span><pre>GenerateFiles()</pre></a></li>
+<li class="method public inherited"><a href="#method_GetSettingsXml" title="GetSettingsXml :: "><span class="description">GetSettingsXml()
+        </span><pre>GetSettingsXml()</pre></a></li>
+<li class="method public inherited"><a href="#method_OverrideAttributes" title="OverrideAttributes :: This allows you to set any properties, given by a name-value pair list
+in mixOverrideArray."><span class="description">This allows you to set any properties, given by a name-value pair list
+in mixOverrideArray.</span><pre>OverrideAttributes()</pre></a></li>
+<li class="method public inherited"><a href="#method_Run" title="Run :: "><span class="description">Run()
+        </span><pre>Run()</pre></a></li>
+<li class="method public inherited"><a href="#method___get" title='__get :: Override method to perform a property "Get"
+This will get the value of $strName'><span class="description">Override method to perform a property "Get"
+This will get the value of $strName</span><pre>__get()</pre></a></li>
+<li class="method public inherited"><a href="#method___set" title='__set :: Override method to perform a property "Set"
+This will set the property $strName to be $mixValue
+All inhereted objects that call __set() should always fall through
+to calling parent::__set() in a try/catch statement catching
+for CallerExceptions.'><span class="description">Override method to perform a property "Set"
+This will set the property $strName to be $mixValue
+All inhereted objects that call __set() should always fall through
+to calling parent::__set() in a try/catch statement catching
+for CallerExceptions.</span><pre>__set()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul>
+<li class="method protected inherited"><a href="#method_CalculateGraphPrefixArray" title="CalculateGraphPrefixArray :: "><span class="description">CalculateGraphPrefixArray()
+        </span><pre>CalculateGraphPrefixArray()</pre></a></li>
+<li class="method protected inherited"><a href="#method_CalculateObjectDescription" title="CalculateObjectDescription :: "><span class="description">CalculateObjectDescription()
+        </span><pre>CalculateObjectDescription()</pre></a></li>
+<li class="method protected inherited"><a href="#method_CalculateObjectDescriptionForAssociation" title="CalculateObjectDescriptionForAssociation :: "><span class="description">CalculateObjectDescriptionForAssociation()
+        </span><pre>CalculateObjectDescriptionForAssociation()</pre></a></li>
+<li class="method protected inherited"><a href="#method_CalculateObjectMemberVariable" title="CalculateObjectMemberVariable :: "><span class="description">CalculateObjectMemberVariable()
+        </span><pre>CalculateObjectMemberVariable()</pre></a></li>
+<li class="method protected inherited"><a href="#method_CalculateObjectPropertyName" title="CalculateObjectPropertyName :: "><span class="description">CalculateObjectPropertyName()
+        </span><pre>CalculateObjectPropertyName()</pre></a></li>
+<li class="method protected inherited"><a href="#method_ClassNameFromTableName" title="ClassNameFromTableName :: "><span class="description">ClassNameFromTableName()
+        </span><pre>ClassNameFromTableName()</pre></a></li>
+<li class="method protected inherited"><a href="#method_EvaluatePHP" title="EvaluatePHP :: "><span class="description">EvaluatePHP()
+        </span><pre>EvaluatePHP()</pre></a></li>
+<li class="method protected inherited"><a href="#method_EvaluateSubTemplate" title="EvaluateSubTemplate :: "><span class="description">EvaluateSubTemplate()
+        </span><pre>EvaluateSubTemplate()</pre></a></li>
+<li class="method protected inherited"><a href="#method_EvaluateTemplate" title="EvaluateTemplate :: "><span class="description">EvaluateTemplate()
+        </span><pre>EvaluateTemplate()</pre></a></li>
+<li class="method protected inherited"><a href="#method_FormControlClassForColumn" title="FormControlClassForColumn :: "><span class="description">FormControlClassForColumn()
+        </span><pre>FormControlClassForColumn()</pre></a></li>
+<li class="method protected inherited"><a href="#method_FormControlTypeForColumn" title="FormControlTypeForColumn :: "><span class="description">FormControlTypeForColumn()
+        </span><pre>FormControlTypeForColumn()</pre></a></li>
+<li class="method protected inherited"><a href="#method_FormControlVariableDataTypeForColumn" title="FormControlVariableDataTypeForColumn :: This function returns the data type for table column
+NOTE: The data type is not the PHP data type, but classes used by QCubed"><span class="description">This function returns the data type for table column
+NOTE: The data type is not the PHP data type, but classes used by QCubed</span><pre>FormControlVariableDataTypeForColumn()</pre></a></li>
+<li class="method protected inherited"><a href="#method_FormControlVariableNameForColumn" title="FormControlVariableNameForColumn :: "><span class="description">FormControlVariableNameForColumn()
+        </span><pre>FormControlVariableNameForColumn()</pre></a></li>
+<li class="method protected inherited"><a href="#method_FormControlVariableNameForManyToManyReference" title="FormControlVariableNameForManyToManyReference :: "><span class="description">FormControlVariableNameForManyToManyReference()
+        </span><pre>FormControlVariableNameForManyToManyReference()</pre></a></li>
+<li class="method protected inherited"><a href="#method_FormControlVariableNameForUniqueReverseReference" title="FormControlVariableNameForUniqueReverseReference :: "><span class="description">FormControlVariableNameForUniqueReverseReference()
+        </span><pre>FormControlVariableNameForUniqueReverseReference()</pre></a></li>
+<li class="method protected inherited"><a href="#method_FormLabelVariableNameForColumn" title="FormLabelVariableNameForColumn :: "><span class="description">FormLabelVariableNameForColumn()
+        </span><pre>FormLabelVariableNameForColumn()</pre></a></li>
+<li class="method protected inherited"><a href="#method_FormLabelVariableNameForManyToManyReference" title="FormLabelVariableNameForManyToManyReference :: "><span class="description">FormLabelVariableNameForManyToManyReference()
+        </span><pre>FormLabelVariableNameForManyToManyReference()</pre></a></li>
+<li class="method protected inherited"><a href="#method_FormLabelVariableNameForUniqueReverseReference" title="FormLabelVariableNameForUniqueReverseReference :: "><span class="description">FormLabelVariableNameForUniqueReverseReference()
+        </span><pre>FormLabelVariableNameForUniqueReverseReference()</pre></a></li>
+<li class="method protected inherited"><a href="#method_ImplodeObjectArray" title="ImplodeObjectArray :: "><span class="description">ImplodeObjectArray()
+        </span><pre>ImplodeObjectArray()</pre></a></li>
+<li class="method protected inherited"><a href="#method_LookupSetting" title="LookupSetting :: This will lookup either the node value (if no attributename is passed in) or the attribute value
+for a given Tag."><span class="description">This will lookup either the node value (if no attributename is passed in) or the attribute value
+for a given Tag.</span><pre>LookupSetting()</pre></a></li>
+<li class="method protected inherited"><a href="#method_ParameterCleanupFromColumn" title="ParameterCleanupFromColumn :: "><span class="description">ParameterCleanupFromColumn()
+        </span><pre>ParameterCleanupFromColumn()</pre></a></li>
+<li class="method protected inherited"><a href="#method_ParameterListFromColumnArray" title="ParameterListFromColumnArray :: "><span class="description">ParameterListFromColumnArray()
+        </span><pre>ParameterListFromColumnArray()</pre></a></li>
+<li class="method protected "><a href="#method_Pluralize" title="Pluralize :: QCodeGen::Pluralize()"><span class="description">QCodeGen::Pluralize()</span><pre>Pluralize()</pre></a></li>
+<li class="method protected inherited"><a href="#method_PropertyNameFromColumn" title="PropertyNameFromColumn :: "><span class="description">PropertyNameFromColumn()
+        </span><pre>PropertyNameFromColumn()</pre></a></li>
+<li class="method protected inherited"><a href="#method_ReferenceColumnNameFromColumn" title="ReferenceColumnNameFromColumn :: "><span class="description">ReferenceColumnNameFromColumn()
+        </span><pre>ReferenceColumnNameFromColumn()</pre></a></li>
+<li class="method protected inherited"><a href="#method_ReferencePropertyNameFromColumn" title="ReferencePropertyNameFromColumn :: "><span class="description">ReferencePropertyNameFromColumn()
+        </span><pre>ReferencePropertyNameFromColumn()</pre></a></li>
+<li class="method protected inherited"><a href="#method_ReferenceVariableNameFromColumn" title="ReferenceVariableNameFromColumn :: "><span class="description">ReferenceVariableNameFromColumn()
+        </span><pre>ReferenceVariableNameFromColumn()</pre></a></li>
+<li class="method protected inherited"><a href="#method_ReverseReferenceVariableNameFromTable" title="ReverseReferenceVariableNameFromTable :: "><span class="description">ReverseReferenceVariableNameFromTable()
+        </span><pre>ReverseReferenceVariableNameFromTable()</pre></a></li>
+<li class="method protected inherited"><a href="#method_ReverseReferenceVariableTypeFromTable" title="ReverseReferenceVariableTypeFromTable :: "><span class="description">ReverseReferenceVariableTypeFromTable()
+        </span><pre>ReverseReferenceVariableTypeFromTable()</pre></a></li>
+<li class="method protected inherited"><a href="#method_TypeNameFromColumnName" title="TypeNameFromColumnName :: "><span class="description">TypeNameFromColumnName()
+        </span><pre>TypeNameFromColumnName()</pre></a></li>
+<li class="method protected inherited"><a href="#method_TypeTokenFromTypeName" title="TypeTokenFromTypeName :: "><span class="description">TypeTokenFromTypeName()
+        </span><pre>TypeTokenFromTypeName()</pre></a></li>
+<li class="method protected inherited"><a href="#method_VariableNameFromColumn" title="VariableNameFromColumn :: "><span class="description">VariableNameFromColumn()
+        </span><pre>VariableNameFromColumn()</pre></a></li>
+<li class="method protected inherited"><a href="#method_VariableNameFromTable" title="VariableNameFromTable :: "><span class="description">VariableNameFromTable()
+        </span><pre>VariableNameFromTable()</pre></a></li>
+<li class="method protected inherited"><a href="#method_VariableTypeFromDbType" title="VariableTypeFromDbType :: "><span class="description">VariableTypeFromDbType()
+        </span><pre>VariableTypeFromDbType()</pre></a></li>
+<li class="method protected inherited"><a href="#method_setGeneratedFilePermissions" title="setGeneratedFilePermissions :: "><span class="description">setGeneratedFilePermissions()
+        </span><pre>setGeneratedFilePermissions()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties
+                    <ul>
+<li class="property public inherited"><a href="#property_CodeGenArray" title="$CodeGenArray :: This static array contains an array of active and executed codegen objects, based
+on the XML Configuration passed in to Run()"><span class="description"></span><pre>$CodeGenArray</pre></a></li>
+<li class="property public inherited"><a href="#property_RootErrors" title="$RootErrors :: "><span class="description"></span><pre>$RootErrors</pre></a></li>
+<li class="property public inherited"><a href="#property_SettingsFilePath" title="$SettingsFilePath :: "><span class="description"></span><pre>$SettingsFilePath</pre></a></li>
+</ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul>
+<li class="property protected inherited"><a href="#property_ApplicationName" title="$ApplicationName :: Application Name (from CodeGen Settings)"><span class="description"></span><pre>$ApplicationName</pre></a></li>
+<li class="property protected inherited"><a href="#property_DirectoriesToExcludeArray" title="$DirectoriesToExcludeArray :: "><span class="description">array of directories to be excluded in codegen (lower cased)</span><pre>$DirectoriesToExcludeArray</pre></a></li>
+<li class="property protected inherited"><a href="#property_SettingsXml" title="$SettingsXml :: This is the SimpleXML representation of the Settings XML file"><span class="description"></span><pre>$SettingsXml</pre></a></li>
+<li class="property protected inherited"><a href="#property_SettingsXmlArray" title="$SettingsXmlArray :: This is the array representation of the parsed SettingsXml
+for reportback purposes."><span class="description"></span><pre>$SettingsXmlArray</pre></a></li>
+<li class="property protected inherited"><a href="#property_TemplateEscapeBegin" title="$TemplateEscapeBegin :: Template Escape Begin (from CodeGen Settings)"><span class="description"></span><pre>$TemplateEscapeBegin</pre></a></li>
+<li class="property protected inherited"><a href="#property_TemplateEscapeBeginLength" title="$TemplateEscapeBeginLength :: "><span class="description"></span><pre>$TemplateEscapeBeginLength</pre></a></li>
+<li class="property protected inherited"><a href="#property_TemplateEscapeEnd" title="$TemplateEscapeEnd :: Template Escape End (from CodeGen Settings)"><span class="description"></span><pre>$TemplateEscapeEnd</pre></a></li>
+<li class="property protected inherited"><a href="#property_TemplateEscapeEndLength" title="$TemplateEscapeEndLength :: "><span class="description"></span><pre>$TemplateEscapeEndLength</pre></a></li>
+<li class="property protected inherited"><a href="#property_strClassPrefix" title="$strClassPrefix :: "><span class="description"></span><pre>$strClassPrefix</pre></a></li>
+<li class="property protected inherited"><a href="#property_strClassSuffix" title="$strClassSuffix :: "><span class="description"></span><pre>$strClassSuffix</pre></a></li>
+<li class="property protected inherited"><a href="#property_strErrors" title="$strErrors :: "><span class="description"></span><pre>$strErrors</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-constant"></i> Constants
+                    <ul>
+<li class="constant  inherited"><a href="#constant_DebugMode" title="DebugMode :: "><span class="description">DebugMode</span><pre>DebugMode</pre></a></li>
+<li class="constant  inherited"><a href="#constant_PhpReservedWords" title="PhpReservedWords :: "><span class="description">PhpReservedWords</span><pre>PhpReservedWords</pre></a></li>
+<li class="constant  inherited"><a href="#constant_TemplatesPath" title="TemplatesPath :: "><span class="description">TemplatesPath</span><pre>TemplatesPath</pre></a></li>
+<li class="constant  inherited"><a href="#constant_TemplatesPathCustom" title="TemplatesPathCustom :: "><span class="description">TemplatesPathCustom</span><pre>TemplatesPathCustom</pre></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a id="\QCodeGen"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/global.html">global</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/QCodeGen.html">QCodeGen</a>
+</li>
+</ul>
+<div class="element class">
+<p class="short_description">QCodeGen</p>
+<div class="details">
+<div class="long_description"><p>Feel free to override any core QCodeGenBase methods here</p></div>
+<table class="table table-bordered">
+<tr>
+<th>package</th>
+<td><a href="../packages/Codegen.html">Codegen</a></td>
+</tr>
+<tr>
+<th>author</th>
+<td><a href="">Qcubed</a></td>
+</tr>
+<tr>
+<th>copyright</th>
+<td></td>
+</tr>
+<tr>
+<th>version</th>
+<td>2011</td>
+</tr>
+<tr>
+<th>access</th>
+<td>public</td>
+</tr>
+</table>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method_GenerateAggregate"></a><div class="element clickable method public method_GenerateAggregate" data-toggle="collapse" data-target=".method_GenerateAggregate .collapse">
+<h2>GenerateAggregate()
+        </h2>
+<pre>GenerateAggregate() : array</pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QCodeGenBase::GenerateAggregate()</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method_GenerateFile"></a><div class="element clickable method public method_GenerateFile" data-toggle="collapse" data-target=".method_GenerateFile .collapse">
+<h2>Enter description here.</h2>
+<pre>GenerateFile(string $strModuleName, string $strFilename, boolean $blnOverrideFlag, mixed[] $mixArgumentArray, boolean $blnSave) : mixed</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>..</p></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QCodeGenBase::GenerateFile()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$strModuleName</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$strFilename</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$blnOverrideFlag</h4>
+<code>boolean</code><p>whether we are using the _core template, or using a custom one</p></div>
+<div class="subelement argument">
+<h4>$mixArgumentArray</h4>
+<code>mixed[]</code>
+</div>
+<div class="subelement argument">
+<h4>$blnSave</h4>
+<code>boolean</code><p>wheather or not to actually perform the save</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>mixed</code>returns the evaluated template or boolean save success.</div>
+</div></div>
+</div>
+<a id="method_GenerateFiles"></a><div class="element clickable method public method_GenerateFiles" data-toggle="collapse" data-target=".method_GenerateFiles .collapse">
+<h2>Given a template prefix (e.g.</h2>
+<pre>GenerateFiles(string $strTemplatePrefix, mixed[] $mixArgumentArray) : boolean</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>db_orm_, db_type_, rest_, soap_, etc.), pull
+all the _*.tpl templates from any subfolders of the template prefix in QCodeGen::TemplatesPath and QCodeGen::TemplatesPathCustom,
+and call GenerateFile() on each one.  If there are any template files that reside
+in BOTH TemplatesPath AND TemplatesPathCustom, then only use the TemplatesPathCustom one (which
+in essence overrides the one in TemplatesPath).</p></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QCodeGenBase::GenerateFiles()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$strTemplatePrefix</h4>
+<code>string</code><p>the prefix of the templates you want to generate against</p></div>
+<div class="subelement argument">
+<h4>$mixArgumentArray</h4>
+<code>mixed[]</code><p>array of arguments to send to EvaluateTemplate</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>success/failure on whether or not all the files generated successfully</div>
+</div></div>
+</div>
+<a id="method_GetSettingsXml"></a><div class="element clickable method public method_GetSettingsXml" data-toggle="collapse" data-target=".method_GetSettingsXml .collapse">
+<h2>GetSettingsXml()
+        </h2>
+<pre>GetSettingsXml() </pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QCodeGenBase::GetSettingsXml()</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_OverrideAttributes"></a><div class="element clickable method public method_OverrideAttributes" data-toggle="collapse" data-target=".method_OverrideAttributes .collapse">
+<h2>This allows you to set any properties, given by a name-value pair list
+in mixOverrideArray.</h2>
+<pre>OverrideAttributes($mixOverrideArray) : void</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Each item in mixOverrideArray needs to be either a string in the format
+of Property=Value or an array in the format of array(Property => Value).
+OverrideAttributes() will basically call
+$this->Property = Value for each string element in the array.</p>
+
+<p>Value can be surrounded by quotes... but this is optional.</p></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QBaseClass::OverrideAttributes()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QCodeGenBase::OverrideAttributes()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$mixOverrideArray</h4></div>
+</div></div>
+</div>
+<a id="method_Run"></a><div class="element clickable method public method_Run" data-toggle="collapse" data-target=".method_Run .collapse">
+<h2>Run()
+        </h2>
+<pre>Run($strSettingsXmlFilePath) </pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QCodeGenBase::Run()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strSettingsXmlFilePath</h4></div>
+</div></div>
+</div>
+<a id="method___get"></a><div class="element clickable method public method___get" data-toggle="collapse" data-target=".method___get .collapse">
+<h2>Override method to perform a property "Get"
+This will get the value of $strName</h2>
+<pre>__get(string $strName) : mixed</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QCodeGenBase::__get()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$strName</h4>
+<code>string</code><p>strName Name of the property to get</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>mixed</code></div>
+</div></div>
+</div>
+<a id="method___set"></a><div class="element clickable method public method___set" data-toggle="collapse" data-target=".method___set .collapse">
+<h2>Override method to perform a property "Set"
+This will set the property $strName to be $mixValue
+All inhereted objects that call __set() should always fall through
+to calling parent::__set() in a try/catch statement catching
+for CallerExceptions.</h2>
+<pre>__set(string $strName, string $mixValue) : mixed</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QCodeGenBase::__set()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$strName</h4>
+<code>string</code><p>Name of the property to set</p></div>
+<div class="subelement argument">
+<h4>$mixValue</h4>
+<code>string</code><p>New value of the property</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>mixed</code>the property that was set</div>
+</div></div>
+</div>
+<a id="method_CalculateGraphPrefixArray"></a><div class="element clickable method protected method_CalculateGraphPrefixArray" data-toggle="collapse" data-target=".method_CalculateGraphPrefixArray .collapse">
+<h2>CalculateGraphPrefixArray()
+        </h2>
+<pre>CalculateGraphPrefixArray($objForeignKeyArray) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QCodeGenBase::CalculateGraphPrefixArray()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$objForeignKeyArray</h4></div>
+</div></div>
+</div>
+<a id="method_CalculateObjectDescription"></a><div class="element clickable method protected method_CalculateObjectDescription" data-toggle="collapse" data-target=".method_CalculateObjectDescription .collapse">
+<h2>CalculateObjectDescription()
+        </h2>
+<pre>CalculateObjectDescription($strTableName, $strColumnName, $strReferencedTableName, $blnPluralize) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QCodeGenBase::CalculateObjectDescription()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strTableName</h4></div>
+<div class="subelement argument"><h4>$strColumnName</h4></div>
+<div class="subelement argument"><h4>$strReferencedTableName</h4></div>
+<div class="subelement argument"><h4>$blnPluralize</h4></div>
+</div></div>
+</div>
+<a id="method_CalculateObjectDescriptionForAssociation"></a><div class="element clickable method protected method_CalculateObjectDescriptionForAssociation" data-toggle="collapse" data-target=".method_CalculateObjectDescriptionForAssociation .collapse">
+<h2>CalculateObjectDescriptionForAssociation()
+        </h2>
+<pre>CalculateObjectDescriptionForAssociation($strAssociationTableName, $strTableName, $strReferencedTableName, $blnPluralize) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QCodeGenBase::CalculateObjectDescriptionForAssociation()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strAssociationTableName</h4></div>
+<div class="subelement argument"><h4>$strTableName</h4></div>
+<div class="subelement argument"><h4>$strReferencedTableName</h4></div>
+<div class="subelement argument"><h4>$blnPluralize</h4></div>
+</div></div>
+</div>
+<a id="method_CalculateObjectMemberVariable"></a><div class="element clickable method protected method_CalculateObjectMemberVariable" data-toggle="collapse" data-target=".method_CalculateObjectMemberVariable .collapse">
+<h2>CalculateObjectMemberVariable()
+        </h2>
+<pre>CalculateObjectMemberVariable($strTableName, $strColumnName, $strReferencedTableName) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QCodeGenBase::CalculateObjectMemberVariable()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strTableName</h4></div>
+<div class="subelement argument"><h4>$strColumnName</h4></div>
+<div class="subelement argument"><h4>$strReferencedTableName</h4></div>
+</div></div>
+</div>
+<a id="method_CalculateObjectPropertyName"></a><div class="element clickable method protected method_CalculateObjectPropertyName" data-toggle="collapse" data-target=".method_CalculateObjectPropertyName .collapse">
+<h2>CalculateObjectPropertyName()
+        </h2>
+<pre>CalculateObjectPropertyName($strTableName, $strColumnName, $strReferencedTableName) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QCodeGenBase::CalculateObjectPropertyName()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strTableName</h4></div>
+<div class="subelement argument"><h4>$strColumnName</h4></div>
+<div class="subelement argument"><h4>$strReferencedTableName</h4></div>
+</div></div>
+</div>
+<a id="method_ClassNameFromTableName"></a><div class="element clickable method protected method_ClassNameFromTableName" data-toggle="collapse" data-target=".method_ClassNameFromTableName .collapse">
+<h2>ClassNameFromTableName()
+        </h2>
+<pre>ClassNameFromTableName($strTableName) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QCodeGenBase::ClassNameFromTableName()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strTableName</h4></div>
+</div></div>
+</div>
+<a id="method_EvaluatePHP"></a><div class="element clickable method protected method_EvaluatePHP" data-toggle="collapse" data-target=".method_EvaluatePHP .collapse">
+<h2>EvaluatePHP()
+        </h2>
+<pre>EvaluatePHP($strFilename, $strModuleName, $mixArgumentArray) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QCodeGenBase::EvaluatePHP()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strFilename</h4></div>
+<div class="subelement argument"><h4>$strModuleName</h4></div>
+<div class="subelement argument"><h4>$mixArgumentArray</h4></div>
+</div></div>
+</div>
+<a id="method_EvaluateSubTemplate"></a><div class="element clickable method protected method_EvaluateSubTemplate" data-toggle="collapse" data-target=".method_EvaluateSubTemplate .collapse">
+<h2>EvaluateSubTemplate()
+        </h2>
+<pre>EvaluateSubTemplate($strSubTemplateFilename, $strModuleName, $mixArgumentArray) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QCodeGenBase::EvaluateSubTemplate()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strSubTemplateFilename</h4></div>
+<div class="subelement argument"><h4>$strModuleName</h4></div>
+<div class="subelement argument"><h4>$mixArgumentArray</h4></div>
+</div></div>
+</div>
+<a id="method_EvaluateTemplate"></a><div class="element clickable method protected method_EvaluateTemplate" data-toggle="collapse" data-target=".method_EvaluateTemplate .collapse">
+<h2>EvaluateTemplate()
+        </h2>
+<pre>EvaluateTemplate($strTemplate, $strModuleName, $mixArgumentArray) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QCodeGenBase::EvaluateTemplate()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strTemplate</h4></div>
+<div class="subelement argument"><h4>$strModuleName</h4></div>
+<div class="subelement argument"><h4>$mixArgumentArray</h4></div>
+</div></div>
+</div>
+<a id="method_FormControlClassForColumn"></a><div class="element clickable method protected method_FormControlClassForColumn" data-toggle="collapse" data-target=".method_FormControlClassForColumn .collapse">
+<h2>FormControlClassForColumn()
+        </h2>
+<pre>FormControlClassForColumn(\QColumn $objColumn) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QCodeGenBase::FormControlClassForColumn()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$objColumn</h4></div>
+</div></div>
+</div>
+<a id="method_FormControlTypeForColumn"></a><div class="element clickable method protected method_FormControlTypeForColumn" data-toggle="collapse" data-target=".method_FormControlTypeForColumn .collapse">
+<h2>FormControlTypeForColumn()
+        </h2>
+<pre>FormControlTypeForColumn(\QColumn $objColumn) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QCodeGenBase::FormControlTypeForColumn()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$objColumn</h4></div>
+</div></div>
+</div>
+<a id="method_FormControlVariableDataTypeForColumn"></a><div class="element clickable method protected method_FormControlVariableDataTypeForColumn" data-toggle="collapse" data-target=".method_FormControlVariableDataTypeForColumn .collapse">
+<h2>This function returns the data type for table column
+NOTE: The data type is not the PHP data type, but classes used by QCubed</h2>
+<pre>FormControlVariableDataTypeForColumn(\QColumn $objColumn) : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QCodeGenBase::FormControlVariableDataTypeForColumn()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$objColumn</h4>
+<code><a href="../classes/QColumn.html">\QColumn</a></code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_FormControlVariableNameForColumn"></a><div class="element clickable method protected method_FormControlVariableNameForColumn" data-toggle="collapse" data-target=".method_FormControlVariableNameForColumn .collapse">
+<h2>FormControlVariableNameForColumn()
+        </h2>
+<pre>FormControlVariableNameForColumn(\QColumn $objColumn) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QCodeGenBase::FormControlVariableNameForColumn()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$objColumn</h4></div>
+</div></div>
+</div>
+<a id="method_FormControlVariableNameForManyToManyReference"></a><div class="element clickable method protected method_FormControlVariableNameForManyToManyReference" data-toggle="collapse" data-target=".method_FormControlVariableNameForManyToManyReference .collapse">
+<h2>FormControlVariableNameForManyToManyReference()
+        </h2>
+<pre>FormControlVariableNameForManyToManyReference(\QManyToManyReference $objManyToManyReference) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QCodeGenBase::FormControlVariableNameForManyToManyReference()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$objManyToManyReference</h4></div>
+</div></div>
+</div>
+<a id="method_FormControlVariableNameForUniqueReverseReference"></a><div class="element clickable method protected method_FormControlVariableNameForUniqueReverseReference" data-toggle="collapse" data-target=".method_FormControlVariableNameForUniqueReverseReference .collapse">
+<h2>FormControlVariableNameForUniqueReverseReference()
+        </h2>
+<pre>FormControlVariableNameForUniqueReverseReference(\QReverseReference $objReverseReference) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QCodeGenBase::FormControlVariableNameForUniqueReverseReference()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$objReverseReference</h4></div>
+</div></div>
+</div>
+<a id="method_FormLabelVariableNameForColumn"></a><div class="element clickable method protected method_FormLabelVariableNameForColumn" data-toggle="collapse" data-target=".method_FormLabelVariableNameForColumn .collapse">
+<h2>FormLabelVariableNameForColumn()
+        </h2>
+<pre>FormLabelVariableNameForColumn(\QColumn $objColumn) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QCodeGenBase::FormLabelVariableNameForColumn()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$objColumn</h4></div>
+</div></div>
+</div>
+<a id="method_FormLabelVariableNameForManyToManyReference"></a><div class="element clickable method protected method_FormLabelVariableNameForManyToManyReference" data-toggle="collapse" data-target=".method_FormLabelVariableNameForManyToManyReference .collapse">
+<h2>FormLabelVariableNameForManyToManyReference()
+        </h2>
+<pre>FormLabelVariableNameForManyToManyReference(\QManyToManyReference $objManyToManyReference) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QCodeGenBase::FormLabelVariableNameForManyToManyReference()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$objManyToManyReference</h4></div>
+</div></div>
+</div>
+<a id="method_FormLabelVariableNameForUniqueReverseReference"></a><div class="element clickable method protected method_FormLabelVariableNameForUniqueReverseReference" data-toggle="collapse" data-target=".method_FormLabelVariableNameForUniqueReverseReference .collapse">
+<h2>FormLabelVariableNameForUniqueReverseReference()
+        </h2>
+<pre>FormLabelVariableNameForUniqueReverseReference(\QReverseReference $objReverseReference) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QCodeGenBase::FormLabelVariableNameForUniqueReverseReference()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$objReverseReference</h4></div>
+</div></div>
+</div>
+<a id="method_ImplodeObjectArray"></a><div class="element clickable method protected method_ImplodeObjectArray" data-toggle="collapse" data-target=".method_ImplodeObjectArray .collapse">
+<h2>ImplodeObjectArray()
+        </h2>
+<pre>ImplodeObjectArray($strGlue, $strPrefix, $strSuffix, $strProperty, $objArrayToImplode) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QCodeGenBase::ImplodeObjectArray()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strGlue</h4></div>
+<div class="subelement argument"><h4>$strPrefix</h4></div>
+<div class="subelement argument"><h4>$strSuffix</h4></div>
+<div class="subelement argument"><h4>$strProperty</h4></div>
+<div class="subelement argument"><h4>$objArrayToImplode</h4></div>
+</div></div>
+</div>
+<a id="method_LookupSetting"></a><div class="element clickable method protected method_LookupSetting" data-toggle="collapse" data-target=".method_LookupSetting .collapse">
+<h2>This will lookup either the node value (if no attributename is passed in) or the attribute value
+for a given Tag.</h2>
+<pre>LookupSetting(\SimpleXmlElement $objNode, string $strTagName, string $strAttributeName, string $strType) : mixed</pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Node Searches only apply from the root level of the configuration XML being passed in
+(e.g. it will not be able to lookup the tag name of a grandchild of the root node)</p>
+
+<p>If No Tag Name is passed in, then attribute/value lookup is based on the root node, itself.</p></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QCodeGenBase::LookupSetting()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$objNode</h4>
+<code>\SimpleXmlElement</code>
+</div>
+<div class="subelement argument">
+<h4>$strTagName</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$strAttributeName</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$strType</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>mixed</code>the return type depends on the QType you pass in to $strType</div>
+</div></div>
+</div>
+<a id="method_ParameterCleanupFromColumn"></a><div class="element clickable method protected method_ParameterCleanupFromColumn" data-toggle="collapse" data-target=".method_ParameterCleanupFromColumn .collapse">
+<h2>ParameterCleanupFromColumn()
+        </h2>
+<pre>ParameterCleanupFromColumn(\QColumn $objColumn, $blnIncludeEquality) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QCodeGenBase::ParameterCleanupFromColumn()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$objColumn</h4></div>
+<div class="subelement argument"><h4>$blnIncludeEquality</h4></div>
+</div></div>
+</div>
+<a id="method_ParameterListFromColumnArray"></a><div class="element clickable method protected method_ParameterListFromColumnArray" data-toggle="collapse" data-target=".method_ParameterListFromColumnArray .collapse">
+<h2>ParameterListFromColumnArray()
+        </h2>
+<pre>ParameterListFromColumnArray($objColumnArray) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QCodeGenBase::ParameterListFromColumnArray()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$objColumnArray</h4></div>
+</div></div>
+</div>
+<a id="method_Pluralize"></a><div class="element clickable method protected method_Pluralize" data-toggle="collapse" data-target=".method_Pluralize .collapse">
+<h2>QCodeGen::Pluralize()</h2>
+<pre>Pluralize(string $strName) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Example: Overriding the Pluralize method</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$strName</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_PropertyNameFromColumn"></a><div class="element clickable method protected method_PropertyNameFromColumn" data-toggle="collapse" data-target=".method_PropertyNameFromColumn .collapse">
+<h2>PropertyNameFromColumn()
+        </h2>
+<pre>PropertyNameFromColumn(\QColumn $objColumn) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QCodeGenBase::PropertyNameFromColumn()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$objColumn</h4></div>
+</div></div>
+</div>
+<a id="method_ReferenceColumnNameFromColumn"></a><div class="element clickable method protected method_ReferenceColumnNameFromColumn" data-toggle="collapse" data-target=".method_ReferenceColumnNameFromColumn .collapse">
+<h2>ReferenceColumnNameFromColumn()
+        </h2>
+<pre>ReferenceColumnNameFromColumn(\QColumn $objColumn) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QCodeGenBase::ReferenceColumnNameFromColumn()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$objColumn</h4></div>
+</div></div>
+</div>
+<a id="method_ReferencePropertyNameFromColumn"></a><div class="element clickable method protected method_ReferencePropertyNameFromColumn" data-toggle="collapse" data-target=".method_ReferencePropertyNameFromColumn .collapse">
+<h2>ReferencePropertyNameFromColumn()
+        </h2>
+<pre>ReferencePropertyNameFromColumn(\QColumn $objColumn) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QCodeGenBase::ReferencePropertyNameFromColumn()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$objColumn</h4></div>
+</div></div>
+</div>
+<a id="method_ReferenceVariableNameFromColumn"></a><div class="element clickable method protected method_ReferenceVariableNameFromColumn" data-toggle="collapse" data-target=".method_ReferenceVariableNameFromColumn .collapse">
+<h2>ReferenceVariableNameFromColumn()
+        </h2>
+<pre>ReferenceVariableNameFromColumn(\QColumn $objColumn) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QCodeGenBase::ReferenceVariableNameFromColumn()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$objColumn</h4></div>
+</div></div>
+</div>
+<a id="method_ReverseReferenceVariableNameFromTable"></a><div class="element clickable method protected method_ReverseReferenceVariableNameFromTable" data-toggle="collapse" data-target=".method_ReverseReferenceVariableNameFromTable .collapse">
+<h2>ReverseReferenceVariableNameFromTable()
+        </h2>
+<pre>ReverseReferenceVariableNameFromTable($strTableName) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QCodeGenBase::ReverseReferenceVariableNameFromTable()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strTableName</h4></div>
+</div></div>
+</div>
+<a id="method_ReverseReferenceVariableTypeFromTable"></a><div class="element clickable method protected method_ReverseReferenceVariableTypeFromTable" data-toggle="collapse" data-target=".method_ReverseReferenceVariableTypeFromTable .collapse">
+<h2>ReverseReferenceVariableTypeFromTable()
+        </h2>
+<pre>ReverseReferenceVariableTypeFromTable($strTableName) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QCodeGenBase::ReverseReferenceVariableTypeFromTable()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strTableName</h4></div>
+</div></div>
+</div>
+<a id="method_TypeNameFromColumnName"></a><div class="element clickable method protected method_TypeNameFromColumnName" data-toggle="collapse" data-target=".method_TypeNameFromColumnName .collapse">
+<h2>TypeNameFromColumnName()
+        </h2>
+<pre>TypeNameFromColumnName($strName) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QCodeGenBase::TypeNameFromColumnName()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strName</h4></div>
+</div></div>
+</div>
+<a id="method_TypeTokenFromTypeName"></a><div class="element clickable method protected method_TypeTokenFromTypeName" data-toggle="collapse" data-target=".method_TypeTokenFromTypeName .collapse">
+<h2>TypeTokenFromTypeName()
+        </h2>
+<pre>TypeTokenFromTypeName($strName) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QCodeGenBase::TypeTokenFromTypeName()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strName</h4></div>
+</div></div>
+</div>
+<a id="method_VariableNameFromColumn"></a><div class="element clickable method protected method_VariableNameFromColumn" data-toggle="collapse" data-target=".method_VariableNameFromColumn .collapse">
+<h2>VariableNameFromColumn()
+        </h2>
+<pre>VariableNameFromColumn(\QColumn $objColumn) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QCodeGenBase::VariableNameFromColumn()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$objColumn</h4></div>
+</div></div>
+</div>
+<a id="method_VariableNameFromTable"></a><div class="element clickable method protected method_VariableNameFromTable" data-toggle="collapse" data-target=".method_VariableNameFromTable .collapse">
+<h2>VariableNameFromTable()
+        </h2>
+<pre>VariableNameFromTable($strTableName) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QCodeGenBase::VariableNameFromTable()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strTableName</h4></div>
+</div></div>
+</div>
+<a id="method_VariableTypeFromDbType"></a><div class="element clickable method protected method_VariableTypeFromDbType" data-toggle="collapse" data-target=".method_VariableTypeFromDbType .collapse">
+<h2>VariableTypeFromDbType()
+        </h2>
+<pre>VariableTypeFromDbType($strDbType) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QCodeGenBase::VariableTypeFromDbType()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strDbType</h4></div>
+</div></div>
+</div>
+<a id="method_setGeneratedFilePermissions"></a><div class="element clickable method protected method_setGeneratedFilePermissions" data-toggle="collapse" data-target=".method_setGeneratedFilePermissions .collapse">
+<h2>setGeneratedFilePermissions()
+        </h2>
+<pre>setGeneratedFilePermissions($strFilePath) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QCodeGenBase::setGeneratedFilePermissions()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strFilePath</h4></div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a id="property_CodeGenArray"> </a><div class="element clickable property public property_CodeGenArray" data-toggle="collapse" data-target=".property_CodeGenArray .collapse">
+<h2></h2>
+<pre>$CodeGenArray : <a href="qcubed.codegen.QCodeGen.class.html#%5CQCodeGen">\QCodeGen[]</a></pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QCodeGenBase::$$CodeGenArray</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_RootErrors"> </a><div class="element clickable property public property_RootErrors" data-toggle="collapse" data-target=".property_RootErrors .collapse">
+<h2></h2>
+<pre>$RootErrors </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QCodeGenBase::$$RootErrors</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_SettingsFilePath"> </a><div class="element clickable property public property_SettingsFilePath" data-toggle="collapse" data-target=".property_SettingsFilePath .collapse">
+<h2></h2>
+<pre>$SettingsFilePath </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QCodeGenBase::$$SettingsFilePath</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_ApplicationName"> </a><div class="element clickable property protected property_ApplicationName" data-toggle="collapse" data-target=".property_ApplicationName .collapse">
+<h2></h2>
+<pre>$ApplicationName : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QCodeGenBase::$$ApplicationName</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_DirectoriesToExcludeArray"> </a><div class="element clickable property protected property_DirectoriesToExcludeArray" data-toggle="collapse" data-target=".property_DirectoriesToExcludeArray .collapse">
+<h2>array of directories to be excluded in codegen (lower cased)</h2>
+<pre>$DirectoriesToExcludeArray : string[]</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>access</th>
+<td>protected</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QCodeGenBase::$$DirectoriesToExcludeArray</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_SettingsXml"> </a><div class="element clickable property protected property_SettingsXml" data-toggle="collapse" data-target=".property_SettingsXml .collapse">
+<h2></h2>
+<pre>$SettingsXml : \SimpleXmlElement</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QCodeGenBase::$$SettingsXml</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_SettingsXmlArray"> </a><div class="element clickable property protected property_SettingsXmlArray" data-toggle="collapse" data-target=".property_SettingsXmlArray .collapse">
+<h2></h2>
+<pre>$SettingsXmlArray : string[]</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QCodeGenBase::$$SettingsXmlArray</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_TemplateEscapeBegin"> </a><div class="element clickable property protected property_TemplateEscapeBegin" data-toggle="collapse" data-target=".property_TemplateEscapeBegin .collapse">
+<h2></h2>
+<pre>$TemplateEscapeBegin : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QCodeGenBase::$$TemplateEscapeBegin</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_TemplateEscapeBeginLength"> </a><div class="element clickable property protected property_TemplateEscapeBeginLength" data-toggle="collapse" data-target=".property_TemplateEscapeBeginLength .collapse">
+<h2></h2>
+<pre>$TemplateEscapeBeginLength </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QCodeGenBase::$$TemplateEscapeBeginLength</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_TemplateEscapeEnd"> </a><div class="element clickable property protected property_TemplateEscapeEnd" data-toggle="collapse" data-target=".property_TemplateEscapeEnd .collapse">
+<h2></h2>
+<pre>$TemplateEscapeEnd : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QCodeGenBase::$$TemplateEscapeEnd</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_TemplateEscapeEndLength"> </a><div class="element clickable property protected property_TemplateEscapeEndLength" data-toggle="collapse" data-target=".property_TemplateEscapeEndLength .collapse">
+<h2></h2>
+<pre>$TemplateEscapeEndLength </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QCodeGenBase::$$TemplateEscapeEndLength</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_strClassPrefix"> </a><div class="element clickable property protected property_strClassPrefix" data-toggle="collapse" data-target=".property_strClassPrefix .collapse">
+<h2></h2>
+<pre>$strClassPrefix </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QCodeGenBase::$$strClassPrefix</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_strClassSuffix"> </a><div class="element clickable property protected property_strClassSuffix" data-toggle="collapse" data-target=".property_strClassSuffix .collapse">
+<h2></h2>
+<pre>$strClassSuffix </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QCodeGenBase::$$strClassSuffix</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_strErrors"> </a><div class="element clickable property protected property_strErrors" data-toggle="collapse" data-target=".property_strErrors .collapse">
+<h2></h2>
+<pre>$strErrors </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QCodeGenBase::$$strErrors</td>
+</tr></table>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-constant"></i> Constants</h3>
+<a id="constant_DebugMode"> </a><div class="element clickable constant  constant_DebugMode" data-toggle="collapse" data-target=".constant_DebugMode .collapse">
+<h2>DebugMode</h2>
+<pre>DebugMode </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QCodeGenBase::DebugMode</td>
+</tr></table>
+</div></div>
+</div>
+<a id="constant_PhpReservedWords"> </a><div class="element clickable constant  constant_PhpReservedWords" data-toggle="collapse" data-target=".constant_PhpReservedWords .collapse">
+<h2>PhpReservedWords</h2>
+<pre>PhpReservedWords </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QCodeGenBase::PhpReservedWords</td>
+</tr></table>
+</div></div>
+</div>
+<a id="constant_TemplatesPath"> </a><div class="element clickable constant  constant_TemplatesPath" data-toggle="collapse" data-target=".constant_TemplatesPath .collapse">
+<h2>TemplatesPath</h2>
+<pre>TemplatesPath </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QCodeGenBase::TemplatesPath</td>
+</tr></table>
+</div></div>
+</div>
+<a id="constant_TemplatesPathCustom"> </a><div class="element clickable constant  constant_TemplatesPathCustom" data-toggle="collapse" data-target=".constant_TemplatesPathCustom .collapse">
+<h2>TemplatesPathCustom</h2>
+<pre>TemplatesPathCustom </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QCodeGenBase::TemplatesPathCustom</td>
+</tr></table>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
+            generated on 2013-03-17T02:01:28+07:00.<br></footer></div>
+</div>
+</body>
+</html>

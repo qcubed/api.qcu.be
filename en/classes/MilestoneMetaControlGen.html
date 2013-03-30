@@ -1,0 +1,723 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>QCubed API » \MilestoneMetaControlGen</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">QCubed API</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="../packages/Codegen.html"><i class="icon-folder-open"></i> Codegen</a></li>
+<li><a href="../packages/Controls.html"><i class="icon-folder-open"></i> Controls</a></li>
+<li><a href="../packages/Controls%20%20.html"><i class="icon-folder-open"></i> Controls  </a></li>
+<li><a href="../packages/DatabaseAdapters.html"><i class="icon-folder-open"></i> DatabaseAdapters</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/My%20QCubed%20Application.html"><i class="icon-folder-open"></i> My QCubed Application</a></li>
+<li><a href="../packages/Sessions.html"><i class="icon-folder-open"></i> Sessions</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">4384</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul><li>todo 
+                <span class="label label-info">28</span>
+</li></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">8</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method_Create" title="Create :: Static Helper Method to Create using PK arguments
+You must pass in the PK arguments on an object to load, or leave it blank to create a new one."><span class="description">Static Helper Method to Create using PK arguments
+You must pass in the PK arguments on an object to load, or leave it blank to create a new one.</span><pre>Create()</pre></a></li>
+<li class="method public "><a href="#method_CreateFromPathInfo" title="CreateFromPathInfo :: Static Helper Method to Create using PathInfo arguments"><span class="description">Static Helper Method to Create using PathInfo arguments</span><pre>CreateFromPathInfo()</pre></a></li>
+<li class="method public "><a href="#method_CreateFromQueryString" title="CreateFromQueryString :: Static Helper Method to Create using QueryString arguments"><span class="description">Static Helper Method to Create using QueryString arguments</span><pre>CreateFromQueryString()</pre></a></li>
+<li class="method public "><a href="#method_DeleteMilestone" title="DeleteMilestone :: This will DELETE this object's Milestone instance from the database."><span class="description">This will DELETE this object's Milestone instance from the database.</span><pre>DeleteMilestone()</pre></a></li>
+<li class="method public "><a href="#method_From" title="From :: Static Helper Method to Create using a reference to the Milestone object"><span class="description">Static Helper Method to Create using a reference to the Milestone object</span><pre>From()</pre></a></li>
+<li class="method public "><a href="#method_Matches" title="Matches :: Static Helper Method to Create using a reference to the Milestone object"><span class="description">Static Helper Method to Create using a reference to the Milestone object</span><pre>Matches()</pre></a></li>
+<li class="method public inherited"><a href="#method_OverrideAttributes" title="OverrideAttributes :: This allows you to set any properties, given by a name-value pair list
+in mixOverrideArray."><span class="description">This allows you to set any properties, given by a name-value pair list
+in mixOverrideArray.</span><pre>OverrideAttributes()</pre></a></li>
+<li class="method public "><a href="#method_Refresh" title="Refresh :: Refresh this MetaControl with Data from the local Milestone object."><span class="description">Refresh this MetaControl with Data from the local Milestone object.</span><pre>Refresh()</pre></a></li>
+<li class="method public "><a href="#method_SaveMilestone" title="SaveMilestone :: This will save this object's Milestone instance,
+updating only the fields which have had a control created for it."><span class="description">This will save this object's Milestone instance,
+updating only the fields which have had a control created for it.</span><pre>SaveMilestone()</pre></a></li>
+<li class="method public "><a href="#method___construct" title="__construct :: Main constructor."><span class="description">Main constructor.</span><pre>__construct()</pre></a></li>
+<li class="method public "><a href="#method___get" title='__get :: Override method to perform a property "Get"
+This will get the value of $strName'><span class="description">Override method to perform a property "Get"
+This will get the value of $strName</span><pre>__get()</pre></a></li>
+<li class="method public "><a href="#method___set" title='__set :: Override method to perform a property "Set"
+This will set the property $strName to be $mixValue'><span class="description">Override method to perform a property "Set"
+This will set the property $strName to be $mixValue</span><pre>__set()</pre></a></li>
+<li class="method public "><a href="#method_lblId_Create" title="lblId_Create :: Create and setup QLabel lblId"><span class="description">Create and setup QLabel lblId</span><pre>lblId_Create()</pre></a></li>
+<li class="method public "><a href="#method_lblName_Create" title="lblName_Create :: Create and setup QLabel lblName"><span class="description">Create and setup QLabel lblName</span><pre>lblName_Create()</pre></a></li>
+<li class="method public "><a href="#method_lblProjectId_Create" title="lblProjectId_Create :: Create and setup QLabel lblProjectId"><span class="description">Create and setup QLabel lblProjectId</span><pre>lblProjectId_Create()</pre></a></li>
+<li class="method public "><a href="#method_lstProject_Create" title="lstProject_Create :: Create and setup MilestoneObjectSelector lstProject"><span class="description">Create and setup MilestoneObjectSelector lstProject</span><pre>lstProject_Create()</pre></a></li>
+<li class="method public "><a href="#method_txtName_Create" title="txtName_Create :: Create and setup QTextBox txtName"><span class="description">Create and setup QTextBox txtName</span><pre>txtName_Create()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties
+                    <ul>
+<li class="property public "><a href="#property_EditMode" title="$EditMode :: a boolean indicating whether or not this is being edited or created"><span class="description"></span><pre>$EditMode</pre></a></li>
+<li class="property public "><a href="#property_IdControl" title="$IdControl :: "><span class="description"></span><pre>$IdControl</pre></a></li>
+<li class="property public "><a href="#property_IdLabel" title="$IdLabel :: "><span class="description"></span><pre>$IdLabel</pre></a></li>
+<li class="property public "><a href="#property_Milestone" title="$Milestone :: the actual Milestone data class being edited"><span class="description"></span><pre>$Milestone</pre></a></li>
+<li class="property public "><a href="#property_NameControl" title="$NameControl :: "><span class="description"></span><pre>$NameControl</pre></a></li>
+<li class="property public "><a href="#property_NameLabel" title="$NameLabel :: "><span class="description"></span><pre>$NameLabel</pre></a></li>
+<li class="property public "><a href="#property_ProjectIdControl" title="$ProjectIdControl :: "><span class="description"></span><pre>$ProjectIdControl</pre></a></li>
+<li class="property public "><a href="#property_ProjectIdLabel" title="$ProjectIdLabel :: "><span class="description"></span><pre>$ProjectIdLabel</pre></a></li>
+<li class="property public "><a href="#property_TitleVerb" title="$TitleVerb :: a verb indicating whether or not this is being edited or created"><span class="description"></span><pre>$TitleVerb</pre></a></li>
+</ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul>
+<li class="property protected "><a href="#property_blnEditMode" title="$blnEditMode :: "><span class="description">blnEditMode</span><pre>$blnEditMode</pre></a></li>
+<li class="property protected "><a href="#property_lblId" title="$lblId :: "><span class="description">lblId</span><pre>$lblId</pre></a></li>
+<li class="property protected "><a href="#property_lblName" title="$lblName :: "><span class="description">lblName</span><pre>$lblName</pre></a></li>
+<li class="property protected "><a href="#property_lblProjectId" title="$lblProjectId :: "><span class="description">lblProjectId</span><pre>$lblProjectId</pre></a></li>
+<li class="property protected "><a href="#property_lstProject" title="$lstProject :: "><span class="description">lstProject</span><pre>$lstProject</pre></a></li>
+<li class="property protected "><a href="#property_objMilestone" title="$objMilestone :: "><span class="description">objMilestone</span><pre>$objMilestone</pre></a></li>
+<li class="property protected "><a href="#property_objParentObject" title="$objParentObject :: "><span class="description">objParentObject</span><pre>$objParentObject</pre></a></li>
+<li class="property protected "><a href="#property_strTitleVerb" title="$strTitleVerb :: "><span class="description">strTitleVerb</span><pre>$strTitleVerb</pre></a></li>
+<li class="property protected "><a href="#property_txtName" title="$txtName :: "><span class="description">txtName</span><pre>$txtName</pre></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a id="\MilestoneMetaControlGen"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/global.html">global</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/MilestoneMetaControlGen.html">MilestoneMetaControlGen</a>
+</li>
+</ul>
+<div class="element class">
+<p class="short_description">This is a MetaControl class, providing a QForm or QPanel access to event handlers
+and QControls to perform the Create, Edit, and Delete functionality
+of the Milestone class.</p>
+<div class="details">
+<div class="long_description"><p>This code-generated class
+contains all the basic elements to help a QPanel or QForm display an HTML form that can
+manipulate a single Milestone object.</p>
+
+<p>To take advantage of some (or all) of these control objects, you
+must create a new QForm or QPanel which instantiates a MilestoneMetaControl
+class.</p>
+
+<p>Any and all changes to this file will be overwritten with any subsequent
+code re-generation.</p></div>
+<table class="table table-bordered">
+<tr>
+<th>package</th>
+<td><a href="../packages/My%20QCubed%20Application.MetaControls.html">My QCubed Application</a></td>
+</tr>
+<tr>
+<th>subpackage</th>
+<td>MetaControls</td>
+</tr>
+</table>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method_Create"></a><div class="element clickable method public method_Create" data-toggle="collapse" data-target=".method_Create .collapse">
+<h2>Static Helper Method to Create using PK arguments
+You must pass in the PK arguments on an object to load, or leave it blank to create a new one.</h2>
+<pre>Create(mixed $objParentObject, integer $intId, \QMetaControlCreateType $intCreateType) : <a href="../classes/MilestoneMetaControl.html">\MilestoneMetaControl</a></pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>If you want to load via QueryString or PathInfo, use the CreateFromQueryString or CreateFromPathInfo
+static helper methods.  Finally, specify a CreateType to define whether or not we are only allowed to
+edit, or if we are also allowed to create a new one, etc.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$objParentObject</h4>
+<code>mixed</code><p>QForm or QPanel which will be using this MilestoneMetaControl</p></div>
+<div class="subelement argument">
+<h4>$intId</h4>
+<code>integer</code><p>primary key value</p></div>
+<div class="subelement argument">
+<h4>$intCreateType</h4>
+<code>\QMetaControlCreateType</code><p>rules governing Milestone object creation - defaults to CreateOrEdit</p>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/MilestoneMetaControl.html">\MilestoneMetaControl</a></code></div>
+</div></div>
+</div>
+<a id="method_CreateFromPathInfo"></a><div class="element clickable method public method_CreateFromPathInfo" data-toggle="collapse" data-target=".method_CreateFromPathInfo .collapse">
+<h2>Static Helper Method to Create using PathInfo arguments</h2>
+<pre>CreateFromPathInfo(mixed $objParentObject, \QMetaControlCreateType $intCreateType) : <a href="../classes/MilestoneMetaControl.html">\MilestoneMetaControl</a></pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$objParentObject</h4>
+<code>mixed</code><p>QForm or QPanel which will be using this MilestoneMetaControl</p></div>
+<div class="subelement argument">
+<h4>$intCreateType</h4>
+<code>\QMetaControlCreateType</code><p>rules governing Milestone object creation - defaults to CreateOrEdit</p>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/MilestoneMetaControl.html">\MilestoneMetaControl</a></code></div>
+</div></div>
+</div>
+<a id="method_CreateFromQueryString"></a><div class="element clickable method public method_CreateFromQueryString" data-toggle="collapse" data-target=".method_CreateFromQueryString .collapse">
+<h2>Static Helper Method to Create using QueryString arguments</h2>
+<pre>CreateFromQueryString(mixed $objParentObject, \QMetaControlCreateType $intCreateType) : <a href="../classes/MilestoneMetaControl.html">\MilestoneMetaControl</a></pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$objParentObject</h4>
+<code>mixed</code><p>QForm or QPanel which will be using this MilestoneMetaControl</p></div>
+<div class="subelement argument">
+<h4>$intCreateType</h4>
+<code>\QMetaControlCreateType</code><p>rules governing Milestone object creation - defaults to CreateOrEdit</p>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/MilestoneMetaControl.html">\MilestoneMetaControl</a></code></div>
+</div></div>
+</div>
+<a id="method_DeleteMilestone"></a><div class="element clickable method public method_DeleteMilestone" data-toggle="collapse" data-target=".method_DeleteMilestone .collapse">
+<h2>This will DELETE this object's Milestone instance from the database.</h2>
+<pre>DeleteMilestone() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"><p>It will also unassociate itself from any ManyToManyReferences.</p></div></div></div>
+</div>
+<a id="method_From"></a><div class="element clickable method public method_From" data-toggle="collapse" data-target=".method_From .collapse">
+<h2>Static Helper Method to Create using a reference to the Milestone object</h2>
+<pre>From(<a href="../classes/QForm.html">\QForm</a> | <a href="../classes/QControl.html">\QControl</a> $objParentObject, mixed $objMilestoneRef, int | \QMetaControlCreateType $intCreateType) : <a href="../classes/MilestoneMetaControl.html">\MilestoneMetaControl</a></pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$objParentObject</h4>
+<code><a href="../classes/QForm.html">\QForm</a></code><code><a href="../classes/QControl.html">\QControl</a></code><p>QForm or QPanel which will be using this MilestoneMetaControl</p></div>
+<div class="subelement argument">
+<h4>$objMilestoneRef</h4>
+<code>mixed</code><p>reference to the Milestone object, could be the metacontrol, the object itself, or anything that can be used to load the object</p></div>
+<div class="subelement argument">
+<h4>$intCreateType</h4>
+<code>int</code><code>\QMetaControlCreateType</code><p>rules governing Milestone object creation - defaults to CreateOrEdit</p>
+</div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="../classes/QCallerException.html">\QCallerException</a></code></th>
+<td></td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/MilestoneMetaControl.html">\MilestoneMetaControl</a></code></div>
+</div></div>
+</div>
+<a id="method_Matches"></a><div class="element clickable method public method_Matches" data-toggle="collapse" data-target=".method_Matches .collapse">
+<h2>Static Helper Method to Create using a reference to the Milestone object</h2>
+<pre>Matches(<a href="../classes/QForm.html">\QForm</a> | <a href="../classes/QControl.html">\QControl</a> $objParentObject, mixed $objMilestoneRef) : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$objParentObject</h4>
+<code><a href="../classes/QForm.html">\QForm</a></code><code><a href="../classes/QControl.html">\QControl</a></code><p>QForm or QPanel which will be using this MilestoneMetaControl</p></div>
+<div class="subelement argument">
+<h4>$objMilestoneRef</h4>
+<code>mixed</code><p>reference to the Milestone object, could be the metacontrol, the object itself, or anything that can be used to load the object</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>boolean</code></div>
+</div></div>
+</div>
+<a id="method_OverrideAttributes"></a><div class="element clickable method public method_OverrideAttributes" data-toggle="collapse" data-target=".method_OverrideAttributes .collapse">
+<h2>This allows you to set any properties, given by a name-value pair list
+in mixOverrideArray.</h2>
+<pre>OverrideAttributes($mixOverrideArray) : void</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Each item in mixOverrideArray needs to be either a string in the format
+of Property=Value or an array in the format of array(Property => Value).
+OverrideAttributes() will basically call
+$this->Property = Value for each string element in the array.</p>
+
+<p>Value can be surrounded by quotes... but this is optional.</p></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QBaseClass::OverrideAttributes()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$mixOverrideArray</h4></div>
+</div></div>
+</div>
+<a id="method_Refresh"></a><div class="element clickable method public method_Refresh" data-toggle="collapse" data-target=".method_Refresh .collapse">
+<h2>Refresh this MetaControl with Data from the local Milestone object.</h2>
+<pre>Refresh(boolean $blnReload) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$blnReload</h4>
+<code>boolean</code><p>reload Milestone from the database</p></div>
+</div></div>
+</div>
+<a id="method_SaveMilestone"></a><div class="element clickable method public method_SaveMilestone" data-toggle="collapse" data-target=".method_SaveMilestone .collapse">
+<h2>This will save this object's Milestone instance,
+updating only the fields which have had a control created for it.</h2>
+<pre>SaveMilestone() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method___construct"></a><div class="element clickable method public method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
+<h2>Main constructor.</h2>
+<pre>__construct(mixed $objParentObject, \Milestone $objMilestone) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Constructor OR static create methods are designed to be called in either
+a parent QPanel or the main QForm when wanting to create a
+MilestoneMetaControl to edit a single Milestone object within the
+QPanel or QForm.</p>
+
+<p>This constructor takes in a single Milestone object, while any of the static
+create methods below can be used to construct based off of individual PK ID(s).</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$objParentObject</h4>
+<code>mixed</code><p>QForm or QPanel which will be using this MilestoneMetaControl</p></div>
+<div class="subelement argument">
+<h4>$objMilestone</h4>
+<code><a href="../classes/Milestone.html">\Milestone</a></code><p>new or existing Milestone object</p></div>
+</div></div>
+</div>
+<a id="method___get"></a><div class="element clickable method public method___get" data-toggle="collapse" data-target=".method___get .collapse">
+<h2>Override method to perform a property "Get"
+This will get the value of $strName</h2>
+<pre>__get(string $strName) : mixed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$strName</h4>
+<code>string</code><p>Name of the property to get</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>mixed</code></div>
+</div></div>
+</div>
+<a id="method___set"></a><div class="element clickable method public method___set" data-toggle="collapse" data-target=".method___set .collapse">
+<h2>Override method to perform a property "Set"
+This will set the property $strName to be $mixValue</h2>
+<pre>__set(string $strName, string $mixValue) : mixed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$strName</h4>
+<code>string</code><p>Name of the property to set</p></div>
+<div class="subelement argument">
+<h4>$mixValue</h4>
+<code>string</code><p>New value of the property</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>mixed</code></div>
+</div></div>
+</div>
+<a id="method_lblId_Create"></a><div class="element clickable method public method_lblId_Create" data-toggle="collapse" data-target=".method_lblId_Create .collapse">
+<h2>Create and setup QLabel lblId</h2>
+<pre>lblId_Create(string $strControlId) : <a href="../classes/QLabel.html">\QLabel</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$strControlId</h4>
+<code>string</code><p>optional ControlId to use</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/QLabel.html">\QLabel</a></code></div>
+</div></div>
+</div>
+<a id="method_lblName_Create"></a><div class="element clickable method public method_lblName_Create" data-toggle="collapse" data-target=".method_lblName_Create .collapse">
+<h2>Create and setup QLabel lblName</h2>
+<pre>lblName_Create(string $strControlId) : <a href="../classes/QLabel.html">\QLabel</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$strControlId</h4>
+<code>string</code><p>optional ControlId to use</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/QLabel.html">\QLabel</a></code></div>
+</div></div>
+</div>
+<a id="method_lblProjectId_Create"></a><div class="element clickable method public method_lblProjectId_Create" data-toggle="collapse" data-target=".method_lblProjectId_Create .collapse">
+<h2>Create and setup QLabel lblProjectId</h2>
+<pre>lblProjectId_Create(string $strControlId) : <a href="../classes/QLabel.html">\QLabel</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$strControlId</h4>
+<code>string</code><p>optional ControlId to use</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/QLabel.html">\QLabel</a></code></div>
+</div></div>
+</div>
+<a id="method_lstProject_Create"></a><div class="element clickable method public method_lstProject_Create" data-toggle="collapse" data-target=".method_lstProject_Create .collapse">
+<h2>Create and setup MilestoneObjectSelector lstProject</h2>
+<pre>lstProject_Create(string $strControlId, \QQCondition $objCondition, <a href="qcubed._core.framework.QQuery.class.html#%5CQQClause">\QQClause[]</a> $objOptionalClauses) : <a href="../classes/ProjectObjectSelector.html">\ProjectObjectSelector</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$strControlId</h4>
+<code>string</code><p>optional ControlId to use</p></div>
+<div class="subelement argument">
+<h4>$objCondition</h4>
+<code><a href="../classes/QQCondition.html">\QQCondition</a></code><p>override the default condition of QQ::All() to the query, itself</p>
+</div>
+<div class="subelement argument">
+<h4>$objOptionalClauses</h4>
+<code><a href="qcubed._core.framework.QQuery.class.html#%5CQQClause">\QQClause[]</a></code><p>additional optional QQClause object or array of QQClause objects for the query</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/ProjectObjectSelector.html">\ProjectObjectSelector</a></code></div>
+</div></div>
+</div>
+<a id="method_txtName_Create"></a><div class="element clickable method public method_txtName_Create" data-toggle="collapse" data-target=".method_txtName_Create .collapse">
+<h2>Create and setup QTextBox txtName</h2>
+<pre>txtName_Create(string $strControlId) : <a href="../classes/QTextBox.html">\QTextBox</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$strControlId</h4>
+<code>string</code><p>optional ControlId to use</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/QTextBox.html">\QTextBox</a></code></div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a id="property_EditMode"> </a><div class="element clickable property public property_EditMode" data-toggle="collapse" data-target=".property_EditMode .collapse">
+<h2></h2>
+<pre>$EditMode : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>magic</th>
+<td></td>
+</tr>
+<tr>
+<th>property-read</th>
+<td>a boolean indicating whether or not this is being edited or created</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_IdControl"> </a><div class="element clickable property public property_IdControl" data-toggle="collapse" data-target=".property_IdControl .collapse">
+<h2></h2>
+<pre>$IdControl : <a href="../classes/QLabel.html">\QLabel</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>magic</th>
+<td></td>
+</tr>
+<tr>
+<th>property</th>
+<td></td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_IdLabel"> </a><div class="element clickable property public property_IdLabel" data-toggle="collapse" data-target=".property_IdLabel .collapse">
+<h2></h2>
+<pre>$IdLabel : <a href="../classes/QLabel.html">\QLabel</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>magic</th>
+<td></td>
+</tr>
+<tr>
+<th>property-read</th>
+<td></td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_Milestone"> </a><div class="element clickable property public property_Milestone" data-toggle="collapse" data-target=".property_Milestone .collapse">
+<h2></h2>
+<pre>$Milestone : <a href="../classes/Milestone.html">\Milestone</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>magic</th>
+<td></td>
+</tr>
+<tr>
+<th>property-read</th>
+<td>the actual Milestone data class being edited</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_NameControl"> </a><div class="element clickable property public property_NameControl" data-toggle="collapse" data-target=".property_NameControl .collapse">
+<h2></h2>
+<pre>$NameControl : <a href="../classes/QTextBox.html">\QTextBox</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>magic</th>
+<td></td>
+</tr>
+<tr>
+<th>property</th>
+<td></td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_NameLabel"> </a><div class="element clickable property public property_NameLabel" data-toggle="collapse" data-target=".property_NameLabel .collapse">
+<h2></h2>
+<pre>$NameLabel : <a href="../classes/QLabel.html">\QLabel</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>magic</th>
+<td></td>
+</tr>
+<tr>
+<th>property-read</th>
+<td></td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_ProjectIdControl"> </a><div class="element clickable property public property_ProjectIdControl" data-toggle="collapse" data-target=".property_ProjectIdControl .collapse">
+<h2></h2>
+<pre>$ProjectIdControl : <a href="../classes/ProjectObjectSelector.html">\ProjectObjectSelector</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>magic</th>
+<td></td>
+</tr>
+<tr>
+<th>property</th>
+<td></td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_ProjectIdLabel"> </a><div class="element clickable property public property_ProjectIdLabel" data-toggle="collapse" data-target=".property_ProjectIdLabel .collapse">
+<h2></h2>
+<pre>$ProjectIdLabel : <a href="../classes/QLabel.html">\QLabel</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>magic</th>
+<td></td>
+</tr>
+<tr>
+<th>property-read</th>
+<td></td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_TitleVerb"> </a><div class="element clickable property public property_TitleVerb" data-toggle="collapse" data-target=".property_TitleVerb .collapse">
+<h2></h2>
+<pre>$TitleVerb : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>magic</th>
+<td></td>
+</tr>
+<tr>
+<th>property-read</th>
+<td>a verb indicating whether or not this is being edited or created</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_blnEditMode"> </a><div class="element clickable property protected property_blnEditMode" data-toggle="collapse" data-target=".property_blnEditMode .collapse">
+<h2>blnEditMode</h2>
+<pre>$blnEditMode : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>protected</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_lblId"> </a><div class="element clickable property protected property_lblId" data-toggle="collapse" data-target=".property_lblId .collapse">
+<h2>lblId</h2>
+<pre>$lblId : <a href="../classes/QLabel.html">\QLabel</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>protected</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_lblName"> </a><div class="element clickable property protected property_lblName" data-toggle="collapse" data-target=".property_lblName .collapse">
+<h2>lblName</h2>
+<pre>$lblName : <a href="../classes/QLabel.html">\QLabel</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>protected</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_lblProjectId"> </a><div class="element clickable property protected property_lblProjectId" data-toggle="collapse" data-target=".property_lblProjectId .collapse">
+<h2>lblProjectId</h2>
+<pre>$lblProjectId : <a href="../classes/QLabel.html">\QLabel</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>protected</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_lstProject"> </a><div class="element clickable property protected property_lstProject" data-toggle="collapse" data-target=".property_lstProject .collapse">
+<h2>lstProject</h2>
+<pre>$lstProject : <a href="../classes/ProjectObjectSelector.html">\ProjectObjectSelector</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>protected</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_objMilestone"> </a><div class="element clickable property protected property_objMilestone" data-toggle="collapse" data-target=".property_objMilestone .collapse">
+<h2>objMilestone</h2>
+<pre>$objMilestone : <a href="../classes/Milestone.html">\Milestone</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>protected</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_objParentObject"> </a><div class="element clickable property protected property_objParentObject" data-toggle="collapse" data-target=".property_objParentObject .collapse">
+<h2>objParentObject</h2>
+<pre>$objParentObject : <a href="../classes/QForm.html">\QForm</a> | <a href="../classes/QControl.html">\QControl</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>protected</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_strTitleVerb"> </a><div class="element clickable property protected property_strTitleVerb" data-toggle="collapse" data-target=".property_strTitleVerb .collapse">
+<h2>strTitleVerb</h2>
+<pre>$strTitleVerb : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>protected</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_txtName"> </a><div class="element clickable property protected property_txtName" data-toggle="collapse" data-target=".property_txtName .collapse">
+<h2>txtName</h2>
+<pre>$txtName : <a href="../classes/QTextBox.html">\QTextBox</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>access</th>
+<td>protected</td>
+</tr></table>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
+            generated on 2013-03-17T02:02:32+07:00.<br></footer></div>
+</div>
+</body>
+</html>

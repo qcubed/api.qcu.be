@@ -1,0 +1,980 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>QCubed API » Controls</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">QCubed API</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="../packages/Codegen.html"><i class="icon-folder-open"></i> Codegen</a></li>
+<li><a href="../packages/Controls.html"><i class="icon-folder-open"></i> Controls</a></li>
+<li><a href="../packages/Controls%20%20.html"><i class="icon-folder-open"></i> Controls  </a></li>
+<li><a href="../packages/DatabaseAdapters.html"><i class="icon-folder-open"></i> DatabaseAdapters</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/My%20QCubed%20Application.html"><i class="icon-folder-open"></i> My QCubed Application</a></li>
+<li><a href="../packages/Sessions.html"><i class="icon-folder-open"></i> Sessions</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">4384</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul><li>todo 
+                <span class="label label-info">28</span>
+</li></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">8</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-map-marker"></i> Packages</li>
+<li>
+<a href="../packages/Controls.html" title="Controls"><i class="icon-folder-open"></i>Controls</a><ul class="nav nav-list nav-packages"><li>
+<a href="../packages/Controls.Base.html" title="Base"><i class="icon-folder-open"></i>Base</a><ul class="nav nav-list nav-packages"></ul>
+</li></ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-function"></i> Functions</li>
+<li class="function  "><a href="#function_DataGridEvalHandleError" title="DataGridEvalHandleError :: Due to the fact that DataGrid's will perform php eval's on anything that is back-ticked within each column/row's
+DataGridColumn::HTML, we need to set up this special DataGridEvalHandleError error handler to correctly report
+errors that happen."><span class="description">Due to the fact that DataGrid's will perform php eval's on anything that is back-ticked within each column/row's
+DataGridColumn::HTML, we need to set up this special DataGridEvalHandleError error handler to correctly report
+errors that happen.</span><pre>DataGridEvalHandleError</pre></a></li>
+<li class="function  "><a href="#function___QForm_EvaluateTemplate_ObHandler" title="__QForm_EvaluateTemplate_ObHandler :: "><span class="description">__QForm_EvaluateTemplate_ObHandler()
+        </span><pre>__QForm_EvaluateTemplate_ObHandler</pre></a></li>
+<li class="nav-header">
+<i class="icon-custom icon-class"></i> Classes</li>
+<li><a href="#QForm" title="QForm is one of the most important parts of QCubed - it is what ultimately creates the web page">QForm</a></li>
+<li><a href="#QButton" title="QButton class - You may modify it to contain your own modifications to the
+QButton throughout the framework.">QButton</a></li>
+<li><a href="#QTextBox" title='This class will render an HTML Textbox -- which can either be [input type="text"],
+[input type="password"] or [textarea] depending on the TextMode (see below).'>QTextBox</a></li>
+<li><a href="#QDatepickerBox" title="Creates the jQuery Datepicker control (with a textbox)">QDatepickerBox</a></li>
+<li><a href="#QListBox" title="The QListBox class is based upon QListBoxBase.">QListBox</a></li>
+<li><a href="#QJqCheckBox" title="This class mplements a JQuery Ui Check Box.">QJqCheckBox</a></li>
+<li><a href="#QDataGrid" title="QDataGrid can help generate tables automatically with pagination.">QDataGrid</a></li>
+<li><a href="#QImageLabel" title="This class will render an Image/Bitmapped version of any Text string">QImageLabel</a></li>
+<li><a href="#QImageControl" title="This class will render an Image Control of any image file in the system">QImageControl</a></li>
+<li><a href="#QFileAsset" title="QFileAsset">QFileAsset</a></li>
+<li><a href="#QImageFileAsset" title="ImageFileAsset is derived from QFileAsset and is a dedicated control for uploading images (images only).">QImageFileAsset</a></li>
+<li><a href="#QAccordion" title="Creates the jQuery Accordian control">QAccordion</a></li>
+<li><a href="#QSampleControl" title="This is a SAMPLE of a custom QControl that you could write.">QSampleControl</a></li>
+<li><a href="#QSimpleTable" title="&lt;p&gt;This control is used to display a simple html table.">QSimpleTable</a></li>
+<li><a href="#QAutocomplete" title="This class only extends QAutocompleteBase which implements the actual functionality.">QAutocomplete</a></li>
+<li><a href="#QDialog" title="Implements a JQuery UI Dialog">QDialog</a></li>
+<li><a href="#QDatepicker" title="Creates the jQuery Datepicker control">QDatepicker</a></li>
+<li><a href="#QControl" title="QControl is the user overridable Base-Class for all Controls.">QControl</a></li>
+<li><a href="#QJqRadioButton" title="Implements a JQuery UI Radio Button">QJqRadioButton</a></li>
+<li><a href="#QListControl" title="Abstract object which is extended by anything which involves lists of selectable items.">QListControl</a></li>
+<li><a href="#QControlLabel" title="QControl is the user overridable Base-Class for all Controls.">QControlLabel</a></li>
+<li><a href="#QControlGrouping" title="This is the Base Class for ALL classes in the system.">QControlGrouping</a></li>
+<li><a href="#QIntegerTextBox" title="A subclass of TextBox with its validate method overridden -- Validate will also ensure
+that the Text is a valid integer and (if applicable) is in the range of Minimum &lt;= x &lt;= Maximum">QIntegerTextBox</a></li>
+<li><a href="#QFileAssetBase" title="This class will render HTML via a pair of &lt;span&gt;&lt;/span&gt; tags.">QFileAssetBase</a></li>
+<li><a href="#QDropZoneGrouping" title="This file contains the QDropZoneGrouping class.">QDropZoneGrouping</a></li>
+<li><a href="#QControlBase" title="QControlBase is the base class of all QControls and shares their common properties">QControlBase</a></li>
+<li><a href="#QImageLabelBase" title="This class will render an Image/Bitmapped version of any Text string">QImageLabelBase</a></li>
+<li><a href="#QLabel" title="This class will render HTML via a pair of &lt;span&gt;&lt;/span&gt; tags.">QLabel</a></li>
+<li><a href="#QCalendar" title="This class will render a pop-up, modeless calendar control
+that can be used to let the user pick a date.">QCalendar</a></li>
+<li><a href="#QListBoxBase" title="QListBoxBase will render an HTML DropDown or MultiSelect box [SELECT] element.">QListBoxBase</a></li>
+<li><a href="#QListItemStyle" title="This defines the style for an Item for a ListBox
+All the appearance properties should be self-explanatory.">QListItemStyle</a></li>
+<li><a href="#QImageBase" title="QControl is the user overridable Base-Class for all Controls.">QImageBase</a></li>
+<li><a href="#QFontFamily" title="">QFontFamily</a></li>
+<li><a href="#QDataGridRow" title="QControl is the user overridable Base-Class for all Controls.">QDataGridRow</a></li>
+<li><a href="#QDataGridBase" title='NOTE: Due to the use of "Eval", DataGrid is currently being redone to not use EVAL.'>QDataGridBase</a></li>
+<li><a href="#QTreeNav" title="QControl is the user overridable Base-Class for all Controls.">QTreeNav</a></li>
+<li><a href="#QCheckBox" title="This class will render an HTML Checkbox.">QCheckBox</a></li>
+<li><a href="#QBlockControl" title="This class will render HTML via a pair of &lt;span&gt;&lt;/span&gt; tags.">QBlockControl</a></li>
+<li><a href="#QWriteBox" title='This class will render an HTML Textbox -- which can either be [input type="text"],
+[input type="password"] or [textarea] depending on the TextMode (see below).'>QWriteBox</a></li>
+<li><a href="#QButtonBase" title="This class will render an HTML Button.">QButtonBase</a></li>
+<li><a href="#QWaitIcon" title="QControl is the user overridable Base-Class for all Controls.">QWaitIcon</a></li>
+<li><a href="#QFilterType" title="This file contains the QDataGridColumn and QFilterType class.">QFilterType</a></li>
+<li><a href="#QDataGridColumn" title="This defines a specific column &lt;td&gt; for a DataGrid
+All the appearance properties should be self-explanatory.">QDataGridColumn</a></li>
+<li><a href="#QPaginatedControl" title="QControl is the user overridable Base-Class for all Controls.">QPaginatedControl</a></li>
+<li><a href="#QTreeNavItem" title="This is the Base Class for ALL classes in the system.">QTreeNavItem</a></li>
+<li><a href="#QImageButton" title='This class will render an HTML ImageButton &lt;input type="image"&gt;.'>QImageButton</a></li>
+<li><a href="#QDataGridRowStyle" title="This defines a the stle for a row &lt;tr&gt; for a DataGrid
+All the appearance properties should be self-explanatory.">QDataGridRowStyle</a></li>
+<li><a href="#QTextBoxBase" title='This class will render an HTML Textbox -- which can either be [input type="text"],
+[input type="password"] or [textarea] depending on the TextMode (see below).'>QTextBoxBase</a></li>
+<li><a href="#QLinkButton" title="This class will render an HTML link [a href], but will act like a Button or ImageButton.">QLinkButton</a></li>
+<li><a href="#QRadioButton" title="This class will render an HTML Radio button.">QRadioButton</a></li>
+<li><a href="#QFloatTextBox" title="A subclass of QNumericTextBox -- Validate will also ensure
+that the Text is a valid float and (if applicable) is in the range of Minimum &lt;= x &lt;= Maximum">QFloatTextBox</a></li>
+<li><a href="#QFormBase" title="This is the Base Class for ALL classes in the system.">QFormBase</a></li>
+<li><a href="#QPaginatorBase" title="QControl is the user overridable Base-Class for all Controls.">QPaginatorBase</a></li>
+<li><a href="#QCheckBoxList" title="This class will render a List of HTML Checkboxes (inhereting from ListControl).">QCheckBoxList</a></li>
+<li><a href="#QPanel" title="This class will render HTML via a pair of &lt;span&gt;&lt;/span&gt; tags.">QPanel</a></li>
+<li><a href="#QFileControl" title="This class will render an HTML File input.">QFileControl</a></li>
+<li><a href="#QSimpleTableBase" title="&lt;p&gt;This control is used to display a simple html table.">QSimpleTableBase</a></li>
+<li><a href="#QImageRollover" title="QControl is the user overridable Base-Class for all Controls.">QImageRollover</a></li>
+<li><a href="#QListItem" title="Utilized by the {@link QListControl} class which contains a private array of ListItems.">QListItem</a></li>
+<li><a href="#QImageBrowserNav" title="Control for a simple image browser.">QImageBrowserNav</a></li>
+<li><a href="#QImageBrowserThumbnails" title="This class will render HTML via a pair of &lt;span&gt;&lt;/span&gt; tags.">QImageBrowserThumbnails</a></li>
+<li><a href="#QImageBrowser" title="A simple implementation of the QImageBrowserBase, which takes the images from a provided
+array of image paths (must be absolute paths).">QImageBrowser</a></li>
+<li><a href="#QNumericTextBox" title="A subclass of TextBox with its validate method overridden -- Validate will also ensure
+that the Text is a valid integer/float and (if applicable) is in the range of Minimum &lt;= x &lt;= Maximum
+this class is abstract.">QNumericTextBox</a></li>
+<li><a href="#QRadioButtonList" title="This class will render a List of HTML Radio Buttons (inhereting from ListControl).">QRadioButtonList</a></li>
+<li><a href="#QFileAssetDialog" title="This file contains the QFileAssetDialog class.">QFileAssetDialog</a></li>
+<li><a href="#QImageControlBase" title="This class will render an Image Control of any image file in the system">QImageControlBase</a></li>
+<li><a href="#QDateTimePicker" title="This class is meant to be a date-picker.">QDateTimePicker</a></li>
+<li><a href="#QDateTimeTextBox" title='This class will render an HTML Textbox -- which can either be [input type="text"],
+[input type="password"] or [textarea] depending on the TextMode (see below).'>QDateTimeTextBox</a></li>
+<li><a href="#QDataRepeater" title="QControl is the user overridable Base-Class for all Controls.">QDataRepeater</a></li>
+<li><a href="#QDialogBox" title="This class will render HTML via a pair of &lt;span&gt;&lt;/span&gt; tags.">QDialogBox</a></li>
+</ul>
+</div>
+<div class="span8 package-contents">
+<ul class="breadcrumb"><li>
+<a href="../index.html"><i class="icon-folder-open"></i></a><span class="divider">\</span><li class="active"><a href="../packages/Controls.html">Controls</a></li>
+</li></ul>
+<div class="package-indent">
+<h3>
+<i class="icon-custom icon-function"></i> Functions</h3>
+<a id="function_DataGridEvalHandleError"></a><div class="element clickable function  function_DataGridEvalHandleError" data-toggle="collapse" data-target=".function_DataGridEvalHandleError .collapse">
+<h2>Due to the fact that DataGrid's will perform php eval's on anything that is back-ticked within each column/row's
+DataGridColumn::HTML, we need to set up this special DataGridEvalHandleError error handler to correctly report
+errors that happen.</h2>
+<pre>DataGridEvalHandleError(mixed $__exc_errno, string $__exc_errstr, string $__exc_errfile, string $__exc_errline) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>global</th>
+<td>string $__exc_dtg_errstr</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$__exc_errno</h4>
+<code>mixed</code>
+</div>
+<div class="subelement argument">
+<h4>$__exc_errstr</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$__exc_errfile</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$__exc_errline</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a id="function___QForm_EvaluateTemplate_ObHandler"></a><div class="element clickable function  function___QForm_EvaluateTemplate_ObHandler" data-toggle="collapse" data-target=".function___QForm_EvaluateTemplate_ObHandler .collapse">
+<h2>__QForm_EvaluateTemplate_ObHandler()
+        </h2>
+<pre>__QForm_EvaluateTemplate_ObHandler($strBuffer) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strBuffer</h4></div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-class"></i> Classes and interfaces</h3>
+<div id="QAccordion" class="element ajax clickable class">
+<h1>QAccordion<a href="../classes/QAccordion.html">¶</a>
+</h1>
+<p class="short_description">Creates the jQuery Accordian control</p>
+<div class="details collapse"></div>
+<a href="../classes/QAccordion.html" class="more">« More »</a>
+</div>
+<div id="QAutocomplete" class="element ajax clickable class">
+<h1>QAutocomplete<a href="../classes/QAutocomplete.html">¶</a>
+</h1>
+<p class="short_description">This class only extends QAutocompleteBase which implements the actual functionality.</p>
+<div class="details collapse"></div>
+<a href="../classes/QAutocomplete.html" class="more">« More »</a>
+</div>
+<div id="QBlockControl" class="element ajax clickable class">
+<h1>QBlockControl<a href="../classes/QBlockControl.html">¶</a>
+</h1>
+<p class="short_description">This class will render HTML via a pair of <span></span> tags.</p>
+<div class="details collapse"></div>
+<a href="../classes/QBlockControl.html" class="more">« More »</a>
+</div>
+<div id="QButton" class="element ajax clickable class">
+<h1>QButton<a href="../classes/QButton.html">¶</a>
+</h1>
+<p class="short_description">QButton class - You may modify it to contain your own modifications to the
+QButton throughout the framework.</p>
+<div class="details collapse"></div>
+<a href="../classes/QButton.html" class="more">« More »</a>
+</div>
+<div id="QButtonBase" class="element ajax clickable class">
+<h1>QButtonBase<a href="../classes/QButtonBase.html">¶</a>
+</h1>
+<p class="short_description">This class will render an HTML Button.</p>
+<div class="details collapse"></div>
+<a href="../classes/QButtonBase.html" class="more">« More »</a>
+</div>
+<div id="QCalendar" class="element ajax clickable class">
+<h1>QCalendar<a href="../classes/QCalendar.html">¶</a>
+</h1>
+<p class="short_description">This class will render a pop-up, modeless calendar control
+that can be used to let the user pick a date.</p>
+<div class="details collapse"></div>
+<a href="../classes/QCalendar.html" class="more">« More »</a>
+</div>
+<div id="QCheckBox" class="element ajax clickable class">
+<h1>QCheckBox<a href="../classes/QCheckBox.html">¶</a>
+</h1>
+<p class="short_description">This class will render an HTML Checkbox.</p>
+<div class="details collapse"></div>
+<a href="../classes/QCheckBox.html" class="more">« More »</a>
+</div>
+<div id="QCheckBoxList" class="element ajax clickable class">
+<h1>QCheckBoxList<a href="../classes/QCheckBoxList.html">¶</a>
+</h1>
+<p class="short_description">This class will render a List of HTML Checkboxes (inhereting from ListControl).</p>
+<div class="details collapse"></div>
+<a href="../classes/QCheckBoxList.html" class="more">« More »</a>
+</div>
+<div id="QControl" class="element ajax clickable class">
+<h1>QControl<a href="../classes/QControl.html">¶</a>
+</h1>
+<p class="short_description">QControl is the user overridable Base-Class for all Controls.</p>
+<div class="details collapse"></div>
+<a href="../classes/QControl.html" class="more">« More »</a>
+</div>
+<div id="QControlBase" class="element ajax clickable class">
+<h1>QControlBase<a href="../classes/QControlBase.html">¶</a>
+</h1>
+<p class="short_description">QControlBase is the base class of all QControls and shares their common properties</p>
+<div class="details collapse"></div>
+<a href="../classes/QControlBase.html" class="more">« More »</a>
+</div>
+<div id="QControlGrouping" class="element ajax clickable class">
+<h1>QControlGrouping<a href="../classes/QControlGrouping.html">¶</a>
+</h1>
+<p class="short_description">This is the Base Class for ALL classes in the system.</p>
+<div class="details collapse"></div>
+<a href="../classes/QControlGrouping.html" class="more">« More »</a>
+</div>
+<div id="QControlLabel" class="element ajax clickable class">
+<h1>QControlLabel<a href="../classes/QControlLabel.html">¶</a>
+</h1>
+<p class="short_description">QControl is the user overridable Base-Class for all Controls.</p>
+<div class="details collapse"></div>
+<a href="../classes/QControlLabel.html" class="more">« More »</a>
+</div>
+<div id="QDataGrid" class="element ajax clickable class">
+<h1>QDataGrid<a href="../classes/QDataGrid.html">¶</a>
+</h1>
+<p class="short_description">QDataGrid can help generate tables automatically with pagination.</p>
+<div class="details collapse"></div>
+<a href="../classes/QDataGrid.html" class="more">« More »</a>
+</div>
+<div id="QDataGridBase" class="element ajax clickable class">
+<h1>QDataGridBase<a href="../classes/QDataGridBase.html">¶</a>
+</h1>
+<p class="short_description">NOTE: Due to the use of "Eval", DataGrid is currently being redone to not use EVAL.</p>
+<div class="details collapse"></div>
+<a href="../classes/QDataGridBase.html" class="more">« More »</a>
+</div>
+<div id="QDataGridColumn" class="element ajax clickable class">
+<h1>QDataGridColumn<a href="../classes/QDataGridColumn.html">¶</a>
+</h1>
+<p class="short_description">This defines a specific column <td> for a DataGrid
+All the appearance properties should be self-explanatory.</p>
+<div class="details collapse"></div>
+<a href="../classes/QDataGridColumn.html" class="more">« More »</a>
+</div>
+<div id="QDataGridRow" class="element ajax clickable class">
+<h1>QDataGridRow<a href="../classes/QDataGridRow.html">¶</a>
+</h1>
+<p class="short_description">QControl is the user overridable Base-Class for all Controls.</p>
+<div class="details collapse"></div>
+<a href="../classes/QDataGridRow.html" class="more">« More »</a>
+</div>
+<div id="QDataGridRowStyle" class="element ajax clickable class">
+<h1>QDataGridRowStyle<a href="../classes/QDataGridRowStyle.html">¶</a>
+</h1>
+<p class="short_description">This defines a the stle for a row <tr> for a DataGrid
+All the appearance properties should be self-explanatory.</p>
+<div class="details collapse"></div>
+<a href="../classes/QDataGridRowStyle.html" class="more">« More »</a>
+</div>
+<div id="QDataRepeater" class="element ajax clickable class">
+<h1>QDataRepeater<a href="../classes/QDataRepeater.html">¶</a>
+</h1>
+<p class="short_description">QControl is the user overridable Base-Class for all Controls.</p>
+<div class="details collapse"></div>
+<a href="../classes/QDataRepeater.html" class="more">« More »</a>
+</div>
+<div id="QDateTimePicker" class="element ajax clickable class">
+<h1>QDateTimePicker<a href="../classes/QDateTimePicker.html">¶</a>
+</h1>
+<p class="short_description">This class is meant to be a date-picker.</p>
+<div class="details collapse"></div>
+<a href="../classes/QDateTimePicker.html" class="more">« More »</a>
+</div>
+<div id="QDateTimeTextBox" class="element ajax clickable class">
+<h1>QDateTimeTextBox<a href="../classes/QDateTimeTextBox.html">¶</a>
+</h1>
+<p class="short_description">This class will render an HTML Textbox -- which can either be [input type="text"],
+[input type="password"] or [textarea] depending on the TextMode (see below).</p>
+<div class="details collapse"></div>
+<a href="../classes/QDateTimeTextBox.html" class="more">« More »</a>
+</div>
+<div id="QDatepicker" class="element ajax clickable class">
+<h1>QDatepicker<a href="../classes/QDatepicker.html">¶</a>
+</h1>
+<p class="short_description">Creates the jQuery Datepicker control</p>
+<div class="details collapse"></div>
+<a href="../classes/QDatepicker.html" class="more">« More »</a>
+</div>
+<div id="QDatepickerBox" class="element ajax clickable class">
+<h1>QDatepickerBox<a href="../classes/QDatepickerBox.html">¶</a>
+</h1>
+<p class="short_description">Creates the jQuery Datepicker control (with a textbox)</p>
+<div class="details collapse"></div>
+<a href="../classes/QDatepickerBox.html" class="more">« More »</a>
+</div>
+<div id="QDialog" class="element ajax clickable class">
+<h1>QDialog<a href="../classes/QDialog.html">¶</a>
+</h1>
+<p class="short_description">Implements a JQuery UI Dialog</p>
+<div class="details collapse"></div>
+<a href="../classes/QDialog.html" class="more">« More »</a>
+</div>
+<div id="QDialogBox" class="element ajax clickable class">
+<h1>QDialogBox<a href="../classes/QDialogBox.html">¶</a>
+</h1>
+<p class="short_description">This class will render HTML via a pair of <span></span> tags.</p>
+<div class="details collapse"></div>
+<a href="../classes/QDialogBox.html" class="more">« More »</a>
+</div>
+<div id="QDropZoneGrouping" class="element ajax clickable class">
+<h1>QDropZoneGrouping<a href="../classes/QDropZoneGrouping.html">¶</a>
+</h1>
+<p class="short_description">This file contains the QDropZoneGrouping class.</p>
+<div class="details collapse"></div>
+<a href="../classes/QDropZoneGrouping.html" class="more">« More »</a>
+</div>
+<div id="QFileAsset" class="element ajax clickable class">
+<h1>QFileAsset<a href="../classes/QFileAsset.html">¶</a>
+</h1>
+<p class="short_description">QFileAsset</p>
+<div class="details collapse"></div>
+<a href="../classes/QFileAsset.html" class="more">« More »</a>
+</div>
+<div id="QFileAssetBase" class="element ajax clickable class">
+<h1>QFileAssetBase<a href="../classes/QFileAssetBase.html">¶</a>
+</h1>
+<p class="short_description">This class will render HTML via a pair of <span></span> tags.</p>
+<div class="details collapse"></div>
+<a href="../classes/QFileAssetBase.html" class="more">« More »</a>
+</div>
+<div id="QFileAssetDialog" class="element ajax clickable class">
+<h1>QFileAssetDialog<a href="../classes/QFileAssetDialog.html">¶</a>
+</h1>
+<p class="short_description">This file contains the QFileAssetDialog class.</p>
+<div class="details collapse"></div>
+<a href="../classes/QFileAssetDialog.html" class="more">« More »</a>
+</div>
+<div id="QFileControl" class="element ajax clickable class">
+<h1>QFileControl<a href="../classes/QFileControl.html">¶</a>
+</h1>
+<p class="short_description">This class will render an HTML File input.</p>
+<div class="details collapse"></div>
+<a href="../classes/QFileControl.html" class="more">« More »</a>
+</div>
+<div id="QFilterType" class="element ajax clickable class">
+<h1>QFilterType<a href="../classes/QFilterType.html">¶</a>
+</h1>
+<p class="short_description">This file contains the QDataGridColumn and QFilterType class.</p>
+<div class="details collapse"></div>
+<a href="../classes/QFilterType.html" class="more">« More »</a>
+</div>
+<div id="QFloatTextBox" class="element ajax clickable class">
+<h1>QFloatTextBox<a href="../classes/QFloatTextBox.html">¶</a>
+</h1>
+<p class="short_description">A subclass of QNumericTextBox -- Validate will also ensure
+that the Text is a valid float and (if applicable) is in the range of Minimum <= x <= Maximum</p>
+<div class="details collapse"></div>
+<a href="../classes/QFloatTextBox.html" class="more">« More »</a>
+</div>
+<div id="QFontFamily" class="element ajax clickable class">
+<h1>QFontFamily<a href="../classes/QFontFamily.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/QFontFamily.html" class="more">« More »</a>
+</div>
+<div id="QForm" class="element ajax clickable class">
+<h1>QForm<a href="../classes/QForm.html">¶</a>
+</h1>
+<p class="short_description">QForm is one of the most important parts of QCubed - it is what ultimately creates the web page</p>
+<div class="details collapse"></div>
+<a href="../classes/QForm.html" class="more">« More »</a>
+</div>
+<div id="QFormBase" class="element ajax clickable class">
+<h1>QFormBase<a href="../classes/QFormBase.html">¶</a>
+</h1>
+<p class="short_description">This is the Base Class for ALL classes in the system.</p>
+<div class="details collapse"></div>
+<a href="../classes/QFormBase.html" class="more">« More »</a>
+</div>
+<div id="QImageBase" class="element ajax clickable class">
+<h1>QImageBase<a href="../classes/QImageBase.html">¶</a>
+</h1>
+<p class="short_description">QControl is the user overridable Base-Class for all Controls.</p>
+<div class="details collapse"></div>
+<a href="../classes/QImageBase.html" class="more">« More »</a>
+</div>
+<div id="QImageBrowser" class="element ajax clickable class">
+<h1>QImageBrowser<a href="../classes/QImageBrowser.html">¶</a>
+</h1>
+<p class="short_description">A simple implementation of the QImageBrowserBase, which takes the images from a provided
+array of image paths (must be absolute paths).</p>
+<div class="details collapse"></div>
+<a href="../classes/QImageBrowser.html" class="more">« More »</a>
+</div>
+<div id="QImageBrowserNav" class="element ajax clickable class">
+<h1>QImageBrowserNav<a href="../classes/QImageBrowserNav.html">¶</a>
+</h1>
+<p class="short_description">Control for a simple image browser.</p>
+<div class="details collapse"></div>
+<a href="../classes/QImageBrowserNav.html" class="more">« More »</a>
+</div>
+<div id="QImageBrowserThumbnails" class="element ajax clickable class">
+<h1>QImageBrowserThumbnails<a href="../classes/QImageBrowserThumbnails.html">¶</a>
+</h1>
+<p class="short_description">This class will render HTML via a pair of <span></span> tags.</p>
+<div class="details collapse"></div>
+<a href="../classes/QImageBrowserThumbnails.html" class="more">« More »</a>
+</div>
+<div id="QImageButton" class="element ajax clickable class">
+<h1>QImageButton<a href="../classes/QImageButton.html">¶</a>
+</h1>
+<p class="short_description">This class will render an HTML ImageButton <input type="image">.</p>
+<div class="details collapse"></div>
+<a href="../classes/QImageButton.html" class="more">« More »</a>
+</div>
+<div id="QImageControl" class="element ajax clickable class">
+<h1>QImageControl<a href="../classes/QImageControl.html">¶</a>
+</h1>
+<p class="short_description">This class will render an Image Control of any image file in the system</p>
+<div class="details collapse"></div>
+<a href="../classes/QImageControl.html" class="more">« More »</a>
+</div>
+<div id="QImageControlBase" class="element ajax clickable class">
+<h1>QImageControlBase<a href="../classes/QImageControlBase.html">¶</a>
+</h1>
+<p class="short_description">This class will render an Image Control of any image file in the system</p>
+<div class="details collapse"></div>
+<a href="../classes/QImageControlBase.html" class="more">« More »</a>
+</div>
+<div id="QImageFileAsset" class="element ajax clickable class">
+<h1>QImageFileAsset<a href="../classes/QImageFileAsset.html">¶</a>
+</h1>
+<p class="short_description">ImageFileAsset is derived from QFileAsset and is a dedicated control for uploading images (images only).</p>
+<div class="details collapse"></div>
+<a href="../classes/QImageFileAsset.html" class="more">« More »</a>
+</div>
+<div id="QImageLabel" class="element ajax clickable class">
+<h1>QImageLabel<a href="../classes/QImageLabel.html">¶</a>
+</h1>
+<p class="short_description">This class will render an Image/Bitmapped version of any Text string</p>
+<div class="details collapse"></div>
+<a href="../classes/QImageLabel.html" class="more">« More »</a>
+</div>
+<div id="QImageLabelBase" class="element ajax clickable class">
+<h1>QImageLabelBase<a href="../classes/QImageLabelBase.html">¶</a>
+</h1>
+<p class="short_description">This class will render an Image/Bitmapped version of any Text string</p>
+<div class="details collapse"></div>
+<a href="../classes/QImageLabelBase.html" class="more">« More »</a>
+</div>
+<div id="QImageRollover" class="element ajax clickable class">
+<h1>QImageRollover<a href="../classes/QImageRollover.html">¶</a>
+</h1>
+<p class="short_description">QControl is the user overridable Base-Class for all Controls.</p>
+<div class="details collapse"></div>
+<a href="../classes/QImageRollover.html" class="more">« More »</a>
+</div>
+<div id="QIntegerTextBox" class="element ajax clickable class">
+<h1>QIntegerTextBox<a href="../classes/QIntegerTextBox.html">¶</a>
+</h1>
+<p class="short_description">A subclass of TextBox with its validate method overridden -- Validate will also ensure
+that the Text is a valid integer and (if applicable) is in the range of Minimum <= x <= Maximum</p>
+<div class="details collapse"></div>
+<a href="../classes/QIntegerTextBox.html" class="more">« More »</a>
+</div>
+<div id="QJqCheckBox" class="element ajax clickable class">
+<h1>QJqCheckBox<a href="../classes/QJqCheckBox.html">¶</a>
+</h1>
+<p class="short_description">This class mplements a JQuery Ui Check Box.</p>
+<div class="details collapse"></div>
+<a href="../classes/QJqCheckBox.html" class="more">« More »</a>
+</div>
+<div id="QJqRadioButton" class="element ajax clickable class">
+<h1>QJqRadioButton<a href="../classes/QJqRadioButton.html">¶</a>
+</h1>
+<p class="short_description">Implements a JQuery UI Radio Button</p>
+<div class="details collapse"></div>
+<a href="../classes/QJqRadioButton.html" class="more">« More »</a>
+</div>
+<div id="QLabel" class="element ajax clickable class">
+<h1>QLabel<a href="../classes/QLabel.html">¶</a>
+</h1>
+<p class="short_description">This class will render HTML via a pair of <span></span> tags.</p>
+<div class="details collapse"></div>
+<a href="../classes/QLabel.html" class="more">« More »</a>
+</div>
+<div id="QLinkButton" class="element ajax clickable class">
+<h1>QLinkButton<a href="../classes/QLinkButton.html">¶</a>
+</h1>
+<p class="short_description">This class will render an HTML link [a href], but will act like a Button or ImageButton.</p>
+<div class="details collapse"></div>
+<a href="../classes/QLinkButton.html" class="more">« More »</a>
+</div>
+<div id="QListBox" class="element ajax clickable class">
+<h1>QListBox<a href="../classes/QListBox.html">¶</a>
+</h1>
+<p class="short_description">The QListBox class is based upon QListBoxBase.</p>
+<div class="details collapse"></div>
+<a href="../classes/QListBox.html" class="more">« More »</a>
+</div>
+<div id="QListBoxBase" class="element ajax clickable class">
+<h1>QListBoxBase<a href="../classes/QListBoxBase.html">¶</a>
+</h1>
+<p class="short_description">QListBoxBase will render an HTML DropDown or MultiSelect box [SELECT] element.</p>
+<div class="details collapse"></div>
+<a href="../classes/QListBoxBase.html" class="more">« More »</a>
+</div>
+<div id="QListControl" class="element ajax clickable class">
+<h1>QListControl<a href="../classes/QListControl.html">¶</a>
+</h1>
+<p class="short_description">Abstract object which is extended by anything which involves lists of selectable items.</p>
+<div class="details collapse"></div>
+<a href="../classes/QListControl.html" class="more">« More »</a>
+</div>
+<div id="QListItem" class="element ajax clickable class">
+<h1>QListItem<a href="../classes/QListItem.html">¶</a>
+</h1>
+<p class="short_description">Utilized by the {@link QListControl} class which contains a private array of ListItems.</p>
+<div class="details collapse"></div>
+<a href="../classes/QListItem.html" class="more">« More »</a>
+</div>
+<div id="QListItemStyle" class="element ajax clickable class">
+<h1>QListItemStyle<a href="../classes/QListItemStyle.html">¶</a>
+</h1>
+<p class="short_description">This defines the style for an Item for a ListBox
+All the appearance properties should be self-explanatory.</p>
+<div class="details collapse"></div>
+<a href="../classes/QListItemStyle.html" class="more">« More »</a>
+</div>
+<div id="QNumericTextBox" class="element ajax clickable class">
+<h1>QNumericTextBox<a href="../classes/QNumericTextBox.html">¶</a>
+</h1>
+<p class="short_description">A subclass of TextBox with its validate method overridden -- Validate will also ensure
+that the Text is a valid integer/float and (if applicable) is in the range of Minimum <= x <= Maximum
+this class is abstract.</p>
+<div class="details collapse"></div>
+<a href="../classes/QNumericTextBox.html" class="more">« More »</a>
+</div>
+<div id="QPaginatedControl" class="element ajax clickable class">
+<h1>QPaginatedControl<a href="../classes/QPaginatedControl.html">¶</a>
+</h1>
+<p class="short_description">QControl is the user overridable Base-Class for all Controls.</p>
+<div class="details collapse"></div>
+<a href="../classes/QPaginatedControl.html" class="more">« More »</a>
+</div>
+<div id="QPaginatorBase" class="element ajax clickable class">
+<h1>QPaginatorBase<a href="../classes/QPaginatorBase.html">¶</a>
+</h1>
+<p class="short_description">QControl is the user overridable Base-Class for all Controls.</p>
+<div class="details collapse"></div>
+<a href="../classes/QPaginatorBase.html" class="more">« More »</a>
+</div>
+<div id="QPanel" class="element ajax clickable class">
+<h1>QPanel<a href="../classes/QPanel.html">¶</a>
+</h1>
+<p class="short_description">This class will render HTML via a pair of <span></span> tags.</p>
+<div class="details collapse"></div>
+<a href="../classes/QPanel.html" class="more">« More »</a>
+</div>
+<div id="QRadioButton" class="element ajax clickable class">
+<h1>QRadioButton<a href="../classes/QRadioButton.html">¶</a>
+</h1>
+<p class="short_description">This class will render an HTML Radio button.</p>
+<div class="details collapse"></div>
+<a href="../classes/QRadioButton.html" class="more">« More »</a>
+</div>
+<div id="QRadioButtonList" class="element ajax clickable class">
+<h1>QRadioButtonList<a href="../classes/QRadioButtonList.html">¶</a>
+</h1>
+<p class="short_description">This class will render a List of HTML Radio Buttons (inhereting from ListControl).</p>
+<div class="details collapse"></div>
+<a href="../classes/QRadioButtonList.html" class="more">« More »</a>
+</div>
+<div id="QSampleControl" class="element ajax clickable class">
+<h1>QSampleControl<a href="../classes/QSampleControl.html">¶</a>
+</h1>
+<p class="short_description">This is a SAMPLE of a custom QControl that you could write.</p>
+<div class="details collapse"></div>
+<a href="../classes/QSampleControl.html" class="more">« More »</a>
+</div>
+<div id="QSimpleTable" class="element ajax clickable class">
+<h1>QSimpleTable<a href="../classes/QSimpleTable.html">¶</a>
+</h1>
+<p class="short_description"><p>This control is used to display a simple html table.</p>
+<div class="details collapse"></div>
+<a href="../classes/QSimpleTable.html" class="more">« More »</a>
+</div>
+<div id="QSimpleTableBase" class="element ajax clickable class">
+<h1>QSimpleTableBase<a href="../classes/QSimpleTableBase.html">¶</a>
+</h1>
+<p class="short_description"><p>This control is used to display a simple html table.</p>
+<div class="details collapse"></div>
+<a href="../classes/QSimpleTableBase.html" class="more">« More »</a>
+</div>
+<div id="QTextBox" class="element ajax clickable class">
+<h1>QTextBox<a href="../classes/QTextBox.html">¶</a>
+</h1>
+<p class="short_description">This class will render an HTML Textbox -- which can either be [input type="text"],
+[input type="password"] or [textarea] depending on the TextMode (see below).</p>
+<div class="details collapse"></div>
+<a href="../classes/QTextBox.html" class="more">« More »</a>
+</div>
+<div id="QTextBoxBase" class="element ajax clickable class">
+<h1>QTextBoxBase<a href="../classes/QTextBoxBase.html">¶</a>
+</h1>
+<p class="short_description">This class will render an HTML Textbox -- which can either be [input type="text"],
+[input type="password"] or [textarea] depending on the TextMode (see below).</p>
+<div class="details collapse"></div>
+<a href="../classes/QTextBoxBase.html" class="more">« More »</a>
+</div>
+<div id="QTreeNav" class="element ajax clickable class">
+<h1>QTreeNav<a href="../classes/QTreeNav.html">¶</a>
+</h1>
+<p class="short_description">QControl is the user overridable Base-Class for all Controls.</p>
+<div class="details collapse"></div>
+<a href="../classes/QTreeNav.html" class="more">« More »</a>
+</div>
+<div id="QTreeNavItem" class="element ajax clickable class">
+<h1>QTreeNavItem<a href="../classes/QTreeNavItem.html">¶</a>
+</h1>
+<p class="short_description">This is the Base Class for ALL classes in the system.</p>
+<div class="details collapse"></div>
+<a href="../classes/QTreeNavItem.html" class="more">« More »</a>
+</div>
+<div id="QWaitIcon" class="element ajax clickable class">
+<h1>QWaitIcon<a href="../classes/QWaitIcon.html">¶</a>
+</h1>
+<p class="short_description">QControl is the user overridable Base-Class for all Controls.</p>
+<div class="details collapse"></div>
+<a href="../classes/QWaitIcon.html" class="more">« More »</a>
+</div>
+<div id="QWriteBox" class="element ajax clickable class">
+<h1>QWriteBox<a href="../classes/QWriteBox.html">¶</a>
+</h1>
+<p class="short_description">This class will render an HTML Textbox -- which can either be [input type="text"],
+[input type="password"] or [textarea] depending on the TextMode (see below).</p>
+<div class="details collapse"></div>
+<a href="../classes/QWriteBox.html" class="more">« More »</a>
+</div>
+<ul class="breadcrumb"><li>
+<a href="../index.html"><i class="icon-folder-open"></i></a><span class="divider">\</span><li><a href="../packages/Controls.html">Controls</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../packages/Controls.Base.html">Base</a>
+</li>
+</li></ul>
+<div class="package-indent">
+<h3>
+<i class="icon-custom icon-class"></i> Classes and interfaces</h3>
+<div id="QAccordionBase" class="element ajax clickable class">
+<h1>QAccordionBase<a href="../classes/QAccordionBase.html">¶</a>
+</h1>
+<p class="short_description">Implements the JQuery UI Accordion</p>
+<div class="details collapse"></div>
+<a href="../classes/QAccordionBase.html" class="more">« More »</a>
+</div>
+<div id="QAccordionGen" class="element ajax clickable class">
+<h1>QAccordionGen<a href="../classes/QAccordionGen.html">¶</a>
+</h1>
+<p class="short_description">Generated QAccordionGen class.</p>
+<div class="details collapse"></div>
+<a href="../classes/QAccordionGen.html" class="more">« More »</a>
+</div>
+<div id="QAutocompleteBase" class="element ajax clickable class">
+<h1>QAutocompleteBase<a href="../classes/QAutocompleteBase.html">¶</a>
+</h1>
+<p class="short_description">Implements the JQuery UI Autocomplete widget</p>
+<div class="details collapse"></div>
+<a href="../classes/QAutocompleteBase.html" class="more">« More »</a>
+</div>
+<div id="QAutocompleteGen" class="element ajax clickable class">
+<h1>QAutocompleteGen<a href="../classes/QAutocompleteGen.html">¶</a>
+</h1>
+<p class="short_description">Generated QAutocompleteGen class.</p>
+<div class="details collapse"></div>
+<a href="../classes/QAutocompleteGen.html" class="more">« More »</a>
+</div>
+<div id="QDatepickerBase" class="element ajax clickable class">
+<h1>QDatepickerBase<a href="../classes/QDatepickerBase.html">¶</a>
+</h1>
+<p class="short_description">Impelements a JQuery UI Datepicker</p>
+<div class="details collapse"></div>
+<a href="../classes/QDatepickerBase.html" class="more">« More »</a>
+</div>
+<div id="QDatepickerBoxBase" class="element ajax clickable class">
+<h1>QDatepickerBoxBase<a href="../classes/QDatepickerBoxBase.html">¶</a>
+</h1>
+<p class="short_description">Impelements a JQuery UI Datepicker in a box</p>
+<div class="details collapse"></div>
+<a href="../classes/QDatepickerBoxBase.html" class="more">« More »</a>
+</div>
+<div id="QDatepickerBoxGen" class="element ajax clickable class">
+<h1>QDatepickerBoxGen<a href="../classes/QDatepickerBoxGen.html">¶</a>
+</h1>
+<p class="short_description">Generated QDatepickerBoxGen class.</p>
+<div class="details collapse"></div>
+<a href="../classes/QDatepickerBoxGen.html" class="more">« More »</a>
+</div>
+<div id="QDatepickerGen" class="element ajax clickable class">
+<h1>QDatepickerGen<a href="../classes/QDatepickerGen.html">¶</a>
+</h1>
+<p class="short_description">Generated QDatepickerGen class.</p>
+<div class="details collapse"></div>
+<a href="../classes/QDatepickerGen.html" class="more">« More »</a>
+</div>
+<div id="QDialogBase" class="element ajax clickable class">
+<h1>QDialogBase<a href="../classes/QDialogBase.html">¶</a>
+</h1>
+<p class="short_description">Implements a JQuery UI Dialog</p>
+<div class="details collapse"></div>
+<a href="../classes/QDialogBase.html" class="more">« More »</a>
+</div>
+<div id="QDialogGen" class="element ajax clickable class">
+<h1>QDialogGen<a href="../classes/QDialogGen.html">¶</a>
+</h1>
+<p class="short_description">Generated QDialogGen class.</p>
+<div class="details collapse"></div>
+<a href="../classes/QDialogGen.html" class="more">« More »</a>
+</div>
+<div id="QDraggableBase" class="element ajax clickable class">
+<h1>QDraggableBase<a href="../classes/QDraggableBase.html">¶</a>
+</h1>
+<p class="short_description">Implements the jQuery UI Draggable capabilities on to a control.</p>
+<div class="details collapse"></div>
+<a href="../classes/QDraggableBase.html" class="more">« More »</a>
+</div>
+<div id="QDraggableGen" class="element ajax clickable class">
+<h1>QDraggableGen<a href="../classes/QDraggableGen.html">¶</a>
+</h1>
+<p class="short_description">Generated QDraggableGen class.</p>
+<div class="details collapse"></div>
+<a href="../classes/QDraggableGen.html" class="more">« More »</a>
+</div>
+<div id="QDroppableBase" class="element ajax clickable class">
+<h1>QDroppableBase<a href="../classes/QDroppableBase.html">¶</a>
+</h1>
+<p class="short_description">Implements the Droppable capabilities of JQuery UI in a QControl</p>
+<div class="details collapse"></div>
+<a href="../classes/QDroppableBase.html" class="more">« More »</a>
+</div>
+<div id="QDroppableGen" class="element ajax clickable class">
+<h1>QDroppableGen<a href="../classes/QDroppableGen.html">¶</a>
+</h1>
+<p class="short_description">Generated QDroppableGen class.</p>
+<div class="details collapse"></div>
+<a href="../classes/QDroppableGen.html" class="more">« More »</a>
+</div>
+<div id="QJqButtonGen" class="element ajax clickable class">
+<h1>QJqButtonGen<a href="../classes/QJqButtonGen.html">¶</a>
+</h1>
+<p class="short_description">Generated QJqButtonGen class.</p>
+<div class="details collapse"></div>
+<a href="../classes/QJqButtonGen.html" class="more">« More »</a>
+</div>
+<div id="QJqCheckBoxBase" class="element ajax clickable class">
+<h1>QJqCheckBoxBase<a href="../classes/QJqCheckBoxBase.html">¶</a>
+</h1>
+<p class="short_description">Implements a JQuery Ui Check Box</p>
+<div class="details collapse"></div>
+<a href="../classes/QJqCheckBoxBase.html" class="more">« More »</a>
+</div>
+<div id="QJqCheckBoxGen" class="element ajax clickable class">
+<h1>QJqCheckBoxGen<a href="../classes/QJqCheckBoxGen.html">¶</a>
+</h1>
+<p class="short_description">Generated QJqCheckBoxGen class.</p>
+<div class="details collapse"></div>
+<a href="../classes/QJqCheckBoxGen.html" class="more">« More »</a>
+</div>
+<div id="QJqRadioButtonGen" class="element ajax clickable class">
+<h1>QJqRadioButtonGen<a href="../classes/QJqRadioButtonGen.html">¶</a>
+</h1>
+<p class="short_description">Generated QJqRadioButtonGen class.</p>
+<div class="details collapse"></div>
+<a href="../classes/QJqRadioButtonGen.html" class="more">« More »</a>
+</div>
+<div id="QMenuBase" class="element ajax clickable class">
+<h1>QMenuBase<a href="../classes/QMenuBase.html">¶</a>
+</h1>
+<p class="short_description">Implements a JQuery UI Menu</p>
+<div class="details collapse"></div>
+<a href="../classes/QMenuBase.html" class="more">« More »</a>
+</div>
+<div id="QMenuGen" class="element ajax clickable class">
+<h1>QMenuGen<a href="../classes/QMenuGen.html">¶</a>
+</h1>
+<p class="short_description">Generated QMenuGen class.</p>
+<div class="details collapse"></div>
+<a href="../classes/QMenuGen.html" class="more">« More »</a>
+</div>
+<div id="QProgressbarBase" class="element ajax clickable class">
+<h1>QProgressbarBase<a href="../classes/QProgressbarBase.html">¶</a>
+</h1>
+<p class="short_description">Implements a JQuery UI Progress Bar</p>
+<div class="details collapse"></div>
+<a href="../classes/QProgressbarBase.html" class="more">« More »</a>
+</div>
+<div id="QProgressbarGen" class="element ajax clickable class">
+<h1>QProgressbarGen<a href="../classes/QProgressbarGen.html">¶</a>
+</h1>
+<p class="short_description">Generated QProgressbarGen class.</p>
+<div class="details collapse"></div>
+<a href="../classes/QProgressbarGen.html" class="more">« More »</a>
+</div>
+<div id="QResizableBase" class="element ajax clickable class">
+<h1>QResizableBase<a href="../classes/QResizableBase.html">¶</a>
+</h1>
+<p class="short_description">Implements the JQuery UI Resizable capabilities into a QControl</p>
+<div class="details collapse"></div>
+<a href="../classes/QResizableBase.html" class="more">« More »</a>
+</div>
+<div id="QResizableGen" class="element ajax clickable class">
+<h1>QResizableGen<a href="../classes/QResizableGen.html">¶</a>
+</h1>
+<p class="short_description">Generated QResizableGen class.</p>
+<div class="details collapse"></div>
+<a href="../classes/QResizableGen.html" class="more">« More »</a>
+</div>
+<div id="QSelectableBase" class="element ajax clickable class">
+<h1>QSelectableBase<a href="../classes/QSelectableBase.html">¶</a>
+</h1>
+<p class="short_description">Impelments a JQuery UI Selectable box</p>
+<div class="details collapse"></div>
+<a href="../classes/QSelectableBase.html" class="more">« More »</a>
+</div>
+<div id="QSelectableGen" class="element ajax clickable class">
+<h1>QSelectableGen<a href="../classes/QSelectableGen.html">¶</a>
+</h1>
+<p class="short_description">Generated QSelectableGen class.</p>
+<div class="details collapse"></div>
+<a href="../classes/QSelectableGen.html" class="more">« More »</a>
+</div>
+<div id="QSliderBase" class="element ajax clickable class">
+<h1>QSliderBase<a href="../classes/QSliderBase.html">¶</a>
+</h1>
+<p class="short_description">Implements a JQuery UI Slider</p>
+<div class="details collapse"></div>
+<a href="../classes/QSliderBase.html" class="more">« More »</a>
+</div>
+<div id="QSliderGen" class="element ajax clickable class">
+<h1>QSliderGen<a href="../classes/QSliderGen.html">¶</a>
+</h1>
+<p class="short_description">Generated QSliderGen class.</p>
+<div class="details collapse"></div>
+<a href="../classes/QSliderGen.html" class="more">« More »</a>
+</div>
+<div id="QSortableBase" class="element ajax clickable class">
+<h1>QSortableBase<a href="../classes/QSortableBase.html">¶</a>
+</h1>
+<p class="short_description">Impelements a JQuery UI Sortable</p>
+<div class="details collapse"></div>
+<a href="../classes/QSortableBase.html" class="more">« More »</a>
+</div>
+<div id="QSortableGen" class="element ajax clickable class">
+<h1>QSortableGen<a href="../classes/QSortableGen.html">¶</a>
+</h1>
+<p class="short_description">Generated QSortableGen class.</p>
+<div class="details collapse"></div>
+<a href="../classes/QSortableGen.html" class="more">« More »</a>
+</div>
+<div id="QSpinnerBase" class="element ajax clickable class">
+<h1>QSpinnerBase<a href="../classes/QSpinnerBase.html">¶</a>
+</h1>
+<p class="short_description">Implements a JQuery UI Spinner Object</p>
+<div class="details collapse"></div>
+<a href="../classes/QSpinnerBase.html" class="more">« More »</a>
+</div>
+<div id="QSpinnerGen" class="element ajax clickable class">
+<h1>QSpinnerGen<a href="../classes/QSpinnerGen.html">¶</a>
+</h1>
+<p class="short_description">Generated QSpinnerGen class.</p>
+<div class="details collapse"></div>
+<a href="../classes/QSpinnerGen.html" class="more">« More »</a>
+</div>
+<div id="QTabsBase" class="element ajax clickable class">
+<h1>QTabsBase<a href="../classes/QTabsBase.html">¶</a>
+</h1>
+<p class="short_description">Impelements JQuery Ui Tabs</p>
+<div class="details collapse"></div>
+<a href="../classes/QTabsBase.html" class="more">« More »</a>
+</div>
+<div id="QTabsGen" class="element ajax clickable class">
+<h1>QTabsGen<a href="../classes/QTabsGen.html">¶</a>
+</h1>
+<p class="short_description">Generated QTabsGen class.</p>
+<div class="details collapse"></div>
+<a href="../classes/QTabsGen.html" class="more">« More »</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
+            generated on 2013-03-17T01:59:04+07:00.<br></footer></div>
+</div>
+</body>
+</html>

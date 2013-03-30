@@ -1,0 +1,975 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>QCubed API » \QSqLite3PdoDatabase</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">QCubed API</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="../packages/Codegen.html"><i class="icon-folder-open"></i> Codegen</a></li>
+<li><a href="../packages/Controls.html"><i class="icon-folder-open"></i> Controls</a></li>
+<li><a href="../packages/Controls%20%20.html"><i class="icon-folder-open"></i> Controls  </a></li>
+<li><a href="../packages/DatabaseAdapters.html"><i class="icon-folder-open"></i> DatabaseAdapters</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/My%20QCubed%20Application.html"><i class="icon-folder-open"></i> My QCubed Application</a></li>
+<li><a href="../packages/Sessions.html"><i class="icon-folder-open"></i> Sessions</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">4384</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul><li>todo 
+                <span class="label label-info">28</span>
+</li></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">8</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method_Close" title="Close :: "><span class="description">Close()
+        </span><pre>Close()</pre></a></li>
+<li class="method public "><a href="#method_Connect" title="Connect :: "><span class="description">Connect()
+        </span><pre>Connect()</pre></a></li>
+<li class="method public inherited"><a href="#method_EnableProfiling" title="EnableProfiling :: Allows for the enabling of DB profiling while in middle of the script"><span class="description">Allows for the enabling of DB profiling while in middle of the script</span><pre>EnableProfiling()</pre></a></li>
+<li class="method public inherited"><a href="#method_EscapeIdentifier" title="EscapeIdentifier :: "><span class="description">EscapeIdentifier()
+        </span><pre>EscapeIdentifier()</pre></a></li>
+<li class="method public inherited"><a href="#method_EscapeIdentifiers" title="EscapeIdentifiers :: "><span class="description">EscapeIdentifiers()
+        </span><pre>EscapeIdentifiers()</pre></a></li>
+<li class="method public inherited"><a href="#method_EscapeIdentifiersAndValues" title="EscapeIdentifiersAndValues :: "><span class="description">EscapeIdentifiersAndValues()
+        </span><pre>EscapeIdentifiersAndValues()</pre></a></li>
+<li class="method public inherited"><a href="#method_EscapeValues" title="EscapeValues :: "><span class="description">EscapeValues()
+        </span><pre>EscapeValues()</pre></a></li>
+<li class="method public inherited"><a href="#method_ExplainStatement" title="ExplainStatement :: Executes the explain statement for a given query and returns the output without any transformation."><span class="description">Executes the explain statement for a given query and returns the output without any transformation.</span><pre>ExplainStatement()</pre></a></li>
+<li class="method public "><a href="#method_GetFieldsForTable" title="GetFieldsForTable :: "><span class="description">GetFieldsForTable()
+        </span><pre>GetFieldsForTable()</pre></a></li>
+<li class="method public "><a href="#method_GetForeignKeysForTable" title="GetForeignKeysForTable :: "><span class="description">GetForeignKeysForTable()
+        </span><pre>GetForeignKeysForTable()</pre></a></li>
+<li class="method public "><a href="#method_GetIndexesForTable" title="GetIndexesForTable :: "><span class="description">GetIndexesForTable()
+        </span><pre>GetIndexesForTable()</pre></a></li>
+<li class="method public "><a href="#method_GetTables" title="GetTables :: "><span class="description">GetTables()
+        </span><pre>GetTables()</pre></a></li>
+<li class="method public "><a href="#method_InsertId" title="InsertId :: "><span class="description">InsertId()
+        </span><pre>InsertId()</pre></a></li>
+<li class="method public "><a href="#method_InsertOrUpdate" title="InsertOrUpdate :: "><span class="description">InsertOrUpdate()
+        </span><pre>InsertOrUpdate()</pre></a></li>
+<li class="method public inherited"><a href="#method_NonQuery" title="NonQuery :: "><span class="description">NonQuery()
+        </span><pre>NonQuery()</pre></a></li>
+<li class="method public inherited"><a href="#method_OutputProfiling" title="OutputProfiling :: Displays the OutputProfiling results, plus a link which will popup the details of the profiling."><span class="description">Displays the OutputProfiling results, plus a link which will popup the details of the profiling.</span><pre>OutputProfiling()</pre></a></li>
+<li class="method public inherited"><a href="#method_OverrideAttributes" title="OverrideAttributes :: This allows you to set any properties, given by a name-value pair list
+in mixOverrideArray."><span class="description">This allows you to set any properties, given by a name-value pair list
+in mixOverrideArray.</span><pre>OverrideAttributes()</pre></a></li>
+<li class="method public inherited"><a href="#method_PrepareStatement" title="PrepareStatement :: "><span class="description">PrepareStatement()
+        </span><pre>PrepareStatement()</pre></a></li>
+<li class="method public inherited"><a href="#method_Query" title="Query :: "><span class="description">Query()
+        </span><pre>Query()</pre></a></li>
+<li class="method public "><a href="#method_SqlLimitVariablePrefix" title="SqlLimitVariablePrefix :: "><span class="description">SqlLimitVariablePrefix()
+        </span><pre>SqlLimitVariablePrefix()</pre></a></li>
+<li class="method public "><a href="#method_SqlLimitVariableSuffix" title="SqlLimitVariableSuffix :: "><span class="description">SqlLimitVariableSuffix()
+        </span><pre>SqlLimitVariableSuffix()</pre></a></li>
+<li class="method public "><a href="#method_SqlSortByVariable" title="SqlSortByVariable :: "><span class="description">SqlSortByVariable()
+        </span><pre>SqlSortByVariable()</pre></a></li>
+<li class="method public "><a href="#method_SqlVariable" title="SqlVariable :: Properly escapes $mixData to be used as a SQL query parameter."><span class="description">Properly escapes $mixData to be used as a SQL query parameter.</span><pre>SqlVariable()</pre></a></li>
+<li class="method public inherited"><a href="#method_TransactionBegin" title="TransactionBegin :: "><span class="description">TransactionBegin()
+        </span><pre>TransactionBegin()</pre></a></li>
+<li class="method public inherited"><a href="#method_TransactionCommit" title="TransactionCommit :: "><span class="description">TransactionCommit()
+        </span><pre>TransactionCommit()</pre></a></li>
+<li class="method public inherited"><a href="#method_TransactionRollBack" title="TransactionRollBack :: "><span class="description">TransactionRollBack()
+        </span><pre>TransactionRollBack()</pre></a></li>
+<li class="method public inherited"><a href="#method___construct" title="__construct :: Constructs a Database Adapter based on the database index and the configuration array of properties for this particular adapter
+Sets up the base-level configuration properties for this database,
+namely DB Profiling and Database Index"><span class="description">Constructs a Database Adapter based on the database index and the configuration array of properties for this particular adapter
+Sets up the base-level configuration properties for this database,
+namely DB Profiling and Database Index</span><pre>__construct()</pre></a></li>
+<li class="method public inherited"><a href="#method___get" title='__get :: Override method to perform a property "Get"
+This will get the value of $strName
+All inhereted objects that call __get() should always fall through
+to calling parent::__get() in a try/catch statement catching
+for CallerExceptions.'><span class="description">Override method to perform a property "Get"
+This will get the value of $strName
+All inhereted objects that call __get() should always fall through
+to calling parent::__get() in a try/catch statement catching
+for CallerExceptions.</span><pre>__get()</pre></a></li>
+<li class="method public inherited"><a href="#method___set" title='__set :: Override method to perform a property "Set"
+This will set the property $strName to be $mixValue
+All inhereted objects that call __set() should always fall through
+to calling parent::__set() in a try/catch statement catching
+for CallerExceptions.'><span class="description">Override method to perform a property "Set"
+This will set the property $strName to be $mixValue
+All inhereted objects that call __set() should always fall through
+to calling parent::__set() in a try/catch statement catching
+for CallerExceptions.</span><pre>__set()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul>
+<li class="method protected inherited"><a href="#method_ExecuteNonQuery" title="ExecuteNonQuery :: "><span class="description">ExecuteNonQuery()
+        </span><pre>ExecuteNonQuery()</pre></a></li>
+<li class="method protected "><a href="#method_ExecuteQuery" title="ExecuteQuery :: "><span class="description">ExecuteQuery()
+        </span><pre>ExecuteQuery()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header private">» Private
+                    <ul>
+<li class="method private inherited"><a href="#method_LogQuery" title="LogQuery :: If EnableProfiling is on, then log the query to the profile array"><span class="description">If EnableProfiling is on, then log the query to the profile array</span><pre>LogQuery()</pre></a></li>
+<li class="method private "><a href="#method_ParseColumnNameArrayFromKeyDefinition" title="ParseColumnNameArrayFromKeyDefinition :: "><span class="description">ParseColumnNameArrayFromKeyDefinition()
+        </span><pre>ParseColumnNameArrayFromKeyDefinition()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties
+                    <ul></ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul>
+<li class="property protected inherited"><a href="#property_blnConnectedFlag" title="$blnConnectedFlag :: "><span class="description"></span><pre>$blnConnectedFlag</pre></a></li>
+<li class="property protected inherited"><a href="#property_blnEnableProfiling" title="$blnEnableProfiling :: "><span class="description"></span><pre>$blnEnableProfiling</pre></a></li>
+<li class="property protected inherited"><a href="#property_blnOnlyFullGroupBy" title="$blnOnlyFullGroupBy :: "><span class="description"></span><pre>$blnOnlyFullGroupBy</pre></a></li>
+<li class="property protected inherited"><a href="#property_intDatabaseIndex" title="$intDatabaseIndex :: "><span class="description"></span><pre>$intDatabaseIndex</pre></a></li>
+<li class="property protected inherited"><a href="#property_objConfigArray" title="$objConfigArray :: "><span class="description"></span><pre>$objConfigArray</pre></a></li>
+<li class="property protected inherited"><a href="#property_objMostRecentResult" title="$objMostRecentResult :: "><span class="description">most recent query result</span><pre>$objMostRecentResult</pre></a></li>
+<li class="property protected inherited"><a href="#property_objPdo" title="$objPdo :: "><span class="description">connection handler</span><pre>$objPdo</pre></a></li>
+<li class="property protected "><a href="#property_strEscapeIdentifierBegin" title="$strEscapeIdentifierBegin :: "><span class="description"></span><pre>$strEscapeIdentifierBegin</pre></a></li>
+<li class="property protected "><a href="#property_strEscapeIdentifierBeginInternal" title="$strEscapeIdentifierBeginInternal :: "><span class="description"></span><pre>$strEscapeIdentifierBeginInternal</pre></a></li>
+<li class="property protected "><a href="#property_strEscapeIdentifierEnd" title="$strEscapeIdentifierEnd :: "><span class="description"></span><pre>$strEscapeIdentifierEnd</pre></a></li>
+<li class="property protected "><a href="#property_strEscapeIdentifierEndInternal" title="$strEscapeIdentifierEndInternal :: "><span class="description"></span><pre>$strEscapeIdentifierEndInternal</pre></a></li>
+<li class="property protected inherited"><a href="#property_strProfileArray" title="$strProfileArray :: "><span class="description"></span><pre>$strProfileArray</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-constant"></i> Constants
+                    <ul>
+<li class="constant  "><a href="#constant_Adapter" title="Adapter :: "><span class="description">Adapter</span><pre>Adapter</pre></a></li>
+<li class="constant  "><a href="#constant_PDO_SQLITE3_DSN_IDENTIFIER" title="PDO_SQLITE3_DSN_IDENTIFIER :: "><span class="description">PDO_SQLITE3_DSN_IDENTIFIER</span><pre>PDO_SQLITE3_DSN_IDENTIFIER</pre></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a id="\QSqLite3PdoDatabase"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/global.html">global</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/QSqLite3PdoDatabase.html">QSqLite3PdoDatabase</a>
+</li>
+</ul>
+<div class="element class">
+<p class="short_description">PDO_SqLite3 database driver</p>
+<div class="details">
+<div class="long_description"><p>This Database library also has the following classes already defined, and
+Database adapters are assumed to use them internally:
+* DatabaseIndex
+* DatabaseForeignKey
+* DatabaseFieldType (which is an abstract class that solely contains constants)</p></div>
+<table class="table table-bordered">
+<tr>
+<th>package</th>
+<td><a href="../packages/DatabaseAdapters.html">DatabaseAdapters</a></td>
+</tr>
+<tr>
+<th>author</th>
+<td><a href="">Christophe Damour [sigeal at sigeal dot com dot fr]
+Adapted from PDO_PGSQL database driver by Marcos S�nchez [marcosdsanchez at thinkclear dot com dot ar]</a></td>
+</tr>
+</table>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method_Close"></a><div class="element clickable method public method_Close" data-toggle="collapse" data-target=".method_Close .collapse">
+<h2>Close()
+        </h2>
+<pre>Close() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_Connect"></a><div class="element clickable method public method_Connect" data-toggle="collapse" data-target=".method_Connect .collapse">
+<h2>Connect()
+        </h2>
+<pre>Connect() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_EnableProfiling"></a><div class="element clickable method public method_EnableProfiling" data-toggle="collapse" data-target=".method_EnableProfiling .collapse">
+<h2>Allows for the enabling of DB profiling while in middle of the script</h2>
+<pre>EnableProfiling() : void</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QDatabaseBase::EnableProfiling()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QPdoDatabase::EnableProfiling()</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="method_EscapeIdentifier"></a><div class="element clickable method public method_EscapeIdentifier" data-toggle="collapse" data-target=".method_EscapeIdentifier .collapse">
+<h2>EscapeIdentifier()
+        </h2>
+<pre>EscapeIdentifier($strIdentifier) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QDatabaseBase::EscapeIdentifier()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QPdoDatabase::EscapeIdentifier()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strIdentifier</h4></div>
+</div></div>
+</div>
+<a id="method_EscapeIdentifiers"></a><div class="element clickable method public method_EscapeIdentifiers" data-toggle="collapse" data-target=".method_EscapeIdentifiers .collapse">
+<h2>EscapeIdentifiers()
+        </h2>
+<pre>EscapeIdentifiers($mixIdentifiers) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QDatabaseBase::EscapeIdentifiers()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QPdoDatabase::EscapeIdentifiers()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$mixIdentifiers</h4></div>
+</div></div>
+</div>
+<a id="method_EscapeIdentifiersAndValues"></a><div class="element clickable method public method_EscapeIdentifiersAndValues" data-toggle="collapse" data-target=".method_EscapeIdentifiersAndValues .collapse">
+<h2>EscapeIdentifiersAndValues()
+        </h2>
+<pre>EscapeIdentifiersAndValues($mixColumnsAndValuesArray) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QDatabaseBase::EscapeIdentifiersAndValues()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QPdoDatabase::EscapeIdentifiersAndValues()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$mixColumnsAndValuesArray</h4></div>
+</div></div>
+</div>
+<a id="method_EscapeValues"></a><div class="element clickable method public method_EscapeValues" data-toggle="collapse" data-target=".method_EscapeValues .collapse">
+<h2>EscapeValues()
+        </h2>
+<pre>EscapeValues($mixValues) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QDatabaseBase::EscapeValues()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QPdoDatabase::EscapeValues()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$mixValues</h4></div>
+</div></div>
+</div>
+<a id="method_ExplainStatement"></a><div class="element clickable method public method_ExplainStatement" data-toggle="collapse" data-target=".method_ExplainStatement .collapse">
+<h2>Executes the explain statement for a given query and returns the output without any transformation.</h2>
+<pre>ExplainStatement($sql) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>If the database adapter does not support EXPLAIN statements, returns null.</p></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QDatabaseBase::ExplainStatement()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QPdoDatabase::ExplainStatement()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$sql</h4></div>
+</div></div>
+</div>
+<a id="method_GetFieldsForTable"></a><div class="element clickable method public method_GetFieldsForTable" data-toggle="collapse" data-target=".method_GetFieldsForTable .collapse">
+<h2>GetFieldsForTable()
+        </h2>
+<pre>GetFieldsForTable($strTableName) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strTableName</h4></div>
+</div></div>
+</div>
+<a id="method_GetForeignKeysForTable"></a><div class="element clickable method public method_GetForeignKeysForTable" data-toggle="collapse" data-target=".method_GetForeignKeysForTable .collapse">
+<h2>GetForeignKeysForTable()
+        </h2>
+<pre>GetForeignKeysForTable($strTableName) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strTableName</h4></div>
+</div></div>
+</div>
+<a id="method_GetIndexesForTable"></a><div class="element clickable method public method_GetIndexesForTable" data-toggle="collapse" data-target=".method_GetIndexesForTable .collapse">
+<h2>GetIndexesForTable()
+        </h2>
+<pre>GetIndexesForTable($strTableName) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strTableName</h4></div>
+</div></div>
+</div>
+<a id="method_GetTables"></a><div class="element clickable method public method_GetTables" data-toggle="collapse" data-target=".method_GetTables .collapse">
+<h2>GetTables()
+        </h2>
+<pre>GetTables() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_InsertId"></a><div class="element clickable method public method_InsertId" data-toggle="collapse" data-target=".method_InsertId .collapse">
+<h2>InsertId()
+        </h2>
+<pre>InsertId($strTableName, $strColumnName) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strTableName</h4></div>
+<div class="subelement argument"><h4>$strColumnName</h4></div>
+</div></div>
+</div>
+<a id="method_InsertOrUpdate"></a><div class="element clickable method public method_InsertOrUpdate" data-toggle="collapse" data-target=".method_InsertOrUpdate .collapse">
+<h2>InsertOrUpdate()
+        </h2>
+<pre>InsertOrUpdate($strTable, $mixColumnsAndValuesArray, $strPKNames) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strTable</h4></div>
+<div class="subelement argument"><h4>$mixColumnsAndValuesArray</h4></div>
+<div class="subelement argument"><h4>$strPKNames</h4></div>
+</div></div>
+</div>
+<a id="method_NonQuery"></a><div class="element clickable method public method_NonQuery" data-toggle="collapse" data-target=".method_NonQuery .collapse">
+<h2>NonQuery()
+        </h2>
+<pre>NonQuery($strNonQuery) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QDatabaseBase::NonQuery()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QPdoDatabase::NonQuery()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strNonQuery</h4></div>
+</div></div>
+</div>
+<a id="method_OutputProfiling"></a><div class="element clickable method public method_OutputProfiling" data-toggle="collapse" data-target=".method_OutputProfiling .collapse">
+<h2>Displays the OutputProfiling results, plus a link which will popup the details of the profiling.</h2>
+<pre>OutputProfiling() : void</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QDatabaseBase::OutputProfiling()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QPdoDatabase::OutputProfiling()</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="method_OverrideAttributes"></a><div class="element clickable method public method_OverrideAttributes" data-toggle="collapse" data-target=".method_OverrideAttributes .collapse">
+<h2>This allows you to set any properties, given by a name-value pair list
+in mixOverrideArray.</h2>
+<pre>OverrideAttributes($mixOverrideArray) : void</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Each item in mixOverrideArray needs to be either a string in the format
+of Property=Value or an array in the format of array(Property => Value).
+OverrideAttributes() will basically call
+$this->Property = Value for each string element in the array.</p>
+
+<p>Value can be surrounded by quotes... but this is optional.</p></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QBaseClass::OverrideAttributes()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QDatabaseBase::OverrideAttributes()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QPdoDatabase::OverrideAttributes()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$mixOverrideArray</h4></div>
+</div></div>
+</div>
+<a id="method_PrepareStatement"></a><div class="element clickable method public method_PrepareStatement" data-toggle="collapse" data-target=".method_PrepareStatement .collapse">
+<h2>PrepareStatement()
+        </h2>
+<pre>PrepareStatement($strQuery, $mixParameterArray) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QDatabaseBase::PrepareStatement()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QPdoDatabase::PrepareStatement()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strQuery</h4></div>
+<div class="subelement argument"><h4>$mixParameterArray</h4></div>
+</div></div>
+</div>
+<a id="method_Query"></a><div class="element clickable method public method_Query" data-toggle="collapse" data-target=".method_Query .collapse">
+<h2>Query()
+        </h2>
+<pre>Query(string $strQuery) : <a href="../classes/QDatabaseResultBase.html">\QDatabaseResultBase</a></pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QDatabaseBase::Query()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QPdoDatabase::Query()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$strQuery</h4>
+<code>string</code><p>query string</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/QDatabaseResultBase.html">\QDatabaseResultBase</a></code></div>
+</div></div>
+</div>
+<a id="method_SqlLimitVariablePrefix"></a><div class="element clickable method public method_SqlLimitVariablePrefix" data-toggle="collapse" data-target=".method_SqlLimitVariablePrefix .collapse">
+<h2>SqlLimitVariablePrefix()
+        </h2>
+<pre>SqlLimitVariablePrefix($strLimitInfo) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strLimitInfo</h4></div>
+</div></div>
+</div>
+<a id="method_SqlLimitVariableSuffix"></a><div class="element clickable method public method_SqlLimitVariableSuffix" data-toggle="collapse" data-target=".method_SqlLimitVariableSuffix .collapse">
+<h2>SqlLimitVariableSuffix()
+        </h2>
+<pre>SqlLimitVariableSuffix($strLimitInfo) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strLimitInfo</h4></div>
+</div></div>
+</div>
+<a id="method_SqlSortByVariable"></a><div class="element clickable method public method_SqlSortByVariable" data-toggle="collapse" data-target=".method_SqlSortByVariable .collapse">
+<h2>SqlSortByVariable()
+        </h2>
+<pre>SqlSortByVariable($strSortByInfo) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strSortByInfo</h4></div>
+</div></div>
+</div>
+<a id="method_SqlVariable"></a><div class="element clickable method public method_SqlVariable" data-toggle="collapse" data-target=".method_SqlVariable .collapse">
+<h2>Properly escapes $mixData to be used as a SQL query parameter.</h2>
+<pre>SqlVariable(mixed $mixData, boolean $blnIncludeEquality, boolean $blnReverseEquality) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>If IncludeEquality is set (usually not), then include an equality operator.
+So for most data, it would just be "=".  But, for example,
+if $mixData is NULL, then most RDBMS's require the use of "IS".</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$mixData</h4>
+<code>mixed</code>
+</div>
+<div class="subelement argument">
+<h4>$blnIncludeEquality</h4>
+<code>boolean</code><p>whether or not to include an equality operator</p></div>
+<div class="subelement argument">
+<h4>$blnReverseEquality</h4>
+<code>boolean</code><p>whether the included equality operator should be a "NOT EQUAL", e.g. "!="</p>
+</div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>the properly formatted SQL variable</div>
+</div></div>
+</div>
+<a id="method_TransactionBegin"></a><div class="element clickable method public method_TransactionBegin" data-toggle="collapse" data-target=".method_TransactionBegin .collapse">
+<h2>TransactionBegin()
+        </h2>
+<pre>TransactionBegin() </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QPdoDatabase::TransactionBegin()</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_TransactionCommit"></a><div class="element clickable method public method_TransactionCommit" data-toggle="collapse" data-target=".method_TransactionCommit .collapse">
+<h2>TransactionCommit()
+        </h2>
+<pre>TransactionCommit() </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QPdoDatabase::TransactionCommit()</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_TransactionRollBack"></a><div class="element clickable method public method_TransactionRollBack" data-toggle="collapse" data-target=".method_TransactionRollBack .collapse">
+<h2>TransactionRollBack()
+        </h2>
+<pre>TransactionRollBack() </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QPdoDatabase::TransactionRollBack()</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method___construct"></a><div class="element clickable method public method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
+<h2>Constructs a Database Adapter based on the database index and the configuration array of properties for this particular adapter
+Sets up the base-level configuration properties for this database,
+namely DB Profiling and Database Index</h2>
+<pre>__construct(integer $intDatabaseIndex, string[] $objConfigArray) : void</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QDatabaseBase::__construct()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QPdoDatabase::__construct()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$intDatabaseIndex</h4>
+<code>integer</code>
+</div>
+<div class="subelement argument">
+<h4>$objConfigArray</h4>
+<code>string[]</code><p>configuration array as passed in to the constructor by QApplicationBase::InitializeDatabaseConnections();</p>
+</div>
+</div></div>
+</div>
+<a id="method___get"></a><div class="element clickable method public method___get" data-toggle="collapse" data-target=".method___get .collapse">
+<h2>Override method to perform a property "Get"
+This will get the value of $strName
+All inhereted objects that call __get() should always fall through
+to calling parent::__get() in a try/catch statement catching
+for CallerExceptions.</h2>
+<pre>__get(string $strName) : mixed</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QPdoDatabase::__get()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$strName</h4>
+<code>string</code><p>Name of the property to get</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>mixed</code>the returned property</div>
+</div></div>
+</div>
+<a id="method___set"></a><div class="element clickable method public method___set" data-toggle="collapse" data-target=".method___set .collapse">
+<h2>Override method to perform a property "Set"
+This will set the property $strName to be $mixValue
+All inhereted objects that call __set() should always fall through
+to calling parent::__set() in a try/catch statement catching
+for CallerExceptions.</h2>
+<pre>__set(string $strName, string $mixValue) : mixed</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QBaseClass::__set()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QDatabaseBase::__set()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QPdoDatabase::__set()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$strName</h4>
+<code>string</code><p>Name of the property to set</p></div>
+<div class="subelement argument">
+<h4>$mixValue</h4>
+<code>string</code><p>New value of the property</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>mixed</code>the property that was set</div>
+</div></div>
+</div>
+<a id="method_ExecuteNonQuery"></a><div class="element clickable method protected method_ExecuteNonQuery" data-toggle="collapse" data-target=".method_ExecuteNonQuery .collapse">
+<h2>ExecuteNonQuery()
+        </h2>
+<pre>ExecuteNonQuery($strNonQuery) </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QPdoDatabase::ExecuteNonQuery()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strNonQuery</h4></div>
+</div></div>
+</div>
+<a id="method_ExecuteQuery"></a><div class="element clickable method protected method_ExecuteQuery" data-toggle="collapse" data-target=".method_ExecuteQuery .collapse">
+<h2>ExecuteQuery()
+        </h2>
+<pre>ExecuteQuery($strQuery) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strQuery</h4></div>
+</div></div>
+</div>
+<a id="method_LogQuery"></a><div class="element clickable method private method_LogQuery" data-toggle="collapse" data-target=".method_LogQuery .collapse">
+<h2>If EnableProfiling is on, then log the query to the profile array</h2>
+<pre>LogQuery(string $strQuery, double $dblQueryTime) : void</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QDatabaseBase::LogQuery()</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QPdoDatabase::LogQuery()</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$strQuery</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$dblQueryTime</h4>
+<code>double</code><p>query execution time in milliseconds</p></div>
+</div></div>
+</div>
+<a id="method_ParseColumnNameArrayFromKeyDefinition"></a><div class="element clickable method private method_ParseColumnNameArrayFromKeyDefinition" data-toggle="collapse" data-target=".method_ParseColumnNameArrayFromKeyDefinition .collapse">
+<h2>ParseColumnNameArrayFromKeyDefinition()
+        </h2>
+<pre>ParseColumnNameArrayFromKeyDefinition($strKeyDefinition) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strKeyDefinition</h4></div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a id="property_blnConnectedFlag"> </a><div class="element clickable property protected property_blnConnectedFlag" data-toggle="collapse" data-target=".property_blnConnectedFlag .collapse">
+<h2></h2>
+<pre>$blnConnectedFlag </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QDatabaseBase::$$blnConnectedFlag</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QPdoDatabase::$$blnConnectedFlag</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_blnEnableProfiling"> </a><div class="element clickable property protected property_blnEnableProfiling" data-toggle="collapse" data-target=".property_blnEnableProfiling .collapse">
+<h2></h2>
+<pre>$blnEnableProfiling </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QDatabaseBase::$$blnEnableProfiling</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QPdoDatabase::$$blnEnableProfiling</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_blnOnlyFullGroupBy"> </a><div class="element clickable property protected property_blnOnlyFullGroupBy" data-toggle="collapse" data-target=".property_blnOnlyFullGroupBy .collapse">
+<h2></h2>
+<pre>$blnOnlyFullGroupBy </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QDatabaseBase::$$blnOnlyFullGroupBy</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QPdoDatabase::$$blnOnlyFullGroupBy</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_intDatabaseIndex"> </a><div class="element clickable property protected property_intDatabaseIndex" data-toggle="collapse" data-target=".property_intDatabaseIndex .collapse">
+<h2></h2>
+<pre>$intDatabaseIndex </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QDatabaseBase::$$intDatabaseIndex</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QPdoDatabase::$$intDatabaseIndex</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_objConfigArray"> </a><div class="element clickable property protected property_objConfigArray" data-toggle="collapse" data-target=".property_objConfigArray .collapse">
+<h2></h2>
+<pre>$objConfigArray </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QDatabaseBase::$$objConfigArray</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QPdoDatabase::$$objConfigArray</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_objMostRecentResult"> </a><div class="element clickable property protected property_objMostRecentResult" data-toggle="collapse" data-target=".property_objMostRecentResult .collapse">
+<h2>most recent query result</h2>
+<pre>$objMostRecentResult : <a href="http://php.net/manual/en/class.pdostatement.php">\PDOStatement</a></pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>access</th>
+<td>protected</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QPdoDatabase::$$objMostRecentResult</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_objPdo"> </a><div class="element clickable property protected property_objPdo" data-toggle="collapse" data-target=".property_objPdo .collapse">
+<h2>connection handler</h2>
+<pre>$objPdo : <a href="http://php.net/manual/en/class.pdo.php">\PDO</a></pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>access</th>
+<td>protected</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QPdoDatabase::$$objPdo</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_strEscapeIdentifierBegin"> </a><div class="element clickable property protected property_strEscapeIdentifierBegin" data-toggle="collapse" data-target=".property_strEscapeIdentifierBegin .collapse">
+<h2></h2>
+<pre>$strEscapeIdentifierBegin </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_strEscapeIdentifierBeginInternal"> </a><div class="element clickable property protected property_strEscapeIdentifierBeginInternal" data-toggle="collapse" data-target=".property_strEscapeIdentifierBeginInternal .collapse">
+<h2></h2>
+<pre>$strEscapeIdentifierBeginInternal </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_strEscapeIdentifierEnd"> </a><div class="element clickable property protected property_strEscapeIdentifierEnd" data-toggle="collapse" data-target=".property_strEscapeIdentifierEnd .collapse">
+<h2></h2>
+<pre>$strEscapeIdentifierEnd </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_strEscapeIdentifierEndInternal"> </a><div class="element clickable property protected property_strEscapeIdentifierEndInternal" data-toggle="collapse" data-target=".property_strEscapeIdentifierEndInternal .collapse">
+<h2></h2>
+<pre>$strEscapeIdentifierEndInternal </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_strProfileArray"> </a><div class="element clickable property protected property_strProfileArray" data-toggle="collapse" data-target=".property_strProfileArray .collapse">
+<h2></h2>
+<pre>$strProfileArray </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>inherited_from</th>
+<td>\QDatabaseBase::$$strProfileArray</td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\QPdoDatabase::$$strProfileArray</td>
+</tr>
+</table>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-constant"></i> Constants</h3>
+<a id="constant_Adapter"> </a><div class="element clickable constant  constant_Adapter" data-toggle="collapse" data-target=".constant_Adapter .collapse">
+<h2>Adapter</h2>
+<pre>Adapter </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_PDO_SQLITE3_DSN_IDENTIFIER"> </a><div class="element clickable constant  constant_PDO_SQLITE3_DSN_IDENTIFIER" data-toggle="collapse" data-target=".constant_PDO_SQLITE3_DSN_IDENTIFIER .collapse">
+<h2>PDO_SQLITE3_DSN_IDENTIFIER</h2>
+<pre>PDO_SQLITE3_DSN_IDENTIFIER </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
+            generated on 2013-03-17T01:59:33+07:00.<br></footer></div>
+</div>
+</body>
+</html>

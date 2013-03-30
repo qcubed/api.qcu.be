@@ -1,0 +1,667 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>QCubed API » \QQueryBuilder</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">QCubed API</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="../packages/Codegen.html"><i class="icon-folder-open"></i> Codegen</a></li>
+<li><a href="../packages/Controls.html"><i class="icon-folder-open"></i> Controls</a></li>
+<li><a href="../packages/Controls%20%20.html"><i class="icon-folder-open"></i> Controls  </a></li>
+<li><a href="../packages/DatabaseAdapters.html"><i class="icon-folder-open"></i> DatabaseAdapters</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/My%20QCubed%20Application.html"><i class="icon-folder-open"></i> My QCubed Application</a></li>
+<li><a href="../packages/Sessions.html"><i class="icon-folder-open"></i> Sessions</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">4384</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul><li>todo 
+                <span class="label label-info">28</span>
+</li></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">8</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method_AddExpandAsArrayNode" title="AddExpandAsArrayNode :: "><span class="description">AddExpandAsArrayNode()
+        </span><pre>AddExpandAsArrayNode()</pre></a></li>
+<li class="method public "><a href="#method_AddFromItem" title="AddFromItem :: "><span class="description">AddFromItem()
+        </span><pre>AddFromItem()</pre></a></li>
+<li class="method public "><a href="#method_AddGroupByItem" title="AddGroupByItem :: "><span class="description">AddGroupByItem()
+        </span><pre>AddGroupByItem()</pre></a></li>
+<li class="method public "><a href="#method_AddHavingItem" title="AddHavingItem :: "><span class="description">AddHavingItem()
+        </span><pre>AddHavingItem()</pre></a></li>
+<li class="method public "><a href="#method_AddJoinCustomItem" title="AddJoinCustomItem :: "><span class="description">AddJoinCustomItem()
+        </span><pre>AddJoinCustomItem()</pre></a></li>
+<li class="method public "><a href="#method_AddJoinCustomSqlItem" title="AddJoinCustomSqlItem :: "><span class="description">AddJoinCustomSqlItem()
+        </span><pre>AddJoinCustomSqlItem()</pre></a></li>
+<li class="method public "><a href="#method_AddJoinItem" title="AddJoinItem :: "><span class="description">AddJoinItem()
+        </span><pre>AddJoinItem()</pre></a></li>
+<li class="method public "><a href="#method_AddOrderByItem" title="AddOrderByItem :: "><span class="description">AddOrderByItem()
+        </span><pre>AddOrderByItem()</pre></a></li>
+<li class="method public "><a href="#method_AddSelectFunction" title="AddSelectFunction :: "><span class="description">AddSelectFunction()
+        </span><pre>AddSelectFunction()</pre></a></li>
+<li class="method public "><a href="#method_AddSelectItem" title="AddSelectItem :: "><span class="description">AddSelectItem()
+        </span><pre>AddSelectItem()</pre></a></li>
+<li class="method public "><a href="#method_AddWhereItem" title="AddWhereItem :: "><span class="description">AddWhereItem()
+        </span><pre>AddWhereItem()</pre></a></li>
+<li class="method public "><a href="#method_GetStatement" title="GetStatement :: "><span class="description">GetStatement()
+        </span><pre>GetStatement()</pre></a></li>
+<li class="method public "><a href="#method_GetTableAlias" title="GetTableAlias :: "><span class="description">GetTableAlias()
+        </span><pre>GetTableAlias()</pre></a></li>
+<li class="method public "><a href="#method_GetVirtualNode" title="GetVirtualNode :: "><span class="description">GetVirtualNode()
+        </span><pre>GetVirtualNode()</pre></a></li>
+<li class="method public inherited"><a href="#method_OverrideAttributes" title="OverrideAttributes :: This allows you to set any properties, given by a name-value pair list
+in mixOverrideArray."><span class="description">This allows you to set any properties, given by a name-value pair list
+in mixOverrideArray.</span><pre>OverrideAttributes()</pre></a></li>
+<li class="method public "><a href="#method_SetCountOnlyFlag" title="SetCountOnlyFlag :: "><span class="description">SetCountOnlyFlag()
+        </span><pre>SetCountOnlyFlag()</pre></a></li>
+<li class="method public "><a href="#method_SetDistinctFlag" title="SetDistinctFlag :: "><span class="description">SetDistinctFlag()
+        </span><pre>SetDistinctFlag()</pre></a></li>
+<li class="method public "><a href="#method_SetLimitInfo" title="SetLimitInfo :: "><span class="description">SetLimitInfo()
+        </span><pre>SetLimitInfo()</pre></a></li>
+<li class="method public "><a href="#method_SetVirtualNode" title="SetVirtualNode :: "><span class="description">SetVirtualNode()
+        </span><pre>SetVirtualNode()</pre></a></li>
+<li class="method public "><a href="#method___construct" title="__construct :: "><span class="description">__construct()
+        </span><pre>__construct()</pre></a></li>
+<li class="method public "><a href="#method___get" title='__get :: Override method to perform a property "Get"
+This will get the value of $strName
+All inhereted objects that call __get() should always fall through
+to calling parent::__get() in a try/catch statement catching
+for CallerExceptions.'><span class="description">Override method to perform a property "Get"
+This will get the value of $strName
+All inhereted objects that call __get() should always fall through
+to calling parent::__get() in a try/catch statement catching
+for CallerExceptions.</span><pre>__get()</pre></a></li>
+<li class="method public inherited"><a href="#method___set" title='__set :: Override method to perform a property "Set"
+This will set the property $strName to be $mixValue
+All inhereted objects that call __set() should always fall through
+to calling parent::__set() in a try/catch statement catching
+for CallerExceptions.'><span class="description">Override method to perform a property "Set"
+This will set the property $strName to be $mixValue
+All inhereted objects that call __set() should always fall through
+to calling parent::__set() in a try/catch statement catching
+for CallerExceptions.</span><pre>__set()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties
+                    <ul>
+<li class="property public "><a href="#property_ColumnAliasArray" title="$ColumnAliasArray :: "><span class="description"></span><pre>$ColumnAliasArray</pre></a></li>
+<li class="property public "><a href="#property_Database" title="$Database :: "><span class="description"></span><pre>$Database</pre></a></li>
+<li class="property public "><a href="#property_ExpandAsArrayNodes" title="$ExpandAsArrayNodes :: "><span class="description"></span><pre>$ExpandAsArrayNodes</pre></a></li>
+<li class="property public "><a href="#property_RootTableName" title="$RootTableName :: "><span class="description"></span><pre>$RootTableName</pre></a></li>
+</ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul>
+<li class="property protected "><a href="#property_blnCountOnlyFlag" title="$blnCountOnlyFlag :: "><span class="description"></span><pre>$blnCountOnlyFlag</pre></a></li>
+<li class="property protected "><a href="#property_blnDistinctFlag" title="$blnDistinctFlag :: "><span class="description"></span><pre>$blnDistinctFlag</pre></a></li>
+<li class="property protected "><a href="#property_intColumnAliasCount" title="$intColumnAliasCount :: "><span class="description"></span><pre>$intColumnAliasCount</pre></a></li>
+<li class="property protected "><a href="#property_intTableAliasCount" title="$intTableAliasCount :: "><span class="description"></span><pre>$intTableAliasCount</pre></a></li>
+<li class="property protected "><a href="#property_objDatabase" title="$objDatabase :: "><span class="description"></span><pre>$objDatabase</pre></a></li>
+<li class="property protected "><a href="#property_objVirtualNodeArray" title="$objVirtualNodeArray :: "><span class="description"></span><pre>$objVirtualNodeArray</pre></a></li>
+<li class="property protected "><a href="#property_strColumnAliasArray" title="$strColumnAliasArray :: "><span class="description"></span><pre>$strColumnAliasArray</pre></a></li>
+<li class="property protected "><a href="#property_strEscapeIdentifierBegin" title="$strEscapeIdentifierBegin :: "><span class="description"></span><pre>$strEscapeIdentifierBegin</pre></a></li>
+<li class="property protected "><a href="#property_strEscapeIdentifierEnd" title="$strEscapeIdentifierEnd :: "><span class="description"></span><pre>$strEscapeIdentifierEnd</pre></a></li>
+<li class="property protected "><a href="#property_strExpandAsArrayNodes" title="$strExpandAsArrayNodes :: "><span class="description"></span><pre>$strExpandAsArrayNodes</pre></a></li>
+<li class="property protected "><a href="#property_strFromArray" title="$strFromArray :: "><span class="description"></span><pre>$strFromArray</pre></a></li>
+<li class="property protected "><a href="#property_strGroupByArray" title="$strGroupByArray :: "><span class="description"></span><pre>$strGroupByArray</pre></a></li>
+<li class="property protected "><a href="#property_strHavingArray" title="$strHavingArray :: "><span class="description"></span><pre>$strHavingArray</pre></a></li>
+<li class="property protected "><a href="#property_strJoinArray" title="$strJoinArray :: "><span class="description"></span><pre>$strJoinArray</pre></a></li>
+<li class="property protected "><a href="#property_strJoinConditionArray" title="$strJoinConditionArray :: "><span class="description"></span><pre>$strJoinConditionArray</pre></a></li>
+<li class="property protected "><a href="#property_strLimitInfo" title="$strLimitInfo :: "><span class="description"></span><pre>$strLimitInfo</pre></a></li>
+<li class="property protected "><a href="#property_strOrderByArray" title="$strOrderByArray :: "><span class="description"></span><pre>$strOrderByArray</pre></a></li>
+<li class="property protected "><a href="#property_strRootTableName" title="$strRootTableName :: "><span class="description"></span><pre>$strRootTableName</pre></a></li>
+<li class="property protected "><a href="#property_strSelectArray" title="$strSelectArray :: "><span class="description"></span><pre>$strSelectArray</pre></a></li>
+<li class="property protected "><a href="#property_strTableAliasArray" title="$strTableAliasArray :: "><span class="description"></span><pre>$strTableAliasArray</pre></a></li>
+<li class="property protected "><a href="#property_strWhereArray" title="$strWhereArray :: "><span class="description"></span><pre>$strWhereArray</pre></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a id="\QQueryBuilder"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/global.html">global</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/QQueryBuilder.html">QQueryBuilder</a>
+</li>
+</ul>
+<div class="element class">
+<p class="short_description">QQueryBuilder class</p>
+<div class="details">
+<div class="long_description"><p>It provides
+proper error handling of property getters and setters.  It also
+provides the OverrideAttribute functionality.</p></div>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method_AddExpandAsArrayNode"></a><div class="element clickable method public method_AddExpandAsArrayNode" data-toggle="collapse" data-target=".method_AddExpandAsArrayNode .collapse">
+<h2>AddExpandAsArrayNode()
+        </h2>
+<pre>AddExpandAsArrayNode($objNode) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$objNode</h4></div>
+</div></div>
+</div>
+<a id="method_AddFromItem"></a><div class="element clickable method public method_AddFromItem" data-toggle="collapse" data-target=".method_AddFromItem .collapse">
+<h2>AddFromItem()
+        </h2>
+<pre>AddFromItem($strTableName) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strTableName</h4></div>
+</div></div>
+</div>
+<a id="method_AddGroupByItem"></a><div class="element clickable method public method_AddGroupByItem" data-toggle="collapse" data-target=".method_AddGroupByItem .collapse">
+<h2>AddGroupByItem()
+        </h2>
+<pre>AddGroupByItem($strItem) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strItem</h4></div>
+</div></div>
+</div>
+<a id="method_AddHavingItem"></a><div class="element clickable method public method_AddHavingItem" data-toggle="collapse" data-target=".method_AddHavingItem .collapse">
+<h2>AddHavingItem()
+        </h2>
+<pre>AddHavingItem($strItem) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strItem</h4></div>
+</div></div>
+</div>
+<a id="method_AddJoinCustomItem"></a><div class="element clickable method public method_AddJoinCustomItem" data-toggle="collapse" data-target=".method_AddJoinCustomItem .collapse">
+<h2>AddJoinCustomItem()
+        </h2>
+<pre>AddJoinCustomItem($strJoinTableName, $strJoinTableAlias, \QQCondition $objJoinCondition) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strJoinTableName</h4></div>
+<div class="subelement argument"><h4>$strJoinTableAlias</h4></div>
+<div class="subelement argument"><h4>$objJoinCondition</h4></div>
+</div></div>
+</div>
+<a id="method_AddJoinCustomSqlItem"></a><div class="element clickable method public method_AddJoinCustomSqlItem" data-toggle="collapse" data-target=".method_AddJoinCustomSqlItem .collapse">
+<h2>AddJoinCustomSqlItem()
+        </h2>
+<pre>AddJoinCustomSqlItem($strSql) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strSql</h4></div>
+</div></div>
+</div>
+<a id="method_AddJoinItem"></a><div class="element clickable method public method_AddJoinItem" data-toggle="collapse" data-target=".method_AddJoinItem .collapse">
+<h2>AddJoinItem()
+        </h2>
+<pre>AddJoinItem($strJoinTableName, $strJoinTableAlias, $strTableName, $strColumnName, $strLinkedColumnName, \QQCondition $objJoinCondition) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strJoinTableName</h4></div>
+<div class="subelement argument"><h4>$strJoinTableAlias</h4></div>
+<div class="subelement argument"><h4>$strTableName</h4></div>
+<div class="subelement argument"><h4>$strColumnName</h4></div>
+<div class="subelement argument"><h4>$strLinkedColumnName</h4></div>
+<div class="subelement argument"><h4>$objJoinCondition</h4></div>
+</div></div>
+</div>
+<a id="method_AddOrderByItem"></a><div class="element clickable method public method_AddOrderByItem" data-toggle="collapse" data-target=".method_AddOrderByItem .collapse">
+<h2>AddOrderByItem()
+        </h2>
+<pre>AddOrderByItem($strItem) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strItem</h4></div>
+</div></div>
+</div>
+<a id="method_AddSelectFunction"></a><div class="element clickable method public method_AddSelectFunction" data-toggle="collapse" data-target=".method_AddSelectFunction .collapse">
+<h2>AddSelectFunction()
+        </h2>
+<pre>AddSelectFunction($strFunctionName, $strColumnName, $strFullAlias) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strFunctionName</h4></div>
+<div class="subelement argument"><h4>$strColumnName</h4></div>
+<div class="subelement argument"><h4>$strFullAlias</h4></div>
+</div></div>
+</div>
+<a id="method_AddSelectItem"></a><div class="element clickable method public method_AddSelectItem" data-toggle="collapse" data-target=".method_AddSelectItem .collapse">
+<h2>AddSelectItem()
+        </h2>
+<pre>AddSelectItem($strTableName, $strColumnName, $strFullAlias) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strTableName</h4></div>
+<div class="subelement argument"><h4>$strColumnName</h4></div>
+<div class="subelement argument"><h4>$strFullAlias</h4></div>
+</div></div>
+</div>
+<a id="method_AddWhereItem"></a><div class="element clickable method public method_AddWhereItem" data-toggle="collapse" data-target=".method_AddWhereItem .collapse">
+<h2>AddWhereItem()
+        </h2>
+<pre>AddWhereItem($strItem) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strItem</h4></div>
+</div></div>
+</div>
+<a id="method_GetStatement"></a><div class="element clickable method public method_GetStatement" data-toggle="collapse" data-target=".method_GetStatement .collapse">
+<h2>GetStatement()
+        </h2>
+<pre>GetStatement() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_GetTableAlias"></a><div class="element clickable method public method_GetTableAlias" data-toggle="collapse" data-target=".method_GetTableAlias .collapse">
+<h2>GetTableAlias()
+        </h2>
+<pre>GetTableAlias($strTableName) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strTableName</h4></div>
+</div></div>
+</div>
+<a id="method_GetVirtualNode"></a><div class="element clickable method public method_GetVirtualNode" data-toggle="collapse" data-target=".method_GetVirtualNode .collapse">
+<h2>GetVirtualNode()
+        </h2>
+<pre>GetVirtualNode($strName) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strName</h4></div>
+</div></div>
+</div>
+<a id="method_OverrideAttributes"></a><div class="element clickable method public method_OverrideAttributes" data-toggle="collapse" data-target=".method_OverrideAttributes .collapse">
+<h2>This allows you to set any properties, given by a name-value pair list
+in mixOverrideArray.</h2>
+<pre>OverrideAttributes($mixOverrideArray) : void</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Each item in mixOverrideArray needs to be either a string in the format
+of Property=Value or an array in the format of array(Property => Value).
+OverrideAttributes() will basically call
+$this->Property = Value for each string element in the array.</p>
+
+<p>Value can be surrounded by quotes... but this is optional.</p></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QBaseClass::OverrideAttributes()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$mixOverrideArray</h4></div>
+</div></div>
+</div>
+<a id="method_SetCountOnlyFlag"></a><div class="element clickable method public method_SetCountOnlyFlag" data-toggle="collapse" data-target=".method_SetCountOnlyFlag .collapse">
+<h2>SetCountOnlyFlag()
+        </h2>
+<pre>SetCountOnlyFlag() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_SetDistinctFlag"></a><div class="element clickable method public method_SetDistinctFlag" data-toggle="collapse" data-target=".method_SetDistinctFlag .collapse">
+<h2>SetDistinctFlag()
+        </h2>
+<pre>SetDistinctFlag() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_SetLimitInfo"></a><div class="element clickable method public method_SetLimitInfo" data-toggle="collapse" data-target=".method_SetLimitInfo .collapse">
+<h2>SetLimitInfo()
+        </h2>
+<pre>SetLimitInfo($strLimitInfo) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strLimitInfo</h4></div>
+</div></div>
+</div>
+<a id="method_SetVirtualNode"></a><div class="element clickable method public method_SetVirtualNode" data-toggle="collapse" data-target=".method_SetVirtualNode .collapse">
+<h2>SetVirtualNode()
+        </h2>
+<pre>SetVirtualNode($strName, \QQSubQueryNode $objNode) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strName</h4></div>
+<div class="subelement argument"><h4>$objNode</h4></div>
+</div></div>
+</div>
+<a id="method___construct"></a><div class="element clickable method public method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
+<h2>__construct()
+        </h2>
+<pre>__construct(\QDatabaseBase $objDatabase, $strRootTableName) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$objDatabase</h4></div>
+<div class="subelement argument"><h4>$strRootTableName</h4></div>
+</div></div>
+</div>
+<a id="method___get"></a><div class="element clickable method public method___get" data-toggle="collapse" data-target=".method___get .collapse">
+<h2>Override method to perform a property "Get"
+This will get the value of $strName
+All inhereted objects that call __get() should always fall through
+to calling parent::__get() in a try/catch statement catching
+for CallerExceptions.</h2>
+<pre>__get(string $strName) : mixed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$strName</h4>
+<code>string</code><p>Name of the property to get</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>mixed</code>the returned property</div>
+</div></div>
+</div>
+<a id="method___set"></a><div class="element clickable method public method___set" data-toggle="collapse" data-target=".method___set .collapse">
+<h2>Override method to perform a property "Set"
+This will set the property $strName to be $mixValue
+All inhereted objects that call __set() should always fall through
+to calling parent::__set() in a try/catch statement catching
+for CallerExceptions.</h2>
+<pre>__set(string $strName, string $mixValue) : mixed</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QBaseClass::__set()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$strName</h4>
+<code>string</code><p>Name of the property to set</p></div>
+<div class="subelement argument">
+<h4>$mixValue</h4>
+<code>string</code><p>New value of the property</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>mixed</code>the property that was set</div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a id="property_ColumnAliasArray"> </a><div class="element clickable property public property_ColumnAliasArray" data-toggle="collapse" data-target=".property_ColumnAliasArray .collapse">
+<h2></h2>
+<pre>$ColumnAliasArray : string[]</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>magic</th>
+<td></td>
+</tr>
+<tr>
+<th>property</th>
+<td></td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_Database"> </a><div class="element clickable property public property_Database" data-toggle="collapse" data-target=".property_Database .collapse">
+<h2></h2>
+<pre>$Database : <a href="../classes/QDatabaseBase.html">\QDatabaseBase</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>magic</th>
+<td></td>
+</tr>
+<tr>
+<th>property</th>
+<td></td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_ExpandAsArrayNodes"> </a><div class="element clickable property public property_ExpandAsArrayNodes" data-toggle="collapse" data-target=".property_ExpandAsArrayNodes .collapse">
+<h2></h2>
+<pre>$ExpandAsArrayNodes : string[]</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>magic</th>
+<td></td>
+</tr>
+<tr>
+<th>property</th>
+<td></td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_RootTableName"> </a><div class="element clickable property public property_RootTableName" data-toggle="collapse" data-target=".property_RootTableName .collapse">
+<h2></h2>
+<pre>$RootTableName : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>magic</th>
+<td></td>
+</tr>
+<tr>
+<th>property</th>
+<td></td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_blnCountOnlyFlag"> </a><div class="element clickable property protected property_blnCountOnlyFlag" data-toggle="collapse" data-target=".property_blnCountOnlyFlag .collapse">
+<h2></h2>
+<pre>$blnCountOnlyFlag </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_blnDistinctFlag"> </a><div class="element clickable property protected property_blnDistinctFlag" data-toggle="collapse" data-target=".property_blnDistinctFlag .collapse">
+<h2></h2>
+<pre>$blnDistinctFlag </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_intColumnAliasCount"> </a><div class="element clickable property protected property_intColumnAliasCount" data-toggle="collapse" data-target=".property_intColumnAliasCount .collapse">
+<h2></h2>
+<pre>$intColumnAliasCount </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_intTableAliasCount"> </a><div class="element clickable property protected property_intTableAliasCount" data-toggle="collapse" data-target=".property_intTableAliasCount .collapse">
+<h2></h2>
+<pre>$intTableAliasCount </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_objDatabase"> </a><div class="element clickable property protected property_objDatabase" data-toggle="collapse" data-target=".property_objDatabase .collapse">
+<h2></h2>
+<pre>$objDatabase </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_objVirtualNodeArray"> </a><div class="element clickable property protected property_objVirtualNodeArray" data-toggle="collapse" data-target=".property_objVirtualNodeArray .collapse">
+<h2></h2>
+<pre>$objVirtualNodeArray : <a href="qcubed._core.framework.QQuery.class.html#%5CQQVirtualNode">\QQVirtualNode[]</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_strColumnAliasArray"> </a><div class="element clickable property protected property_strColumnAliasArray" data-toggle="collapse" data-target=".property_strColumnAliasArray .collapse">
+<h2></h2>
+<pre>$strColumnAliasArray </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_strEscapeIdentifierBegin"> </a><div class="element clickable property protected property_strEscapeIdentifierBegin" data-toggle="collapse" data-target=".property_strEscapeIdentifierBegin .collapse">
+<h2></h2>
+<pre>$strEscapeIdentifierBegin </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_strEscapeIdentifierEnd"> </a><div class="element clickable property protected property_strEscapeIdentifierEnd" data-toggle="collapse" data-target=".property_strEscapeIdentifierEnd .collapse">
+<h2></h2>
+<pre>$strEscapeIdentifierEnd </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_strExpandAsArrayNodes"> </a><div class="element clickable property protected property_strExpandAsArrayNodes" data-toggle="collapse" data-target=".property_strExpandAsArrayNodes .collapse">
+<h2></h2>
+<pre>$strExpandAsArrayNodes </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_strFromArray"> </a><div class="element clickable property protected property_strFromArray" data-toggle="collapse" data-target=".property_strFromArray .collapse">
+<h2></h2>
+<pre>$strFromArray </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_strGroupByArray"> </a><div class="element clickable property protected property_strGroupByArray" data-toggle="collapse" data-target=".property_strGroupByArray .collapse">
+<h2></h2>
+<pre>$strGroupByArray </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_strHavingArray"> </a><div class="element clickable property protected property_strHavingArray" data-toggle="collapse" data-target=".property_strHavingArray .collapse">
+<h2></h2>
+<pre>$strHavingArray </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_strJoinArray"> </a><div class="element clickable property protected property_strJoinArray" data-toggle="collapse" data-target=".property_strJoinArray .collapse">
+<h2></h2>
+<pre>$strJoinArray </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_strJoinConditionArray"> </a><div class="element clickable property protected property_strJoinConditionArray" data-toggle="collapse" data-target=".property_strJoinConditionArray .collapse">
+<h2></h2>
+<pre>$strJoinConditionArray </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_strLimitInfo"> </a><div class="element clickable property protected property_strLimitInfo" data-toggle="collapse" data-target=".property_strLimitInfo .collapse">
+<h2></h2>
+<pre>$strLimitInfo </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_strOrderByArray"> </a><div class="element clickable property protected property_strOrderByArray" data-toggle="collapse" data-target=".property_strOrderByArray .collapse">
+<h2></h2>
+<pre>$strOrderByArray </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_strRootTableName"> </a><div class="element clickable property protected property_strRootTableName" data-toggle="collapse" data-target=".property_strRootTableName .collapse">
+<h2></h2>
+<pre>$strRootTableName </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_strSelectArray"> </a><div class="element clickable property protected property_strSelectArray" data-toggle="collapse" data-target=".property_strSelectArray .collapse">
+<h2></h2>
+<pre>$strSelectArray </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_strTableAliasArray"> </a><div class="element clickable property protected property_strTableAliasArray" data-toggle="collapse" data-target=".property_strTableAliasArray .collapse">
+<h2></h2>
+<pre>$strTableAliasArray </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_strWhereArray"> </a><div class="element clickable property protected property_strWhereArray" data-toggle="collapse" data-target=".property_strWhereArray .collapse">
+<h2></h2>
+<pre>$strWhereArray </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
+            generated on 2013-03-17T02:01:15+07:00.<br></footer></div>
+</div>
+</body>
+</html>

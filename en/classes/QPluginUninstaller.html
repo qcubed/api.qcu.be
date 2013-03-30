@@ -1,0 +1,444 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>QCubed API » \QPluginUninstaller</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">QCubed API</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="../packages/Codegen.html"><i class="icon-folder-open"></i> Codegen</a></li>
+<li><a href="../packages/Controls.html"><i class="icon-folder-open"></i> Controls</a></li>
+<li><a href="../packages/Controls%20%20.html"><i class="icon-folder-open"></i> Controls  </a></li>
+<li><a href="../packages/DatabaseAdapters.html"><i class="icon-folder-open"></i> DatabaseAdapters</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/My%20QCubed%20Application.html"><i class="icon-folder-open"></i> My QCubed Application</a></li>
+<li><a href="../packages/Sessions.html"><i class="icon-folder-open"></i> Sessions</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">4384</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul><li>todo 
+                <span class="label label-info">28</span>
+</li></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">8</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public inherited"><a href="#method_cleanupExtractedFiles" title="cleanupExtractedFiles :: "><span class="description">cleanupExtractedFiles()
+        </span><pre>cleanupExtractedFiles()</pre></a></li>
+<li class="method public inherited"><a href="#method_getLastError" title="getLastError :: "><span class="description">getLastError()
+        </span><pre>getLastError()</pre></a></li>
+<li class="method public inherited"><a href="#method_getMasterConfigFilePath" title="getMasterConfigFilePath :: "><span class="description">getMasterConfigFilePath()
+        </span><pre>getMasterConfigFilePath()</pre></a></li>
+<li class="method public inherited"><a href="#method_getMasterExamplesFilePath" title="getMasterExamplesFilePath :: "><span class="description">getMasterExamplesFilePath()
+        </span><pre>getMasterExamplesFilePath()</pre></a></li>
+<li class="method public inherited"><a href="#method_getMasterIncludeFilePath" title="getMasterIncludeFilePath :: "><span class="description">getMasterIncludeFilePath()
+        </span><pre>getMasterIncludeFilePath()</pre></a></li>
+<li class="method public inherited"><a href="#method_isPluginInstalled" title="isPluginInstalled :: Given a plugin name, returns true if a plugin with this name is installed on the system."><span class="description">Given a plugin name, returns true if a plugin with this name is installed on the system.</span><pre>isPluginInstalled()</pre></a></li>
+<li class="method public "><a href="#method_uninstallExisting" title="uninstallExisting :: "><span class="description">uninstallExisting()
+        </span><pre>uninstallExisting()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul>
+<li class="method protected inherited"><a href="#method_getBeginMarker" title="getBeginMarker :: "><span class="description">getBeginMarker()
+        </span><pre>getBeginMarker()</pre></a></li>
+<li class="method protected inherited"><a href="#method_getEndMarker" title="getEndMarker :: "><span class="description">getEndMarker()
+        </span><pre>getEndMarker()</pre></a></li>
+<li class="method protected inherited"><a href="#method_replaceFileSection" title="replaceFileSection :: "><span class="description">replaceFileSection()
+        </span><pre>replaceFileSection()</pre></a></li>
+<li class="method protected inherited"><a href="#method_stripExtraNewlines" title="stripExtraNewlines :: "><span class="description">stripExtraNewlines()
+        </span><pre>stripExtraNewlines()</pre></a></li>
+<li class="method protected inherited"><a href="#method_writeFileHelper" title="writeFileHelper :: Copies the file to the destination folder for the plugin,
+creating all relevant directories in the process, if necessary."><span class="description">Copies the file to the destination folder for the plugin,
+creating all relevant directories in the process, if necessary.</span><pre>writeFileHelper()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header private">» Private
+                    <ul>
+<li class="method private "><a href="#method_deleteFiles" title="deleteFiles :: "><span class="description">deleteFiles()
+        </span><pre>deleteFiles()</pre></a></li>
+<li class="method private "><a href="#method_deleteFromMasterConfig" title="deleteFromMasterConfig :: "><span class="description">deleteFromMasterConfig()
+        </span><pre>deleteFromMasterConfig()</pre></a></li>
+<li class="method private "><a href="#method_removeMarkedSectionHelper" title="removeMarkedSectionHelper :: "><span class="description">removeMarkedSectionHelper()
+        </span><pre>removeMarkedSectionHelper()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties
+                    <ul></ul>
+</li>
+<li class="nav-header private">» Private
+                    <ul><li class="property private inherited"><a href="#property_strLastError" title="$strLastError :: "><span class="description"></span><pre>$strLastError</pre></a></li></ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-constant"></i> Constants
+                    <ul>
+<li class="constant  inherited"><a href="#constant_ONLINE_PLUGIN_REPOSITORY" title="ONLINE_PLUGIN_REPOSITORY :: "><span class="description">ONLINE_PLUGIN_REPOSITORY</span><pre>ONLINE_PLUGIN_REPOSITORY</pre></a></li>
+<li class="constant  inherited"><a href="#constant_PLUGIN_CONFIG_FILE" title="PLUGIN_CONFIG_FILE :: "><span class="description">&lt;p&gt;Name of the the file defines plugin settings in XML format.&lt;/p&gt;</span><pre>PLUGIN_CONFIG_FILE</pre></a></li>
+<li class="constant  inherited"><a href="#constant_PLUGIN_CONFIG_GENERATION_FILE" title="PLUGIN_CONFIG_GENERATION_FILE :: "><span class="description">&lt;p&gt;Name of the the file defines plugin settings in PHP format.&lt;/p&gt;</span><pre>PLUGIN_CONFIG_GENERATION_FILE</pre></a></li>
+<li class="constant  inherited"><a href="#constant_PLUGIN_EXTRACTION_DIR" title="PLUGIN_EXTRACTION_DIR :: "><span class="description">PLUGIN_EXTRACTION_DIR</span><pre>PLUGIN_EXTRACTION_DIR</pre></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a id="\QPluginUninstaller"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/global.html">global</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/QPluginUninstaller.html">QPluginUninstaller</a>
+</li>
+</ul>
+<div class="element class">
+<p class="short_description">This class takes care of uninstalling existing plugins - removal of
+files, as well as modding any configuration files that were touched
+by the plugin.</p>
+<div class="details">
+<div class="long_description"><p>Remember - don't ever uninstall the plugin by hand.
+Always use this class / UI encapsulation of this class.</p></div>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method_cleanupExtractedFiles"></a><div class="element clickable method public method_cleanupExtractedFiles" data-toggle="collapse" data-target=".method_cleanupExtractedFiles .collapse">
+<h2>cleanupExtractedFiles()
+        </h2>
+<pre>cleanupExtractedFiles($strExtractedFolderName) </pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QPluginInstallerBase::cleanupExtractedFiles()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strExtractedFolderName</h4></div>
+</div></div>
+</div>
+<a id="method_getLastError"></a><div class="element clickable method public method_getLastError" data-toggle="collapse" data-target=".method_getLastError .collapse">
+<h2>getLastError()
+        </h2>
+<pre>getLastError() </pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QPluginInstallerBase::getLastError()</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_getMasterConfigFilePath"></a><div class="element clickable method public method_getMasterConfigFilePath" data-toggle="collapse" data-target=".method_getMasterConfigFilePath .collapse">
+<h2>getMasterConfigFilePath()
+        </h2>
+<pre>getMasterConfigFilePath() </pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QPluginInstallerBase::getMasterConfigFilePath()</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_getMasterExamplesFilePath"></a><div class="element clickable method public method_getMasterExamplesFilePath" data-toggle="collapse" data-target=".method_getMasterExamplesFilePath .collapse">
+<h2>getMasterExamplesFilePath()
+        </h2>
+<pre>getMasterExamplesFilePath() </pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QPluginInstallerBase::getMasterExamplesFilePath()</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_getMasterIncludeFilePath"></a><div class="element clickable method public method_getMasterIncludeFilePath" data-toggle="collapse" data-target=".method_getMasterIncludeFilePath .collapse">
+<h2>getMasterIncludeFilePath()
+        </h2>
+<pre>getMasterIncludeFilePath() </pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QPluginInstallerBase::getMasterIncludeFilePath()</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_isPluginInstalled"></a><div class="element clickable method public method_isPluginInstalled" data-toggle="collapse" data-target=".method_isPluginInstalled .collapse">
+<h2>Given a plugin name, returns true if a plugin with this name is installed on the system.</h2>
+<pre>isPluginInstalled($strPluginName) </pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QPluginInstallerBase::isPluginInstalled()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strPluginName</h4></div>
+</div></div>
+</div>
+<a id="method_uninstallExisting"></a><div class="element clickable method public method_uninstallExisting" data-toggle="collapse" data-target=".method_uninstallExisting .collapse">
+<h2>uninstallExisting()
+        </h2>
+<pre>uninstallExisting($strPluginName) </pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strPluginName</h4></div>
+</div></div>
+</div>
+<a id="method_getBeginMarker"></a><div class="element clickable method protected method_getBeginMarker" data-toggle="collapse" data-target=".method_getBeginMarker .collapse">
+<h2>getBeginMarker()
+        </h2>
+<pre>getBeginMarker($strId) </pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QPluginInstallerBase::getBeginMarker()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strId</h4></div>
+</div></div>
+</div>
+<a id="method_getEndMarker"></a><div class="element clickable method protected method_getEndMarker" data-toggle="collapse" data-target=".method_getEndMarker .collapse">
+<h2>getEndMarker()
+        </h2>
+<pre>getEndMarker($strId) </pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QPluginInstallerBase::getEndMarker()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strId</h4></div>
+</div></div>
+</div>
+<a id="method_replaceFileSection"></a><div class="element clickable method protected method_replaceFileSection" data-toggle="collapse" data-target=".method_replaceFileSection .collapse">
+<h2>replaceFileSection()
+        </h2>
+<pre>replaceFileSection($strFilePath, $strSearch, $strReplace) </pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QPluginInstallerBase::replaceFileSection()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strFilePath</h4></div>
+<div class="subelement argument"><h4>$strSearch</h4></div>
+<div class="subelement argument"><h4>$strReplace</h4></div>
+</div></div>
+</div>
+<a id="method_stripExtraNewlines"></a><div class="element clickable method protected method_stripExtraNewlines" data-toggle="collapse" data-target=".method_stripExtraNewlines .collapse">
+<h2>stripExtraNewlines()
+        </h2>
+<pre>stripExtraNewlines($strInput) </pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QPluginInstallerBase::stripExtraNewlines()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strInput</h4></div>
+</div></div>
+</div>
+<a id="method_writeFileHelper"></a><div class="element clickable method protected method_writeFileHelper" data-toggle="collapse" data-target=".method_writeFileHelper .collapse">
+<h2>Copies the file to the destination folder for the plugin,
+creating all relevant directories in the process, if necessary.</h2>
+<pre>writeFileHelper($strSourcePath, $strDestinationPath) </pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QPluginInstallerBase::writeFileHelper()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strSourcePath</h4></div>
+<div class="subelement argument"><h4>$strDestinationPath</h4></div>
+</div></div>
+</div>
+<a id="method_deleteFiles"></a><div class="element clickable method private method_deleteFiles" data-toggle="collapse" data-target=".method_deleteFiles .collapse">
+<h2>deleteFiles()
+        </h2>
+<pre>deleteFiles($strPluginName) </pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strPluginName</h4></div>
+</div></div>
+</div>
+<a id="method_deleteFromMasterConfig"></a><div class="element clickable method private method_deleteFromMasterConfig" data-toggle="collapse" data-target=".method_deleteFromMasterConfig .collapse">
+<h2>deleteFromMasterConfig()
+        </h2>
+<pre>deleteFromMasterConfig($strPluginName) </pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strPluginName</h4></div>
+</div></div>
+</div>
+<a id="method_removeMarkedSectionHelper"></a><div class="element clickable method private method_removeMarkedSectionHelper" data-toggle="collapse" data-target=".method_removeMarkedSectionHelper .collapse">
+<h2>removeMarkedSectionHelper()
+        </h2>
+<pre>removeMarkedSectionHelper($strPluginName, $strFileName) </pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$strPluginName</h4></div>
+<div class="subelement argument"><h4>$strFileName</h4></div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a id="property_strLastError"> </a><div class="element clickable property private property_strLastError" data-toggle="collapse" data-target=".property_strLastError .collapse">
+<h2></h2>
+<pre>$strLastError </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QPluginInstallerBase::$$strLastError</td>
+</tr></table>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-constant"></i> Constants</h3>
+<a id="constant_ONLINE_PLUGIN_REPOSITORY"> </a><div class="element clickable constant  constant_ONLINE_PLUGIN_REPOSITORY" data-toggle="collapse" data-target=".constant_ONLINE_PLUGIN_REPOSITORY .collapse">
+<h2>ONLINE_PLUGIN_REPOSITORY</h2>
+<pre>ONLINE_PLUGIN_REPOSITORY </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QPluginInstallerBase::ONLINE_PLUGIN_REPOSITORY</td>
+</tr></table>
+</div></div>
+</div>
+<a id="constant_PLUGIN_CONFIG_FILE"> </a><div class="element clickable constant  constant_PLUGIN_CONFIG_FILE" data-toggle="collapse" data-target=".constant_PLUGIN_CONFIG_FILE .collapse">
+<h2>&lt;p&gt;Name of the the file defines plugin settings in XML format.&lt;/p&gt;</h2>
+<pre>PLUGIN_CONFIG_FILE : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QPluginInstallerBase::PLUGIN_CONFIG_FILE</td>
+</tr></table>
+</div></div>
+</div>
+<a id="constant_PLUGIN_CONFIG_GENERATION_FILE"> </a><div class="element clickable constant  constant_PLUGIN_CONFIG_GENERATION_FILE" data-toggle="collapse" data-target=".constant_PLUGIN_CONFIG_GENERATION_FILE .collapse">
+<h2>&lt;p&gt;Name of the the file defines plugin settings in PHP format.&lt;/p&gt;</h2>
+<pre>PLUGIN_CONFIG_GENERATION_FILE : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QPluginInstallerBase::PLUGIN_CONFIG_GENERATION_FILE</td>
+</tr></table>
+</div></div>
+</div>
+<a id="constant_PLUGIN_EXTRACTION_DIR"> </a><div class="element clickable constant  constant_PLUGIN_EXTRACTION_DIR" data-toggle="collapse" data-target=".constant_PLUGIN_EXTRACTION_DIR .collapse">
+<h2>PLUGIN_EXTRACTION_DIR</h2>
+<pre>PLUGIN_EXTRACTION_DIR </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QPluginInstallerBase::PLUGIN_EXTRACTION_DIR</td>
+</tr></table>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
+            generated on 2013-03-17T02:01:23+07:00.<br></footer></div>
+</div>
+</body>
+</html>
