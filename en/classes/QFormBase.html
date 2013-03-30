@@ -25,7 +25,6 @@
 <li><a href="../packages/Controls%20%20.html"><i class="icon-folder-open"></i> Controls  </a></li>
 <li><a href="../packages/DatabaseAdapters.html"><i class="icon-folder-open"></i> DatabaseAdapters</a></li>
 <li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
-<li><a href="../packages/My%20QCubed%20Application.html"><i class="icon-folder-open"></i> My QCubed Application</a></li>
 <li><a href="../packages/Sessions.html"><i class="icon-folder-open"></i> Sessions</a></li>
 </ul>
 </li>
@@ -37,10 +36,10 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">4384</span></a></li>
+                <span class="label label-info">2985</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul><li>todo 
-                <span class="label label-info">28</span>
+                <span class="label label-info">27</span>
 </li></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
                 <span class="label label-info">8</span></a></li>
@@ -98,6 +97,7 @@ in all the controls in the form.</span><pre>GetErrorMessages()</pre></a></li>
         </span><pre>GetGrouping()</pre></a></li>
 <li class="method public "><a href="#method_GetJsFileURI" title="GetJsFileURI :: "><span class="description">GetJsFileURI()
         </span><pre>GetJsFileURI()</pre></a></li>
+<li class="method public "><a href="#method_InvalidFormState" title="InvalidFormState :: An invalid form state was found."><span class="description">An invalid form state was found.</span><pre>InvalidFormState()</pre></a></li>
 <li class="method public "><a href="#method_IsCheckableControlRendered" title="IsCheckableControlRendered :: Returns whether or not the cheackable control with the given controlId has been rendered or not."><span class="description">Returns whether or not the cheackable control with the given controlId has been rendered or not.</span><pre>IsCheckableControlRendered()</pre></a></li>
 <li class="method public "><a href="#method_IsPostBack" title="IsPostBack :: Returns whether or not this Form is being run due to a PostBack event (e.g."><span class="description">Returns whether or not this Form is being run due to a PostBack event (e.g.</span><pre>IsPostBack()</pre></a></li>
 <li class="method public inherited"><a href="#method_OverrideAttributes" title="OverrideAttributes :: This allows you to set any properties, given by a name-value pair list
@@ -443,6 +443,18 @@ in all the controls in the form.</h2>
 <h3>Parameters</h3>
 <div class="subelement argument"><h4>$strFile</h4></div>
 </div></div>
+</div>
+<a id="method_InvalidFormState"></a><div class="element clickable method public method_InvalidFormState" data-toggle="collapse" data-target=".method_InvalidFormState .collapse">
+<h2>An invalid form state was found.</h2>
+<pre>InvalidFormState() </pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"><p>We were handed a formstate, but the formstate could not be interpreted. This could be for
+a variety of reasons, and is dependent on the formstate handler. Most likely, the user hit
+the back button past the back button limit of what we remember, or the user lost the session.
+Or, you simply have not set up the form state handler correctly.
+In the past, we threw an exception, but that was not a very user friendly response.
+The response below resubmits the url without a formstate so that a new one will be created.
+Override if you want a different response.</p></div></div></div>
 </div>
 <a id="method_IsCheckableControlRendered"></a><div class="element clickable method public method_IsCheckableControlRendered" data-toggle="collapse" data-target=".method_IsCheckableControlRendered .collapse">
 <h2>Returns whether or not the cheackable control with the given controlId has been rendered or not.</h2>
@@ -1142,7 +1154,7 @@ be included because (1) it hasn't yet been included and (2) it hasn't been speci
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
-            generated on 2013-03-17T02:00:20+07:00.<br></footer></div>
+            generated on 2013-03-30T21:12:08+07:00.<br></footer></div>
 </div>
 </body>
 </html>
