@@ -35,7 +35,7 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">2985</span></a></li>
+                <span class="label label-info">2737</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul><li>todo 
                 <span class="label label-info">27</span>
@@ -91,15 +91,18 @@
 <i class="icon-custom icon-class"></i> Classes</li>
 <li><a href="#QApplication" title="The Application class is an abstract class that statically provides
 information and global utilities for the entire web application.">QApplication</a></li>
-<li><a href="#QMenu" title="Implements a JQuery UI Menu">QMenu</a></li>
-<li><a href="#QPaginator" title="QControl is the user overridable Base-Class for all Controls.">QPaginator</a></li>
-<li><a href="#QSpinner" title="Implements a JQuery UI Spinner Object">QSpinner</a></li>
+<li><a href="#QMenu" title="Class QMenu derived from QMenuBase.">QMenu</a></li>
+<li><a href="#QPaginator" title="Class QPaginator - The paginator control which can be attached to a QDataRepeater or QDataGrid
+This class will take care of the number of pages, current page, next/previous links and so on
+automatically.">QPaginator</a></li>
+<li><a href="#QSpinner" title="Class QSpinner">QSpinner</a></li>
 <li><a href="#QTimerExpiredEvent" title="Use this event with the QJsTimer control
 this event is trigger after a
 delay specified in QJsTimer (param DeltaTime)">QTimerExpiredEvent</a></li>
 <li><a href="#QJsTimer" title="Timer Control:
 This control uses a javascript timer to execute Actions after a defined time
 Periodic or one shot timers are possible.">QJsTimer</a></li>
+<li><a href="#QTabs" title="QTabs is the PHP wrapper for JQueryUI Tabs control">QTabs</a></li>
 <li><a href="#QPostgreSqlPdoDatabaseResult" title="QPostgreSqlPdoDatabaseResult">QPostgreSqlPdoDatabaseResult</a></li>
 <li><a href="#QPostgreSqlPdoDatabaseRow" title="QPostgreSqlPdoDatabaseRow">QPostgreSqlPdoDatabaseRow</a></li>
 <li><a href="#QPostgreSqlPdoDatabaseField" title="QPostgreSqlPdoDatabaseField">QPostgreSqlPdoDatabaseField</a></li>
@@ -138,7 +141,9 @@ causing the exception.">QOracleDatabaseException</a></li>
 		&lt;ul&gt;&lt;li&gt;&lt;strong&gt;item&lt;/strong&gt; Type: &lt;a&gt;jQuery&lt;/a&gt; The currently active menu
 		item.&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;">QMenu_BlurEvent</a></li>
 <li><a href="#QMenu_CreateEvent" title="Triggered when the menu is created.&lt;ul&gt;&lt;li&gt;&lt;strong&gt;event&lt;/strong&gt; Type:
-		&lt;a&gt;Event&lt;/a&gt; &lt;/li&gt; &lt;li&gt;&lt;strong&gt;ui&lt;/strong&gt; Type: &lt;a&gt;Object&lt;/a&gt; &lt;/li&gt;&lt;/ul&gt;">QMenu_CreateEvent</a></li>
+		&lt;a&gt;Event&lt;/a&gt; &lt;/li&gt; &lt;li&gt;&lt;strong&gt;ui&lt;/strong&gt; Type: &lt;a&gt;Object&lt;/a&gt;
+		&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;Note: The &lt;code&gt;ui&lt;/code&gt; object is empty but included for
+		consistency with other events.&lt;/em&gt;&lt;/p&gt;">QMenu_CreateEvent</a></li>
 <li><a href="#QMenu_FocusEvent" title="Triggered when a menu gains focus or when any menu item is
 		activated.&lt;ul&gt;&lt;li&gt;&lt;strong&gt;event&lt;/strong&gt; Type: &lt;a&gt;Event&lt;/a&gt; &lt;/li&gt;
 		&lt;li&gt;&lt;strong&gt;ui&lt;/strong&gt; Type: &lt;a&gt;Object&lt;/a&gt;  &lt;ul&gt;&lt;li&gt;&lt;strong&gt;item&lt;/strong&gt;
@@ -166,17 +171,25 @@ causing the exception.">QOracleDatabaseException</a></li>
 		selected.">QDatepicker_SelectEvent</a></li>
 <li><a href="#QSpinner_ChangeEvent" title="Triggered when the value of the spinner has changed and the input is no
 		longer focused.&lt;ul&gt;&lt;li&gt;&lt;strong&gt;event&lt;/strong&gt; Type: &lt;a&gt;Event&lt;/a&gt; &lt;/li&gt;
-		&lt;li&gt;&lt;strong&gt;ui&lt;/strong&gt; Type: &lt;a&gt;Object&lt;/a&gt; &lt;/li&gt;&lt;/ul&gt;">QSpinner_ChangeEvent</a></li>
+		&lt;li&gt;&lt;strong&gt;ui&lt;/strong&gt; Type: &lt;a&gt;Object&lt;/a&gt; &lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;Note: The
+		&lt;code&gt;ui&lt;/code&gt; object is empty but included for consistency with other
+		events.&lt;/em&gt;&lt;/p&gt;">QSpinner_ChangeEvent</a></li>
 <li><a href="#QSpinner_CreateEvent" title="Triggered when the spinner is created.&lt;ul&gt;&lt;li&gt;&lt;strong&gt;event&lt;/strong&gt; Type:
-		&lt;a&gt;Event&lt;/a&gt; &lt;/li&gt; &lt;li&gt;&lt;strong&gt;ui&lt;/strong&gt; Type: &lt;a&gt;Object&lt;/a&gt; &lt;/li&gt;&lt;/ul&gt;">QSpinner_CreateEvent</a></li>
+		&lt;a&gt;Event&lt;/a&gt; &lt;/li&gt; &lt;li&gt;&lt;strong&gt;ui&lt;/strong&gt; Type: &lt;a&gt;Object&lt;/a&gt;
+		&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;Note: The &lt;code&gt;ui&lt;/code&gt; object is empty but included for
+		consistency with other events.&lt;/em&gt;&lt;/p&gt;">QSpinner_CreateEvent</a></li>
 <li><a href="#QSpinner_SpinEvent" title="Triggered during increment/decrement (to determine direction of spin
 		compare current value with &lt;code&gt;ui.value&lt;/code&gt;).">QSpinner_SpinEvent</a></li>
 <li><a href="#QSpinner_StartEvent" title="Triggered before a spin.">QSpinner_StartEvent</a></li>
 <li><a href="#QSpinner_StopEvent" title="Triggered after a spin.&lt;ul&gt;&lt;li&gt;&lt;strong&gt;event&lt;/strong&gt; Type: &lt;a&gt;Event&lt;/a&gt;
-		&lt;/li&gt; &lt;li&gt;&lt;strong&gt;ui&lt;/strong&gt; Type: &lt;a&gt;Object&lt;/a&gt; &lt;/li&gt;&lt;/ul&gt;">QSpinner_StopEvent</a></li>
+		&lt;/li&gt; &lt;li&gt;&lt;strong&gt;ui&lt;/strong&gt; Type: &lt;a&gt;Object&lt;/a&gt; &lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;Note:
+		The &lt;code&gt;ui&lt;/code&gt; object is empty but included for consistency with other
+		events.&lt;/em&gt;&lt;/p&gt;">QSpinner_StopEvent</a></li>
 <li><a href="#QJqButton_CreateEvent" title="Triggered when the button is created.&lt;ul&gt;&lt;li&gt;&lt;strong&gt;event&lt;/strong&gt; Type:
-		&lt;a&gt;Event&lt;/a&gt; &lt;/li&gt; &lt;li&gt;&lt;strong&gt;ui&lt;/strong&gt; Type: &lt;a&gt;Object&lt;/a&gt; &lt;/li&gt;&lt;/ul&gt;">QJqButton_CreateEvent</a></li>
-<li><a href="#QControlProxy" title="QControl is the user overridable Base-Class for all Controls.">QControlProxy</a></li>
+		&lt;a&gt;Event&lt;/a&gt; &lt;/li&gt; &lt;li&gt;&lt;strong&gt;ui&lt;/strong&gt; Type: &lt;a&gt;Object&lt;/a&gt;
+		&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;Note: The &lt;code&gt;ui&lt;/code&gt; object is empty but included for
+		consistency with other events.&lt;/em&gt;&lt;/p&gt;">QJqButton_CreateEvent</a></li>
+<li><a href="#QControlProxy" title="Class QControlProxy is used to 'proxy' the actions for another control">QControlProxy</a></li>
 <li><a href="#QAbstractSimpleTableColumn" title="Represents a column for a SimpleTable.">QAbstractSimpleTableColumn</a></li>
 <li><a href="#QSimpleTablePropertyColumn" title="A type of column that should be used when the cell data is given by a simple property of the objects inside the
 DataSource array">QSimpleTablePropertyColumn</a></li>
@@ -203,7 +216,9 @@ All the appearance properties should be self-explanatory.">QCheckBoxColumn</a></
 		representing the handle that was changed.&lt;/li&gt; &lt;li&gt;&lt;strong&gt;value&lt;/strong&gt;
 		Type: &lt;a&gt;Number&lt;/a&gt; The current value of the slider.&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;">QSlider_ChangeEvent</a></li>
 <li><a href="#QSlider_CreateEvent" title="Triggered when the slider is created.&lt;ul&gt;&lt;li&gt;&lt;strong&gt;event&lt;/strong&gt; Type:
-		&lt;a&gt;Event&lt;/a&gt; &lt;/li&gt; &lt;li&gt;&lt;strong&gt;ui&lt;/strong&gt; Type: &lt;a&gt;Object&lt;/a&gt; &lt;/li&gt;&lt;/ul&gt;">QSlider_CreateEvent</a></li>
+		&lt;a&gt;Event&lt;/a&gt; &lt;/li&gt; &lt;li&gt;&lt;strong&gt;ui&lt;/strong&gt; Type: &lt;a&gt;Object&lt;/a&gt;
+		&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;Note: The &lt;code&gt;ui&lt;/code&gt; object is empty but included for
+		consistency with other events.&lt;/em&gt;&lt;/p&gt;">QSlider_CreateEvent</a></li>
 <li><a href="#QSlider_SlideEvent" title="Triggered on every mouse move during slide.">QSlider_SlideEvent</a></li>
 <li><a href="#QSlider_StartEvent" title="Triggered when the user starts sliding.&lt;ul&gt;&lt;li&gt;&lt;strong&gt;event&lt;/strong&gt; Type:
 		&lt;a&gt;Event&lt;/a&gt; &lt;/li&gt; &lt;li&gt;&lt;strong&gt;ui&lt;/strong&gt; Type: &lt;a&gt;Object&lt;/a&gt;
@@ -217,18 +232,24 @@ All the appearance properties should be self-explanatory.">QCheckBoxColumn</a></
 		Type: &lt;a&gt;Number&lt;/a&gt; The current value of the slider.&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;">QSlider_StopEvent</a></li>
 <li><a href="#QProgressbar_ChangeEvent" title="Triggered when the value of the progressbar
 		changes.&lt;ul&gt;&lt;li&gt;&lt;strong&gt;event&lt;/strong&gt; Type: &lt;a&gt;Event&lt;/a&gt; &lt;/li&gt;
-		&lt;li&gt;&lt;strong&gt;ui&lt;/strong&gt; Type: &lt;a&gt;Object&lt;/a&gt; &lt;/li&gt;&lt;/ul&gt;">QProgressbar_ChangeEvent</a></li>
+		&lt;li&gt;&lt;strong&gt;ui&lt;/strong&gt; Type: &lt;a&gt;Object&lt;/a&gt; &lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;Note: The
+		&lt;code&gt;ui&lt;/code&gt; object is empty but included for consistency with other
+		events.&lt;/em&gt;&lt;/p&gt;">QProgressbar_ChangeEvent</a></li>
 <li><a href="#QProgressbar_CompleteEvent" title="Triggered when the value of the progressbar reaches the maximum
 		value.&lt;ul&gt;&lt;li&gt;&lt;strong&gt;event&lt;/strong&gt; Type: &lt;a&gt;Event&lt;/a&gt; &lt;/li&gt;
-		&lt;li&gt;&lt;strong&gt;ui&lt;/strong&gt; Type: &lt;a&gt;Object&lt;/a&gt; &lt;/li&gt;&lt;/ul&gt;">QProgressbar_CompleteEvent</a></li>
+		&lt;li&gt;&lt;strong&gt;ui&lt;/strong&gt; Type: &lt;a&gt;Object&lt;/a&gt; &lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;Note: The
+		&lt;code&gt;ui&lt;/code&gt; object is empty but included for consistency with other
+		events.&lt;/em&gt;&lt;/p&gt;">QProgressbar_CompleteEvent</a></li>
 <li><a href="#QProgressbar_CreateEvent" title="Triggered when the progressbar is created.&lt;ul&gt;&lt;li&gt;&lt;strong&gt;event&lt;/strong&gt;
 		Type: &lt;a&gt;Event&lt;/a&gt; &lt;/li&gt; &lt;li&gt;&lt;strong&gt;ui&lt;/strong&gt; Type: &lt;a&gt;Object&lt;/a&gt;
-		&lt;/li&gt;&lt;/ul&gt;">QProgressbar_CreateEvent</a></li>
+		&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;Note: The &lt;code&gt;ui&lt;/code&gt; object is empty but included for
+		consistency with other events.&lt;/em&gt;&lt;/p&gt;">QProgressbar_CreateEvent</a></li>
 <li><a href="#QDataBindException" title="">QDataBindException</a></li>
 <li><a href="#QDroppable_ActivateEvent" title="Triggered when an accepted draggable starts dragging.">QDroppable_ActivateEvent</a></li>
 <li><a href="#QDroppable_CreateEvent" title="Triggered when the droppable is created.&lt;ul&gt;&lt;li&gt;&lt;strong&gt;event&lt;/strong&gt;
 		Type: &lt;a&gt;Event&lt;/a&gt; &lt;/li&gt; &lt;li&gt;&lt;strong&gt;ui&lt;/strong&gt; Type: &lt;a&gt;Object&lt;/a&gt;
-		&lt;/li&gt;&lt;/ul&gt;">QDroppable_CreateEvent</a></li>
+		&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;Note: The &lt;code&gt;ui&lt;/code&gt; object is empty but included for
+		consistency with other events.&lt;/em&gt;&lt;/p&gt;">QDroppable_CreateEvent</a></li>
 <li><a href="#QDroppable_DeactivateEvent" title="Triggered when an accepted draggable stops
 		dragging.&lt;ul&gt;&lt;li&gt;&lt;strong&gt;event&lt;/strong&gt; Type: &lt;a&gt;Event&lt;/a&gt; &lt;/li&gt;
 		&lt;li&gt;&lt;strong&gt;ui&lt;/strong&gt; Type: &lt;a&gt;Object&lt;/a&gt;
@@ -254,7 +275,8 @@ All the appearance properties should be self-explanatory.">QCheckBoxColumn</a></
 <li><a href="#QDroppable_OutEvent" title="Triggered when an accepted draggable is dragged out of the droppable (based
 		on the&lt;a&gt;&lt;code&gt;tolerance&lt;/code&gt;&lt;/a&gt; option).&lt;ul&gt;&lt;li&gt;&lt;strong&gt;event&lt;/strong&gt;
 		Type: &lt;a&gt;Event&lt;/a&gt; &lt;/li&gt; &lt;li&gt;&lt;strong&gt;ui&lt;/strong&gt; Type: &lt;a&gt;Object&lt;/a&gt;
-		&lt;/li&gt;&lt;/ul&gt;">QDroppable_OutEvent</a></li>
+		&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;Note: The &lt;code&gt;ui&lt;/code&gt; object is empty but included for
+		consistency with other events.&lt;/em&gt;&lt;/p&gt;">QDroppable_OutEvent</a></li>
 <li><a href="#QDroppable_OverEvent" title="Triggered when an accepted draggable is dragged over the droppable (based
 		on the&lt;a&gt;&lt;code&gt;tolerance&lt;/code&gt;&lt;/a&gt; option).&lt;ul&gt;&lt;li&gt;&lt;strong&gt;event&lt;/strong&gt;
 		Type: &lt;a&gt;Event&lt;/a&gt; &lt;/li&gt; &lt;li&gt;&lt;strong&gt;ui&lt;/strong&gt; Type: &lt;a&gt;Object&lt;/a&gt;
@@ -268,9 +290,13 @@ All the appearance properties should be self-explanatory.">QCheckBoxColumn</a></
 		object.&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;">QDroppable_OverEvent</a></li>
 <li><a href="#QDialog_BeforeCloseEvent" title="Triggered when a dialog is about to close.">QDialog_BeforeCloseEvent</a></li>
 <li><a href="#QDialog_CloseEvent" title="Triggered when the dialog is closed.&lt;ul&gt;&lt;li&gt;&lt;strong&gt;event&lt;/strong&gt; Type:
-		&lt;a&gt;Event&lt;/a&gt; &lt;/li&gt; &lt;li&gt;&lt;strong&gt;ui&lt;/strong&gt; Type: &lt;a&gt;Object&lt;/a&gt; &lt;/li&gt;&lt;/ul&gt;">QDialog_CloseEvent</a></li>
+		&lt;a&gt;Event&lt;/a&gt; &lt;/li&gt; &lt;li&gt;&lt;strong&gt;ui&lt;/strong&gt; Type: &lt;a&gt;Object&lt;/a&gt;
+		&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;Note: The &lt;code&gt;ui&lt;/code&gt; object is empty but included for
+		consistency with other events.&lt;/em&gt;&lt;/p&gt;">QDialog_CloseEvent</a></li>
 <li><a href="#QDialog_CreateEvent" title="Triggered when the dialog is created.&lt;ul&gt;&lt;li&gt;&lt;strong&gt;event&lt;/strong&gt; Type:
-		&lt;a&gt;Event&lt;/a&gt; &lt;/li&gt; &lt;li&gt;&lt;strong&gt;ui&lt;/strong&gt; Type: &lt;a&gt;Object&lt;/a&gt; &lt;/li&gt;&lt;/ul&gt;">QDialog_CreateEvent</a></li>
+		&lt;a&gt;Event&lt;/a&gt; &lt;/li&gt; &lt;li&gt;&lt;strong&gt;ui&lt;/strong&gt; Type: &lt;a&gt;Object&lt;/a&gt;
+		&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;Note: The &lt;code&gt;ui&lt;/code&gt; object is empty but included for
+		consistency with other events.&lt;/em&gt;&lt;/p&gt;">QDialog_CreateEvent</a></li>
 <li><a href="#QDialog_DragEvent" title="Triggered while the dialog is being dragged.&lt;ul&gt;&lt;li&gt;&lt;strong&gt;event&lt;/strong&gt;
 		Type: &lt;a&gt;Event&lt;/a&gt; &lt;/li&gt; &lt;li&gt;&lt;strong&gt;ui&lt;/strong&gt; Type: &lt;a&gt;Object&lt;/a&gt;
 		&lt;ul&gt;&lt;li&gt;&lt;strong&gt;position&lt;/strong&gt; Type: &lt;a&gt;Object&lt;/a&gt; The current CSS
@@ -291,9 +317,13 @@ All the appearance properties should be self-explanatory.">QCheckBoxColumn</a></
 		&lt;a&gt;Object&lt;/a&gt; The current offset position of the
 		dialog.&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;">QDialog_DragStopEvent</a></li>
 <li><a href="#QDialog_FocusEvent" title="Triggered when the dialog gains focus.&lt;ul&gt;&lt;li&gt;&lt;strong&gt;event&lt;/strong&gt; Type:
-		&lt;a&gt;Event&lt;/a&gt; &lt;/li&gt; &lt;li&gt;&lt;strong&gt;ui&lt;/strong&gt; Type: &lt;a&gt;Object&lt;/a&gt; &lt;/li&gt;&lt;/ul&gt;">QDialog_FocusEvent</a></li>
+		&lt;a&gt;Event&lt;/a&gt; &lt;/li&gt; &lt;li&gt;&lt;strong&gt;ui&lt;/strong&gt; Type: &lt;a&gt;Object&lt;/a&gt;
+		&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;Note: The &lt;code&gt;ui&lt;/code&gt; object is empty but included for
+		consistency with other events.&lt;/em&gt;&lt;/p&gt;">QDialog_FocusEvent</a></li>
 <li><a href="#QDialog_OpenEvent" title="Triggered when the dialog is opened.&lt;ul&gt;&lt;li&gt;&lt;strong&gt;event&lt;/strong&gt; Type:
-		&lt;a&gt;Event&lt;/a&gt; &lt;/li&gt; &lt;li&gt;&lt;strong&gt;ui&lt;/strong&gt; Type: &lt;a&gt;Object&lt;/a&gt; &lt;/li&gt;&lt;/ul&gt;">QDialog_OpenEvent</a></li>
+		&lt;a&gt;Event&lt;/a&gt; &lt;/li&gt; &lt;li&gt;&lt;strong&gt;ui&lt;/strong&gt; Type: &lt;a&gt;Object&lt;/a&gt;
+		&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;Note: The &lt;code&gt;ui&lt;/code&gt; object is empty but included for
+		consistency with other events.&lt;/em&gt;&lt;/p&gt;">QDialog_OpenEvent</a></li>
 <li><a href="#QDialog_ResizeEvent" title="Triggered while the dialog is being resized.&lt;ul&gt;&lt;li&gt;&lt;strong&gt;event&lt;/strong&gt;
 		Type: &lt;a&gt;Event&lt;/a&gt; &lt;/li&gt; &lt;li&gt;&lt;strong&gt;ui&lt;/strong&gt; Type: &lt;a&gt;Object&lt;/a&gt;
 		&lt;ul&gt;&lt;li&gt;&lt;strong&gt;originalPosition&lt;/strong&gt; Type: &lt;a&gt;Object&lt;/a&gt; The CSS
@@ -322,12 +352,11 @@ All the appearance properties should be self-explanatory.">QCheckBoxColumn</a></
 		The size of the dialog prior to being resized.&lt;/li&gt;
 		&lt;li&gt;&lt;strong&gt;size&lt;/strong&gt; Type: &lt;a&gt;Object&lt;/a&gt; The current size of the
 		dialog.&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;">QDialog_ResizeStopEvent</a></li>
-<li><a href="#QCrossScriptingException" title="This is the main exception to be thrown by any
-method to indicate that the CALLER is responsible for
-causing the exception.">QCrossScriptingException</a></li>
+<li><a href="#QCrossScriptingException" title="Class QCrossScriptingException: Called when the textbox fails CrossScripting checks">QCrossScriptingException</a></li>
 <li><a href="#QDraggable_CreateEvent" title="Triggered when the draggable is created.&lt;ul&gt;&lt;li&gt;&lt;strong&gt;event&lt;/strong&gt;
 		Type: &lt;a&gt;Event&lt;/a&gt; &lt;/li&gt; &lt;li&gt;&lt;strong&gt;ui&lt;/strong&gt; Type: &lt;a&gt;Object&lt;/a&gt;
-		&lt;/li&gt;&lt;/ul&gt;">QDraggable_CreateEvent</a></li>
+		&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;Note: The &lt;code&gt;ui&lt;/code&gt; object is empty but included for
+		consistency with other events.&lt;/em&gt;&lt;/p&gt;">QDraggable_CreateEvent</a></li>
 <li><a href="#QDraggable_DragEvent" title="Triggered while the mouse is moved during the
 		dragging.&lt;ul&gt;&lt;li&gt;&lt;strong&gt;event&lt;/strong&gt; Type: &lt;a&gt;Event&lt;/a&gt; &lt;/li&gt;
 		&lt;li&gt;&lt;strong&gt;ui&lt;/strong&gt; Type: &lt;a&gt;Object&lt;/a&gt;
@@ -356,77 +385,65 @@ causing the exception.">QCrossScriptingException</a></li>
 <li><a href="#QJqButtonBase" title="Implements a JQuery UI Button">QJqButtonBase</a></li>
 <li><a href="#QDialog_ButtonEvent" title="Special event to handle button clicks.">QDialog_ButtonEvent</a></li>
 <li><a href="#QJqCheckBox_CreateEvent" title="Triggered when the button is created.&lt;ul&gt;&lt;li&gt;&lt;strong&gt;event&lt;/strong&gt; Type:
-		&lt;a&gt;Event&lt;/a&gt; &lt;/li&gt; &lt;li&gt;&lt;strong&gt;ui&lt;/strong&gt; Type: &lt;a&gt;Object&lt;/a&gt; &lt;/li&gt;&lt;/ul&gt;">QJqCheckBox_CreateEvent</a></li>
-<li><a href="#QResizable_CreateEvent" title="&lt;div&gt;Triggered when the resizable is
-		created.&lt;/div&gt;&lt;ul&gt;&lt;li&gt;&lt;div&gt;&lt;strong&gt;event&lt;/strong&gt;&lt;/div&gt; &lt;div&gt;Type:
-		&lt;a&gt;Event&lt;/a&gt;&lt;/div&gt; &lt;div&gt;&lt;/div&gt;&lt;/li&gt; &lt;li&gt;&lt;div&gt;&lt;strong&gt;ui&lt;/strong&gt;&lt;/div&gt;
-		&lt;div&gt;Type: &lt;a&gt;Object&lt;/a&gt;&lt;/div&gt; &lt;div&gt;&lt;/div&gt;&lt;/li&gt;&lt;/ul&gt;">QResizable_CreateEvent</a></li>
-<li><a href="#QResizable_ResizeEvent" title="&lt;div&gt;This event is triggered during the resize, on the drag of the resize
-		handler.&lt;/div&gt;&lt;ul&gt;&lt;li&gt;&lt;div&gt;&lt;strong&gt;event&lt;/strong&gt;&lt;/div&gt; &lt;div&gt;Type:
-		&lt;a&gt;Event&lt;/a&gt;&lt;/div&gt; &lt;div&gt;&lt;/div&gt;&lt;/li&gt; &lt;li&gt;&lt;div&gt;&lt;strong&gt;ui&lt;/strong&gt;&lt;/div&gt;
-		&lt;div&gt;Type: &lt;a&gt;Object&lt;/a&gt;&lt;/div&gt; &lt;div&gt;&lt;/div&gt;
-		&lt;ul&gt;&lt;li&gt;&lt;div&gt;&lt;strong&gt;element&lt;/strong&gt;&lt;/div&gt; &lt;div&gt;Type: &lt;a&gt;jQuery&lt;/a&gt;&lt;/div&gt;
-		&lt;div&gt;The jQuery object representing the element to be resized&lt;/div&gt;&lt;/li&gt;
-		&lt;li&gt;&lt;div&gt;&lt;strong&gt;helper&lt;/strong&gt;&lt;/div&gt; &lt;div&gt;Type: &lt;a&gt;jQuery&lt;/a&gt;&lt;/div&gt;
-		&lt;div&gt;The jQuery object representing the helper that's being
-		resized&lt;/div&gt;&lt;/li&gt; &lt;li&gt;&lt;div&gt;&lt;strong&gt;originalElement&lt;/strong&gt;&lt;/div&gt;
-		&lt;div&gt;Type: &lt;a&gt;jQuery&lt;/a&gt;&lt;/div&gt; &lt;div&gt;The jQuery object representing the
-		original element before it is wrapped&lt;/div&gt;&lt;/li&gt;
-		&lt;li&gt;&lt;div&gt;&lt;strong&gt;originalPosition&lt;/strong&gt;&lt;/div&gt; &lt;div&gt;Type:
-		&lt;a&gt;Object&lt;/a&gt;&lt;/div&gt; &lt;div&gt;The position represented as &lt;code&gt;{ left, top
-		}&lt;/code&gt; before the resizable is resized&lt;/div&gt;&lt;/li&gt;
-		&lt;li&gt;&lt;div&gt;&lt;strong&gt;originalSize&lt;/strong&gt;&lt;/div&gt; &lt;div&gt;Type: &lt;a&gt;Object&lt;/a&gt;&lt;/div&gt;
-		&lt;div&gt;The size represented as &lt;code&gt;{ width, height }&lt;/code&gt; before the
-		resizable is resized&lt;/div&gt;&lt;/li&gt; &lt;li&gt;&lt;div&gt;&lt;strong&gt;position&lt;/strong&gt;&lt;/div&gt;
-		&lt;div&gt;Type: &lt;a&gt;Object&lt;/a&gt;&lt;/div&gt; &lt;div&gt;The current position represented as
-		&lt;code&gt;{ left, top }&lt;/code&gt;&lt;/div&gt;&lt;/li&gt; &lt;li&gt;&lt;div&gt;&lt;strong&gt;size&lt;/strong&gt;&lt;/div&gt;
-		&lt;div&gt;Type: &lt;a&gt;Object&lt;/a&gt;&lt;/div&gt; &lt;div&gt;The current size represented as &lt;code&gt;{
-		width, height }&lt;/code&gt;&lt;/div&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;">QResizable_ResizeEvent</a></li>
-<li><a href="#QResizable_StartEvent" title="&lt;div&gt;This event is triggered at the start of a resize
-		operation.&lt;/div&gt;&lt;ul&gt;&lt;li&gt;&lt;div&gt;&lt;strong&gt;event&lt;/strong&gt;&lt;/div&gt; &lt;div&gt;Type:
-		&lt;a&gt;Event&lt;/a&gt;&lt;/div&gt; &lt;div&gt;&lt;/div&gt;&lt;/li&gt; &lt;li&gt;&lt;div&gt;&lt;strong&gt;ui&lt;/strong&gt;&lt;/div&gt;
-		&lt;div&gt;Type: &lt;a&gt;Object&lt;/a&gt;&lt;/div&gt; &lt;div&gt;&lt;/div&gt;
-		&lt;ul&gt;&lt;li&gt;&lt;div&gt;&lt;strong&gt;element&lt;/strong&gt;&lt;/div&gt; &lt;div&gt;Type: &lt;a&gt;jQuery&lt;/a&gt;&lt;/div&gt;
-		&lt;div&gt;The jQuery object representing the element to be resized&lt;/div&gt;&lt;/li&gt;
-		&lt;li&gt;&lt;div&gt;&lt;strong&gt;helper&lt;/strong&gt;&lt;/div&gt; &lt;div&gt;Type: &lt;a&gt;jQuery&lt;/a&gt;&lt;/div&gt;
-		&lt;div&gt;The jQuery object representing the helper that's being
-		resized&lt;/div&gt;&lt;/li&gt; &lt;li&gt;&lt;div&gt;&lt;strong&gt;originalElement&lt;/strong&gt;&lt;/div&gt;
-		&lt;div&gt;Type: &lt;a&gt;jQuery&lt;/a&gt;&lt;/div&gt; &lt;div&gt;The jQuery object representing the
-		original element before it is wrapped&lt;/div&gt;&lt;/li&gt;
-		&lt;li&gt;&lt;div&gt;&lt;strong&gt;originalPosition&lt;/strong&gt;&lt;/div&gt; &lt;div&gt;Type:
-		&lt;a&gt;Object&lt;/a&gt;&lt;/div&gt; &lt;div&gt;The position represented as &lt;code&gt;{ left, top
-		}&lt;/code&gt; before the resizable is resized&lt;/div&gt;&lt;/li&gt;
-		&lt;li&gt;&lt;div&gt;&lt;strong&gt;originalSize&lt;/strong&gt;&lt;/div&gt; &lt;div&gt;Type: &lt;a&gt;Object&lt;/a&gt;&lt;/div&gt;
-		&lt;div&gt;The size represented as &lt;code&gt;{ width, height }&lt;/code&gt; before the
-		resizable is resized&lt;/div&gt;&lt;/li&gt; &lt;li&gt;&lt;div&gt;&lt;strong&gt;position&lt;/strong&gt;&lt;/div&gt;
-		&lt;div&gt;Type: &lt;a&gt;Object&lt;/a&gt;&lt;/div&gt; &lt;div&gt;The current position represented as
-		&lt;code&gt;{ left, top }&lt;/code&gt;&lt;/div&gt;&lt;/li&gt; &lt;li&gt;&lt;div&gt;&lt;strong&gt;size&lt;/strong&gt;&lt;/div&gt;
-		&lt;div&gt;Type: &lt;a&gt;Object&lt;/a&gt;&lt;/div&gt; &lt;div&gt;The current size represented as &lt;code&gt;{
-		width, height }&lt;/code&gt;&lt;/div&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;">QResizable_StartEvent</a></li>
-<li><a href="#QResizable_StopEvent" title="&lt;div&gt;This event is triggered at the end of a resize
-		operation.&lt;/div&gt;&lt;ul&gt;&lt;li&gt;&lt;div&gt;&lt;strong&gt;event&lt;/strong&gt;&lt;/div&gt; &lt;div&gt;Type:
-		&lt;a&gt;Event&lt;/a&gt;&lt;/div&gt; &lt;div&gt;&lt;/div&gt;&lt;/li&gt; &lt;li&gt;&lt;div&gt;&lt;strong&gt;ui&lt;/strong&gt;&lt;/div&gt;
-		&lt;div&gt;Type: &lt;a&gt;Object&lt;/a&gt;&lt;/div&gt; &lt;div&gt;&lt;/div&gt;
-		&lt;ul&gt;&lt;li&gt;&lt;div&gt;&lt;strong&gt;element&lt;/strong&gt;&lt;/div&gt; &lt;div&gt;Type: &lt;a&gt;jQuery&lt;/a&gt;&lt;/div&gt;
-		&lt;div&gt;The jQuery object representing the element to be resized&lt;/div&gt;&lt;/li&gt;
-		&lt;li&gt;&lt;div&gt;&lt;strong&gt;helper&lt;/strong&gt;&lt;/div&gt; &lt;div&gt;Type: &lt;a&gt;jQuery&lt;/a&gt;&lt;/div&gt;
-		&lt;div&gt;The jQuery object representing the helper that's being
-		resized&lt;/div&gt;&lt;/li&gt; &lt;li&gt;&lt;div&gt;&lt;strong&gt;originalElement&lt;/strong&gt;&lt;/div&gt;
-		&lt;div&gt;Type: &lt;a&gt;jQuery&lt;/a&gt;&lt;/div&gt; &lt;div&gt;The jQuery object representing the
-		original element before it is wrapped&lt;/div&gt;&lt;/li&gt;
-		&lt;li&gt;&lt;div&gt;&lt;strong&gt;originalPosition&lt;/strong&gt;&lt;/div&gt; &lt;div&gt;Type:
-		&lt;a&gt;Object&lt;/a&gt;&lt;/div&gt; &lt;div&gt;The position represented as &lt;code&gt;{ left, top
-		}&lt;/code&gt; before the resizable is resized&lt;/div&gt;&lt;/li&gt;
-		&lt;li&gt;&lt;div&gt;&lt;strong&gt;originalSize&lt;/strong&gt;&lt;/div&gt; &lt;div&gt;Type: &lt;a&gt;Object&lt;/a&gt;&lt;/div&gt;
-		&lt;div&gt;The size represented as &lt;code&gt;{ width, height }&lt;/code&gt; before the
-		resizable is resized&lt;/div&gt;&lt;/li&gt; &lt;li&gt;&lt;div&gt;&lt;strong&gt;position&lt;/strong&gt;&lt;/div&gt;
-		&lt;div&gt;Type: &lt;a&gt;Object&lt;/a&gt;&lt;/div&gt; &lt;div&gt;The current position represented as
-		&lt;code&gt;{ left, top }&lt;/code&gt;&lt;/div&gt;&lt;/li&gt; &lt;li&gt;&lt;div&gt;&lt;strong&gt;size&lt;/strong&gt;&lt;/div&gt;
-		&lt;div&gt;Type: &lt;a&gt;Object&lt;/a&gt;&lt;/div&gt; &lt;div&gt;The current size represented as &lt;code&gt;{
-		width, height }&lt;/code&gt;&lt;/div&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;">QResizable_StopEvent</a></li>
+		&lt;a&gt;Event&lt;/a&gt; &lt;/li&gt; &lt;li&gt;&lt;strong&gt;ui&lt;/strong&gt; Type: &lt;a&gt;Object&lt;/a&gt;
+		&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;Note: The &lt;code&gt;ui&lt;/code&gt; object is empty but included for
+		consistency with other events.&lt;/em&gt;&lt;/p&gt;">QJqCheckBox_CreateEvent</a></li>
+<li><a href="#QResizable_CreateEvent" title="Triggered when the resizable is created.&lt;ul&gt;&lt;li&gt;&lt;strong&gt;event&lt;/strong&gt;
+		Type: &lt;a&gt;Event&lt;/a&gt; &lt;/li&gt; &lt;li&gt;&lt;strong&gt;ui&lt;/strong&gt; Type: &lt;a&gt;Object&lt;/a&gt;
+		&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;Note: The &lt;code&gt;ui&lt;/code&gt; object is empty but included for
+		consistency with other events.&lt;/em&gt;&lt;/p&gt;">QResizable_CreateEvent</a></li>
+<li><a href="#QResizable_ResizeEvent" title="This event is triggered during the resize, on the drag of the resize
+		handler.&lt;ul&gt;&lt;li&gt;&lt;strong&gt;event&lt;/strong&gt; Type: &lt;a&gt;Event&lt;/a&gt; &lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;ui&lt;/strong&gt; Type: &lt;a&gt;Object&lt;/a&gt;
+		&lt;ul&gt;&lt;li&gt;&lt;strong&gt;element&lt;/strong&gt; Type: &lt;a&gt;jQuery&lt;/a&gt; The jQuery object
+		representing the element to be resized&lt;/li&gt; &lt;li&gt;&lt;strong&gt;helper&lt;/strong&gt;
+		Type: &lt;a&gt;jQuery&lt;/a&gt; The jQuery object representing the helper that's being
+		resized&lt;/li&gt; &lt;li&gt;&lt;strong&gt;originalElement&lt;/strong&gt; Type: &lt;a&gt;jQuery&lt;/a&gt; The
+		jQuery object representing the original element before it is wrapped&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;originalPosition&lt;/strong&gt; Type: &lt;a&gt;Object&lt;/a&gt; The position
+		represented as &lt;code&gt;{ left, top }&lt;/code&gt; before the resizable is
+		resized&lt;/li&gt; &lt;li&gt;&lt;strong&gt;originalSize&lt;/strong&gt; Type: &lt;a&gt;Object&lt;/a&gt; The size
+		represented as &lt;code&gt;{ width, height }&lt;/code&gt; before the resizable is
+		resized&lt;/li&gt; &lt;li&gt;&lt;strong&gt;position&lt;/strong&gt; Type: &lt;a&gt;Object&lt;/a&gt; The current
+		position represented as &lt;code&gt;{ left, top }&lt;/code&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;size&lt;/strong&gt; Type: &lt;a&gt;Object&lt;/a&gt; The current size represented
+		as &lt;code&gt;{ width, height }&lt;/code&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;">QResizable_ResizeEvent</a></li>
+<li><a href="#QResizable_StartEvent" title="This event is triggered at the start of a resize
+		operation.&lt;ul&gt;&lt;li&gt;&lt;strong&gt;event&lt;/strong&gt; Type: &lt;a&gt;Event&lt;/a&gt; &lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;ui&lt;/strong&gt; Type: &lt;a&gt;Object&lt;/a&gt;
+		&lt;ul&gt;&lt;li&gt;&lt;strong&gt;element&lt;/strong&gt; Type: &lt;a&gt;jQuery&lt;/a&gt; The jQuery object
+		representing the element to be resized&lt;/li&gt; &lt;li&gt;&lt;strong&gt;helper&lt;/strong&gt;
+		Type: &lt;a&gt;jQuery&lt;/a&gt; The jQuery object representing the helper that's being
+		resized&lt;/li&gt; &lt;li&gt;&lt;strong&gt;originalElement&lt;/strong&gt; Type: &lt;a&gt;jQuery&lt;/a&gt; The
+		jQuery object representing the original element before it is wrapped&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;originalPosition&lt;/strong&gt; Type: &lt;a&gt;Object&lt;/a&gt; The position
+		represented as &lt;code&gt;{ left, top }&lt;/code&gt; before the resizable is
+		resized&lt;/li&gt; &lt;li&gt;&lt;strong&gt;originalSize&lt;/strong&gt; Type: &lt;a&gt;Object&lt;/a&gt; The size
+		represented as &lt;code&gt;{ width, height }&lt;/code&gt; before the resizable is
+		resized&lt;/li&gt; &lt;li&gt;&lt;strong&gt;position&lt;/strong&gt; Type: &lt;a&gt;Object&lt;/a&gt; The current
+		position represented as &lt;code&gt;{ left, top }&lt;/code&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;size&lt;/strong&gt; Type: &lt;a&gt;Object&lt;/a&gt; The current size represented
+		as &lt;code&gt;{ width, height }&lt;/code&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;">QResizable_StartEvent</a></li>
+<li><a href="#QResizable_StopEvent" title="This event is triggered at the end of a resize
+		operation.&lt;ul&gt;&lt;li&gt;&lt;strong&gt;event&lt;/strong&gt; Type: &lt;a&gt;Event&lt;/a&gt; &lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;ui&lt;/strong&gt; Type: &lt;a&gt;Object&lt;/a&gt;
+		&lt;ul&gt;&lt;li&gt;&lt;strong&gt;element&lt;/strong&gt; Type: &lt;a&gt;jQuery&lt;/a&gt; The jQuery object
+		representing the element to be resized&lt;/li&gt; &lt;li&gt;&lt;strong&gt;helper&lt;/strong&gt;
+		Type: &lt;a&gt;jQuery&lt;/a&gt; The jQuery object representing the helper that's being
+		resized&lt;/li&gt; &lt;li&gt;&lt;strong&gt;originalElement&lt;/strong&gt; Type: &lt;a&gt;jQuery&lt;/a&gt; The
+		jQuery object representing the original element before it is wrapped&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;originalPosition&lt;/strong&gt; Type: &lt;a&gt;Object&lt;/a&gt; The position
+		represented as &lt;code&gt;{ left, top }&lt;/code&gt; before the resizable is
+		resized&lt;/li&gt; &lt;li&gt;&lt;strong&gt;originalSize&lt;/strong&gt; Type: &lt;a&gt;Object&lt;/a&gt; The size
+		represented as &lt;code&gt;{ width, height }&lt;/code&gt; before the resizable is
+		resized&lt;/li&gt; &lt;li&gt;&lt;strong&gt;position&lt;/strong&gt; Type: &lt;a&gt;Object&lt;/a&gt; The current
+		position represented as &lt;code&gt;{ left, top }&lt;/code&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;size&lt;/strong&gt; Type: &lt;a&gt;Object&lt;/a&gt; The current size represented
+		as &lt;code&gt;{ width, height }&lt;/code&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;">QResizable_StopEvent</a></li>
 <li><a href="#QSelectable_CreateEvent" title="Triggered when the selectable is created.&lt;ul&gt;&lt;li&gt;&lt;strong&gt;event&lt;/strong&gt;
 		Type: &lt;a&gt;Event&lt;/a&gt; &lt;/li&gt; &lt;li&gt;&lt;strong&gt;ui&lt;/strong&gt; Type: &lt;a&gt;Object&lt;/a&gt;
-		&lt;/li&gt;&lt;/ul&gt;">QSelectable_CreateEvent</a></li>
+		&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;Note: The &lt;code&gt;ui&lt;/code&gt; object is empty but included for
+		consistency with other events.&lt;/em&gt;&lt;/p&gt;">QSelectable_CreateEvent</a></li>
 <li><a href="#QSelectable_SelectedEvent" title="Triggered at the end of the select operation, on each element added to the
 		selection.&lt;ul&gt;&lt;li&gt;&lt;strong&gt;event&lt;/strong&gt; Type: &lt;a&gt;Event&lt;/a&gt; &lt;/li&gt;
 		&lt;li&gt;&lt;strong&gt;ui&lt;/strong&gt; Type: &lt;a&gt;Object&lt;/a&gt;
@@ -439,10 +456,13 @@ causing the exception.">QCrossScriptingException</a></li>
 		selectable item being selected.&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;">QSelectable_SelectingEvent</a></li>
 <li><a href="#QSelectable_StartEvent" title="Triggered at the beginning of the select
 		operation.&lt;ul&gt;&lt;li&gt;&lt;strong&gt;event&lt;/strong&gt; Type: &lt;a&gt;Event&lt;/a&gt; &lt;/li&gt;
-		&lt;li&gt;&lt;strong&gt;ui&lt;/strong&gt; Type: &lt;a&gt;Object&lt;/a&gt; &lt;/li&gt;&lt;/ul&gt;">QSelectable_StartEvent</a></li>
+		&lt;li&gt;&lt;strong&gt;ui&lt;/strong&gt; Type: &lt;a&gt;Object&lt;/a&gt; &lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;Note: The
+		&lt;code&gt;ui&lt;/code&gt; object is empty but included for consistency with other
+		events.&lt;/em&gt;&lt;/p&gt;">QSelectable_StartEvent</a></li>
 <li><a href="#QSelectable_StopEvent" title="Triggered at the end of the select operation.&lt;ul&gt;&lt;li&gt;&lt;strong&gt;event&lt;/strong&gt;
 		Type: &lt;a&gt;Event&lt;/a&gt; &lt;/li&gt; &lt;li&gt;&lt;strong&gt;ui&lt;/strong&gt; Type: &lt;a&gt;Object&lt;/a&gt;
-		&lt;/li&gt;&lt;/ul&gt;">QSelectable_StopEvent</a></li>
+		&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;Note: The &lt;code&gt;ui&lt;/code&gt; object is empty but included for
+		consistency with other events.&lt;/em&gt;&lt;/p&gt;">QSelectable_StopEvent</a></li>
 <li><a href="#QSelectable_UnselectedEvent" title="Triggered at the end of the select operation, on each element removed from
 		the selection.&lt;ul&gt;&lt;li&gt;&lt;strong&gt;event&lt;/strong&gt; Type: &lt;a&gt;Event&lt;/a&gt; &lt;/li&gt;
 		&lt;li&gt;&lt;strong&gt;ui&lt;/strong&gt; Type: &lt;a&gt;Object&lt;/a&gt;
@@ -455,7 +475,7 @@ causing the exception.">QCrossScriptingException</a></li>
 		selectable item being unselected.&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;">QSelectable_UnselectingEvent</a></li>
 <li><a href="#QAutocompleteListItem" title="Utilized by the {@link QListControl} class which contains a private array of ListItems.">QAutocompleteListItem</a></li>
 <li><a href="#QAutocomplete_SourceEvent" title="Special event to handle source ajax callbacks">QAutocomplete_SourceEvent</a></li>
-<li><a href="#QImageBrowserBase" title="This class will render HTML via a pair of &lt;span&gt;&lt;/span&gt; tags.">QImageBrowserBase</a></li>
+<li><a href="#QImageBrowserBase" title="The QPanel Class is defined here.">QImageBrowserBase</a></li>
 <li><a href="#QDatepickerBox_BeforeShowEvent" title="&lt;strong&gt;Default:&lt;/strong&gt;&lt;code&gt;null&lt;/code&gt;A function that takes an input
 		field and current datepicker instance and returns an options object to
 		update the datepicker with.">QDatepickerBox_BeforeShowEvent</a></li>
@@ -474,7 +494,9 @@ causing the exception.">QCrossScriptingException</a></li>
 <li><a href="#QDatepickerBox_SelectEvent" title="&lt;strong&gt;Default:&lt;/strong&gt;&lt;code&gt;null&lt;/code&gt;Called when the datepicker is
 		selected.">QDatepickerBox_SelectEvent</a></li>
 <li><a href="#QJqRadioButton_CreateEvent" title="Triggered when the button is created.&lt;ul&gt;&lt;li&gt;&lt;strong&gt;event&lt;/strong&gt; Type:
-		&lt;a&gt;Event&lt;/a&gt; &lt;/li&gt; &lt;li&gt;&lt;strong&gt;ui&lt;/strong&gt; Type: &lt;a&gt;Object&lt;/a&gt; &lt;/li&gt;&lt;/ul&gt;">QJqRadioButton_CreateEvent</a></li>
+		&lt;a&gt;Event&lt;/a&gt; &lt;/li&gt; &lt;li&gt;&lt;strong&gt;ui&lt;/strong&gt; Type: &lt;a&gt;Object&lt;/a&gt;
+		&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;Note: The &lt;code&gt;ui&lt;/code&gt; object is empty but included for
+		consistency with other events.&lt;/em&gt;&lt;/p&gt;">QJqRadioButton_CreateEvent</a></li>
 <li><a href="#QAutocomplete_ChangeEvent" title="Triggered when the field is blurred, if the value has
 		changed.&lt;ul&gt;&lt;li&gt;&lt;strong&gt;event&lt;/strong&gt; Type: &lt;a&gt;Event&lt;/a&gt; &lt;/li&gt;
 		&lt;li&gt;&lt;strong&gt;ui&lt;/strong&gt; Type: &lt;a&gt;Object&lt;/a&gt;  &lt;ul&gt;&lt;li&gt;&lt;strong&gt;item&lt;/strong&gt;
@@ -482,11 +504,14 @@ causing the exception.">QCrossScriptingException</a></li>
 <li><a href="#QAutocomplete_CloseEvent" title="Triggered when the menu is hidden.">QAutocomplete_CloseEvent</a></li>
 <li><a href="#QAutocomplete_CreateEvent" title="Triggered when the autocomplete is created.&lt;ul&gt;&lt;li&gt;&lt;strong&gt;event&lt;/strong&gt;
 		Type: &lt;a&gt;Event&lt;/a&gt; &lt;/li&gt; &lt;li&gt;&lt;strong&gt;ui&lt;/strong&gt; Type: &lt;a&gt;Object&lt;/a&gt;
-		&lt;/li&gt;&lt;/ul&gt;">QAutocomplete_CreateEvent</a></li>
+		&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;Note: The &lt;code&gt;ui&lt;/code&gt; object is empty but included for
+		consistency with other events.&lt;/em&gt;&lt;/p&gt;">QAutocomplete_CreateEvent</a></li>
 <li><a href="#QAutocomplete_FocusEvent" title="Triggered when focus is moved to an item (not selecting).">QAutocomplete_FocusEvent</a></li>
 <li><a href="#QAutocomplete_OpenEvent" title="Triggered when the suggestion menu is opened or
 		updated.&lt;ul&gt;&lt;li&gt;&lt;strong&gt;event&lt;/strong&gt; Type: &lt;a&gt;Event&lt;/a&gt; &lt;/li&gt;
-		&lt;li&gt;&lt;strong&gt;ui&lt;/strong&gt; Type: &lt;a&gt;Object&lt;/a&gt; &lt;/li&gt;&lt;/ul&gt;">QAutocomplete_OpenEvent</a></li>
+		&lt;li&gt;&lt;strong&gt;ui&lt;/strong&gt; Type: &lt;a&gt;Object&lt;/a&gt; &lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;Note: The
+		&lt;code&gt;ui&lt;/code&gt; object is empty but included for consistency with other
+		events.&lt;/em&gt;&lt;/p&gt;">QAutocomplete_OpenEvent</a></li>
 <li><a href="#QAutocomplete_ResponseEvent" title="Triggered after a search completes, before the menu is shown.">QAutocomplete_ResponseEvent</a></li>
 <li><a href="#QAutocomplete_SearchEvent" title="Triggered before a search is performed, after &lt;a&gt;&lt;code&gt;minLength&lt;/code&gt;&lt;/a&gt;
 		and &lt;a&gt;&lt;code&gt;delay&lt;/code&gt;&lt;/a&gt; are met.">QAutocomplete_SearchEvent</a></li>
@@ -534,7 +559,9 @@ causing the exception.">QCrossScriptingException</a></li>
 		&lt;li&gt;&lt;strong&gt;sender&lt;/strong&gt; Type: &lt;a&gt;jQuery&lt;/a&gt; The sortable that the item
 		comes from if moving from one sortable to another&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;">QSortable_ChangeEvent</a></li>
 <li><a href="#QSortable_CreateEvent" title="Triggered when the sortable is created.&lt;ul&gt;&lt;li&gt;&lt;strong&gt;event&lt;/strong&gt; Type:
-		&lt;a&gt;Event&lt;/a&gt; &lt;/li&gt; &lt;li&gt;&lt;strong&gt;ui&lt;/strong&gt; Type: &lt;a&gt;Object&lt;/a&gt; &lt;/li&gt;&lt;/ul&gt;">QSortable_CreateEvent</a></li>
+		&lt;a&gt;Event&lt;/a&gt; &lt;/li&gt; &lt;li&gt;&lt;strong&gt;ui&lt;/strong&gt; Type: &lt;a&gt;Object&lt;/a&gt;
+		&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;em&gt;Note: The &lt;code&gt;ui&lt;/code&gt; object is empty but included for
+		consistency with other events.&lt;/em&gt;&lt;/p&gt;">QSortable_CreateEvent</a></li>
 <li><a href="#QSortable_DeactivateEvent" title="This event is triggered when sorting was stopped, is propagated to all
 		possible connected lists.&lt;ul&gt;&lt;li&gt;&lt;strong&gt;event&lt;/strong&gt; Type: &lt;a&gt;Event&lt;/a&gt;
 		&lt;/li&gt; &lt;li&gt;&lt;strong&gt;ui&lt;/strong&gt; Type: &lt;a&gt;Object&lt;/a&gt;
@@ -549,10 +576,9 @@ causing the exception.">QCrossScriptingException</a></li>
 		position of the element represented as &lt;code&gt;{ top, left }&lt;/code&gt;&lt;/li&gt;
 		&lt;li&gt;&lt;strong&gt;sender&lt;/strong&gt; Type: &lt;a&gt;jQuery&lt;/a&gt; The sortable that the item
 		comes from if moving from one sortable to another&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;">QSortable_DeactivateEvent</a></li>
-<li><a href="#QSortable_OutEvent" title="&lt;p&gt;This event is triggered when a sortable item is moved away from a
-		connected list.&lt;/p&gt; 				&lt;p&gt;&lt;em&gt;Note: This event is also triggered when a
-		sortable item is dropped.&lt;/em&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;event&lt;/strong&gt; Type:
-		&lt;a&gt;Event&lt;/a&gt; &lt;/li&gt; &lt;li&gt;&lt;strong&gt;ui&lt;/strong&gt; Type: &lt;a&gt;Object&lt;/a&gt;
+<li><a href="#QSortable_OutEvent" title="This event is triggered when a sortable item is moved away from a connected
+		list.&lt;ul&gt;&lt;li&gt;&lt;strong&gt;event&lt;/strong&gt; Type: &lt;a&gt;Event&lt;/a&gt; &lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;ui&lt;/strong&gt; Type: &lt;a&gt;Object&lt;/a&gt;
 		&lt;ul&gt;&lt;li&gt;&lt;strong&gt;helper&lt;/strong&gt; Type: &lt;a&gt;jQuery&lt;/a&gt; The jQuery object
 		representing the helper being sorted&lt;/li&gt; &lt;li&gt;&lt;strong&gt;item&lt;/strong&gt; Type:
 		&lt;a&gt;jQuery&lt;/a&gt; The jQuery object representing the current dragged
@@ -785,7 +811,7 @@ REQUIRES: PHP &gt;= 5.2.0">QDateTime</a></li>
 <li><a href="#QQueryBuilder" title="QQueryBuilder class">QQueryBuilder</a></li>
 <li><a href="#QPartialQueryBuilder" title="Subclasses QQueryBuilder to handle the building of conditions for conditional expansions, subqueries, etc.">QPartialQueryBuilder</a></li>
 <li><a href="#QBaseClass" title="This is the Base Class for ALL classes in the system.">QBaseClass</a></li>
-<li><a href="#QCacheProviderNoCache" title="abstract cache provider">QCacheProviderNoCache</a></li>
+<li><a href="#QCacheProviderNoCache" title="No-op cache provider: No caching at all.">QCacheProviderNoCache</a></li>
 <li><a href="#QRegex" title="This is the Base Class for ALL classes in the system.">QRegex</a></li>
 <li><a href="#QEmailServer" title="This EmailServer (and its dependent EmailMessage class) allows the application to send
 messages via any accessible SMTP server.">QEmailServer</a></li>
@@ -826,17 +852,67 @@ by the plugin.">QPluginUninstaller</a></li>
 <li><a href="#QDbBackedFormStateHandler" title="This will store the formstate in a pre-specified table in the DB.">QDbBackedFormStateHandler</a></li>
 <li class="nav-header">
 <i class="icon-custom icon-constant"></i> Constants</li>
+<li class="constant  "><a href="#constant_ALLOW_REMOTE_ADMIN" title="ALLOW_REMOTE_ADMIN :: "><span class="description">ALLOW_REMOTE_ADMIN</span><pre>ALLOW_REMOTE_ADMIN</pre></a></li>
+<li class="constant  "><a href="#constant_CACHE_PROVIDER_CLASS" title="CACHE_PROVIDER_CLASS :: "><span class="description">CACHE_PROVIDER_CLASS</span><pre>CACHE_PROVIDER_CLASS</pre></a></li>
+<li class="constant  "><a href="#constant_CACHE_PROVIDER_OPTIONS" title="CACHE_PROVIDER_OPTIONS :: "><span class="description">CACHE_PROVIDER_OPTIONS</span><pre>CACHE_PROVIDER_OPTIONS</pre></a></li>
+<li class="constant  "><a href="#constant_DB_BACKED_SESSION_HANDLER_DB_INDEX" title="DB_BACKED_SESSION_HANDLER_DB_INDEX :: "><span class="description">DB_BACKED_SESSION_HANDLER_DB_INDEX</span><pre>DB_BACKED_SESSION_HANDLER_DB_INDEX</pre></a></li>
+<li class="constant  "><a href="#constant_DB_BACKED_SESSION_HANDLER_TABLE_NAME" title="DB_BACKED_SESSION_HANDLER_TABLE_NAME :: "><span class="description">DB_BACKED_SESSION_HANDLER_TABLE_NAME</span><pre>DB_BACKED_SESSION_HANDLER_TABLE_NAME</pre></a></li>
+<li class="constant  "><a href="#constant_DB_CONNECTION_1" title="DB_CONNECTION_1 :: "><span class="description">DB_CONNECTION_1</span><pre>DB_CONNECTION_1</pre></a></li>
+<li class="constant  "><a href="#constant_ERROR_LOG_PATH" title="ERROR_LOG_PATH :: "><span class="description">ERROR_LOG_PATH</span><pre>ERROR_LOG_PATH</pre></a></li>
+<li class="constant  "><a href="#constant_ERROR_PAGE_PATH" title="ERROR_PAGE_PATH :: "><span class="description">ERROR_PAGE_PATH</span><pre>ERROR_PAGE_PATH</pre></a></li>
+<li class="constant  "><a href="#constant_MAX_DB_CONNECTION_INDEX" title="MAX_DB_CONNECTION_INDEX :: "><span class="description">MAX_DB_CONNECTION_INDEX</span><pre>MAX_DB_CONNECTION_INDEX</pre></a></li>
 <li class="constant  "><a href="#constant_MYSQLI_TYPE_BIT" title="MYSQLI_TYPE_BIT :: "><span class="description">MYSQLI_TYPE_BIT</span><pre>MYSQLI_TYPE_BIT</pre></a></li>
 <li class="constant  "><a href="#constant_MYSQLI_TYPE_NEWDECIMAL" title="MYSQLI_TYPE_NEWDECIMAL :: "><span class="description">MYSQLI_TYPE_NEWDECIMAL</span><pre>MYSQLI_TYPE_NEWDECIMAL</pre></a></li>
+<li class="constant  "><a href="#constant_SERVER_INSTANCE" title="SERVER_INSTANCE :: "><span class="description">SERVER_INSTANCE</span><pre>SERVER_INSTANCE</pre></a></li>
+<li class="constant  "><a href="#constant___APP_CSS_ASSETS__" title="__APP_CSS_ASSETS__ :: "><span class="description">__APP_CSS_ASSETS__</span><pre>__APP_CSS_ASSETS__</pre></a></li>
+<li class="constant  "><a href="#constant___APP_IMAGE_ASSETS__" title="__APP_IMAGE_ASSETS__ :: "><span class="description">__APP_IMAGE_ASSETS__</span><pre>__APP_IMAGE_ASSETS__</pre></a></li>
 <li class="constant  "><a href="#constant___APP_INCLUDES__" title="__APP_INCLUDES__ :: "><span class="description">__APP_INCLUDES__</span><pre>__APP_INCLUDES__</pre></a></li>
+<li class="constant  "><a href="#constant___APP_INCLUDES__" title="__APP_INCLUDES__ :: "><span class="description">__APP_INCLUDES__</span><pre>__APP_INCLUDES__</pre></a></li>
+<li class="constant  "><a href="#constant___APP_JS_ASSETS__" title="__APP_JS_ASSETS__ :: "><span class="description">__APP_JS_ASSETS__</span><pre>__APP_JS_ASSETS__</pre></a></li>
+<li class="constant  "><a href="#constant___APP_PHP_ASSETS__" title="__APP_PHP_ASSETS__ :: "><span class="description">__APP_PHP_ASSETS__</span><pre>__APP_PHP_ASSETS__</pre></a></li>
+<li class="constant  "><a href="#constant___CACHE__" title="__CACHE__ :: "><span class="description">__CACHE__</span><pre>__CACHE__</pre></a></li>
+<li class="constant  "><a href="#constant___CONFIGURATION__" title="__CONFIGURATION__ :: "><span class="description">__CONFIGURATION__</span><pre>__CONFIGURATION__</pre></a></li>
+<li class="constant  "><a href="#constant___CSS_ASSETS__" title="__CSS_ASSETS__ :: "><span class="description">__CSS_ASSETS__</span><pre>__CSS_ASSETS__</pre></a></li>
+<li class="constant  "><a href="#constant___DB_BACKED_FORM_STATE_HANDLER_DB_INDEX__" title="__DB_BACKED_FORM_STATE_HANDLER_DB_INDEX__ :: "><span class="description">__DB_BACKED_FORM_STATE_HANDLER_DB_INDEX__</span><pre>__DB_BACKED_FORM_STATE_HANDLER_DB_INDEX__</pre></a></li>
+<li class="constant  "><a href="#constant___DB_BACKED_FORM_STATE_HANDLER_TABLE_NAME__" title="__DB_BACKED_FORM_STATE_HANDLER_TABLE_NAME__ :: "><span class="description">__DB_BACKED_FORM_STATE_HANDLER_TABLE_NAME__</span><pre>__DB_BACKED_FORM_STATE_HANDLER_TABLE_NAME__</pre></a></li>
+<li class="constant  "><a href="#constant___DEVTOOLS__" title="__DEVTOOLS__ :: "><span class="description">__DEVTOOLS__</span><pre>__DEVTOOLS__</pre></a></li>
 <li class="constant  "><a href="#constant___DOCROOT__" title="__DOCROOT__ :: "><span class="description">__DOCROOT__</span><pre>__DOCROOT__</pre></a></li>
+<li class="constant  "><a href="#constant___DOCROOT__" title="__DOCROOT__ :: "><span class="description">__DOCROOT__</span><pre>__DOCROOT__</pre></a></li>
+<li class="constant  "><a href="#constant___EXAMPLES__" title="__EXAMPLES__ :: "><span class="description">__EXAMPLES__</span><pre>__EXAMPLES__</pre></a></li>
+<li class="constant  "><a href="#constant___EXTERNAL_LIBRARIES__" title="__EXTERNAL_LIBRARIES__ :: "><span class="description">__EXTERNAL_LIBRARIES__</span><pre>__EXTERNAL_LIBRARIES__</pre></a></li>
+<li class="constant  "><a href="#constant___FILE_FORM_STATE_HANDLER_PATH__" title="__FILE_FORM_STATE_HANDLER_PATH__ :: "><span class="description">__FILE_FORM_STATE_HANDLER_PATH__</span><pre>__FILE_FORM_STATE_HANDLER_PATH__</pre></a></li>
+<li class="constant  "><a href="#constant___FORMBASE_CLASSES__" title="__FORMBASE_CLASSES__ :: "><span class="description">__FORMBASE_CLASSES__</span><pre>__FORMBASE_CLASSES__</pre></a></li>
+<li class="constant  "><a href="#constant___FORM_DRAFTS_FORM_LIST_ITEMS_PER_PAGE__" title="__FORM_DRAFTS_FORM_LIST_ITEMS_PER_PAGE__ :: "><span class="description">__FORM_DRAFTS_FORM_LIST_ITEMS_PER_PAGE__</span><pre>__FORM_DRAFTS_FORM_LIST_ITEMS_PER_PAGE__</pre></a></li>
+<li class="constant  "><a href="#constant___FORM_DRAFTS_PANEL_LIST_ITEMS_PER_PAGE__" title="__FORM_DRAFTS_PANEL_LIST_ITEMS_PER_PAGE__ :: "><span class="description">__FORM_DRAFTS_PANEL_LIST_ITEMS_PER_PAGE__</span><pre>__FORM_DRAFTS_PANEL_LIST_ITEMS_PER_PAGE__</pre></a></li>
+<li class="constant  "><a href="#constant___FORM_DRAFTS__" title="__FORM_DRAFTS__ :: "><span class="description">__FORM_DRAFTS__</span><pre>__FORM_DRAFTS__</pre></a></li>
+<li class="constant  "><a href="#constant___FORM_STATE_HANDLER__" title="__FORM_STATE_HANDLER__ :: "><span class="description">__FORM_STATE_HANDLER__</span><pre>__FORM_STATE_HANDLER__</pre></a></li>
+<li class="constant  "><a href="#constant___IMAGE_ASSETS__" title="__IMAGE_ASSETS__ :: "><span class="description">__IMAGE_ASSETS__</span><pre>__IMAGE_ASSETS__</pre></a></li>
 <li class="constant  "><a href="#constant___INCLUDES__" title="__INCLUDES__ :: "><span class="description">__INCLUDES__</span><pre>__INCLUDES__</pre></a></li>
+<li class="constant  "><a href="#constant___INCLUDES__" title="__INCLUDES__ :: "><span class="description">__INCLUDES__</span><pre>__INCLUDES__</pre></a></li>
+<li class="constant  "><a href="#constant___JQUERY_BASE__" title="__JQUERY_BASE__ :: "><span class="description">__JQUERY_BASE__</span><pre>__JQUERY_BASE__</pre></a></li>
+<li class="constant  "><a href="#constant___JQUERY_CSS__" title="__JQUERY_CSS__ :: "><span class="description">__JQUERY_CSS__</span><pre>__JQUERY_CSS__</pre></a></li>
+<li class="constant  "><a href="#constant___JQUERY_EFFECTS__" title="__JQUERY_EFFECTS__ :: "><span class="description">__JQUERY_EFFECTS__</span><pre>__JQUERY_EFFECTS__</pre></a></li>
+<li class="constant  "><a href="#constant___JS_ASSETS__" title="__JS_ASSETS__ :: "><span class="description">__JS_ASSETS__</span><pre>__JS_ASSETS__</pre></a></li>
+<li class="constant  "><a href="#constant___META_CONTROLS_GEN__" title="__META_CONTROLS_GEN__ :: "><span class="description">__META_CONTROLS_GEN__</span><pre>__META_CONTROLS_GEN__</pre></a></li>
+<li class="constant  "><a href="#constant___META_CONTROLS__" title="__META_CONTROLS__ :: "><span class="description">__META_CONTROLS__</span><pre>__META_CONTROLS__</pre></a></li>
+<li class="constant  "><a href="#constant___MODEL_GEN__" title="__MODEL_GEN__ :: "><span class="description">__MODEL_GEN__</span><pre>__MODEL_GEN__</pre></a></li>
 <li class="constant  "><a href="#constant___MODEL_GEN__" title="__MODEL_GEN__ :: "><span class="description">__MODEL_GEN__</span><pre>__MODEL_GEN__</pre></a></li>
 <li class="constant  "><a href="#constant___MODEL__" title="__MODEL__ :: "><span class="description">__MODEL__</span><pre>__MODEL__</pre></a></li>
+<li class="constant  "><a href="#constant___MODEL__" title="__MODEL__ :: "><span class="description">__MODEL__</span><pre>__MODEL__</pre></a></li>
+<li class="constant  "><a href="#constant___PANEL_DRAFTS__" title="__PANEL_DRAFTS__ :: "><span class="description">__PANEL_DRAFTS__</span><pre>__PANEL_DRAFTS__</pre></a></li>
+<li class="constant  "><a href="#constant___PHP_ASSETS__" title="__PHP_ASSETS__ :: "><span class="description">__PHP_ASSETS__</span><pre>__PHP_ASSETS__</pre></a></li>
 <li class="constant  "><a href="#constant___PLUGINS__" title="__PLUGINS__ :: "><span class="description">__PLUGINS__</span><pre>__PLUGINS__</pre></a></li>
+<li class="constant  "><a href="#constant___PLUGINS__" title="__PLUGINS__ :: "><span class="description">__PLUGINS__</span><pre>__PLUGINS__</pre></a></li>
+<li class="constant  "><a href="#constant___PLUGIN_ASSETS__" title="__PLUGIN_ASSETS__ :: "><span class="description">__PLUGIN_ASSETS__</span><pre>__PLUGIN_ASSETS__</pre></a></li>
 <li class="constant  "><a href="#constant___PREPEND_INCLUDED__" title="__PREPEND_INCLUDED__ :: "><span class="description">__PREPEND_INCLUDED__</span><pre>__PREPEND_INCLUDED__</pre></a></li>
 <li class="constant  "><a href="#constant___QCUBED_CORE__" title="__QCUBED_CORE__ :: "><span class="description">__QCUBED_CORE__</span><pre>__QCUBED_CORE__</pre></a></li>
+<li class="constant  "><a href="#constant___QCUBED_CORE__" title="__QCUBED_CORE__ :: "><span class="description">__QCUBED_CORE__</span><pre>__QCUBED_CORE__</pre></a></li>
 <li class="constant  "><a href="#constant___QCUBED__" title="__QCUBED__ :: "><span class="description">__QCUBED__</span><pre>__QCUBED__</pre></a></li>
+<li class="constant  "><a href="#constant___QCUBED__" title="__QCUBED__ :: "><span class="description">__QCUBED__</span><pre>__QCUBED__</pre></a></li>
+<li class="constant  "><a href="#constant___QI18N_PO_PATH__" title="__QI18N_PO_PATH__ :: "><span class="description">__QI18N_PO_PATH__</span><pre>__QI18N_PO_PATH__</pre></a></li>
+<li class="constant  "><a href="#constant___SUBDIRECTORY__" title="__SUBDIRECTORY__ :: "><span class="description">__SUBDIRECTORY__</span><pre>__SUBDIRECTORY__</pre></a></li>
+<li class="constant  "><a href="#constant___URL_REWRITE__" title="__URL_REWRITE__ :: "><span class="description">__URL_REWRITE__</span><pre>__URL_REWRITE__</pre></a></li>
+<li class="constant  "><a href="#constant___VIRTUAL_DIRECTORY__" title="__VIRTUAL_DIRECTORY__ :: "><span class="description">__VIRTUAL_DIRECTORY__</span><pre>__VIRTUAL_DIRECTORY__</pre></a></li>
 </ul>
 </div>
 <div class="span8 package-contents">
@@ -1069,7 +1145,8 @@ information and global utilities for the entire web application.</p>
 </h1>
 <p class="short_description">Triggered when the autocomplete is created.<ul><li><strong>event</strong>
 		Type: <a>Event</a> </li> <li><strong>ui</strong> Type: <a>Object</a>
-		</li></ul></p>
+		</li></ul><p><em>Note: The <code>ui</code> object is empty but included for
+		consistency with other events.</em></p></p>
 <div class="details collapse"></div>
 <a href="../classes/QAutocomplete_CreateEvent.html" class="more">« More »</a>
 </div>
@@ -1085,7 +1162,9 @@ information and global utilities for the entire web application.</p>
 </h1>
 <p class="short_description">Triggered when the suggestion menu is opened or
 		updated.<ul><li><strong>event</strong> Type: <a>Event</a> </li>
-		<li><strong>ui</strong> Type: <a>Object</a> </li></ul></p>
+		<li><strong>ui</strong> Type: <a>Object</a> </li></ul><p><em>Note: The
+		<code>ui</code> object is empty but included for consistency with other
+		events.</em></p></p>
 <div class="details collapse"></div>
 <a href="../classes/QAutocomplete_OpenEvent.html" class="more">« More »</a>
 </div>
@@ -1156,7 +1235,7 @@ information and global utilities for the entire web application.</p>
 <div id="QCacheProviderNoCache" class="element ajax clickable class">
 <h1>QCacheProviderNoCache<a href="../classes/QCacheProviderNoCache.html">¶</a>
 </h1>
-<p class="short_description">abstract cache provider</p>
+<p class="short_description">No-op cache provider: No caching at all.</p>
 <div class="details collapse"></div>
 <a href="../classes/QCacheProviderNoCache.html" class="more">« More »</a>
 </div>
@@ -1180,16 +1259,14 @@ All the appearance properties should be self-explanatory.</p>
 <div id="QControlProxy" class="element ajax clickable class">
 <h1>QControlProxy<a href="../classes/QControlProxy.html">¶</a>
 </h1>
-<p class="short_description">QControl is the user overridable Base-Class for all Controls.</p>
+<p class="short_description">Class QControlProxy is used to 'proxy' the actions for another control</p>
 <div class="details collapse"></div>
 <a href="../classes/QControlProxy.html" class="more">« More »</a>
 </div>
 <div id="QCrossScriptingException" class="element ajax clickable class">
 <h1>QCrossScriptingException<a href="../classes/QCrossScriptingException.html">¶</a>
 </h1>
-<p class="short_description">This is the main exception to be thrown by any
-method to indicate that the CALLER is responsible for
-causing the exception.</p>
+<p class="short_description">Class QCrossScriptingException: Called when the textbox fails CrossScripting checks</p>
 <div class="details collapse"></div>
 <a href="../classes/QCrossScriptingException.html" class="more">« More »</a>
 </div>
@@ -1399,7 +1476,9 @@ causing the exception.</p>
 <h1>QDialog_CloseEvent<a href="../classes/QDialog_CloseEvent.html">¶</a>
 </h1>
 <p class="short_description">Triggered when the dialog is closed.<ul><li><strong>event</strong> Type:
-		<a>Event</a> </li> <li><strong>ui</strong> Type: <a>Object</a> </li></ul></p>
+		<a>Event</a> </li> <li><strong>ui</strong> Type: <a>Object</a>
+		</li></ul><p><em>Note: The <code>ui</code> object is empty but included for
+		consistency with other events.</em></p></p>
 <div class="details collapse"></div>
 <a href="../classes/QDialog_CloseEvent.html" class="more">« More »</a>
 </div>
@@ -1407,7 +1486,9 @@ causing the exception.</p>
 <h1>QDialog_CreateEvent<a href="../classes/QDialog_CreateEvent.html">¶</a>
 </h1>
 <p class="short_description">Triggered when the dialog is created.<ul><li><strong>event</strong> Type:
-		<a>Event</a> </li> <li><strong>ui</strong> Type: <a>Object</a> </li></ul></p>
+		<a>Event</a> </li> <li><strong>ui</strong> Type: <a>Object</a>
+		</li></ul><p><em>Note: The <code>ui</code> object is empty but included for
+		consistency with other events.</em></p></p>
 <div class="details collapse"></div>
 <a href="../classes/QDialog_CreateEvent.html" class="more">« More »</a>
 </div>
@@ -1452,7 +1533,9 @@ causing the exception.</p>
 <h1>QDialog_FocusEvent<a href="../classes/QDialog_FocusEvent.html">¶</a>
 </h1>
 <p class="short_description">Triggered when the dialog gains focus.<ul><li><strong>event</strong> Type:
-		<a>Event</a> </li> <li><strong>ui</strong> Type: <a>Object</a> </li></ul></p>
+		<a>Event</a> </li> <li><strong>ui</strong> Type: <a>Object</a>
+		</li></ul><p><em>Note: The <code>ui</code> object is empty but included for
+		consistency with other events.</em></p></p>
 <div class="details collapse"></div>
 <a href="../classes/QDialog_FocusEvent.html" class="more">« More »</a>
 </div>
@@ -1460,7 +1543,9 @@ causing the exception.</p>
 <h1>QDialog_OpenEvent<a href="../classes/QDialog_OpenEvent.html">¶</a>
 </h1>
 <p class="short_description">Triggered when the dialog is opened.<ul><li><strong>event</strong> Type:
-		<a>Event</a> </li> <li><strong>ui</strong> Type: <a>Object</a> </li></ul></p>
+		<a>Event</a> </li> <li><strong>ui</strong> Type: <a>Object</a>
+		</li></ul><p><em>Note: The <code>ui</code> object is empty but included for
+		consistency with other events.</em></p></p>
 <div class="details collapse"></div>
 <a href="../classes/QDialog_OpenEvent.html" class="more">« More »</a>
 </div>
@@ -1522,7 +1607,8 @@ causing the exception.</p>
 </h1>
 <p class="short_description">Triggered when the draggable is created.<ul><li><strong>event</strong>
 		Type: <a>Event</a> </li> <li><strong>ui</strong> Type: <a>Object</a>
-		</li></ul></p>
+		</li></ul><p><em>Note: The <code>ui</code> object is empty but included for
+		consistency with other events.</em></p></p>
 <div class="details collapse"></div>
 <a href="../classes/QDraggable_CreateEvent.html" class="more">« More »</a>
 </div>
@@ -1581,7 +1667,8 @@ causing the exception.</p>
 </h1>
 <p class="short_description">Triggered when the droppable is created.<ul><li><strong>event</strong>
 		Type: <a>Event</a> </li> <li><strong>ui</strong> Type: <a>Object</a>
-		</li></ul></p>
+		</li></ul><p><em>Note: The <code>ui</code> object is empty but included for
+		consistency with other events.</em></p></p>
 <div class="details collapse"></div>
 <a href="../classes/QDroppable_CreateEvent.html" class="more">« More »</a>
 </div>
@@ -1625,7 +1712,8 @@ causing the exception.</p>
 <p class="short_description">Triggered when an accepted draggable is dragged out of the droppable (based
 		on the<a><code>tolerance</code></a> option).<ul><li><strong>event</strong>
 		Type: <a>Event</a> </li> <li><strong>ui</strong> Type: <a>Object</a>
-		</li></ul></p>
+		</li></ul><p><em>Note: The <code>ui</code> object is empty but included for
+		consistency with other events.</em></p></p>
 <div class="details collapse"></div>
 <a href="../classes/QDroppable_OutEvent.html" class="more">« More »</a>
 </div>
@@ -1723,7 +1811,7 @@ messages via any accessible SMTP server.</p>
 <div id="QImageBrowserBase" class="element ajax clickable class">
 <h1>QImageBrowserBase<a href="../classes/QImageBrowserBase.html">¶</a>
 </h1>
-<p class="short_description">This class will render HTML via a pair of <span></span> tags.</p>
+<p class="short_description">The QPanel Class is defined here.</p>
 <div class="details collapse"></div>
 <a href="../classes/QImageBrowserBase.html" class="more">« More »</a>
 </div>
@@ -1806,7 +1894,9 @@ causing the exception.</p>
 <h1>QJqButton_CreateEvent<a href="../classes/QJqButton_CreateEvent.html">¶</a>
 </h1>
 <p class="short_description">Triggered when the button is created.<ul><li><strong>event</strong> Type:
-		<a>Event</a> </li> <li><strong>ui</strong> Type: <a>Object</a> </li></ul></p>
+		<a>Event</a> </li> <li><strong>ui</strong> Type: <a>Object</a>
+		</li></ul><p><em>Note: The <code>ui</code> object is empty but included for
+		consistency with other events.</em></p></p>
 <div class="details collapse"></div>
 <a href="../classes/QJqButton_CreateEvent.html" class="more">« More »</a>
 </div>
@@ -1814,7 +1904,9 @@ causing the exception.</p>
 <h1>QJqCheckBox_CreateEvent<a href="../classes/QJqCheckBox_CreateEvent.html">¶</a>
 </h1>
 <p class="short_description">Triggered when the button is created.<ul><li><strong>event</strong> Type:
-		<a>Event</a> </li> <li><strong>ui</strong> Type: <a>Object</a> </li></ul></p>
+		<a>Event</a> </li> <li><strong>ui</strong> Type: <a>Object</a>
+		</li></ul><p><em>Note: The <code>ui</code> object is empty but included for
+		consistency with other events.</em></p></p>
 <div class="details collapse"></div>
 <a href="../classes/QJqCheckBox_CreateEvent.html" class="more">« More »</a>
 </div>
@@ -1829,7 +1921,9 @@ causing the exception.</p>
 <h1>QJqRadioButton_CreateEvent<a href="../classes/QJqRadioButton_CreateEvent.html">¶</a>
 </h1>
 <p class="short_description">Triggered when the button is created.<ul><li><strong>event</strong> Type:
-		<a>Event</a> </li> <li><strong>ui</strong> Type: <a>Object</a> </li></ul></p>
+		<a>Event</a> </li> <li><strong>ui</strong> Type: <a>Object</a>
+		</li></ul><p><em>Note: The <code>ui</code> object is empty but included for
+		consistency with other events.</em></p></p>
 <div class="details collapse"></div>
 <a href="../classes/QJqRadioButton_CreateEvent.html" class="more">« More »</a>
 </div>
@@ -1866,7 +1960,7 @@ Periodic or one shot timers are possible.</p>
 <div id="QMenu" class="element ajax clickable class">
 <h1>QMenu<a href="../classes/QMenu.html">¶</a>
 </h1>
-<p class="short_description">Implements a JQuery UI Menu</p>
+<p class="short_description">Class QMenu derived from QMenuBase.</p>
 <div class="details collapse"></div>
 <a href="../classes/QMenu.html" class="more">« More »</a>
 </div>
@@ -1884,7 +1978,9 @@ Periodic or one shot timers are possible.</p>
 <h1>QMenu_CreateEvent<a href="../classes/QMenu_CreateEvent.html">¶</a>
 </h1>
 <p class="short_description">Triggered when the menu is created.<ul><li><strong>event</strong> Type:
-		<a>Event</a> </li> <li><strong>ui</strong> Type: <a>Object</a> </li></ul></p>
+		<a>Event</a> </li> <li><strong>ui</strong> Type: <a>Object</a>
+		</li></ul><p><em>Note: The <code>ui</code> object is empty but included for
+		consistency with other events.</em></p></p>
 <div class="details collapse"></div>
 <a href="../classes/QMenu_CreateEvent.html" class="more">« More »</a>
 </div>
@@ -1978,7 +2074,9 @@ causing the exception.</p>
 <div id="QPaginator" class="element ajax clickable class">
 <h1>QPaginator<a href="../classes/QPaginator.html">¶</a>
 </h1>
-<p class="short_description">QControl is the user overridable Base-Class for all Controls.</p>
+<p class="short_description">Class QPaginator - The paginator control which can be attached to a QDataRepeater or QDataGrid
+This class will take care of the number of pages, current page, next/previous links and so on
+automatically.</p>
 <div class="details collapse"></div>
 <a href="../classes/QPaginator.html" class="more">« More »</a>
 </div>
@@ -2180,7 +2278,9 @@ causing the exception.</p>
 </h1>
 <p class="short_description">Triggered when the value of the progressbar
 		changes.<ul><li><strong>event</strong> Type: <a>Event</a> </li>
-		<li><strong>ui</strong> Type: <a>Object</a> </li></ul></p>
+		<li><strong>ui</strong> Type: <a>Object</a> </li></ul><p><em>Note: The
+		<code>ui</code> object is empty but included for consistency with other
+		events.</em></p></p>
 <div class="details collapse"></div>
 <a href="../classes/QProgressbar_ChangeEvent.html" class="more">« More »</a>
 </div>
@@ -2189,7 +2289,9 @@ causing the exception.</p>
 </h1>
 <p class="short_description">Triggered when the value of the progressbar reaches the maximum
 		value.<ul><li><strong>event</strong> Type: <a>Event</a> </li>
-		<li><strong>ui</strong> Type: <a>Object</a> </li></ul></p>
+		<li><strong>ui</strong> Type: <a>Object</a> </li></ul><p><em>Note: The
+		<code>ui</code> object is empty but included for consistency with other
+		events.</em></p></p>
 <div class="details collapse"></div>
 <a href="../classes/QProgressbar_CompleteEvent.html" class="more">« More »</a>
 </div>
@@ -2198,7 +2300,8 @@ causing the exception.</p>
 </h1>
 <p class="short_description">Triggered when the progressbar is created.<ul><li><strong>event</strong>
 		Type: <a>Event</a> </li> <li><strong>ui</strong> Type: <a>Object</a>
-		</li></ul></p>
+		</li></ul><p><em>Note: The <code>ui</code> object is empty but included for
+		consistency with other events.</em></p></p>
 <div class="details collapse"></div>
 <a href="../classes/QProgressbar_CreateEvent.html" class="more">« More »</a>
 </div>
@@ -2586,91 +2689,76 @@ causing the exception.</p>
 <div id="QResizable_CreateEvent" class="element ajax clickable class">
 <h1>QResizable_CreateEvent<a href="../classes/QResizable_CreateEvent.html">¶</a>
 </h1>
-<p class="short_description"><div>Triggered when the resizable is
-		created.</div><ul><li><div><strong>event</strong></div> <div>Type:
-		<a>Event</a></div> <div></div></li> <li><div><strong>ui</strong></div>
-		<div>Type: <a>Object</a></div> <div></div></li></ul></p>
+<p class="short_description">Triggered when the resizable is created.<ul><li><strong>event</strong>
+		Type: <a>Event</a> </li> <li><strong>ui</strong> Type: <a>Object</a>
+		</li></ul><p><em>Note: The <code>ui</code> object is empty but included for
+		consistency with other events.</em></p></p>
 <div class="details collapse"></div>
 <a href="../classes/QResizable_CreateEvent.html" class="more">« More »</a>
 </div>
 <div id="QResizable_ResizeEvent" class="element ajax clickable class">
 <h1>QResizable_ResizeEvent<a href="../classes/QResizable_ResizeEvent.html">¶</a>
 </h1>
-<p class="short_description"><div>This event is triggered during the resize, on the drag of the resize
-		handler.</div><ul><li><div><strong>event</strong></div> <div>Type:
-		<a>Event</a></div> <div></div></li> <li><div><strong>ui</strong></div>
-		<div>Type: <a>Object</a></div> <div></div>
-		<ul><li><div><strong>element</strong></div> <div>Type: <a>jQuery</a></div>
-		<div>The jQuery object representing the element to be resized</div></li>
-		<li><div><strong>helper</strong></div> <div>Type: <a>jQuery</a></div>
-		<div>The jQuery object representing the helper that's being
-		resized</div></li> <li><div><strong>originalElement</strong></div>
-		<div>Type: <a>jQuery</a></div> <div>The jQuery object representing the
-		original element before it is wrapped</div></li>
-		<li><div><strong>originalPosition</strong></div> <div>Type:
-		<a>Object</a></div> <div>The position represented as <code>{ left, top
-		}</code> before the resizable is resized</div></li>
-		<li><div><strong>originalSize</strong></div> <div>Type: <a>Object</a></div>
-		<div>The size represented as <code>{ width, height }</code> before the
-		resizable is resized</div></li> <li><div><strong>position</strong></div>
-		<div>Type: <a>Object</a></div> <div>The current position represented as
-		<code>{ left, top }</code></div></li> <li><div><strong>size</strong></div>
-		<div>Type: <a>Object</a></div> <div>The current size represented as <code>{
-		width, height }</code></div></li></ul></li></ul></p>
+<p class="short_description">This event is triggered during the resize, on the drag of the resize
+		handler.<ul><li><strong>event</strong> Type: <a>Event</a> </li>
+		<li><strong>ui</strong> Type: <a>Object</a>
+		<ul><li><strong>element</strong> Type: <a>jQuery</a> The jQuery object
+		representing the element to be resized</li> <li><strong>helper</strong>
+		Type: <a>jQuery</a> The jQuery object representing the helper that's being
+		resized</li> <li><strong>originalElement</strong> Type: <a>jQuery</a> The
+		jQuery object representing the original element before it is wrapped</li>
+		<li><strong>originalPosition</strong> Type: <a>Object</a> The position
+		represented as <code>{ left, top }</code> before the resizable is
+		resized</li> <li><strong>originalSize</strong> Type: <a>Object</a> The size
+		represented as <code>{ width, height }</code> before the resizable is
+		resized</li> <li><strong>position</strong> Type: <a>Object</a> The current
+		position represented as <code>{ left, top }</code></li>
+		<li><strong>size</strong> Type: <a>Object</a> The current size represented
+		as <code>{ width, height }</code></li></ul></li></ul></p>
 <div class="details collapse"></div>
 <a href="../classes/QResizable_ResizeEvent.html" class="more">« More »</a>
 </div>
 <div id="QResizable_StartEvent" class="element ajax clickable class">
 <h1>QResizable_StartEvent<a href="../classes/QResizable_StartEvent.html">¶</a>
 </h1>
-<p class="short_description"><div>This event is triggered at the start of a resize
-		operation.</div><ul><li><div><strong>event</strong></div> <div>Type:
-		<a>Event</a></div> <div></div></li> <li><div><strong>ui</strong></div>
-		<div>Type: <a>Object</a></div> <div></div>
-		<ul><li><div><strong>element</strong></div> <div>Type: <a>jQuery</a></div>
-		<div>The jQuery object representing the element to be resized</div></li>
-		<li><div><strong>helper</strong></div> <div>Type: <a>jQuery</a></div>
-		<div>The jQuery object representing the helper that's being
-		resized</div></li> <li><div><strong>originalElement</strong></div>
-		<div>Type: <a>jQuery</a></div> <div>The jQuery object representing the
-		original element before it is wrapped</div></li>
-		<li><div><strong>originalPosition</strong></div> <div>Type:
-		<a>Object</a></div> <div>The position represented as <code>{ left, top
-		}</code> before the resizable is resized</div></li>
-		<li><div><strong>originalSize</strong></div> <div>Type: <a>Object</a></div>
-		<div>The size represented as <code>{ width, height }</code> before the
-		resizable is resized</div></li> <li><div><strong>position</strong></div>
-		<div>Type: <a>Object</a></div> <div>The current position represented as
-		<code>{ left, top }</code></div></li> <li><div><strong>size</strong></div>
-		<div>Type: <a>Object</a></div> <div>The current size represented as <code>{
-		width, height }</code></div></li></ul></li></ul></p>
+<p class="short_description">This event is triggered at the start of a resize
+		operation.<ul><li><strong>event</strong> Type: <a>Event</a> </li>
+		<li><strong>ui</strong> Type: <a>Object</a>
+		<ul><li><strong>element</strong> Type: <a>jQuery</a> The jQuery object
+		representing the element to be resized</li> <li><strong>helper</strong>
+		Type: <a>jQuery</a> The jQuery object representing the helper that's being
+		resized</li> <li><strong>originalElement</strong> Type: <a>jQuery</a> The
+		jQuery object representing the original element before it is wrapped</li>
+		<li><strong>originalPosition</strong> Type: <a>Object</a> The position
+		represented as <code>{ left, top }</code> before the resizable is
+		resized</li> <li><strong>originalSize</strong> Type: <a>Object</a> The size
+		represented as <code>{ width, height }</code> before the resizable is
+		resized</li> <li><strong>position</strong> Type: <a>Object</a> The current
+		position represented as <code>{ left, top }</code></li>
+		<li><strong>size</strong> Type: <a>Object</a> The current size represented
+		as <code>{ width, height }</code></li></ul></li></ul></p>
 <div class="details collapse"></div>
 <a href="../classes/QResizable_StartEvent.html" class="more">« More »</a>
 </div>
 <div id="QResizable_StopEvent" class="element ajax clickable class">
 <h1>QResizable_StopEvent<a href="../classes/QResizable_StopEvent.html">¶</a>
 </h1>
-<p class="short_description"><div>This event is triggered at the end of a resize
-		operation.</div><ul><li><div><strong>event</strong></div> <div>Type:
-		<a>Event</a></div> <div></div></li> <li><div><strong>ui</strong></div>
-		<div>Type: <a>Object</a></div> <div></div>
-		<ul><li><div><strong>element</strong></div> <div>Type: <a>jQuery</a></div>
-		<div>The jQuery object representing the element to be resized</div></li>
-		<li><div><strong>helper</strong></div> <div>Type: <a>jQuery</a></div>
-		<div>The jQuery object representing the helper that's being
-		resized</div></li> <li><div><strong>originalElement</strong></div>
-		<div>Type: <a>jQuery</a></div> <div>The jQuery object representing the
-		original element before it is wrapped</div></li>
-		<li><div><strong>originalPosition</strong></div> <div>Type:
-		<a>Object</a></div> <div>The position represented as <code>{ left, top
-		}</code> before the resizable is resized</div></li>
-		<li><div><strong>originalSize</strong></div> <div>Type: <a>Object</a></div>
-		<div>The size represented as <code>{ width, height }</code> before the
-		resizable is resized</div></li> <li><div><strong>position</strong></div>
-		<div>Type: <a>Object</a></div> <div>The current position represented as
-		<code>{ left, top }</code></div></li> <li><div><strong>size</strong></div>
-		<div>Type: <a>Object</a></div> <div>The current size represented as <code>{
-		width, height }</code></div></li></ul></li></ul></p>
+<p class="short_description">This event is triggered at the end of a resize
+		operation.<ul><li><strong>event</strong> Type: <a>Event</a> </li>
+		<li><strong>ui</strong> Type: <a>Object</a>
+		<ul><li><strong>element</strong> Type: <a>jQuery</a> The jQuery object
+		representing the element to be resized</li> <li><strong>helper</strong>
+		Type: <a>jQuery</a> The jQuery object representing the helper that's being
+		resized</li> <li><strong>originalElement</strong> Type: <a>jQuery</a> The
+		jQuery object representing the original element before it is wrapped</li>
+		<li><strong>originalPosition</strong> Type: <a>Object</a> The position
+		represented as <code>{ left, top }</code> before the resizable is
+		resized</li> <li><strong>originalSize</strong> Type: <a>Object</a> The size
+		represented as <code>{ width, height }</code> before the resizable is
+		resized</li> <li><strong>position</strong> Type: <a>Object</a> The current
+		position represented as <code>{ left, top }</code></li>
+		<li><strong>size</strong> Type: <a>Object</a> The current size represented
+		as <code>{ width, height }</code></li></ul></li></ul></p>
 <div class="details collapse"></div>
 <a href="../classes/QResizable_StopEvent.html" class="more">« More »</a>
 </div>
@@ -2707,7 +2795,8 @@ causing the exception.</p>
 </h1>
 <p class="short_description">Triggered when the selectable is created.<ul><li><strong>event</strong>
 		Type: <a>Event</a> </li> <li><strong>ui</strong> Type: <a>Object</a>
-		</li></ul></p>
+		</li></ul><p><em>Note: The <code>ui</code> object is empty but included for
+		consistency with other events.</em></p></p>
 <div class="details collapse"></div>
 <a href="../classes/QSelectable_CreateEvent.html" class="more">« More »</a>
 </div>
@@ -2738,7 +2827,9 @@ causing the exception.</p>
 </h1>
 <p class="short_description">Triggered at the beginning of the select
 		operation.<ul><li><strong>event</strong> Type: <a>Event</a> </li>
-		<li><strong>ui</strong> Type: <a>Object</a> </li></ul></p>
+		<li><strong>ui</strong> Type: <a>Object</a> </li></ul><p><em>Note: The
+		<code>ui</code> object is empty but included for consistency with other
+		events.</em></p></p>
 <div class="details collapse"></div>
 <a href="../classes/QSelectable_StartEvent.html" class="more">« More »</a>
 </div>
@@ -2747,7 +2838,8 @@ causing the exception.</p>
 </h1>
 <p class="short_description">Triggered at the end of the select operation.<ul><li><strong>event</strong>
 		Type: <a>Event</a> </li> <li><strong>ui</strong> Type: <a>Object</a>
-		</li></ul></p>
+		</li></ul><p><em>Note: The <code>ui</code> object is empty but included for
+		consistency with other events.</em></p></p>
 <div class="details collapse"></div>
 <a href="../classes/QSelectable_StopEvent.html" class="more">« More »</a>
 </div>
@@ -2820,7 +2912,9 @@ DataSource array</p>
 <h1>QSlider_CreateEvent<a href="../classes/QSlider_CreateEvent.html">¶</a>
 </h1>
 <p class="short_description">Triggered when the slider is created.<ul><li><strong>event</strong> Type:
-		<a>Event</a> </li> <li><strong>ui</strong> Type: <a>Object</a> </li></ul></p>
+		<a>Event</a> </li> <li><strong>ui</strong> Type: <a>Object</a>
+		</li></ul><p><em>Note: The <code>ui</code> object is empty but included for
+		consistency with other events.</em></p></p>
 <div class="details collapse"></div>
 <a href="../classes/QSlider_CreateEvent.html" class="more">« More »</a>
 </div>
@@ -2938,7 +3032,9 @@ DataSource array</p>
 <h1>QSortable_CreateEvent<a href="../classes/QSortable_CreateEvent.html">¶</a>
 </h1>
 <p class="short_description">Triggered when the sortable is created.<ul><li><strong>event</strong> Type:
-		<a>Event</a> </li> <li><strong>ui</strong> Type: <a>Object</a> </li></ul></p>
+		<a>Event</a> </li> <li><strong>ui</strong> Type: <a>Object</a>
+		</li></ul><p><em>Note: The <code>ui</code> object is empty but included for
+		consistency with other events.</em></p></p>
 <div class="details collapse"></div>
 <a href="../classes/QSortable_CreateEvent.html" class="more">« More »</a>
 </div>
@@ -2965,10 +3061,9 @@ DataSource array</p>
 <div id="QSortable_OutEvent" class="element ajax clickable class">
 <h1>QSortable_OutEvent<a href="../classes/QSortable_OutEvent.html">¶</a>
 </h1>
-<p class="short_description"><p>This event is triggered when a sortable item is moved away from a
-		connected list.</p> 				<p><em>Note: This event is also triggered when a
-		sortable item is dropped.</em></p><ul><li><strong>event</strong> Type:
-		<a>Event</a> </li> <li><strong>ui</strong> Type: <a>Object</a>
+<p class="short_description">This event is triggered when a sortable item is moved away from a connected
+		list.<ul><li><strong>event</strong> Type: <a>Event</a> </li>
+		<li><strong>ui</strong> Type: <a>Object</a>
 		<ul><li><strong>helper</strong> Type: <a>jQuery</a> The jQuery object
 		representing the helper being sorted</li> <li><strong>item</strong> Type:
 		<a>jQuery</a> The jQuery object representing the current dragged
@@ -3124,7 +3219,7 @@ DataSource array</p>
 <div id="QSpinner" class="element ajax clickable class">
 <h1>QSpinner<a href="../classes/QSpinner.html">¶</a>
 </h1>
-<p class="short_description">Implements a JQuery UI Spinner Object</p>
+<p class="short_description">Class QSpinner</p>
 <div class="details collapse"></div>
 <a href="../classes/QSpinner.html" class="more">« More »</a>
 </div>
@@ -3133,7 +3228,9 @@ DataSource array</p>
 </h1>
 <p class="short_description">Triggered when the value of the spinner has changed and the input is no
 		longer focused.<ul><li><strong>event</strong> Type: <a>Event</a> </li>
-		<li><strong>ui</strong> Type: <a>Object</a> </li></ul></p>
+		<li><strong>ui</strong> Type: <a>Object</a> </li></ul><p><em>Note: The
+		<code>ui</code> object is empty but included for consistency with other
+		events.</em></p></p>
 <div class="details collapse"></div>
 <a href="../classes/QSpinner_ChangeEvent.html" class="more">« More »</a>
 </div>
@@ -3141,7 +3238,9 @@ DataSource array</p>
 <h1>QSpinner_CreateEvent<a href="../classes/QSpinner_CreateEvent.html">¶</a>
 </h1>
 <p class="short_description">Triggered when the spinner is created.<ul><li><strong>event</strong> Type:
-		<a>Event</a> </li> <li><strong>ui</strong> Type: <a>Object</a> </li></ul></p>
+		<a>Event</a> </li> <li><strong>ui</strong> Type: <a>Object</a>
+		</li></ul><p><em>Note: The <code>ui</code> object is empty but included for
+		consistency with other events.</em></p></p>
 <div class="details collapse"></div>
 <a href="../classes/QSpinner_CreateEvent.html" class="more">« More »</a>
 </div>
@@ -3164,7 +3263,9 @@ DataSource array</p>
 <h1>QSpinner_StopEvent<a href="../classes/QSpinner_StopEvent.html">¶</a>
 </h1>
 <p class="short_description">Triggered after a spin.<ul><li><strong>event</strong> Type: <a>Event</a>
-		</li> <li><strong>ui</strong> Type: <a>Object</a> </li></ul></p>
+		</li> <li><strong>ui</strong> Type: <a>Object</a> </li></ul><p><em>Note:
+		The <code>ui</code> object is empty but included for consistency with other
+		events.</em></p></p>
 <div class="details collapse"></div>
 <a href="../classes/QSpinner_StopEvent.html" class="more">« More »</a>
 </div>
@@ -3209,6 +3310,13 @@ DataSource array</p>
 <p class="short_description">An abstract utility class to handle string manipulation.</p>
 <div class="details collapse"></div>
 <a href="../classes/QString.html" class="more">« More »</a>
+</div>
+<div id="QTabs" class="element ajax clickable class">
+<h1>QTabs<a href="../classes/QTabs.html">¶</a>
+</h1>
+<p class="short_description">QTabs is the PHP wrapper for JQueryUI Tabs control</p>
+<div class="details collapse"></div>
+<a href="../classes/QTabs.html" class="more">« More »</a>
 </div>
 <div id="QTabs_ActivateEvent" class="element ajax clickable class">
 <h1>QTabs_ActivateEvent<a href="../classes/QTabs_ActivateEvent.html">¶</a>
@@ -3314,6 +3422,60 @@ causing the exception.</p>
 </div>
 <h3>
 <i class="icon-custom icon-constant"></i> Constants</h3>
+<a id="constant_ALLOW_REMOTE_ADMIN"> </a><div class="element clickable constant  constant_ALLOW_REMOTE_ADMIN" data-toggle="collapse" data-target=".constant_ALLOW_REMOTE_ADMIN .collapse">
+<h2>ALLOW_REMOTE_ADMIN</h2>
+<pre>ALLOW_REMOTE_ADMIN </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_CACHE_PROVIDER_CLASS"> </a><div class="element clickable constant  constant_CACHE_PROVIDER_CLASS" data-toggle="collapse" data-target=".constant_CACHE_PROVIDER_CLASS .collapse">
+<h2>CACHE_PROVIDER_CLASS</h2>
+<pre>CACHE_PROVIDER_CLASS </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_CACHE_PROVIDER_OPTIONS"> </a><div class="element clickable constant  constant_CACHE_PROVIDER_OPTIONS" data-toggle="collapse" data-target=".constant_CACHE_PROVIDER_OPTIONS .collapse">
+<h2>CACHE_PROVIDER_OPTIONS</h2>
+<pre>CACHE_PROVIDER_OPTIONS </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_DB_BACKED_SESSION_HANDLER_DB_INDEX"> </a><div class="element clickable constant  constant_DB_BACKED_SESSION_HANDLER_DB_INDEX" data-toggle="collapse" data-target=".constant_DB_BACKED_SESSION_HANDLER_DB_INDEX .collapse">
+<h2>DB_BACKED_SESSION_HANDLER_DB_INDEX</h2>
+<pre>DB_BACKED_SESSION_HANDLER_DB_INDEX </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_DB_BACKED_SESSION_HANDLER_TABLE_NAME"> </a><div class="element clickable constant  constant_DB_BACKED_SESSION_HANDLER_TABLE_NAME" data-toggle="collapse" data-target=".constant_DB_BACKED_SESSION_HANDLER_TABLE_NAME .collapse">
+<h2>DB_BACKED_SESSION_HANDLER_TABLE_NAME</h2>
+<pre>DB_BACKED_SESSION_HANDLER_TABLE_NAME </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_DB_CONNECTION_1"> </a><div class="element clickable constant  constant_DB_CONNECTION_1" data-toggle="collapse" data-target=".constant_DB_CONNECTION_1 .collapse">
+<h2>DB_CONNECTION_1</h2>
+<pre>DB_CONNECTION_1 </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_ERROR_LOG_PATH"> </a><div class="element clickable constant  constant_ERROR_LOG_PATH" data-toggle="collapse" data-target=".constant_ERROR_LOG_PATH .collapse">
+<h2>ERROR_LOG_PATH</h2>
+<pre>ERROR_LOG_PATH </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_ERROR_PAGE_PATH"> </a><div class="element clickable constant  constant_ERROR_PAGE_PATH" data-toggle="collapse" data-target=".constant_ERROR_PAGE_PATH .collapse">
+<h2>ERROR_PAGE_PATH</h2>
+<pre>ERROR_PAGE_PATH </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_MAX_DB_CONNECTION_INDEX"> </a><div class="element clickable constant  constant_MAX_DB_CONNECTION_INDEX" data-toggle="collapse" data-target=".constant_MAX_DB_CONNECTION_INDEX .collapse">
+<h2>MAX_DB_CONNECTION_INDEX</h2>
+<pre>MAX_DB_CONNECTION_INDEX </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
 <a id="constant_MYSQLI_TYPE_BIT"> </a><div class="element clickable constant  constant_MYSQLI_TYPE_BIT" data-toggle="collapse" data-target=".constant_MYSQLI_TYPE_BIT .collapse">
 <h2>MYSQLI_TYPE_BIT</h2>
 <pre>MYSQLI_TYPE_BIT </pre>
@@ -3326,9 +3488,81 @@ causing the exception.</p>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
+<a id="constant_SERVER_INSTANCE"> </a><div class="element clickable constant  constant_SERVER_INSTANCE" data-toggle="collapse" data-target=".constant_SERVER_INSTANCE .collapse">
+<h2>SERVER_INSTANCE</h2>
+<pre>SERVER_INSTANCE </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant___APP_CSS_ASSETS__"> </a><div class="element clickable constant  constant___APP_CSS_ASSETS__" data-toggle="collapse" data-target=".constant___APP_CSS_ASSETS__ .collapse">
+<h2>__APP_CSS_ASSETS__</h2>
+<pre>__APP_CSS_ASSETS__ </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant___APP_IMAGE_ASSETS__"> </a><div class="element clickable constant  constant___APP_IMAGE_ASSETS__" data-toggle="collapse" data-target=".constant___APP_IMAGE_ASSETS__ .collapse">
+<h2>__APP_IMAGE_ASSETS__</h2>
+<pre>__APP_IMAGE_ASSETS__ </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
 <a id="constant___APP_INCLUDES__"> </a><div class="element clickable constant  constant___APP_INCLUDES__" data-toggle="collapse" data-target=".constant___APP_INCLUDES__ .collapse">
 <h2>__APP_INCLUDES__</h2>
 <pre>__APP_INCLUDES__ </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant___APP_INCLUDES__"> </a><div class="element clickable constant  constant___APP_INCLUDES__" data-toggle="collapse" data-target=".constant___APP_INCLUDES__ .collapse">
+<h2>__APP_INCLUDES__</h2>
+<pre>__APP_INCLUDES__ </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant___APP_JS_ASSETS__"> </a><div class="element clickable constant  constant___APP_JS_ASSETS__" data-toggle="collapse" data-target=".constant___APP_JS_ASSETS__ .collapse">
+<h2>__APP_JS_ASSETS__</h2>
+<pre>__APP_JS_ASSETS__ </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant___APP_PHP_ASSETS__"> </a><div class="element clickable constant  constant___APP_PHP_ASSETS__" data-toggle="collapse" data-target=".constant___APP_PHP_ASSETS__ .collapse">
+<h2>__APP_PHP_ASSETS__</h2>
+<pre>__APP_PHP_ASSETS__ </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant___CACHE__"> </a><div class="element clickable constant  constant___CACHE__" data-toggle="collapse" data-target=".constant___CACHE__ .collapse">
+<h2>__CACHE__</h2>
+<pre>__CACHE__ </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant___CONFIGURATION__"> </a><div class="element clickable constant  constant___CONFIGURATION__" data-toggle="collapse" data-target=".constant___CONFIGURATION__ .collapse">
+<h2>__CONFIGURATION__</h2>
+<pre>__CONFIGURATION__ </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant___CSS_ASSETS__"> </a><div class="element clickable constant  constant___CSS_ASSETS__" data-toggle="collapse" data-target=".constant___CSS_ASSETS__ .collapse">
+<h2>__CSS_ASSETS__</h2>
+<pre>__CSS_ASSETS__ </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant___DB_BACKED_FORM_STATE_HANDLER_DB_INDEX__"> </a><div class="element clickable constant  constant___DB_BACKED_FORM_STATE_HANDLER_DB_INDEX__" data-toggle="collapse" data-target=".constant___DB_BACKED_FORM_STATE_HANDLER_DB_INDEX__ .collapse">
+<h2>__DB_BACKED_FORM_STATE_HANDLER_DB_INDEX__</h2>
+<pre>__DB_BACKED_FORM_STATE_HANDLER_DB_INDEX__ </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant___DB_BACKED_FORM_STATE_HANDLER_TABLE_NAME__"> </a><div class="element clickable constant  constant___DB_BACKED_FORM_STATE_HANDLER_TABLE_NAME__" data-toggle="collapse" data-target=".constant___DB_BACKED_FORM_STATE_HANDLER_TABLE_NAME__ .collapse">
+<h2>__DB_BACKED_FORM_STATE_HANDLER_TABLE_NAME__</h2>
+<pre>__DB_BACKED_FORM_STATE_HANDLER_TABLE_NAME__ </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant___DEVTOOLS__"> </a><div class="element clickable constant  constant___DEVTOOLS__" data-toggle="collapse" data-target=".constant___DEVTOOLS__ .collapse">
+<h2>__DEVTOOLS__</h2>
+<pre>__DEVTOOLS__ </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
@@ -3338,9 +3572,117 @@ causing the exception.</p>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
+<a id="constant___DOCROOT__"> </a><div class="element clickable constant  constant___DOCROOT__" data-toggle="collapse" data-target=".constant___DOCROOT__ .collapse">
+<h2>__DOCROOT__</h2>
+<pre>__DOCROOT__ </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant___EXAMPLES__"> </a><div class="element clickable constant  constant___EXAMPLES__" data-toggle="collapse" data-target=".constant___EXAMPLES__ .collapse">
+<h2>__EXAMPLES__</h2>
+<pre>__EXAMPLES__ </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant___EXTERNAL_LIBRARIES__"> </a><div class="element clickable constant  constant___EXTERNAL_LIBRARIES__" data-toggle="collapse" data-target=".constant___EXTERNAL_LIBRARIES__ .collapse">
+<h2>__EXTERNAL_LIBRARIES__</h2>
+<pre>__EXTERNAL_LIBRARIES__ </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant___FILE_FORM_STATE_HANDLER_PATH__"> </a><div class="element clickable constant  constant___FILE_FORM_STATE_HANDLER_PATH__" data-toggle="collapse" data-target=".constant___FILE_FORM_STATE_HANDLER_PATH__ .collapse">
+<h2>__FILE_FORM_STATE_HANDLER_PATH__</h2>
+<pre>__FILE_FORM_STATE_HANDLER_PATH__ </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant___FORMBASE_CLASSES__"> </a><div class="element clickable constant  constant___FORMBASE_CLASSES__" data-toggle="collapse" data-target=".constant___FORMBASE_CLASSES__ .collapse">
+<h2>__FORMBASE_CLASSES__</h2>
+<pre>__FORMBASE_CLASSES__ </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant___FORM_DRAFTS_FORM_LIST_ITEMS_PER_PAGE__"> </a><div class="element clickable constant  constant___FORM_DRAFTS_FORM_LIST_ITEMS_PER_PAGE__" data-toggle="collapse" data-target=".constant___FORM_DRAFTS_FORM_LIST_ITEMS_PER_PAGE__ .collapse">
+<h2>__FORM_DRAFTS_FORM_LIST_ITEMS_PER_PAGE__</h2>
+<pre>__FORM_DRAFTS_FORM_LIST_ITEMS_PER_PAGE__ </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant___FORM_DRAFTS_PANEL_LIST_ITEMS_PER_PAGE__"> </a><div class="element clickable constant  constant___FORM_DRAFTS_PANEL_LIST_ITEMS_PER_PAGE__" data-toggle="collapse" data-target=".constant___FORM_DRAFTS_PANEL_LIST_ITEMS_PER_PAGE__ .collapse">
+<h2>__FORM_DRAFTS_PANEL_LIST_ITEMS_PER_PAGE__</h2>
+<pre>__FORM_DRAFTS_PANEL_LIST_ITEMS_PER_PAGE__ </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant___FORM_DRAFTS__"> </a><div class="element clickable constant  constant___FORM_DRAFTS__" data-toggle="collapse" data-target=".constant___FORM_DRAFTS__ .collapse">
+<h2>__FORM_DRAFTS__</h2>
+<pre>__FORM_DRAFTS__ </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant___FORM_STATE_HANDLER__"> </a><div class="element clickable constant  constant___FORM_STATE_HANDLER__" data-toggle="collapse" data-target=".constant___FORM_STATE_HANDLER__ .collapse">
+<h2>__FORM_STATE_HANDLER__</h2>
+<pre>__FORM_STATE_HANDLER__ </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant___IMAGE_ASSETS__"> </a><div class="element clickable constant  constant___IMAGE_ASSETS__" data-toggle="collapse" data-target=".constant___IMAGE_ASSETS__ .collapse">
+<h2>__IMAGE_ASSETS__</h2>
+<pre>__IMAGE_ASSETS__ </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
 <a id="constant___INCLUDES__"> </a><div class="element clickable constant  constant___INCLUDES__" data-toggle="collapse" data-target=".constant___INCLUDES__ .collapse">
 <h2>__INCLUDES__</h2>
 <pre>__INCLUDES__ </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant___INCLUDES__"> </a><div class="element clickable constant  constant___INCLUDES__" data-toggle="collapse" data-target=".constant___INCLUDES__ .collapse">
+<h2>__INCLUDES__</h2>
+<pre>__INCLUDES__ </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant___JQUERY_BASE__"> </a><div class="element clickable constant  constant___JQUERY_BASE__" data-toggle="collapse" data-target=".constant___JQUERY_BASE__ .collapse">
+<h2>__JQUERY_BASE__</h2>
+<pre>__JQUERY_BASE__ </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant___JQUERY_CSS__"> </a><div class="element clickable constant  constant___JQUERY_CSS__" data-toggle="collapse" data-target=".constant___JQUERY_CSS__ .collapse">
+<h2>__JQUERY_CSS__</h2>
+<pre>__JQUERY_CSS__ </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant___JQUERY_EFFECTS__"> </a><div class="element clickable constant  constant___JQUERY_EFFECTS__" data-toggle="collapse" data-target=".constant___JQUERY_EFFECTS__ .collapse">
+<h2>__JQUERY_EFFECTS__</h2>
+<pre>__JQUERY_EFFECTS__ </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant___JS_ASSETS__"> </a><div class="element clickable constant  constant___JS_ASSETS__" data-toggle="collapse" data-target=".constant___JS_ASSETS__ .collapse">
+<h2>__JS_ASSETS__</h2>
+<pre>__JS_ASSETS__ </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant___META_CONTROLS_GEN__"> </a><div class="element clickable constant  constant___META_CONTROLS_GEN__" data-toggle="collapse" data-target=".constant___META_CONTROLS_GEN__ .collapse">
+<h2>__META_CONTROLS_GEN__</h2>
+<pre>__META_CONTROLS_GEN__ </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant___META_CONTROLS__"> </a><div class="element clickable constant  constant___META_CONTROLS__" data-toggle="collapse" data-target=".constant___META_CONTROLS__ .collapse">
+<h2>__META_CONTROLS__</h2>
+<pre>__META_CONTROLS__ </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant___MODEL_GEN__"> </a><div class="element clickable constant  constant___MODEL_GEN__" data-toggle="collapse" data-target=".constant___MODEL_GEN__ .collapse">
+<h2>__MODEL_GEN__</h2>
+<pre>__MODEL_GEN__ </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
@@ -3356,9 +3698,39 @@ causing the exception.</p>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
+<a id="constant___MODEL__"> </a><div class="element clickable constant  constant___MODEL__" data-toggle="collapse" data-target=".constant___MODEL__ .collapse">
+<h2>__MODEL__</h2>
+<pre>__MODEL__ </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant___PANEL_DRAFTS__"> </a><div class="element clickable constant  constant___PANEL_DRAFTS__" data-toggle="collapse" data-target=".constant___PANEL_DRAFTS__ .collapse">
+<h2>__PANEL_DRAFTS__</h2>
+<pre>__PANEL_DRAFTS__ </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant___PHP_ASSETS__"> </a><div class="element clickable constant  constant___PHP_ASSETS__" data-toggle="collapse" data-target=".constant___PHP_ASSETS__ .collapse">
+<h2>__PHP_ASSETS__</h2>
+<pre>__PHP_ASSETS__ </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
 <a id="constant___PLUGINS__"> </a><div class="element clickable constant  constant___PLUGINS__" data-toggle="collapse" data-target=".constant___PLUGINS__ .collapse">
 <h2>__PLUGINS__</h2>
 <pre>__PLUGINS__ </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant___PLUGINS__"> </a><div class="element clickable constant  constant___PLUGINS__" data-toggle="collapse" data-target=".constant___PLUGINS__ .collapse">
+<h2>__PLUGINS__</h2>
+<pre>__PLUGINS__ </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant___PLUGIN_ASSETS__"> </a><div class="element clickable constant  constant___PLUGIN_ASSETS__" data-toggle="collapse" data-target=".constant___PLUGIN_ASSETS__ .collapse">
+<h2>__PLUGIN_ASSETS__</h2>
+<pre>__PLUGIN_ASSETS__ </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
@@ -3374,9 +3746,45 @@ causing the exception.</p>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
+<a id="constant___QCUBED_CORE__"> </a><div class="element clickable constant  constant___QCUBED_CORE__" data-toggle="collapse" data-target=".constant___QCUBED_CORE__ .collapse">
+<h2>__QCUBED_CORE__</h2>
+<pre>__QCUBED_CORE__ </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
 <a id="constant___QCUBED__"> </a><div class="element clickable constant  constant___QCUBED__" data-toggle="collapse" data-target=".constant___QCUBED__ .collapse">
 <h2>__QCUBED__</h2>
 <pre>__QCUBED__ </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant___QCUBED__"> </a><div class="element clickable constant  constant___QCUBED__" data-toggle="collapse" data-target=".constant___QCUBED__ .collapse">
+<h2>__QCUBED__</h2>
+<pre>__QCUBED__ </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant___QI18N_PO_PATH__"> </a><div class="element clickable constant  constant___QI18N_PO_PATH__" data-toggle="collapse" data-target=".constant___QI18N_PO_PATH__ .collapse">
+<h2>__QI18N_PO_PATH__</h2>
+<pre>__QI18N_PO_PATH__ </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant___SUBDIRECTORY__"> </a><div class="element clickable constant  constant___SUBDIRECTORY__" data-toggle="collapse" data-target=".constant___SUBDIRECTORY__ .collapse">
+<h2>__SUBDIRECTORY__</h2>
+<pre>__SUBDIRECTORY__ </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant___URL_REWRITE__"> </a><div class="element clickable constant  constant___URL_REWRITE__" data-toggle="collapse" data-target=".constant___URL_REWRITE__ .collapse">
+<h2>__URL_REWRITE__</h2>
+<pre>__URL_REWRITE__ </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant___VIRTUAL_DIRECTORY__"> </a><div class="element clickable constant  constant___VIRTUAL_DIRECTORY__" data-toggle="collapse" data-target=".constant___VIRTUAL_DIRECTORY__ .collapse">
+<h2>__VIRTUAL_DIRECTORY__</h2>
+<pre>__VIRTUAL_DIRECTORY__ </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
@@ -3386,7 +3794,7 @@ causing the exception.</p>
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
-            generated on 2013-03-31T00:57:16+07:00.<br></footer></div>
+            generated on 2013-10-23T02:24:46+07:00.<br></footer></div>
 </div>
 </body>
 </html>

@@ -35,7 +35,7 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">2985</span></a></li>
+                <span class="label label-info">2737</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul><li>todo 
                 <span class="label label-info">27</span>
@@ -93,9 +93,6 @@
 <li class="method public inherited"><a href="#method_NonQuery" title="NonQuery :: "><span class="description">NonQuery()
         </span><pre>NonQuery()</pre></a></li>
 <li class="method public inherited"><a href="#method_OutputProfiling" title="OutputProfiling :: Displays the OutputProfiling results, plus a link which will popup the details of the profiling."><span class="description">Displays the OutputProfiling results, plus a link which will popup the details of the profiling.</span><pre>OutputProfiling()</pre></a></li>
-<li class="method public inherited"><a href="#method_OverrideAttributes" title="OverrideAttributes :: This allows you to set any properties, given by a name-value pair list
-in mixOverrideArray."><span class="description">This allows you to set any properties, given by a name-value pair list
-in mixOverrideArray.</span><pre>OverrideAttributes()</pre></a></li>
 <li class="method public inherited"><a href="#method_PrepareStatement" title="PrepareStatement :: "><span class="description">PrepareStatement()
         </span><pre>PrepareStatement()</pre></a></li>
 <li class="method public inherited"><a href="#method_Query" title="Query :: "><span class="description">Query()
@@ -107,14 +104,9 @@ in mixOverrideArray.</span><pre>OverrideAttributes()</pre></a></li>
 <li class="method public "><a href="#method_SqlSortByVariable" title="SqlSortByVariable :: "><span class="description">SqlSortByVariable()
         </span><pre>SqlSortByVariable()</pre></a></li>
 <li class="method public "><a href="#method_SqlVariable" title="SqlVariable :: Properly escapes $mixData to be used as a SQL query parameter."><span class="description">Properly escapes $mixData to be used as a SQL query parameter.</span><pre>SqlVariable()</pre></a></li>
-<li class="method public "><a href="#method_TransactionBegin" title="TransactionBegin :: "><span class="description">TransactionBegin()
-        </span><pre>TransactionBegin()</pre></a></li>
-<li class="method public "><a href="#method_TransactionCommit" title="TransactionCommit :: "><span class="description">TransactionCommit()
-        </span><pre>TransactionCommit()</pre></a></li>
-<li class="method public inherited"><a href="#method_TransactionRollBack" title="TransactionRollBack :: "><span class="description">TransactionRollBack()
-        </span><pre>TransactionRollBack()</pre></a></li>
-<li class="method public "><a href="#method_TransactionRollback" title="TransactionRollback :: "><span class="description">TransactionRollback()
-        </span><pre>TransactionRollback()</pre></a></li>
+<li class="method public inherited"><a href="#method_TransactionBegin" title="TransactionBegin :: This function begins the database transaction."><span class="description">This function begins the database transaction.</span><pre>TransactionBegin()</pre></a></li>
+<li class="method public inherited"><a href="#method_TransactionCommit" title="TransactionCommit :: This function commits the database transaction."><span class="description">This function commits the database transaction.</span><pre>TransactionCommit()</pre></a></li>
+<li class="method public inherited"><a href="#method_TransactionRollBack" title="TransactionRollBack :: This function rolls back the database transaction."><span class="description">This function rolls back the database transaction.</span><pre>TransactionRollBack()</pre></a></li>
 <li class="method public inherited"><a href="#method___construct" title="__construct :: Constructs a Database Adapter based on the database index and the configuration array of properties for this particular adapter
 Sets up the base-level configuration properties for this database,
 namely DB Profiling and Database Index"><span class="description">Constructs a Database Adapter based on the database index and the configuration array of properties for this particular adapter
@@ -146,6 +138,9 @@ for CallerExceptions.</span><pre>__set()</pre></a></li>
         </span><pre>ExecuteNonQuery()</pre></a></li>
 <li class="method protected "><a href="#method_ExecuteQuery" title="ExecuteQuery :: "><span class="description">ExecuteQuery()
         </span><pre>ExecuteQuery()</pre></a></li>
+<li class="method protected "><a href="#method_ExecuteTransactionBegin" title="ExecuteTransactionBegin :: This function actually begins the database transaction."><span class="description">This function actually begins the database transaction.</span><pre>ExecuteTransactionBegin()</pre></a></li>
+<li class="method protected "><a href="#method_ExecuteTransactionCommit" title="ExecuteTransactionCommit :: This function actually commits the database transaction."><span class="description">This function actually commits the database transaction.</span><pre>ExecuteTransactionCommit()</pre></a></li>
+<li class="method protected "><a href="#method_ExecuteTransactionRollBack" title="ExecuteTransactionRollBack :: This function actually rolls back the database transaction."><span class="description">This function actually rolls back the database transaction.</span><pre>ExecuteTransactionRollBack()</pre></a></li>
 </ul>
 </li>
 <li class="nav-header private">» Private
@@ -158,9 +153,10 @@ for CallerExceptions.</span><pre>__set()</pre></a></li>
 <li class="nav-header protected">» Protected
                     <ul>
 <li class="property protected inherited"><a href="#property_blnConnectedFlag" title="$blnConnectedFlag :: "><span class="description"></span><pre>$blnConnectedFlag</pre></a></li>
-<li class="property protected inherited"><a href="#property_blnEnableProfiling" title="$blnEnableProfiling :: "><span class="description"></span><pre>$blnEnableProfiling</pre></a></li>
+<li class="property protected inherited"><a href="#property_blnEnableProfiling" title="$blnEnableProfiling :: "><span class="description">Has the profiling been enabled?</span><pre>$blnEnableProfiling</pre></a></li>
 <li class="property protected "><a href="#property_blnOnlyFullGroupBy" title="$blnOnlyFullGroupBy :: "><span class="description"></span><pre>$blnOnlyFullGroupBy</pre></a></li>
-<li class="property protected inherited"><a href="#property_intDatabaseIndex" title="$intDatabaseIndex :: "><span class="description"></span><pre>$intDatabaseIndex</pre></a></li>
+<li class="property protected inherited"><a href="#property_intDatabaseIndex" title="$intDatabaseIndex :: "><span class="description">Database Index according to the configuration file</span><pre>$intDatabaseIndex</pre></a></li>
+<li class="property protected inherited"><a href="#property_intTransactionDepth" title="$intTransactionDepth :: "><span class="description">The transaction depth value. It is incremented on a transaction begin, decremented on a transaction commit, and reset to zero on a roll back. It is used to implement the recursive transaction functionality.</span><pre>$intTransactionDepth</pre></a></li>
 <li class="property protected inherited"><a href="#property_objConfigArray" title="$objConfigArray :: "><span class="description"></span><pre>$objConfigArray</pre></a></li>
 <li class="property protected "><a href="#property_objMsSql" title="$objMsSql :: "><span class="description"></span><pre>$objMsSql</pre></a></li>
 <li class="property protected "><a href="#property_strEscapeIdentifierBegin" title="$strEscapeIdentifierBegin :: "><span class="description"></span><pre>$strEscapeIdentifierBegin</pre></a></li>
@@ -170,7 +166,7 @@ for CallerExceptions.</span><pre>__set()</pre></a></li>
 </li>
 <li class="nav-header">
 <i class="icon-custom icon-constant"></i> Constants
-                    <ul><li class="constant  "><a href="#constant_Adapter" title="Adapter :: "><span class="description">Adapter</span><pre>Adapter</pre></a></li></ul>
+                    <ul><li class="constant  "><a href="#constant_Adapter" title="Adapter :: Adapter name"><span class="description">Adapter name</span><pre>Adapter</pre></a></li></ul>
 </li>
 </ul>
 </div>
@@ -424,32 +420,6 @@ as well.</p></div>
 </tr></table>
 </div></div>
 </div>
-<a id="method_OverrideAttributes"></a><div class="element clickable method public method_OverrideAttributes" data-toggle="collapse" data-target=".method_OverrideAttributes .collapse">
-<h2>This allows you to set any properties, given by a name-value pair list
-in mixOverrideArray.</h2>
-<pre>OverrideAttributes($mixOverrideArray) : void</pre>
-<div class="labels"><span class="label">Inherited</span></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"><p>Each item in mixOverrideArray needs to be either a string in the format
-of Property=Value or an array in the format of array(Property => Value).
-OverrideAttributes() will basically call
-$this->Property = Value for each string element in the array.</p>
-
-<p>Value can be surrounded by quotes... but this is optional.</p></div>
-<table class="table table-bordered">
-<tr>
-<th>inherited_from</th>
-<td>\QBaseClass::OverrideAttributes()</td>
-</tr>
-<tr>
-<th>inherited_from</th>
-<td>\QDatabaseBase::OverrideAttributes()</td>
-</tr>
-</table>
-<h3>Parameters</h3>
-<div class="subelement argument"><h4>$mixOverrideArray</h4></div>
-</div></div>
-</div>
 <a id="method_PrepareStatement"></a><div class="element clickable method public method_PrepareStatement" data-toggle="collapse" data-target=".method_PrepareStatement .collapse">
 <h2>PrepareStatement()
         </h2>
@@ -544,23 +514,32 @@ if $mixData is NULL, then most RDBMS's require the use of "IS".</p></div>
 </div></div>
 </div>
 <a id="method_TransactionBegin"></a><div class="element clickable method public method_TransactionBegin" data-toggle="collapse" data-target=".method_TransactionBegin .collapse">
-<h2>TransactionBegin()
-        </h2>
-<pre>TransactionBegin() </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+<h2>This function begins the database transaction.</h2>
+<pre>TransactionBegin() : void</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QDatabaseBase::TransactionBegin()</td>
+</tr></table>
+</div></div>
 </div>
 <a id="method_TransactionCommit"></a><div class="element clickable method public method_TransactionCommit" data-toggle="collapse" data-target=".method_TransactionCommit .collapse">
-<h2>TransactionCommit()
-        </h2>
-<pre>TransactionCommit() </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+<h2>This function commits the database transaction.</h2>
+<pre>TransactionCommit() : void</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QDatabaseBase::TransactionCommit()</td>
+</tr></table>
+</div></div>
 </div>
 <a id="method_TransactionRollBack"></a><div class="element clickable method public method_TransactionRollBack" data-toggle="collapse" data-target=".method_TransactionRollBack .collapse">
-<h2>TransactionRollBack()
-        </h2>
-<pre>TransactionRollBack() </pre>
+<h2>This function rolls back the database transaction.</h2>
+<pre>TransactionRollBack() : void</pre>
 <div class="labels"><span class="label">Inherited</span></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -569,13 +548,6 @@ if $mixData is NULL, then most RDBMS's require the use of "IS".</p></div>
 <td>\QDatabaseBase::TransactionRollBack()</td>
 </tr></table>
 </div></div>
-</div>
-<a id="method_TransactionRollback"></a><div class="element clickable method public method_TransactionRollback" data-toggle="collapse" data-target=".method_TransactionRollback .collapse">
-<h2>TransactionRollback()
-        </h2>
-<pre>TransactionRollback() </pre>
-<div class="labels"></div>
-<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
 <a id="method___construct"></a><div class="element clickable method public method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
 <h2>Constructs a Database Adapter based on the database index and the configuration array of properties for this particular adapter
@@ -614,6 +586,11 @@ for CallerExceptions.</h2>
 <div class="subelement argument">
 <h4>$strName</h4>
 <code>string</code><p>Name of the property to get</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="../classes/QUndefinedPropertyException.html">\QUndefinedPropertyException</a></code></th>
+<td></td>
+</tr></table>
 <h3>Returns</h3>
 <div class="subelement response">
 <code>mixed</code>the returned property</div>
@@ -646,6 +623,11 @@ for CallerExceptions.</h2>
 <div class="subelement argument">
 <h4>$mixValue</h4>
 <code>string</code><p>New value of the property</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="../classes/QUndefinedPropertyException.html">\QUndefinedPropertyException</a></code></th>
+<td></td>
+</tr></table>
 <h3>Returns</h3>
 <div class="subelement response">
 <code>mixed</code>the property that was set</div>
@@ -672,6 +654,27 @@ for CallerExceptions.</h2>
 <h3>Parameters</h3>
 <div class="subelement argument"><h4>$strQuery</h4></div>
 </div></div>
+</div>
+<a id="method_ExecuteTransactionBegin"></a><div class="element clickable method protected method_ExecuteTransactionBegin" data-toggle="collapse" data-target=".method_ExecuteTransactionBegin .collapse">
+<h2>This function actually begins the database transaction.</h2>
+<pre>ExecuteTransactionBegin() : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"><p>Must be implemented in all subclasses.
+The "TransactionBegin" wrapper are meant to be called by end-user code</p></div></div></div>
+</div>
+<a id="method_ExecuteTransactionCommit"></a><div class="element clickable method protected method_ExecuteTransactionCommit" data-toggle="collapse" data-target=".method_ExecuteTransactionCommit .collapse">
+<h2>This function actually commits the database transaction.</h2>
+<pre>ExecuteTransactionCommit() : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"><p>Must be implemented in all subclasses.
+The "TransactionCommit" wrapper are meant to be called by end-user code</p></div></div></div>
+</div>
+<a id="method_ExecuteTransactionRollBack"></a><div class="element clickable method protected method_ExecuteTransactionRollBack" data-toggle="collapse" data-target=".method_ExecuteTransactionRollBack .collapse">
+<h2>This function actually rolls back the database transaction.</h2>
+<pre>ExecuteTransactionRollBack() : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"><p>Must be implemented in all subclasses.
+The "TransactionRollBack" wrapper are meant to be called by end-user code</p></div></div></div>
 </div>
 <a id="method_LogQuery"></a><div class="element clickable method private method_LogQuery" data-toggle="collapse" data-target=".method_LogQuery .collapse">
 <h2>If EnableProfiling is on, then log the query to the profile array</h2>
@@ -708,8 +711,8 @@ for CallerExceptions.</h2>
 </div></div>
 </div>
 <a id="property_blnEnableProfiling"> </a><div class="element clickable property protected property_blnEnableProfiling" data-toggle="collapse" data-target=".property_blnEnableProfiling .collapse">
-<h2></h2>
-<pre>$blnEnableProfiling </pre>
+<h2>Has the profiling been enabled?</h2>
+<pre>$blnEnableProfiling : bool</pre>
 <div class="labels"><span class="label">Inherited</span></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -726,14 +729,26 @@ for CallerExceptions.</h2>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
 <a id="property_intDatabaseIndex"> </a><div class="element clickable property protected property_intDatabaseIndex" data-toggle="collapse" data-target=".property_intDatabaseIndex .collapse">
-<h2></h2>
-<pre>$intDatabaseIndex </pre>
+<h2>Database Index according to the configuration file</h2>
+<pre>$intDatabaseIndex : int</pre>
 <div class="labels"><span class="label">Inherited</span></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
 <table class="table table-bordered"><tr>
 <th>inherited_from</th>
 <td>\QDatabaseBase::$$intDatabaseIndex</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_intTransactionDepth"> </a><div class="element clickable property protected property_intTransactionDepth" data-toggle="collapse" data-target=".property_intTransactionDepth .collapse">
+<h2>The transaction depth value. It is incremented on a transaction begin, decremented on a transaction commit, and reset to zero on a roll back. It is used to implement the recursive transaction functionality.</h2>
+<pre>$intTransactionDepth : int</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QDatabaseBase::$$intTransactionDepth</td>
 </tr></table>
 </div></div>
 </div>
@@ -782,7 +797,7 @@ for CallerExceptions.</h2>
 <h3>
 <i class="icon-custom icon-constant"></i> Constants</h3>
 <a id="constant_Adapter"> </a><div class="element clickable constant  constant_Adapter" data-toggle="collapse" data-target=".constant_Adapter .collapse">
-<h2>Adapter</h2>
+<h2>Adapter name</h2>
 <pre>Adapter </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
@@ -794,7 +809,7 @@ for CallerExceptions.</h2>
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
-            generated on 2013-03-31T00:57:26+07:00.<br></footer></div>
+            generated on 2013-10-23T02:25:06+07:00.<br></footer></div>
 </div>
 </body>
 </html>

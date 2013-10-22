@@ -35,7 +35,7 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">2985</span></a></li>
+                <span class="label label-info">2737</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul><li>todo 
                 <span class="label label-info">27</span>
@@ -383,7 +383,8 @@ information and global utilities for the entire web application.</p>
 </h1>
 <p class="short_description">Triggered when the autocomplete is created.<ul><li><strong>event</strong>
 		Type: <a>Event</a> </li> <li><strong>ui</strong> Type: <a>Object</a>
-		</li></ul></p>
+		</li></ul><p><em>Note: The <code>ui</code> object is empty but included for
+		consistency with other events.</em></p></p>
 <div class="details collapse"></div>
 <a href="../classes/QAutocomplete_CreateEvent.html" class="more">« More »</a>
 </div>
@@ -399,7 +400,9 @@ information and global utilities for the entire web application.</p>
 </h1>
 <p class="short_description">Triggered when the suggestion menu is opened or
 		updated.<ul><li><strong>event</strong> Type: <a>Event</a> </li>
-		<li><strong>ui</strong> Type: <a>Object</a> </li></ul></p>
+		<li><strong>ui</strong> Type: <a>Object</a> </li></ul><p><em>Note: The
+		<code>ui</code> object is empty but included for consistency with other
+		events.</em></p></p>
 <div class="details collapse"></div>
 <a href="../classes/QAutocomplete_OpenEvent.html" class="more">« More »</a>
 </div>
@@ -492,7 +495,7 @@ QButton throughout the framework.</p>
 <div id="QCacheProviderNoCache" class="element ajax clickable class">
 <h1>QCacheProviderNoCache<a href="../classes/QCacheProviderNoCache.html">¶</a>
 </h1>
-<p class="short_description">abstract cache provider</p>
+<p class="short_description">No-op cache provider: No caching at all.</p>
 <div class="details collapse"></div>
 <a href="../classes/QCacheProviderNoCache.html" class="more">« More »</a>
 </div>
@@ -588,7 +591,7 @@ for both the Object-Relational Model (e.g.</p>
 <div id="QControlProxy" class="element ajax clickable class">
 <h1>QControlProxy<a href="../classes/QControlProxy.html">¶</a>
 </h1>
-<p class="short_description">QControl is the user overridable Base-Class for all Controls.</p>
+<p class="short_description">Class QControlProxy is used to 'proxy' the actions for another control</p>
 <div class="details collapse"></div>
 <a href="../classes/QControlProxy.html" class="more">« More »</a>
 </div>
@@ -609,9 +612,7 @@ for both the Object-Relational Model (e.g.</p>
 <div id="QCrossScriptingException" class="element ajax clickable class">
 <h1>QCrossScriptingException<a href="../classes/QCrossScriptingException.html">¶</a>
 </h1>
-<p class="short_description">This is the main exception to be thrown by any
-method to indicate that the CALLER is responsible for
-causing the exception.</p>
+<p class="short_description">Class QCrossScriptingException: Called when the textbox fails CrossScripting checks</p>
 <div class="details collapse"></div>
 <a href="../classes/QCrossScriptingException.html" class="more">« More »</a>
 </div>
@@ -984,7 +985,7 @@ causing the exception.</p>
 <div id="QDialogBox" class="element ajax clickable class">
 <h1>QDialogBox<a href="../classes/QDialogBox.html">¶</a>
 </h1>
-<p class="short_description">This class will render HTML via a pair of <span></span> tags.</p>
+<p class="short_description">The QPanel Class is defined here.</p>
 <div class="details collapse"></div>
 <a href="../classes/QDialogBox.html" class="more">« More »</a>
 </div>
@@ -1013,7 +1014,9 @@ causing the exception.</p>
 <h1>QDialog_CloseEvent<a href="../classes/QDialog_CloseEvent.html">¶</a>
 </h1>
 <p class="short_description">Triggered when the dialog is closed.<ul><li><strong>event</strong> Type:
-		<a>Event</a> </li> <li><strong>ui</strong> Type: <a>Object</a> </li></ul></p>
+		<a>Event</a> </li> <li><strong>ui</strong> Type: <a>Object</a>
+		</li></ul><p><em>Note: The <code>ui</code> object is empty but included for
+		consistency with other events.</em></p></p>
 <div class="details collapse"></div>
 <a href="../classes/QDialog_CloseEvent.html" class="more">« More »</a>
 </div>
@@ -1021,7 +1024,9 @@ causing the exception.</p>
 <h1>QDialog_CreateEvent<a href="../classes/QDialog_CreateEvent.html">¶</a>
 </h1>
 <p class="short_description">Triggered when the dialog is created.<ul><li><strong>event</strong> Type:
-		<a>Event</a> </li> <li><strong>ui</strong> Type: <a>Object</a> </li></ul></p>
+		<a>Event</a> </li> <li><strong>ui</strong> Type: <a>Object</a>
+		</li></ul><p><em>Note: The <code>ui</code> object is empty but included for
+		consistency with other events.</em></p></p>
 <div class="details collapse"></div>
 <a href="../classes/QDialog_CreateEvent.html" class="more">« More »</a>
 </div>
@@ -1066,7 +1071,9 @@ causing the exception.</p>
 <h1>QDialog_FocusEvent<a href="../classes/QDialog_FocusEvent.html">¶</a>
 </h1>
 <p class="short_description">Triggered when the dialog gains focus.<ul><li><strong>event</strong> Type:
-		<a>Event</a> </li> <li><strong>ui</strong> Type: <a>Object</a> </li></ul></p>
+		<a>Event</a> </li> <li><strong>ui</strong> Type: <a>Object</a>
+		</li></ul><p><em>Note: The <code>ui</code> object is empty but included for
+		consistency with other events.</em></p></p>
 <div class="details collapse"></div>
 <a href="../classes/QDialog_FocusEvent.html" class="more">« More »</a>
 </div>
@@ -1074,7 +1081,9 @@ causing the exception.</p>
 <h1>QDialog_OpenEvent<a href="../classes/QDialog_OpenEvent.html">¶</a>
 </h1>
 <p class="short_description">Triggered when the dialog is opened.<ul><li><strong>event</strong> Type:
-		<a>Event</a> </li> <li><strong>ui</strong> Type: <a>Object</a> </li></ul></p>
+		<a>Event</a> </li> <li><strong>ui</strong> Type: <a>Object</a>
+		</li></ul><p><em>Note: The <code>ui</code> object is empty but included for
+		consistency with other events.</em></p></p>
 <div class="details collapse"></div>
 <a href="../classes/QDialog_OpenEvent.html" class="more">« More »</a>
 </div>
@@ -1157,7 +1166,8 @@ causing the exception.</p>
 </h1>
 <p class="short_description">Triggered when the draggable is created.<ul><li><strong>event</strong>
 		Type: <a>Event</a> </li> <li><strong>ui</strong> Type: <a>Object</a>
-		</li></ul></p>
+		</li></ul><p><em>Note: The <code>ui</code> object is empty but included for
+		consistency with other events.</em></p></p>
 <div class="details collapse"></div>
 <a href="../classes/QDraggable_CreateEvent.html" class="more">« More »</a>
 </div>
@@ -1244,7 +1254,8 @@ causing the exception.</p>
 </h1>
 <p class="short_description">Triggered when the droppable is created.<ul><li><strong>event</strong>
 		Type: <a>Event</a> </li> <li><strong>ui</strong> Type: <a>Object</a>
-		</li></ul></p>
+		</li></ul><p><em>Note: The <code>ui</code> object is empty but included for
+		consistency with other events.</em></p></p>
 <div class="details collapse"></div>
 <a href="../classes/QDroppable_CreateEvent.html" class="more">« More »</a>
 </div>
@@ -1288,7 +1299,8 @@ causing the exception.</p>
 <p class="short_description">Triggered when an accepted draggable is dragged out of the droppable (based
 		on the<a><code>tolerance</code></a> option).<ul><li><strong>event</strong>
 		Type: <a>Event</a> </li> <li><strong>ui</strong> Type: <a>Object</a>
-		</li></ul></p>
+		</li></ul><p><em>Note: The <code>ui</code> object is empty but included for
+		consistency with other events.</em></p></p>
 <div class="details collapse"></div>
 <a href="../classes/QDroppable_OutEvent.html" class="more">« More »</a>
 </div>
@@ -1364,7 +1376,7 @@ messages via any accessible SMTP server.</p>
 <div id="QFileAssetBase" class="element ajax clickable class">
 <h1>QFileAssetBase<a href="../classes/QFileAssetBase.html">¶</a>
 </h1>
-<p class="short_description">This class will render HTML via a pair of <span></span> tags.</p>
+<p class="short_description">The QPanel Class is defined here.</p>
 <div class="details collapse"></div>
 <a href="../classes/QFileAssetBase.html" class="more">« More »</a>
 </div>
@@ -1414,7 +1426,8 @@ that the Text is a valid float and (if applicable) is in the range of Minimum <=
 <div id="QFontFamily" class="element ajax clickable class">
 <h1>QFontFamily<a href="../classes/QFontFamily.html">¶</a>
 </h1>
-<p class="short_description"></p>
+<p class="short_description">QFontFamily class is an abstract class which arranges the commonly used font families
+the the main font in the family</p>
 <div class="details collapse"></div>
 <a href="../classes/QFontFamily.html" class="more">« More »</a>
 </div>
@@ -1465,7 +1478,7 @@ array of image paths (must be absolute paths).</p>
 <div id="QImageBrowserBase" class="element ajax clickable class">
 <h1>QImageBrowserBase<a href="../classes/QImageBrowserBase.html">¶</a>
 </h1>
-<p class="short_description">This class will render HTML via a pair of <span></span> tags.</p>
+<p class="short_description">The QPanel Class is defined here.</p>
 <div class="details collapse"></div>
 <a href="../classes/QImageBrowserBase.html" class="more">« More »</a>
 </div>
@@ -1479,7 +1492,7 @@ array of image paths (must be absolute paths).</p>
 <div id="QImageBrowserThumbnails" class="element ajax clickable class">
 <h1>QImageBrowserThumbnails<a href="../classes/QImageBrowserThumbnails.html">¶</a>
 </h1>
-<p class="short_description">This class will render HTML via a pair of <span></span> tags.</p>
+<p class="short_description">The QPanel Class is defined here.</p>
 <div class="details collapse"></div>
 <a href="../classes/QImageBrowserThumbnails.html" class="more">« More »</a>
 </div>
@@ -1647,7 +1660,9 @@ causing the exception.</p>
 <h1>QJqButton_CreateEvent<a href="../classes/QJqButton_CreateEvent.html">¶</a>
 </h1>
 <p class="short_description">Triggered when the button is created.<ul><li><strong>event</strong> Type:
-		<a>Event</a> </li> <li><strong>ui</strong> Type: <a>Object</a> </li></ul></p>
+		<a>Event</a> </li> <li><strong>ui</strong> Type: <a>Object</a>
+		</li></ul><p><em>Note: The <code>ui</code> object is empty but included for
+		consistency with other events.</em></p></p>
 <div class="details collapse"></div>
 <a href="../classes/QJqButton_CreateEvent.html" class="more">« More »</a>
 </div>
@@ -1676,7 +1691,9 @@ causing the exception.</p>
 <h1>QJqCheckBox_CreateEvent<a href="../classes/QJqCheckBox_CreateEvent.html">¶</a>
 </h1>
 <p class="short_description">Triggered when the button is created.<ul><li><strong>event</strong> Type:
-		<a>Event</a> </li> <li><strong>ui</strong> Type: <a>Object</a> </li></ul></p>
+		<a>Event</a> </li> <li><strong>ui</strong> Type: <a>Object</a>
+		</li></ul><p><em>Note: The <code>ui</code> object is empty but included for
+		consistency with other events.</em></p></p>
 <div class="details collapse"></div>
 <a href="../classes/QJqCheckBox_CreateEvent.html" class="more">« More »</a>
 </div>
@@ -1705,7 +1722,9 @@ causing the exception.</p>
 <h1>QJqRadioButton_CreateEvent<a href="../classes/QJqRadioButton_CreateEvent.html">¶</a>
 </h1>
 <p class="short_description">Triggered when the button is created.<ul><li><strong>event</strong> Type:
-		<a>Event</a> </li> <li><strong>ui</strong> Type: <a>Object</a> </li></ul></p>
+		<a>Event</a> </li> <li><strong>ui</strong> Type: <a>Object</a>
+		</li></ul><p><em>Note: The <code>ui</code> object is empty but included for
+		consistency with other events.</em></p></p>
 <div class="details collapse"></div>
 <a href="../classes/QJqRadioButton_CreateEvent.html" class="more">« More »</a>
 </div>
@@ -1735,7 +1754,7 @@ Periodic or one shot timers are possible.</p>
 <div id="QLabel" class="element ajax clickable class">
 <h1>QLabel<a href="../classes/QLabel.html">¶</a>
 </h1>
-<p class="short_description">This class will render HTML via a pair of <span></span> tags.</p>
+<p class="short_description">QLabel class is used to create text on the client side.</p>
 <div class="details collapse"></div>
 <a href="../classes/QLabel.html" class="more">« More »</a>
 </div>
@@ -1800,7 +1819,7 @@ the table's perspective (aka a Foreign Key from the referenced Table's point of 
 <div id="QMenu" class="element ajax clickable class">
 <h1>QMenu<a href="../classes/QMenu.html">¶</a>
 </h1>
-<p class="short_description">Implements a JQuery UI Menu</p>
+<p class="short_description">Class QMenu derived from QMenuBase.</p>
 <div class="details collapse"></div>
 <a href="../classes/QMenu.html" class="more">« More »</a>
 </div>
@@ -1832,7 +1851,9 @@ the table's perspective (aka a Foreign Key from the referenced Table's point of 
 <h1>QMenu_CreateEvent<a href="../classes/QMenu_CreateEvent.html">¶</a>
 </h1>
 <p class="short_description">Triggered when the menu is created.<ul><li><strong>event</strong> Type:
-		<a>Event</a> </li> <li><strong>ui</strong> Type: <a>Object</a> </li></ul></p>
+		<a>Event</a> </li> <li><strong>ui</strong> Type: <a>Object</a>
+		</li></ul><p><em>Note: The <code>ui</code> object is empty but included for
+		consistency with other events.</em></p></p>
 <div class="details collapse"></div>
 <a href="../classes/QMenu_CreateEvent.html" class="more">« More »</a>
 </div>
@@ -1975,8 +1996,7 @@ causing the exception.</p>
 <h1>QNumericTextBox<a href="../classes/QNumericTextBox.html">¶</a>
 </h1>
 <p class="short_description">A subclass of TextBox with its validate method overridden -- Validate will also ensure
-that the Text is a valid integer/float and (if applicable) is in the range of Minimum <= x <= Maximum
-this class is abstract.</p>
+that the Text is a valid integer/float and (if applicable) is in the range of Minimum <= x <= Maximum.</p>
 <div class="details collapse"></div>
 <a href="../classes/QNumericTextBox.html" class="more">« More »</a>
 </div>
@@ -2036,7 +2056,9 @@ causing the exception.</p>
 <div id="QPaginator" class="element ajax clickable class">
 <h1>QPaginator<a href="../classes/QPaginator.html">¶</a>
 </h1>
-<p class="short_description">QControl is the user overridable Base-Class for all Controls.</p>
+<p class="short_description">Class QPaginator - The paginator control which can be attached to a QDataRepeater or QDataGrid
+This class will take care of the number of pages, current page, next/previous links and so on
+automatically.</p>
 <div class="details collapse"></div>
 <a href="../classes/QPaginator.html" class="more">« More »</a>
 </div>
@@ -2050,7 +2072,7 @@ causing the exception.</p>
 <div id="QPanel" class="element ajax clickable class">
 <h1>QPanel<a href="../classes/QPanel.html">¶</a>
 </h1>
-<p class="short_description">This class will render HTML via a pair of <span></span> tags.</p>
+<p class="short_description">The QPanel Class is defined here.</p>
 <div class="details collapse"></div>
 <a href="../classes/QPanel.html" class="more">« More »</a>
 </div>
@@ -2317,7 +2339,9 @@ causing the exception.</p>
 </h1>
 <p class="short_description">Triggered when the value of the progressbar
 		changes.<ul><li><strong>event</strong> Type: <a>Event</a> </li>
-		<li><strong>ui</strong> Type: <a>Object</a> </li></ul></p>
+		<li><strong>ui</strong> Type: <a>Object</a> </li></ul><p><em>Note: The
+		<code>ui</code> object is empty but included for consistency with other
+		events.</em></p></p>
 <div class="details collapse"></div>
 <a href="../classes/QProgressbar_ChangeEvent.html" class="more">« More »</a>
 </div>
@@ -2326,7 +2350,9 @@ causing the exception.</p>
 </h1>
 <p class="short_description">Triggered when the value of the progressbar reaches the maximum
 		value.<ul><li><strong>event</strong> Type: <a>Event</a> </li>
-		<li><strong>ui</strong> Type: <a>Object</a> </li></ul></p>
+		<li><strong>ui</strong> Type: <a>Object</a> </li></ul><p><em>Note: The
+		<code>ui</code> object is empty but included for consistency with other
+		events.</em></p></p>
 <div class="details collapse"></div>
 <a href="../classes/QProgressbar_CompleteEvent.html" class="more">« More »</a>
 </div>
@@ -2335,7 +2361,8 @@ causing the exception.</p>
 </h1>
 <p class="short_description">Triggered when the progressbar is created.<ul><li><strong>event</strong>
 		Type: <a>Event</a> </li> <li><strong>ui</strong> Type: <a>Object</a>
-		</li></ul></p>
+		</li></ul><p><em>Note: The <code>ui</code> object is empty but included for
+		consistency with other events.</em></p></p>
 <div class="details collapse"></div>
 <a href="../classes/QProgressbar_CreateEvent.html" class="more">« More »</a>
 </div>
@@ -2766,91 +2793,76 @@ causing the exception.</p>
 <div id="QResizable_CreateEvent" class="element ajax clickable class">
 <h1>QResizable_CreateEvent<a href="../classes/QResizable_CreateEvent.html">¶</a>
 </h1>
-<p class="short_description"><div>Triggered when the resizable is
-		created.</div><ul><li><div><strong>event</strong></div> <div>Type:
-		<a>Event</a></div> <div></div></li> <li><div><strong>ui</strong></div>
-		<div>Type: <a>Object</a></div> <div></div></li></ul></p>
+<p class="short_description">Triggered when the resizable is created.<ul><li><strong>event</strong>
+		Type: <a>Event</a> </li> <li><strong>ui</strong> Type: <a>Object</a>
+		</li></ul><p><em>Note: The <code>ui</code> object is empty but included for
+		consistency with other events.</em></p></p>
 <div class="details collapse"></div>
 <a href="../classes/QResizable_CreateEvent.html" class="more">« More »</a>
 </div>
 <div id="QResizable_ResizeEvent" class="element ajax clickable class">
 <h1>QResizable_ResizeEvent<a href="../classes/QResizable_ResizeEvent.html">¶</a>
 </h1>
-<p class="short_description"><div>This event is triggered during the resize, on the drag of the resize
-		handler.</div><ul><li><div><strong>event</strong></div> <div>Type:
-		<a>Event</a></div> <div></div></li> <li><div><strong>ui</strong></div>
-		<div>Type: <a>Object</a></div> <div></div>
-		<ul><li><div><strong>element</strong></div> <div>Type: <a>jQuery</a></div>
-		<div>The jQuery object representing the element to be resized</div></li>
-		<li><div><strong>helper</strong></div> <div>Type: <a>jQuery</a></div>
-		<div>The jQuery object representing the helper that's being
-		resized</div></li> <li><div><strong>originalElement</strong></div>
-		<div>Type: <a>jQuery</a></div> <div>The jQuery object representing the
-		original element before it is wrapped</div></li>
-		<li><div><strong>originalPosition</strong></div> <div>Type:
-		<a>Object</a></div> <div>The position represented as <code>{ left, top
-		}</code> before the resizable is resized</div></li>
-		<li><div><strong>originalSize</strong></div> <div>Type: <a>Object</a></div>
-		<div>The size represented as <code>{ width, height }</code> before the
-		resizable is resized</div></li> <li><div><strong>position</strong></div>
-		<div>Type: <a>Object</a></div> <div>The current position represented as
-		<code>{ left, top }</code></div></li> <li><div><strong>size</strong></div>
-		<div>Type: <a>Object</a></div> <div>The current size represented as <code>{
-		width, height }</code></div></li></ul></li></ul></p>
+<p class="short_description">This event is triggered during the resize, on the drag of the resize
+		handler.<ul><li><strong>event</strong> Type: <a>Event</a> </li>
+		<li><strong>ui</strong> Type: <a>Object</a>
+		<ul><li><strong>element</strong> Type: <a>jQuery</a> The jQuery object
+		representing the element to be resized</li> <li><strong>helper</strong>
+		Type: <a>jQuery</a> The jQuery object representing the helper that's being
+		resized</li> <li><strong>originalElement</strong> Type: <a>jQuery</a> The
+		jQuery object representing the original element before it is wrapped</li>
+		<li><strong>originalPosition</strong> Type: <a>Object</a> The position
+		represented as <code>{ left, top }</code> before the resizable is
+		resized</li> <li><strong>originalSize</strong> Type: <a>Object</a> The size
+		represented as <code>{ width, height }</code> before the resizable is
+		resized</li> <li><strong>position</strong> Type: <a>Object</a> The current
+		position represented as <code>{ left, top }</code></li>
+		<li><strong>size</strong> Type: <a>Object</a> The current size represented
+		as <code>{ width, height }</code></li></ul></li></ul></p>
 <div class="details collapse"></div>
 <a href="../classes/QResizable_ResizeEvent.html" class="more">« More »</a>
 </div>
 <div id="QResizable_StartEvent" class="element ajax clickable class">
 <h1>QResizable_StartEvent<a href="../classes/QResizable_StartEvent.html">¶</a>
 </h1>
-<p class="short_description"><div>This event is triggered at the start of a resize
-		operation.</div><ul><li><div><strong>event</strong></div> <div>Type:
-		<a>Event</a></div> <div></div></li> <li><div><strong>ui</strong></div>
-		<div>Type: <a>Object</a></div> <div></div>
-		<ul><li><div><strong>element</strong></div> <div>Type: <a>jQuery</a></div>
-		<div>The jQuery object representing the element to be resized</div></li>
-		<li><div><strong>helper</strong></div> <div>Type: <a>jQuery</a></div>
-		<div>The jQuery object representing the helper that's being
-		resized</div></li> <li><div><strong>originalElement</strong></div>
-		<div>Type: <a>jQuery</a></div> <div>The jQuery object representing the
-		original element before it is wrapped</div></li>
-		<li><div><strong>originalPosition</strong></div> <div>Type:
-		<a>Object</a></div> <div>The position represented as <code>{ left, top
-		}</code> before the resizable is resized</div></li>
-		<li><div><strong>originalSize</strong></div> <div>Type: <a>Object</a></div>
-		<div>The size represented as <code>{ width, height }</code> before the
-		resizable is resized</div></li> <li><div><strong>position</strong></div>
-		<div>Type: <a>Object</a></div> <div>The current position represented as
-		<code>{ left, top }</code></div></li> <li><div><strong>size</strong></div>
-		<div>Type: <a>Object</a></div> <div>The current size represented as <code>{
-		width, height }</code></div></li></ul></li></ul></p>
+<p class="short_description">This event is triggered at the start of a resize
+		operation.<ul><li><strong>event</strong> Type: <a>Event</a> </li>
+		<li><strong>ui</strong> Type: <a>Object</a>
+		<ul><li><strong>element</strong> Type: <a>jQuery</a> The jQuery object
+		representing the element to be resized</li> <li><strong>helper</strong>
+		Type: <a>jQuery</a> The jQuery object representing the helper that's being
+		resized</li> <li><strong>originalElement</strong> Type: <a>jQuery</a> The
+		jQuery object representing the original element before it is wrapped</li>
+		<li><strong>originalPosition</strong> Type: <a>Object</a> The position
+		represented as <code>{ left, top }</code> before the resizable is
+		resized</li> <li><strong>originalSize</strong> Type: <a>Object</a> The size
+		represented as <code>{ width, height }</code> before the resizable is
+		resized</li> <li><strong>position</strong> Type: <a>Object</a> The current
+		position represented as <code>{ left, top }</code></li>
+		<li><strong>size</strong> Type: <a>Object</a> The current size represented
+		as <code>{ width, height }</code></li></ul></li></ul></p>
 <div class="details collapse"></div>
 <a href="../classes/QResizable_StartEvent.html" class="more">« More »</a>
 </div>
 <div id="QResizable_StopEvent" class="element ajax clickable class">
 <h1>QResizable_StopEvent<a href="../classes/QResizable_StopEvent.html">¶</a>
 </h1>
-<p class="short_description"><div>This event is triggered at the end of a resize
-		operation.</div><ul><li><div><strong>event</strong></div> <div>Type:
-		<a>Event</a></div> <div></div></li> <li><div><strong>ui</strong></div>
-		<div>Type: <a>Object</a></div> <div></div>
-		<ul><li><div><strong>element</strong></div> <div>Type: <a>jQuery</a></div>
-		<div>The jQuery object representing the element to be resized</div></li>
-		<li><div><strong>helper</strong></div> <div>Type: <a>jQuery</a></div>
-		<div>The jQuery object representing the helper that's being
-		resized</div></li> <li><div><strong>originalElement</strong></div>
-		<div>Type: <a>jQuery</a></div> <div>The jQuery object representing the
-		original element before it is wrapped</div></li>
-		<li><div><strong>originalPosition</strong></div> <div>Type:
-		<a>Object</a></div> <div>The position represented as <code>{ left, top
-		}</code> before the resizable is resized</div></li>
-		<li><div><strong>originalSize</strong></div> <div>Type: <a>Object</a></div>
-		<div>The size represented as <code>{ width, height }</code> before the
-		resizable is resized</div></li> <li><div><strong>position</strong></div>
-		<div>Type: <a>Object</a></div> <div>The current position represented as
-		<code>{ left, top }</code></div></li> <li><div><strong>size</strong></div>
-		<div>Type: <a>Object</a></div> <div>The current size represented as <code>{
-		width, height }</code></div></li></ul></li></ul></p>
+<p class="short_description">This event is triggered at the end of a resize
+		operation.<ul><li><strong>event</strong> Type: <a>Event</a> </li>
+		<li><strong>ui</strong> Type: <a>Object</a>
+		<ul><li><strong>element</strong> Type: <a>jQuery</a> The jQuery object
+		representing the element to be resized</li> <li><strong>helper</strong>
+		Type: <a>jQuery</a> The jQuery object representing the helper that's being
+		resized</li> <li><strong>originalElement</strong> Type: <a>jQuery</a> The
+		jQuery object representing the original element before it is wrapped</li>
+		<li><strong>originalPosition</strong> Type: <a>Object</a> The position
+		represented as <code>{ left, top }</code> before the resizable is
+		resized</li> <li><strong>originalSize</strong> Type: <a>Object</a> The size
+		represented as <code>{ width, height }</code> before the resizable is
+		resized</li> <li><strong>position</strong> Type: <a>Object</a> The current
+		position represented as <code>{ left, top }</code></li>
+		<li><strong>size</strong> Type: <a>Object</a> The current size represented
+		as <code>{ width, height }</code></li></ul></li></ul></p>
 <div class="details collapse"></div>
 <a href="../classes/QResizable_StopEvent.html" class="more">« More »</a>
 </div>
@@ -2930,7 +2942,8 @@ the table's perspective (aka a Foreign Key from the referenced Table's point of 
 </h1>
 <p class="short_description">Triggered when the selectable is created.<ul><li><strong>event</strong>
 		Type: <a>Event</a> </li> <li><strong>ui</strong> Type: <a>Object</a>
-		</li></ul></p>
+		</li></ul><p><em>Note: The <code>ui</code> object is empty but included for
+		consistency with other events.</em></p></p>
 <div class="details collapse"></div>
 <a href="../classes/QSelectable_CreateEvent.html" class="more">« More »</a>
 </div>
@@ -2961,7 +2974,9 @@ the table's perspective (aka a Foreign Key from the referenced Table's point of 
 </h1>
 <p class="short_description">Triggered at the beginning of the select
 		operation.<ul><li><strong>event</strong> Type: <a>Event</a> </li>
-		<li><strong>ui</strong> Type: <a>Object</a> </li></ul></p>
+		<li><strong>ui</strong> Type: <a>Object</a> </li></ul><p><em>Note: The
+		<code>ui</code> object is empty but included for consistency with other
+		events.</em></p></p>
 <div class="details collapse"></div>
 <a href="../classes/QSelectable_StartEvent.html" class="more">« More »</a>
 </div>
@@ -2970,7 +2985,8 @@ the table's perspective (aka a Foreign Key from the referenced Table's point of 
 </h1>
 <p class="short_description">Triggered at the end of the select operation.<ul><li><strong>event</strong>
 		Type: <a>Event</a> </li> <li><strong>ui</strong> Type: <a>Object</a>
-		</li></ul></p>
+		</li></ul><p><em>Note: The <code>ui</code> object is empty but included for
+		consistency with other events.</em></p></p>
 <div class="details collapse"></div>
 <a href="../classes/QSelectable_StopEvent.html" class="more">« More »</a>
 </div>
@@ -3078,7 +3094,9 @@ DataSource array</p>
 <h1>QSlider_CreateEvent<a href="../classes/QSlider_CreateEvent.html">¶</a>
 </h1>
 <p class="short_description">Triggered when the slider is created.<ul><li><strong>event</strong> Type:
-		<a>Event</a> </li> <li><strong>ui</strong> Type: <a>Object</a> </li></ul></p>
+		<a>Event</a> </li> <li><strong>ui</strong> Type: <a>Object</a>
+		</li></ul><p><em>Note: The <code>ui</code> object is empty but included for
+		consistency with other events.</em></p></p>
 <div class="details collapse"></div>
 <a href="../classes/QSlider_CreateEvent.html" class="more">« More »</a>
 </div>
@@ -3217,7 +3235,9 @@ DataSource array</p>
 <h1>QSortable_CreateEvent<a href="../classes/QSortable_CreateEvent.html">¶</a>
 </h1>
 <p class="short_description">Triggered when the sortable is created.<ul><li><strong>event</strong> Type:
-		<a>Event</a> </li> <li><strong>ui</strong> Type: <a>Object</a> </li></ul></p>
+		<a>Event</a> </li> <li><strong>ui</strong> Type: <a>Object</a>
+		</li></ul><p><em>Note: The <code>ui</code> object is empty but included for
+		consistency with other events.</em></p></p>
 <div class="details collapse"></div>
 <a href="../classes/QSortable_CreateEvent.html" class="more">« More »</a>
 </div>
@@ -3244,10 +3264,9 @@ DataSource array</p>
 <div id="QSortable_OutEvent" class="element ajax clickable class">
 <h1>QSortable_OutEvent<a href="../classes/QSortable_OutEvent.html">¶</a>
 </h1>
-<p class="short_description"><p>This event is triggered when a sortable item is moved away from a
-		connected list.</p> 				<p><em>Note: This event is also triggered when a
-		sortable item is dropped.</em></p><ul><li><strong>event</strong> Type:
-		<a>Event</a> </li> <li><strong>ui</strong> Type: <a>Object</a>
+<p class="short_description">This event is triggered when a sortable item is moved away from a connected
+		list.<ul><li><strong>event</strong> Type: <a>Event</a> </li>
+		<li><strong>ui</strong> Type: <a>Object</a>
 		<ul><li><strong>helper</strong> Type: <a>jQuery</a> The jQuery object
 		representing the helper being sorted</li> <li><strong>item</strong> Type:
 		<a>jQuery</a> The jQuery object representing the current dragged
@@ -3403,7 +3422,7 @@ DataSource array</p>
 <div id="QSpinner" class="element ajax clickable class">
 <h1>QSpinner<a href="../classes/QSpinner.html">¶</a>
 </h1>
-<p class="short_description">Implements a JQuery UI Spinner Object</p>
+<p class="short_description">Class QSpinner</p>
 <div class="details collapse"></div>
 <a href="../classes/QSpinner.html" class="more">« More »</a>
 </div>
@@ -3426,7 +3445,9 @@ DataSource array</p>
 </h1>
 <p class="short_description">Triggered when the value of the spinner has changed and the input is no
 		longer focused.<ul><li><strong>event</strong> Type: <a>Event</a> </li>
-		<li><strong>ui</strong> Type: <a>Object</a> </li></ul></p>
+		<li><strong>ui</strong> Type: <a>Object</a> </li></ul><p><em>Note: The
+		<code>ui</code> object is empty but included for consistency with other
+		events.</em></p></p>
 <div class="details collapse"></div>
 <a href="../classes/QSpinner_ChangeEvent.html" class="more">« More »</a>
 </div>
@@ -3434,7 +3455,9 @@ DataSource array</p>
 <h1>QSpinner_CreateEvent<a href="../classes/QSpinner_CreateEvent.html">¶</a>
 </h1>
 <p class="short_description">Triggered when the spinner is created.<ul><li><strong>event</strong> Type:
-		<a>Event</a> </li> <li><strong>ui</strong> Type: <a>Object</a> </li></ul></p>
+		<a>Event</a> </li> <li><strong>ui</strong> Type: <a>Object</a>
+		</li></ul><p><em>Note: The <code>ui</code> object is empty but included for
+		consistency with other events.</em></p></p>
 <div class="details collapse"></div>
 <a href="../classes/QSpinner_CreateEvent.html" class="more">« More »</a>
 </div>
@@ -3457,7 +3480,9 @@ DataSource array</p>
 <h1>QSpinner_StopEvent<a href="../classes/QSpinner_StopEvent.html">¶</a>
 </h1>
 <p class="short_description">Triggered after a spin.<ul><li><strong>event</strong> Type: <a>Event</a>
-		</li> <li><strong>ui</strong> Type: <a>Object</a> </li></ul></p>
+		</li> <li><strong>ui</strong> Type: <a>Object</a> </li></ul><p><em>Note:
+		The <code>ui</code> object is empty but included for consistency with other
+		events.</em></p></p>
 <div class="details collapse"></div>
 <a href="../classes/QSpinner_StopEvent.html" class="more">« More »</a>
 </div>
@@ -3595,7 +3620,7 @@ causing the exception.</p>
 <div id="QTabs" class="element ajax clickable class">
 <h1>QTabs<a href="../classes/QTabs.html">¶</a>
 </h1>
-<p class="short_description">Impelements JQuery Ui Tabs</p>
+<p class="short_description">QTabs is the PHP wrapper for JQueryUI Tabs control</p>
 <div class="details collapse"></div>
 <a href="../classes/QTabs.html" class="more">« More »</a>
 </div>
@@ -3771,6 +3796,60 @@ causing the exception.</p>
 </div>
 <h3>
 <i class="icon-custom icon-constant"></i> Constants</h3>
+<a id="constant_ALLOW_REMOTE_ADMIN"> </a><div class="element clickable constant  constant_ALLOW_REMOTE_ADMIN" data-toggle="collapse" data-target=".constant_ALLOW_REMOTE_ADMIN .collapse">
+<h2>ALLOW_REMOTE_ADMIN</h2>
+<pre>ALLOW_REMOTE_ADMIN </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_CACHE_PROVIDER_CLASS"> </a><div class="element clickable constant  constant_CACHE_PROVIDER_CLASS" data-toggle="collapse" data-target=".constant_CACHE_PROVIDER_CLASS .collapse">
+<h2>CACHE_PROVIDER_CLASS</h2>
+<pre>CACHE_PROVIDER_CLASS </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_CACHE_PROVIDER_OPTIONS"> </a><div class="element clickable constant  constant_CACHE_PROVIDER_OPTIONS" data-toggle="collapse" data-target=".constant_CACHE_PROVIDER_OPTIONS .collapse">
+<h2>CACHE_PROVIDER_OPTIONS</h2>
+<pre>CACHE_PROVIDER_OPTIONS </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_DB_BACKED_SESSION_HANDLER_DB_INDEX"> </a><div class="element clickable constant  constant_DB_BACKED_SESSION_HANDLER_DB_INDEX" data-toggle="collapse" data-target=".constant_DB_BACKED_SESSION_HANDLER_DB_INDEX .collapse">
+<h2>DB_BACKED_SESSION_HANDLER_DB_INDEX</h2>
+<pre>DB_BACKED_SESSION_HANDLER_DB_INDEX </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_DB_BACKED_SESSION_HANDLER_TABLE_NAME"> </a><div class="element clickable constant  constant_DB_BACKED_SESSION_HANDLER_TABLE_NAME" data-toggle="collapse" data-target=".constant_DB_BACKED_SESSION_HANDLER_TABLE_NAME .collapse">
+<h2>DB_BACKED_SESSION_HANDLER_TABLE_NAME</h2>
+<pre>DB_BACKED_SESSION_HANDLER_TABLE_NAME </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_DB_CONNECTION_1"> </a><div class="element clickable constant  constant_DB_CONNECTION_1" data-toggle="collapse" data-target=".constant_DB_CONNECTION_1 .collapse">
+<h2>DB_CONNECTION_1</h2>
+<pre>DB_CONNECTION_1 </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_ERROR_LOG_PATH"> </a><div class="element clickable constant  constant_ERROR_LOG_PATH" data-toggle="collapse" data-target=".constant_ERROR_LOG_PATH .collapse">
+<h2>ERROR_LOG_PATH</h2>
+<pre>ERROR_LOG_PATH </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_ERROR_PAGE_PATH"> </a><div class="element clickable constant  constant_ERROR_PAGE_PATH" data-toggle="collapse" data-target=".constant_ERROR_PAGE_PATH .collapse">
+<h2>ERROR_PAGE_PATH</h2>
+<pre>ERROR_PAGE_PATH </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_MAX_DB_CONNECTION_INDEX"> </a><div class="element clickable constant  constant_MAX_DB_CONNECTION_INDEX" data-toggle="collapse" data-target=".constant_MAX_DB_CONNECTION_INDEX .collapse">
+<h2>MAX_DB_CONNECTION_INDEX</h2>
+<pre>MAX_DB_CONNECTION_INDEX </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
 <a id="constant_MYSQLI_TYPE_BIT"> </a><div class="element clickable constant  constant_MYSQLI_TYPE_BIT" data-toggle="collapse" data-target=".constant_MYSQLI_TYPE_BIT .collapse">
 <h2>MYSQLI_TYPE_BIT</h2>
 <pre>MYSQLI_TYPE_BIT </pre>
@@ -3783,9 +3862,81 @@ causing the exception.</p>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
+<a id="constant_SERVER_INSTANCE"> </a><div class="element clickable constant  constant_SERVER_INSTANCE" data-toggle="collapse" data-target=".constant_SERVER_INSTANCE .collapse">
+<h2>SERVER_INSTANCE</h2>
+<pre>SERVER_INSTANCE </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant___APP_CSS_ASSETS__"> </a><div class="element clickable constant  constant___APP_CSS_ASSETS__" data-toggle="collapse" data-target=".constant___APP_CSS_ASSETS__ .collapse">
+<h2>__APP_CSS_ASSETS__</h2>
+<pre>__APP_CSS_ASSETS__ </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant___APP_IMAGE_ASSETS__"> </a><div class="element clickable constant  constant___APP_IMAGE_ASSETS__" data-toggle="collapse" data-target=".constant___APP_IMAGE_ASSETS__ .collapse">
+<h2>__APP_IMAGE_ASSETS__</h2>
+<pre>__APP_IMAGE_ASSETS__ </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
 <a id="constant___APP_INCLUDES__"> </a><div class="element clickable constant  constant___APP_INCLUDES__" data-toggle="collapse" data-target=".constant___APP_INCLUDES__ .collapse">
 <h2>__APP_INCLUDES__</h2>
 <pre>__APP_INCLUDES__ </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant___APP_INCLUDES__"> </a><div class="element clickable constant  constant___APP_INCLUDES__" data-toggle="collapse" data-target=".constant___APP_INCLUDES__ .collapse">
+<h2>__APP_INCLUDES__</h2>
+<pre>__APP_INCLUDES__ </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant___APP_JS_ASSETS__"> </a><div class="element clickable constant  constant___APP_JS_ASSETS__" data-toggle="collapse" data-target=".constant___APP_JS_ASSETS__ .collapse">
+<h2>__APP_JS_ASSETS__</h2>
+<pre>__APP_JS_ASSETS__ </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant___APP_PHP_ASSETS__"> </a><div class="element clickable constant  constant___APP_PHP_ASSETS__" data-toggle="collapse" data-target=".constant___APP_PHP_ASSETS__ .collapse">
+<h2>__APP_PHP_ASSETS__</h2>
+<pre>__APP_PHP_ASSETS__ </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant___CACHE__"> </a><div class="element clickable constant  constant___CACHE__" data-toggle="collapse" data-target=".constant___CACHE__ .collapse">
+<h2>__CACHE__</h2>
+<pre>__CACHE__ </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant___CONFIGURATION__"> </a><div class="element clickable constant  constant___CONFIGURATION__" data-toggle="collapse" data-target=".constant___CONFIGURATION__ .collapse">
+<h2>__CONFIGURATION__</h2>
+<pre>__CONFIGURATION__ </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant___CSS_ASSETS__"> </a><div class="element clickable constant  constant___CSS_ASSETS__" data-toggle="collapse" data-target=".constant___CSS_ASSETS__ .collapse">
+<h2>__CSS_ASSETS__</h2>
+<pre>__CSS_ASSETS__ </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant___DB_BACKED_FORM_STATE_HANDLER_DB_INDEX__"> </a><div class="element clickable constant  constant___DB_BACKED_FORM_STATE_HANDLER_DB_INDEX__" data-toggle="collapse" data-target=".constant___DB_BACKED_FORM_STATE_HANDLER_DB_INDEX__ .collapse">
+<h2>__DB_BACKED_FORM_STATE_HANDLER_DB_INDEX__</h2>
+<pre>__DB_BACKED_FORM_STATE_HANDLER_DB_INDEX__ </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant___DB_BACKED_FORM_STATE_HANDLER_TABLE_NAME__"> </a><div class="element clickable constant  constant___DB_BACKED_FORM_STATE_HANDLER_TABLE_NAME__" data-toggle="collapse" data-target=".constant___DB_BACKED_FORM_STATE_HANDLER_TABLE_NAME__ .collapse">
+<h2>__DB_BACKED_FORM_STATE_HANDLER_TABLE_NAME__</h2>
+<pre>__DB_BACKED_FORM_STATE_HANDLER_TABLE_NAME__ </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant___DEVTOOLS__"> </a><div class="element clickable constant  constant___DEVTOOLS__" data-toggle="collapse" data-target=".constant___DEVTOOLS__ .collapse">
+<h2>__DEVTOOLS__</h2>
+<pre>__DEVTOOLS__ </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
@@ -3795,9 +3946,117 @@ causing the exception.</p>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
+<a id="constant___DOCROOT__"> </a><div class="element clickable constant  constant___DOCROOT__" data-toggle="collapse" data-target=".constant___DOCROOT__ .collapse">
+<h2>__DOCROOT__</h2>
+<pre>__DOCROOT__ </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant___EXAMPLES__"> </a><div class="element clickable constant  constant___EXAMPLES__" data-toggle="collapse" data-target=".constant___EXAMPLES__ .collapse">
+<h2>__EXAMPLES__</h2>
+<pre>__EXAMPLES__ </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant___EXTERNAL_LIBRARIES__"> </a><div class="element clickable constant  constant___EXTERNAL_LIBRARIES__" data-toggle="collapse" data-target=".constant___EXTERNAL_LIBRARIES__ .collapse">
+<h2>__EXTERNAL_LIBRARIES__</h2>
+<pre>__EXTERNAL_LIBRARIES__ </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant___FILE_FORM_STATE_HANDLER_PATH__"> </a><div class="element clickable constant  constant___FILE_FORM_STATE_HANDLER_PATH__" data-toggle="collapse" data-target=".constant___FILE_FORM_STATE_HANDLER_PATH__ .collapse">
+<h2>__FILE_FORM_STATE_HANDLER_PATH__</h2>
+<pre>__FILE_FORM_STATE_HANDLER_PATH__ </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant___FORMBASE_CLASSES__"> </a><div class="element clickable constant  constant___FORMBASE_CLASSES__" data-toggle="collapse" data-target=".constant___FORMBASE_CLASSES__ .collapse">
+<h2>__FORMBASE_CLASSES__</h2>
+<pre>__FORMBASE_CLASSES__ </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant___FORM_DRAFTS_FORM_LIST_ITEMS_PER_PAGE__"> </a><div class="element clickable constant  constant___FORM_DRAFTS_FORM_LIST_ITEMS_PER_PAGE__" data-toggle="collapse" data-target=".constant___FORM_DRAFTS_FORM_LIST_ITEMS_PER_PAGE__ .collapse">
+<h2>__FORM_DRAFTS_FORM_LIST_ITEMS_PER_PAGE__</h2>
+<pre>__FORM_DRAFTS_FORM_LIST_ITEMS_PER_PAGE__ </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant___FORM_DRAFTS_PANEL_LIST_ITEMS_PER_PAGE__"> </a><div class="element clickable constant  constant___FORM_DRAFTS_PANEL_LIST_ITEMS_PER_PAGE__" data-toggle="collapse" data-target=".constant___FORM_DRAFTS_PANEL_LIST_ITEMS_PER_PAGE__ .collapse">
+<h2>__FORM_DRAFTS_PANEL_LIST_ITEMS_PER_PAGE__</h2>
+<pre>__FORM_DRAFTS_PANEL_LIST_ITEMS_PER_PAGE__ </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant___FORM_DRAFTS__"> </a><div class="element clickable constant  constant___FORM_DRAFTS__" data-toggle="collapse" data-target=".constant___FORM_DRAFTS__ .collapse">
+<h2>__FORM_DRAFTS__</h2>
+<pre>__FORM_DRAFTS__ </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant___FORM_STATE_HANDLER__"> </a><div class="element clickable constant  constant___FORM_STATE_HANDLER__" data-toggle="collapse" data-target=".constant___FORM_STATE_HANDLER__ .collapse">
+<h2>__FORM_STATE_HANDLER__</h2>
+<pre>__FORM_STATE_HANDLER__ </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant___IMAGE_ASSETS__"> </a><div class="element clickable constant  constant___IMAGE_ASSETS__" data-toggle="collapse" data-target=".constant___IMAGE_ASSETS__ .collapse">
+<h2>__IMAGE_ASSETS__</h2>
+<pre>__IMAGE_ASSETS__ </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
 <a id="constant___INCLUDES__"> </a><div class="element clickable constant  constant___INCLUDES__" data-toggle="collapse" data-target=".constant___INCLUDES__ .collapse">
 <h2>__INCLUDES__</h2>
 <pre>__INCLUDES__ </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant___INCLUDES__"> </a><div class="element clickable constant  constant___INCLUDES__" data-toggle="collapse" data-target=".constant___INCLUDES__ .collapse">
+<h2>__INCLUDES__</h2>
+<pre>__INCLUDES__ </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant___JQUERY_BASE__"> </a><div class="element clickable constant  constant___JQUERY_BASE__" data-toggle="collapse" data-target=".constant___JQUERY_BASE__ .collapse">
+<h2>__JQUERY_BASE__</h2>
+<pre>__JQUERY_BASE__ </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant___JQUERY_CSS__"> </a><div class="element clickable constant  constant___JQUERY_CSS__" data-toggle="collapse" data-target=".constant___JQUERY_CSS__ .collapse">
+<h2>__JQUERY_CSS__</h2>
+<pre>__JQUERY_CSS__ </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant___JQUERY_EFFECTS__"> </a><div class="element clickable constant  constant___JQUERY_EFFECTS__" data-toggle="collapse" data-target=".constant___JQUERY_EFFECTS__ .collapse">
+<h2>__JQUERY_EFFECTS__</h2>
+<pre>__JQUERY_EFFECTS__ </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant___JS_ASSETS__"> </a><div class="element clickable constant  constant___JS_ASSETS__" data-toggle="collapse" data-target=".constant___JS_ASSETS__ .collapse">
+<h2>__JS_ASSETS__</h2>
+<pre>__JS_ASSETS__ </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant___META_CONTROLS_GEN__"> </a><div class="element clickable constant  constant___META_CONTROLS_GEN__" data-toggle="collapse" data-target=".constant___META_CONTROLS_GEN__ .collapse">
+<h2>__META_CONTROLS_GEN__</h2>
+<pre>__META_CONTROLS_GEN__ </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant___META_CONTROLS__"> </a><div class="element clickable constant  constant___META_CONTROLS__" data-toggle="collapse" data-target=".constant___META_CONTROLS__ .collapse">
+<h2>__META_CONTROLS__</h2>
+<pre>__META_CONTROLS__ </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant___MODEL_GEN__"> </a><div class="element clickable constant  constant___MODEL_GEN__" data-toggle="collapse" data-target=".constant___MODEL_GEN__ .collapse">
+<h2>__MODEL_GEN__</h2>
+<pre>__MODEL_GEN__ </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
@@ -3813,9 +4072,39 @@ causing the exception.</p>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
+<a id="constant___MODEL__"> </a><div class="element clickable constant  constant___MODEL__" data-toggle="collapse" data-target=".constant___MODEL__ .collapse">
+<h2>__MODEL__</h2>
+<pre>__MODEL__ </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant___PANEL_DRAFTS__"> </a><div class="element clickable constant  constant___PANEL_DRAFTS__" data-toggle="collapse" data-target=".constant___PANEL_DRAFTS__ .collapse">
+<h2>__PANEL_DRAFTS__</h2>
+<pre>__PANEL_DRAFTS__ </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant___PHP_ASSETS__"> </a><div class="element clickable constant  constant___PHP_ASSETS__" data-toggle="collapse" data-target=".constant___PHP_ASSETS__ .collapse">
+<h2>__PHP_ASSETS__</h2>
+<pre>__PHP_ASSETS__ </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
 <a id="constant___PLUGINS__"> </a><div class="element clickable constant  constant___PLUGINS__" data-toggle="collapse" data-target=".constant___PLUGINS__ .collapse">
 <h2>__PLUGINS__</h2>
 <pre>__PLUGINS__ </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant___PLUGINS__"> </a><div class="element clickable constant  constant___PLUGINS__" data-toggle="collapse" data-target=".constant___PLUGINS__ .collapse">
+<h2>__PLUGINS__</h2>
+<pre>__PLUGINS__ </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant___PLUGIN_ASSETS__"> </a><div class="element clickable constant  constant___PLUGIN_ASSETS__" data-toggle="collapse" data-target=".constant___PLUGIN_ASSETS__ .collapse">
+<h2>__PLUGIN_ASSETS__</h2>
+<pre>__PLUGIN_ASSETS__ </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
@@ -3831,9 +4120,45 @@ causing the exception.</p>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
+<a id="constant___QCUBED_CORE__"> </a><div class="element clickable constant  constant___QCUBED_CORE__" data-toggle="collapse" data-target=".constant___QCUBED_CORE__ .collapse">
+<h2>__QCUBED_CORE__</h2>
+<pre>__QCUBED_CORE__ </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
 <a id="constant___QCUBED__"> </a><div class="element clickable constant  constant___QCUBED__" data-toggle="collapse" data-target=".constant___QCUBED__ .collapse">
 <h2>__QCUBED__</h2>
 <pre>__QCUBED__ </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant___QCUBED__"> </a><div class="element clickable constant  constant___QCUBED__" data-toggle="collapse" data-target=".constant___QCUBED__ .collapse">
+<h2>__QCUBED__</h2>
+<pre>__QCUBED__ </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant___QI18N_PO_PATH__"> </a><div class="element clickable constant  constant___QI18N_PO_PATH__" data-toggle="collapse" data-target=".constant___QI18N_PO_PATH__ .collapse">
+<h2>__QI18N_PO_PATH__</h2>
+<pre>__QI18N_PO_PATH__ </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant___SUBDIRECTORY__"> </a><div class="element clickable constant  constant___SUBDIRECTORY__" data-toggle="collapse" data-target=".constant___SUBDIRECTORY__ .collapse">
+<h2>__SUBDIRECTORY__</h2>
+<pre>__SUBDIRECTORY__ </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant___URL_REWRITE__"> </a><div class="element clickable constant  constant___URL_REWRITE__" data-toggle="collapse" data-target=".constant___URL_REWRITE__ .collapse">
+<h2>__URL_REWRITE__</h2>
+<pre>__URL_REWRITE__ </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant___VIRTUAL_DIRECTORY__"> </a><div class="element clickable constant  constant___VIRTUAL_DIRECTORY__" data-toggle="collapse" data-target=".constant___VIRTUAL_DIRECTORY__ .collapse">
+<h2>__VIRTUAL_DIRECTORY__</h2>
+<pre>__VIRTUAL_DIRECTORY__ </pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
@@ -3843,7 +4168,7 @@ causing the exception.</p>
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
-            generated on 2013-03-31T00:57:15+07:00.<br></footer></div>
+            generated on 2013-10-23T02:24:45+07:00.<br></footer></div>
 </div>
 </body>
 </html>

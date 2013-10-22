@@ -35,7 +35,7 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">2985</span></a></li>
+                <span class="label label-info">2737</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul><li>todo 
                 <span class="label label-info">27</span>
@@ -66,7 +66,7 @@
         </span><pre>DecrementOffset()</pre></a></li>
 <li class="method public inherited"><a href="#method_IncrementOffset" title="IncrementOffset :: "><span class="description">IncrementOffset()
         </span><pre>IncrementOffset()</pre></a></li>
-<li class="method public "><a href="#method___construct" title="__construct :: The constructor of CallerExceptions."><span class="description">The constructor of CallerExceptions.</span><pre>__construct()</pre></a></li>
+<li class="method public "><a href="#method___construct" title="__construct :: Constructor"><span class="description">Constructor</span><pre>__construct()</pre></a></li>
 <li class="method public inherited"><a href="#method___get" title="__get :: "><span class="description">__get()
         </span><pre>__get()</pre></a></li>
 <li class="method public inherited"><a href="#method_setMessage" title="setMessage :: "><span class="description">setMessage()
@@ -96,9 +96,7 @@
 </li>
 </ul>
 <div class="element class">
-<p class="short_description">This is the main exception to be thrown by any
-method to indicate that the CALLER is responsible for
-causing the exception.</p>
+<p class="short_description">Class QCrossScriptingException: Called when the textbox fails CrossScripting checks</p>
 <div class="details">
 <div class="long_description"><p>This works in conjunction with Qcodo's
 error handling/reporting, so that the correct file/line-number is
@@ -161,8 +159,8 @@ by the QCubed error reporting/handler.</p></div>
 </div></div>
 </div>
 <a id="method___construct"></a><div class="element clickable method public method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
-<h2>The constructor of CallerExceptions.</h2>
-<pre>__construct($strControlId) : \CallerException</pre>
+<h2>Constructor</h2>
+<pre>__construct(string $strControlId) : \CallerException</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"><p>Takes in a message string
@@ -178,7 +176,9 @@ is set to 1.</p>
 <p>Normally, the Offset would be altered by calls to IncrementOffset
 at every step the CallerException is caught/rethrown up the call stack.</p></div>
 <h3>Parameters</h3>
-<div class="subelement argument"><h4>$strControlId</h4></div>
+<div class="subelement argument">
+<h4>$strControlId</h4>
+<code>string</code><p>Control ID of the control for which it being called</p></div>
 <h3>Returns</h3>
 <div class="subelement response">
 <code>\CallerException</code>the new exception</div>
@@ -247,7 +247,7 @@ at every step the CallerException is caught/rethrown up the call stack.</p></div
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
-            generated on 2013-03-31T00:57:51+07:00.<br></footer></div>
+            generated on 2013-10-23T02:25:50+07:00.<br></footer></div>
 </div>
 </body>
 </html>
