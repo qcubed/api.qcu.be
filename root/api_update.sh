@@ -4,7 +4,7 @@ echo 1
 rm -rf api_scripts
 
 echo 2
-git clone https://github.com/olegabr/api.qcu.be.git api_scripts
+git clone https://github.com/qcubed/api.qcu.be.git api_scripts
 echo 3
 
 rm -rf /var/www/api.qcu.be/htdocs/*
