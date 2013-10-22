@@ -35,7 +35,7 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">2985</span></a></li>
+                <span class="label label-info">2737</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul><li>todo 
                 <span class="label label-info">27</span>
@@ -64,9 +64,6 @@
                     <ul>
 <li class="method public "><a href="#method_GetAttributes" title="GetAttributes :: "><span class="description">GetAttributes()
         </span><pre>GetAttributes()</pre></a></li>
-<li class="method public inherited"><a href="#method_OverrideAttributes" title="OverrideAttributes :: This allows you to set any properties, given by a name-value pair list
-in mixOverrideArray."><span class="description">This allows you to set any properties, given by a name-value pair list
-in mixOverrideArray.</span><pre>OverrideAttributes()</pre></a></li>
 <li class="method public "><a href="#method___construct" title="__construct :: Creates a QListItem"><span class="description">Creates a QListItem</span><pre>__construct()</pre></a></li>
 <li class="method public "><a href="#method___get" title='__get :: Override method to perform a property "Get"
 This will get the value of $strName
@@ -103,12 +100,12 @@ for CallerExceptions.</span><pre>__set()</pre></a></li>
 </li>
 <li class="nav-header protected">» Protected
                     <ul>
-<li class="property protected "><a href="#property_blnSelected" title="$blnSelected :: "><span class="description"></span><pre>$blnSelected</pre></a></li>
-<li class="property protected "><a href="#property_objItemStyle" title="$objItemStyle :: "><span class="description"></span><pre>$objItemStyle</pre></a></li>
-<li class="property protected "><a href="#property_strItemGroup" title="$strItemGroup :: "><span class="description"></span><pre>$strItemGroup</pre></a></li>
-<li class="property protected "><a href="#property_strLabel" title="$strLabel :: "><span class="description"></span><pre>$strLabel</pre></a></li>
-<li class="property protected "><a href="#property_strName" title="$strName :: "><span class="description"></span><pre>$strName</pre></a></li>
-<li class="property protected "><a href="#property_strValue" title="$strValue :: "><span class="description"></span><pre>$strValue</pre></a></li>
+<li class="property protected "><a href="#property_blnSelected" title="$blnSelected :: "><span class="description">Is the item selected?</span><pre>$blnSelected</pre></a></li>
+<li class="property protected "><a href="#property_objItemStyle" title="$objItemStyle :: "><span class="description">Inline style of the item</span><pre>$objItemStyle</pre></a></li>
+<li class="property protected "><a href="#property_strItemGroup" title="$strItemGroup :: "><span class="description">Group to which the item belongs</span><pre>$strItemGroup</pre></a></li>
+<li class="property protected "><a href="#property_strLabel" title="$strLabel :: "><span class="description">Label text for the item</span><pre>$strLabel</pre></a></li>
+<li class="property protected "><a href="#property_strName" title="$strName :: "><span class="description">Name of the Item</span><pre>$strName</pre></a></li>
+<li class="property protected "><a href="#property_strValue" title="$strValue :: "><span class="description">Value of the Item</span><pre>$strValue</pre></a></li>
 </ul>
 </li>
 </ul>
@@ -147,26 +144,6 @@ provides the OverrideAttribute functionality.</p></div>
 <div class="subelement argument"><h4>$blnIncludeAction</h4></div>
 </div></div>
 </div>
-<a id="method_OverrideAttributes"></a><div class="element clickable method public method_OverrideAttributes" data-toggle="collapse" data-target=".method_OverrideAttributes .collapse">
-<h2>This allows you to set any properties, given by a name-value pair list
-in mixOverrideArray.</h2>
-<pre>OverrideAttributes($mixOverrideArray) : void</pre>
-<div class="labels"><span class="label">Inherited</span></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"><p>Each item in mixOverrideArray needs to be either a string in the format
-of Property=Value or an array in the format of array(Property => Value).
-OverrideAttributes() will basically call
-$this->Property = Value for each string element in the array.</p>
-
-<p>Value can be surrounded by quotes... but this is optional.</p></div>
-<table class="table table-bordered"><tr>
-<th>inherited_from</th>
-<td>\QBaseClass::OverrideAttributes()</td>
-</tr></table>
-<h3>Parameters</h3>
-<div class="subelement argument"><h4>$mixOverrideArray</h4></div>
-</div></div>
-</div>
 <a id="method___construct"></a><div class="element clickable method public method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
 <h2>Creates a QListItem</h2>
 <pre>__construct(string $strName, string $strValue, boolean $blnSelected, string $strItemGroup, array $strOverrideParameters) : <a href="../classes/QListItem.html">\QListItem</a></pre>
@@ -192,8 +169,15 @@ $this->Property = Value for each string element in the array.</p>
 <div class="subelement argument">
 <h4>$strOverrideParameters</h4>
 <code>array</code><p>allows you to override item styles.  It is either a string formatted as Property=Value
-             or an array of the format array(property => value)</p>
+                             or an array of the format array(property => value)</p>
 </div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th>
+<code><a href="http://php.net/manual/en/class.exception.php">\Exception</a></code><code><a href="../classes/QCallerException.html">\QCallerException</a></code>
+</th>
+<td></td>
+</tr></table>
 <h3>Returns</h3>
 <div class="subelement response"><code><a href="../classes/QListItem.html">\QListItem</a></code></div>
 </div></div>
@@ -212,6 +196,11 @@ for CallerExceptions.</h2>
 <div class="subelement argument">
 <h4>$strName</h4>
 <code>string</code><p>Name of the property to get</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="../classes/QUndefinedPropertyException.html">\QUndefinedPropertyException</a></code></th>
+<td></td>
+</tr></table>
 <h3>Returns</h3>
 <div class="subelement response">
 <code>mixed</code>the returned property</div>
@@ -234,6 +223,11 @@ for CallerExceptions.</h2>
 <div class="subelement argument">
 <h4>$mixValue</h4>
 <code>string</code><p>New value of the property</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="../classes/QUndefinedPropertyException.html">\QUndefinedPropertyException</a></code></th>
+<td></td>
+</tr></table>
 <h3>Returns</h3>
 <div class="subelement response">
 <code>mixed</code>the property that was set</div>
@@ -357,38 +351,38 @@ for CallerExceptions.</h2>
 </div></div>
 </div>
 <a id="property_blnSelected"> </a><div class="element clickable property protected property_blnSelected" data-toggle="collapse" data-target=".property_blnSelected .collapse">
-<h2></h2>
-<pre>$blnSelected </pre>
+<h2>Is the item selected?</h2>
+<pre>$blnSelected : bool</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
 <a id="property_objItemStyle"> </a><div class="element clickable property protected property_objItemStyle" data-toggle="collapse" data-target=".property_objItemStyle .collapse">
-<h2></h2>
-<pre>$objItemStyle </pre>
+<h2>Inline style of the item</h2>
+<pre>$objItemStyle : <a href="../classes/QListItemStyle.html">\QListItemStyle</a></pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
 <a id="property_strItemGroup"> </a><div class="element clickable property protected property_strItemGroup" data-toggle="collapse" data-target=".property_strItemGroup .collapse">
-<h2></h2>
-<pre>$strItemGroup </pre>
+<h2>Group to which the item belongs</h2>
+<pre>$strItemGroup : null | string</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
 <a id="property_strLabel"> </a><div class="element clickable property protected property_strLabel" data-toggle="collapse" data-target=".property_strLabel .collapse">
-<h2></h2>
-<pre>$strLabel </pre>
+<h2>Label text for the item</h2>
+<pre>$strLabel : string</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
 <a id="property_strName"> </a><div class="element clickable property protected property_strName" data-toggle="collapse" data-target=".property_strName .collapse">
-<h2></h2>
-<pre>$strName </pre>
+<h2>Name of the Item</h2>
+<pre>$strName : null | string</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
 <a id="property_strValue"> </a><div class="element clickable property protected property_strValue" data-toggle="collapse" data-target=".property_strValue .collapse">
-<h2></h2>
-<pre>$strValue </pre>
+<h2>Value of the Item</h2>
+<pre>$strValue : null | string</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
@@ -399,7 +393,7 @@ for CallerExceptions.</h2>
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
-            generated on 2013-03-31T00:57:58+07:00.<br></footer></div>
+            generated on 2013-10-23T02:26:04+07:00.<br></footer></div>
 </div>
 </body>
 </html>

@@ -35,7 +35,7 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">2985</span></a></li>
+                <span class="label label-info">2737</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul><li>todo 
                 <span class="label label-info">27</span>
@@ -64,10 +64,11 @@
                     <ul>
 <li class="method public "><a href="#method_GetColumnByName" title="GetColumnByName :: return the QColumn object related to that column name"><span class="description">return the QColumn object related to that column name</span><pre>GetColumnByName()</pre></a></li>
 <li class="method public "><a href="#method_HasColumn" title="HasColumn :: Search within the table's columns for the given column"><span class="description">Search within the table's columns for the given column</span><pre>HasColumn()</pre></a></li>
+<li class="method public "><a href="#method_HasExtendedArrayExpansions" title="HasExtendedArrayExpansions :: "><span class="description">HasExtendedArrayExpansions()
+        </span><pre>HasExtendedArrayExpansions()</pre></a></li>
+<li class="method public "><a href="#method_HasImmediateArrayExpansions" title="HasImmediateArrayExpansions :: "><span class="description">HasImmediateArrayExpansions()
+        </span><pre>HasImmediateArrayExpansions()</pre></a></li>
 <li class="method public "><a href="#method_LookupColumnPropertyName" title="LookupColumnPropertyName :: Return the property name for a given column name (false if it doesn't exists)"><span class="description">Return the property name for a given column name (false if it doesn't exists)</span><pre>LookupColumnPropertyName()</pre></a></li>
-<li class="method public inherited"><a href="#method_OverrideAttributes" title="OverrideAttributes :: This allows you to set any properties, given by a name-value pair list
-in mixOverrideArray."><span class="description">This allows you to set any properties, given by a name-value pair list
-in mixOverrideArray.</span><pre>OverrideAttributes()</pre></a></li>
 <li class="method public "><a href="#method___construct" title="__construct :: Default Constructor."><span class="description">Default Constructor.</span><pre>__construct()</pre></a></li>
 <li class="method public "><a href="#method___get" title='__get :: Override method to perform a property "Get"
 This will get the value of $strName'><span class="description">Override method to perform a property "Get"
@@ -141,6 +142,25 @@ provides the OverrideAttribute functionality.</p></div>
 <div class="subelement response"><code>boolean</code></div>
 </div></div>
 </div>
+<a id="method_HasExtendedArrayExpansions"></a><div class="element clickable method public method_HasExtendedArrayExpansions" data-toggle="collapse" data-target=".method_HasExtendedArrayExpansions .collapse">
+<h2>HasExtendedArrayExpansions()
+        </h2>
+<pre>HasExtendedArrayExpansions($objCodeGen, $objCheckedTableArray) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$objCodeGen</h4></div>
+<div class="subelement argument"><h4>$objCheckedTableArray</h4></div>
+</div></div>
+</div>
+<a id="method_HasImmediateArrayExpansions"></a><div class="element clickable method public method_HasImmediateArrayExpansions" data-toggle="collapse" data-target=".method_HasImmediateArrayExpansions .collapse">
+<h2>HasImmediateArrayExpansions()
+        </h2>
+<pre>HasImmediateArrayExpansions() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
 <a id="method_LookupColumnPropertyName"></a><div class="element clickable method public method_LookupColumnPropertyName" data-toggle="collapse" data-target=".method_LookupColumnPropertyName .collapse">
 <h2>Return the property name for a given column name (false if it doesn't exists)</h2>
 <pre>LookupColumnPropertyName($strColumnName) : string</pre>
@@ -151,26 +171,6 @@ provides the OverrideAttribute functionality.</p></div>
 <div class="subelement argument"><h4>$strColumnName</h4></div>
 <h3>Returns</h3>
 <div class="subelement response"><code>string</code></div>
-</div></div>
-</div>
-<a id="method_OverrideAttributes"></a><div class="element clickable method public method_OverrideAttributes" data-toggle="collapse" data-target=".method_OverrideAttributes .collapse">
-<h2>This allows you to set any properties, given by a name-value pair list
-in mixOverrideArray.</h2>
-<pre>OverrideAttributes($mixOverrideArray) : void</pre>
-<div class="labels"><span class="label">Inherited</span></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"><p>Each item in mixOverrideArray needs to be either a string in the format
-of Property=Value or an array in the format of array(Property => Value).
-OverrideAttributes() will basically call
-$this->Property = Value for each string element in the array.</p>
-
-<p>Value can be surrounded by quotes... but this is optional.</p></div>
-<table class="table table-bordered"><tr>
-<th>inherited_from</th>
-<td>\QBaseClass::OverrideAttributes()</td>
-</tr></table>
-<h3>Parameters</h3>
-<div class="subelement argument"><h4>$mixOverrideArray</h4></div>
 </div></div>
 </div>
 <a id="method___construct"></a><div class="element clickable method public method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
@@ -198,6 +198,11 @@ This will get the value of $strName</h2>
 <div class="subelement argument">
 <h4>$strName</h4>
 <code>string</code><p>strName Name of the property to get</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="../classes/QUndefinedPropertyException.html">\QUndefinedPropertyException</a></code></th>
+<td></td>
+</tr></table>
 <h3>Returns</h3>
 <div class="subelement response"><code>mixed</code></div>
 </div></div>
@@ -216,6 +221,11 @@ This will set the property $strName to be $mixValue</h2>
 <div class="subelement argument">
 <h4>$mixValue</h4>
 <code>string</code><p>mixValue New value of the property</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="../classes/QUndefinedPropertyException.html">\QUndefinedPropertyException</a></code></th>
+<td></td>
+</tr></table>
 <h3>Returns</h3>
 <div class="subelement response"><code>mixed</code></div>
 </div></div>
@@ -277,7 +287,7 @@ This will set the property $strName to be $mixValue</h2>
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
-            generated on 2013-03-31T00:58:27+07:00.<br></footer></div>
+            generated on 2013-10-23T02:26:47+07:00.<br></footer></div>
 </div>
 </body>
 </html>

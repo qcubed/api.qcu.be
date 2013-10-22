@@ -35,7 +35,7 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">2985</span></a></li>
+                <span class="label label-info">2737</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul><li>todo 
                 <span class="label label-info">27</span>
@@ -94,9 +94,6 @@
         </span><pre>GetVirtualNode()</pre></a></li>
 <li class="method public "><a href="#method_GetWhereStatement" title="GetWhereStatement :: "><span class="description">GetWhereStatement()
         </span><pre>GetWhereStatement()</pre></a></li>
-<li class="method public inherited"><a href="#method_OverrideAttributes" title="OverrideAttributes :: This allows you to set any properties, given by a name-value pair list
-in mixOverrideArray."><span class="description">This allows you to set any properties, given by a name-value pair list
-in mixOverrideArray.</span><pre>OverrideAttributes()</pre></a></li>
 <li class="method public inherited"><a href="#method_SetCountOnlyFlag" title="SetCountOnlyFlag :: "><span class="description">SetCountOnlyFlag()
         </span><pre>SetCountOnlyFlag()</pre></a></li>
 <li class="method public inherited"><a href="#method_SetDistinctFlag" title="SetDistinctFlag :: "><span class="description">SetDistinctFlag()
@@ -138,12 +135,12 @@ for CallerExceptions.</span><pre>__set()</pre></a></li>
 <li class="property protected inherited"><a href="#property_intColumnAliasCount" title="$intColumnAliasCount :: "><span class="description"></span><pre>$intColumnAliasCount</pre></a></li>
 <li class="property protected inherited"><a href="#property_intTableAliasCount" title="$intTableAliasCount :: "><span class="description"></span><pre>$intTableAliasCount</pre></a></li>
 <li class="property protected inherited"><a href="#property_objDatabase" title="$objDatabase :: "><span class="description"></span><pre>$objDatabase</pre></a></li>
+<li class="property protected inherited"><a href="#property_objExpandAsArrayNode" title="$objExpandAsArrayNode :: "><span class="description"></span><pre>$objExpandAsArrayNode</pre></a></li>
 <li class="property protected "><a href="#property_objParentBuilder" title="$objParentBuilder :: "><span class="description"></span><pre>$objParentBuilder</pre></a></li>
 <li class="property protected inherited"><a href="#property_objVirtualNodeArray" title="$objVirtualNodeArray :: "><span class="description"></span><pre>$objVirtualNodeArray</pre></a></li>
 <li class="property protected inherited"><a href="#property_strColumnAliasArray" title="$strColumnAliasArray :: "><span class="description"></span><pre>$strColumnAliasArray</pre></a></li>
 <li class="property protected inherited"><a href="#property_strEscapeIdentifierBegin" title="$strEscapeIdentifierBegin :: "><span class="description"></span><pre>$strEscapeIdentifierBegin</pre></a></li>
 <li class="property protected inherited"><a href="#property_strEscapeIdentifierEnd" title="$strEscapeIdentifierEnd :: "><span class="description"></span><pre>$strEscapeIdentifierEnd</pre></a></li>
-<li class="property protected inherited"><a href="#property_strExpandAsArrayNodes" title="$strExpandAsArrayNodes :: "><span class="description"></span><pre>$strExpandAsArrayNodes</pre></a></li>
 <li class="property protected inherited"><a href="#property_strFromArray" title="$strFromArray :: "><span class="description"></span><pre>$strFromArray</pre></a></li>
 <li class="property protected inherited"><a href="#property_strGroupByArray" title="$strGroupByArray :: "><span class="description"></span><pre>$strGroupByArray</pre></a></li>
 <li class="property protected inherited"><a href="#property_strHavingArray" title="$strHavingArray :: "><span class="description"></span><pre>$strHavingArray</pre></a></li>
@@ -409,32 +406,6 @@ for CallerExceptions.</span><pre>__set()</pre></a></li>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
 </div>
-<a id="method_OverrideAttributes"></a><div class="element clickable method public method_OverrideAttributes" data-toggle="collapse" data-target=".method_OverrideAttributes .collapse">
-<h2>This allows you to set any properties, given by a name-value pair list
-in mixOverrideArray.</h2>
-<pre>OverrideAttributes($mixOverrideArray) : void</pre>
-<div class="labels"><span class="label">Inherited</span></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"><p>Each item in mixOverrideArray needs to be either a string in the format
-of Property=Value or an array in the format of array(Property => Value).
-OverrideAttributes() will basically call
-$this->Property = Value for each string element in the array.</p>
-
-<p>Value can be surrounded by quotes... but this is optional.</p></div>
-<table class="table table-bordered">
-<tr>
-<th>inherited_from</th>
-<td>\QBaseClass::OverrideAttributes()</td>
-</tr>
-<tr>
-<th>inherited_from</th>
-<td>\QQueryBuilder::OverrideAttributes()</td>
-</tr>
-</table>
-<h3>Parameters</h3>
-<div class="subelement argument"><h4>$mixOverrideArray</h4></div>
-</div></div>
-</div>
 <a id="method_SetCountOnlyFlag"></a><div class="element clickable method public method_SetCountOnlyFlag" data-toggle="collapse" data-target=".method_SetCountOnlyFlag .collapse">
 <h2>SetCountOnlyFlag()
         </h2>
@@ -521,6 +492,11 @@ for CallerExceptions.</h2>
 <div class="subelement argument">
 <h4>$strName</h4>
 <code>string</code><p>Name of the property to get</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="../classes/QUndefinedPropertyException.html">\QUndefinedPropertyException</a></code></th>
+<td></td>
+</tr></table>
 <h3>Returns</h3>
 <div class="subelement response">
 <code>mixed</code>the returned property</div>
@@ -553,6 +529,11 @@ for CallerExceptions.</h2>
 <div class="subelement argument">
 <h4>$mixValue</h4>
 <code>string</code><p>New value of the property</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="../classes/QUndefinedPropertyException.html">\QUndefinedPropertyException</a></code></th>
+<td></td>
+</tr></table>
 <h3>Returns</h3>
 <div class="subelement response">
 <code>mixed</code>the property that was set</div>
@@ -620,6 +601,18 @@ for CallerExceptions.</h2>
 </tr></table>
 </div></div>
 </div>
+<a id="property_objExpandAsArrayNode"> </a><div class="element clickable property protected property_objExpandAsArrayNode" data-toggle="collapse" data-target=".property_objExpandAsArrayNode .collapse">
+<h2></h2>
+<pre>$objExpandAsArrayNode </pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\QQueryBuilder::$$objExpandAsArrayNode</td>
+</tr></table>
+</div></div>
+</div>
 <a id="property_objParentBuilder"> </a><div class="element clickable property protected property_objParentBuilder" data-toggle="collapse" data-target=".property_objParentBuilder .collapse">
 <h2></h2>
 <pre>$objParentBuilder </pre>
@@ -671,18 +664,6 @@ for CallerExceptions.</h2>
 <table class="table table-bordered"><tr>
 <th>inherited_from</th>
 <td>\QQueryBuilder::$$strEscapeIdentifierEnd</td>
-</tr></table>
-</div></div>
-</div>
-<a id="property_strExpandAsArrayNodes"> </a><div class="element clickable property protected property_strExpandAsArrayNodes" data-toggle="collapse" data-target=".property_strExpandAsArrayNodes .collapse">
-<h2></h2>
-<pre>$strExpandAsArrayNodes </pre>
-<div class="labels"><span class="label">Inherited</span></div>
-<div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<table class="table table-bordered"><tr>
-<th>inherited_from</th>
-<td>\QQueryBuilder::$$strExpandAsArrayNodes</td>
 </tr></table>
 </div></div>
 </div>
@@ -825,7 +806,7 @@ for CallerExceptions.</h2>
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
-            generated on 2013-03-31T00:58:22+07:00.<br></footer></div>
+            generated on 2013-10-23T02:26:40+07:00.<br></footer></div>
 </div>
 </body>
 </html>
